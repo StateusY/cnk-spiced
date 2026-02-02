@@ -1,0 +1,21 @@
+{
+  "parent": "cnk:cookbook/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:poisonous_potato",
+            "predicates": {
+              "minecraft:custom_data": {"spiced":{"ingredient":{"type":"diced_potato"}}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "spiced:cookbook/grant/diced_potato"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "book.item.minecraft.pumpkin_pie": "\ud001",
+  "book.item.minecraft.glistering_melon_slice": "\ud002",
+  "book.item.minecraft.nether_wart": "\ud003",
+  "book.block.minecraft.oak_log": "\ud004",
+  "book.item.minecraft.purple_dye": "\ud005",
+  "book.block.minecraft.stripped_oak_log": "\ud006",
+  "book.item.minecraft.healing_potion": "\ud007",
+  "book.item.spiced.diced_potato": "\ud008",
+  "book.item.spiced.mashed_potatoes": "\ud009",
+  "book.item.spiced.sliced_potato": "\ud010",
+  "book.item.spiced.powdered_sugar": "\ud011",
+  "book.item.spiced.salt": "\ud012",
+
+  "spiced.source": "Crop & Kettle Example Addon",
+  "item.minecraft.healing_potion": "Healing Potion",
+  "item.spiced.sliced_potato": "Sliced Potatoes",
+  "item.spiced.diced_potato": "Diced Potatoes",
+  "item.spiced.mashed_potatoes": "Mashed Potatoes",
+  "item.spiced.powdered_sugar": "Powdered Sugar",
+  "item.spiced.salt": "Salt",
+  
+  "book.spiced.source": "\ue001",
+  "spiced.tooltip": "\ua001\ub001Crop & Kettle: Spiced"
+}

@@ -1,0 +1,21 @@
+{
+  "parent": "cnk:cookbook/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:poisonous_potato",
+            "components": {
+              "minecraft:custom_data": {"please_fill_this_in":true}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "spiced:cookbook/grant//home/stateus/Documents/GitHub/cnk-spiced/cookbook_helper/input/spiced/item/sliced_potato"
+  }
+}

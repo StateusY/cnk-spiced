@@ -1,0 +1,19 @@
+{
+    "providers": [
+        {"type":"bitmap","file":"spiced:icon/item/pumpkin_pie.png","ascent":15,"height":16,"chars":["\ud001"]},
+        {"type":"bitmap","file":"spiced:icon/item/glistering_melon_slice.png","ascent":15,"height":16,"chars":["\ud002"]},
+        {"type":"bitmap","file":"spiced:icon/item/nether_wart.png","ascent":15,"height":16,"chars":["\ud003"]},
+        {"type":"bitmap","file":"spiced:icon/item/oak_log.png","ascent":15,"height":16,"chars":["\ud004"]},
+        {"type":"bitmap","file":"spiced:icon/item/purple_dye.png","ascent":15,"height":16,"chars":["\ud005"]},
+        {"type":"bitmap","file":"spiced:icon/item/stripped_oak_log.png","ascent":15,"height":16,"chars":["\ud006"]},
+        {"type":"bitmap","file":"spiced:icon/item/healing_potion.png","ascent":15,"height":16,"chars":["\ud007"]},
+        {"type":"bitmap","file":"spiced:icon/item/diced_potato.png","ascent":15,"height":16,"chars":["\ud008"]},
+        {"type":"bitmap","file":"spiced:icon/item/mashed_potatoes.png","ascent":15,"height":16,"chars":["\ud009"]},
+        {"type":"bitmap","file":"spiced:icon/item/sliced_potato.png","ascent":15,"height":16,"chars":["\ud010"]},
+        {"type":"bitmap","file":"spiced:icon/item/powdered_sugar.png","ascent":15,"height":16,"chars":["\ud011"]},
+        {"type":"bitmap","file":"spiced:icon/item/salt.png","ascent":15,"height":16,"chars":["\ud012"]},
+
+        {"type":"bitmap","file":"spiced:icon/misc/spiced_indicator.png","ascent":6,"height":8,"chars":["\ue001"]}
+    
+    ]
+}
