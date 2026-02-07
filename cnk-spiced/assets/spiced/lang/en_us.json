@@ -19,6 +19,10 @@
   "item.spiced.mashed_potatoes": "Mashed Potatoes",
   "item.spiced.powdered_sugar": "Powdered Sugar",
   "item.spiced.salt": "Salt",
+
+  "item.spiced.mortar_and_pestle": "Mortar and Pestle",
+
+  "subtitles.spiced.block.mortar_and_pestle.stir": "Pestle mashes in a Mortar",
   
   "book.spiced.source": "\ue001",
   "spiced.tooltip": "\ua001\ub001Crop & Kettle: Spiced"

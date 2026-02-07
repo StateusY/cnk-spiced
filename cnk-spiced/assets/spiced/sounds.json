@@ -1,0 +1,32 @@
+{
+  "block.mortar_and_pestle.stir": {
+    "sounds": [
+      {
+        "name": "spiced:mortar_and_pestle/stir1",
+        "attenuation_distance": 6,
+        "volume": 0.8
+      },
+      {
+        "name": "spiced:mortar_and_pestle/stir2",
+        "attenuation_distance": 6,
+        "volume": 0.8
+      },
+      {
+        "name": "spiced:mortar_and_pestle/stir3",
+        "attenuation_distance": 6,
+        "volume": 0.8
+      },
+      {
+        "name": "spiced:mortar_and_pestle/stir4",
+        "attenuation_distance": 6,
+        "volume": 0.8
+      },
+      {
+        "name": "spiced:mortar_and_pestle/stir5",
+        "attenuation_distance": 6,
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.spiced.block.mortar_and_pestle.stir"
+  }
+}

@@ -1,0 +1,1 @@
+$clear @p[tag=spiced.interact_mortar_and_pestle] $(id)[minecraft:custom_data=$(custom_data)] $(count)
