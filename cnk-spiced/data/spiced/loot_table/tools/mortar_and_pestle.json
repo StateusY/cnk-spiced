@@ -12,7 +12,7 @@
               "components": {
                 "minecraft:item_name": {"translate":"item.spiced.mortar_and_pestle","fallback":"Mortar and Pestle"},
                 "minecraft:item_model": "spiced:mortar_and_pestle_item",
-                "minecraft:custom_data": {"spiced":{"block":{"type":"mortar_and_pestle"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:custom_data": {"cnk":{"block":{"type":"mortar_and_pestle"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
                 "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
                 "minecraft:profile": {"texture":"cnk:block/transparent_head"},
                 "tooltip_display": {"hidden_components":["minecraft:profile"]},

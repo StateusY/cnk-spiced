@@ -1,0 +1,5 @@
+{
+    "providers": [
+        {"type":"bitmap","file":"spiced:icon/item/mortar_and_pestle.png","ascent":62,"height":64,"chars":["\ue001"]}
+    ]
+}

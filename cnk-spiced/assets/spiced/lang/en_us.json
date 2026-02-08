@@ -11,8 +11,10 @@
   "book.item.spiced.sliced_potato": "\ud010",
   "book.item.spiced.powdered_sugar": "\ud011",
   "book.item.spiced.salt": "\ud012",
+  
+  "book.spiced.mortar_and_pestle": "\ue001",
 
-  "spiced.source": "Crop & Kettle Example Addon",
+  "spiced.source": "C&K: Spiced",
   "item.minecraft.healing_potion": "Healing Potion",
   "item.spiced.sliced_potato": "Sliced Potatoes",
   "item.spiced.diced_potato": "Diced Potatoes",
@@ -25,5 +27,5 @@
   "subtitles.spiced.block.mortar_and_pestle.stir": "Pestle mashes in a Mortar",
   
   "book.spiced.source": "\ue001",
-  "spiced.tooltip": "\ua001\ub001Crop & Kettle: Spiced"
+  "spiced.tooltip": "\ua001\ub001C&K: Spiced"
 }

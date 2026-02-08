@@ -14,6 +14,5 @@
         {"type":"bitmap","file":"spiced:icon/item/salt.png","ascent":15,"height":16,"chars":["\ud012"]},
 
         {"type":"bitmap","file":"spiced:icon/misc/spiced_indicator.png","ascent":6,"height":8,"chars":["\ue001"]}
-    
     ]
 }
