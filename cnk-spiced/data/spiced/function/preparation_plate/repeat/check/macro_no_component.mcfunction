@@ -1,0 +1,2 @@
+$execute store result score $item_count cnk.dummy run clear @p[tag=spiced.interact_preparation_plate] $(id) 0
+execute if score $count cnk.dummy > $item_count cnk.dummy run scoreboard players set $items_found cnk.dummy 0

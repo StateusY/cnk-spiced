@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"spiced.preparation_plate_interaction\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "spiced:preparation_plate/hit/main"
+  }
+}

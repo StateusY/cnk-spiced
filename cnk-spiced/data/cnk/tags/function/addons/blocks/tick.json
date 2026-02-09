@@ -1,5 +1,6 @@
 {
   "values": [
-    "spiced:mortar_and_pestle/tick"
+    "spiced:mortar_and_pestle/tick",
+    "spiced:preparation_plate/tick"
   ]
 }

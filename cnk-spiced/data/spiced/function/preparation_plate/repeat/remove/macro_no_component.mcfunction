@@ -1,0 +1,1 @@
+$clear @p[tag=spiced.interact_preparation_plate] $(id) $(count)
