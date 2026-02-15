@@ -1,7 +1,0 @@
-{
-    "providers": [
-        {"type":"bitmap","file":"spiced:icon/item//home/stateus/Documents/GitHub/cnk-spiced/cookbook_helper/input/spiced/item/diced_potato.png","ascent":15,"height":16,"chars":["\uc000"]},
-        {"type":"bitmap","file":"spiced:icon/item//home/stateus/Documents/GitHub/cnk-spiced/cookbook_helper/input/spiced/item/mashed_potatoes.png","ascent":15,"height":16,"chars":["\uc001"]},
-        {"type":"bitmap","file":"spiced:icon/item//home/stateus/Documents/GitHub/cnk-spiced/cookbook_helper/input/spiced/item/sliced_potato.png","ascent":15,"height":16,"chars":["\uc002"]}
-    ]
-}

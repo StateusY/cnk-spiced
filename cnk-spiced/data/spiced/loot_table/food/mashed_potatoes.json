@@ -13,8 +13,8 @@
                 "minecraft:item_name": {"translate":"item.spiced.mashed_potatoes","fallback":"Mashed Potatoes"},
                 "minecraft:item_model": "spiced:mashed_potatoes",
                 "minecraft:food": {
-                  "nutrition": 9,
-                  "saturation": 6.3
+                  "nutrition": 3,
+                  "saturation": 1.5
                 },
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"mashed_potatoes"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},

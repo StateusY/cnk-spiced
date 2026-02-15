@@ -5,4 +5,4 @@ execute if score $hit_preparation_plate_check cnk.dummy matches 1 run data remov
 execute if score $hit_preparation_plate_check cnk.dummy matches 1 on vehicle unless entity @s[tag=spiced.preparing] on passengers if entity @s[type=minecraft:item_display,tag=spiced.preparation_plate_item] on vehicle run return run function spiced:preparation_plate/hit/remove_last
 execute if score $hit_preparation_plate_check cnk.dummy matches 1 on vehicle run scoreboard players add @s cnk.hit_count 1
 execute if score $hit_preparation_plate_check cnk.dummy matches 1 on vehicle at @s run playsound minecraft:block.bamboo_wood.hit block @a ~ ~ ~ 1 2
-execute if score $hit_preparation_plate_check cnk.dummy matches 1 on vehicle at @s run particle minecraft:item{item:{id:"minecraft:spruce_planks"}} ~ ~-0.25 ~ 0.3 0.1 0.3 0.1 5
+execute if score $hit_preparation_plate_check cnk.dummy matches 1 on vehicle at @s run particle minecraft:item{item:{id:"minecraft:iron_block"}} ~ ~-0.25 ~ 0.3 0.1 0.3 0.1 5

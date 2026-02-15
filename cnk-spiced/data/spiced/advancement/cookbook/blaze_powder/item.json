@@ -1,0 +1,18 @@
+{
+  "parent": "cnk:cookbook/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blaze_powder"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "spiced:cookbook/grant/blaze_powder"
+  }
+}

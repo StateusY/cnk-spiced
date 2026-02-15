@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ipi"
+  ],
+  "key": {
+    "i": "minecraft:iron_ingot",
+    "p": "minecraft:heavy_weighted_pressure_plate"
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {"translate":"item.spiced.preparation_plate","fallback":"Preparation Plate"},
+      "minecraft:item_model": "spiced:preparation_plate_item",
+      "minecraft:custom_data": {"cnk":{"block":{"type":"preparation_plate"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+      "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+      "minecraft:profile": {"texture":"cnk:block/transparent_head"},
+      "tooltip_display": {"hidden_components":["minecraft:profile"]},
+      "minecraft:rarity":"common",
+      "!minecraft:equippable": {}
+    }
+  }
+}

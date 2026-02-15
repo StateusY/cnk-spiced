@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"translate":"item.spiced.ethanol","fallback":"Ethanol"},
+                "minecraft:item_model": "spiced:ethanol",
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0
+                },
+                "minecraft:consumable": {},
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"ethanol"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

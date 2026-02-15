@@ -12,6 +12,16 @@
         {"type":"bitmap","file":"spiced:icon/item/sliced_potato.png","ascent":15,"height":16,"chars":["\ud010"]},
         {"type":"bitmap","file":"spiced:icon/item/powdered_sugar.png","ascent":15,"height":16,"chars":["\ud011"]},
         {"type":"bitmap","file":"spiced:icon/item/salt.png","ascent":15,"height":16,"chars":["\ud012"]},
+        {"type":"bitmap","file":"spiced:icon/item/mashed_potatoes_side.png","ascent":15,"height":16,"chars":["\ud013"]},
+        {"type":"bitmap","file":"spiced:icon/item/parsley.png","ascent":15,"height":16,"chars":["\ud014"]},
+        {"type":"bitmap","file":"spiced:icon/item/ice_cubes.png","ascent":15,"height":16,"chars":["\ud015"]},
+        {"type":"bitmap","file":"spiced:icon/item/crushed_ice.png","ascent":15,"height":16,"chars":["\ud016"]},
+        {"type":"bitmap","file":"spiced:icon/item/ethanol.png","ascent":15,"height":16,"chars":["\ud017"]},
+        {"type":"bitmap","file":"spiced:icon/item/flaming_cocktail.png","ascent":15,"height":16,"chars":["\ud018"]},
+        {"type":"bitmap","file":"spiced:icon/item/bowl.png","ascent":15,"height":16,"chars":["\ud019"]},
+        {"type":"bitmap","file":"spiced:icon/item/bowl.png","ascent":15,"height":16,"chars":["\ud020"]},
+        {"type":"bitmap","file":"spiced:icon/item/bowl.png","ascent":15,"height":16,"chars":["\ud021"]},
+        {"type":"bitmap","file":"spiced:icon/item/blaze_powder.png","ascent":15,"height":16,"chars":["\ud022"]},
 
         {"type":"bitmap","file":"spiced:icon/misc/spiced_indicator.png","ascent":6,"height":8,"chars":["\ue001"]}
     ]

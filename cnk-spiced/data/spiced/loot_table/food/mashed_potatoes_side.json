@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"translate":"item.spiced.mashed_potatoes_side.name","fallback":"Side of Mashed Potatoes"},
+                "minecraft:item_model": "spiced:mashed_potatoes_side",
+                "minecraft:food": {
+                  "nutrition": 7,
+                  "saturation": 6.3
+                },
+                "minecraft:consumable": {},
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"mashed_potatoes_side"}},"cnk":{"placeable":{"model":"spiced:placeable/mashed_potatoes_side"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
