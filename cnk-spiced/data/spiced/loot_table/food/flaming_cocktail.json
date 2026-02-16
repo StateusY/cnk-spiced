@@ -5,20 +5,24 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:poisonous_potato",
+          "name": "minecraft:splash_potion",
           "functions": [
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {"translate":"item.spiced.flaming_cocktail","fallback":"Flaming Cocktail"},
                 "minecraft:item_model": "spiced:flaming_cocktail",
-                "minecraft:food": {
-                  "nutrition": 0,
-                  "saturation": 0
+                "minecraft:potion_contents": {
+                  "custom_color": 13260321,
+                  "custom_name": "flaming_cocktail"
                 },
-                "minecraft:consumable": {},
-                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"flaming_cocktail"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
-                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}]
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:potion_contents"
+                  ]
+                },
+                "minecraft:lore": [{"translate":"item.cnk.calendar.format", "with": ["0", "0"],"color":"blue","italic":false},{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"flaming_cocktail"},"wine":{"time":0,"color":13260321}},"smithed":{"ignore":{"functionality":true,"crafting":true}}}
               }
             }
           ]

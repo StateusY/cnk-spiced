@@ -2,3 +2,4 @@ tellraw @a [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","
 
 scoreboard objectives add spiced.mash_time dummy
 scoreboard objectives add spiced.prepare_time dummy
+scoreboard objectives add spiced.flaming_cocktail minecraft.used:minecraft.splash_potion

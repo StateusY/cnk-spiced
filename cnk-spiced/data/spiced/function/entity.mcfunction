@@ -1,0 +1,1 @@
+execute if entity @s[tag=cnk.projectile] at @s run return run function spiced:projectiles

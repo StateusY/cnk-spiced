@@ -1,0 +1,1 @@
+execute if score @s spiced.flaming_cocktail matches 1.. at @s run function spiced:drinks/flaming_cocktail/effect/check

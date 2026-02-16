@@ -4,7 +4,7 @@
 # "set from storage" resolves the issue where the check would return multiple NBT values and cause an error
 
 # remove the ingredient
-data modify storage cnk:temp cooking_pot.slot set from storage cnk:temp cooking_pot.Items[{id:"minecraft:wool"}].Slot
+data modify storage cnk:temp cooking_pot.slot set from storage cnk:temp cooking_pot.Items[{id:"minecraft:white_wool"}].Slot
 function cnk:recipes/remove with storage cnk:temp cooking_pot
 
 # remove the ingredient
