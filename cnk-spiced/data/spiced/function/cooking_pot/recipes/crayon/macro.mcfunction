@@ -1,0 +1,1 @@
+$loot spawn ~ ~0.25 ~ loot spiced:food/crayon/$(color)

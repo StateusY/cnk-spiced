@@ -14,7 +14,7 @@
                 "minecraft:item_model": "spiced:ice_cubes",
                 "minecraft:food": {
                   "nutrition": 0,
-                  "saturation": 0
+                  "saturation": 0.1
                 },
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"ice_cubes"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},

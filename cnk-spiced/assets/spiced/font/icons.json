@@ -22,6 +22,15 @@
         {"type":"bitmap","file":"spiced:icon/item/bowl.png","ascent":15,"height":16,"chars":["\ud020"]},
         {"type":"bitmap","file":"spiced:icon/item/bowl.png","ascent":15,"height":16,"chars":["\ud021"]},
         {"type":"bitmap","file":"spiced:icon/item/blaze_powder.png","ascent":15,"height":16,"chars":["\ud022"]},
+        {"type":"bitmap","file":"spiced:icon/item/honeycomb.png","ascent":15,"height":16,"chars":["\ud023"]},
+        {"type":"bitmap","file":"spiced:icon/item/crayon.png","ascent":15,"height":16,"chars":["\ud024"]},
+        {"type":"bitmap","file":"spiced:icon/item/ender_feast.png","ascent":15,"height":16,"chars":["\ud025"]},
+        {"type":"bitmap","file":"spiced:icon/item/corn_milk.png","ascent":15,"height":16,"chars":["\ud026"]},
+        {"type":"bitmap","file":"spiced:icon/item/shulker_shell.png","ascent":15,"height":16,"chars":["\ud027"]},
+        {"type":"bitmap","file":"spiced:icon/item/ender_pearl.png","ascent":15,"height":16,"chars":["\ud028"]},
+        {"type":"bitmap","file":"spiced:icon/item/paper.png","ascent":15,"height":16,"chars":["\ud029"]},
+        {"type":"bitmap","file":"spiced:icon/item/clay_ball.png","ascent":15,"height":16,"chars":["\ud030"]},
+        {"type":"bitmap","file":"spiced:icon/item/bagged_sugar.png","ascent":15,"height":16,"chars":["\ud031"]},
 
         {"type":"bitmap","file":"spiced:icon/misc/spiced_indicator.png","ascent":6,"height":8,"chars":["\ue001"]}
     ]

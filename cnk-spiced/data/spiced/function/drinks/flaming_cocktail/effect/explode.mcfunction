@@ -15,6 +15,7 @@ data modify storage cnk:temp flaming_cocktail.year set from storage cnk:temp tim
 execute store result storage cnk:temp flaming_cocktail.x int 1 run random value -2..2
 execute store result storage cnk:temp flaming_cocktail.y int 1 run random value -2..2
 execute store result storage cnk:temp flaming_cocktail.z int 1 run random value -2..2
+execute store result storage cnk:temp flaming_cocktail.fireR int 1 run random value 5..20
 
 execute if entity @s[tag=!spiced.flaming_cocktail_marker_second] run data merge storage cnk:temp {flaming_cocktail:{x:0,y:0,z:0}}
 

@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/crayon/base",
+          "functions": [
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": {"spiced":{"crayon":{"color":"orange","generic":true}}}
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_model": "spiced:crayon/orange"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

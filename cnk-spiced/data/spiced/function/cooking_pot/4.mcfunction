@@ -22,3 +22,18 @@ execute if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custo
         if data storage cnk:temp cooking_pot.Items[{id:"minecraft:blaze_powder"}] \
         if function cnk:cooking_pot/crafting/lock \
         run return run function spiced:cooking_pot/recipes/flaming_cocktail
+
+execute if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"rice"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{id:"minecraft:chorus_fruit"}] \
+        if data storage cnk:temp cooking_pot.Items[{id:"minecraft:ender_pearl"}] \
+        if data storage cnk:temp cooking_pot.Items[{id:"minecraft:shulker_shell"}] \
+        if function cnk:cooking_pot/crafting/lock \
+        run return run function spiced:cooking_pot/recipes/ender_feast
+
+execute \
+        if data storage cnk:temp cooking_pot.Items[{id:"minecraft:honeycomb"}] \
+        if data storage cnk:temp cooking_pot.Items[{id:"minecraft:clay_ball"}] \
+        if data storage cnk:temp cooking_pot.Items[{id:"minecraft:paper"}] \
+        if function cnk:cooking_pot/crafting/generic/dye if score $dye_count cnk.dummy matches 1 \
+        if function cnk:cooking_pot/crafting/lock \
+        run return run function spiced:cooking_pot/recipes/crayon/main
