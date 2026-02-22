@@ -8,7 +8,7 @@ data modify storage cnk:temp register.recipe_icon_font set value "spiced:icons"
 data modify storage cnk:temp register.ingredients set value [ \
     {key:"item.spiced.ethanol", font:"spiced:icons"}, \
     {key:"item.cnk.cooking_oil", font:"cnk:book:icons"}, \
-    {key:"block.minecraft.white_wool", font:"spiced:icons"}, \
+    {key:"block.minecraft.paper", font:"spiced:icons"}, \
     {key:"item.minecraft.blaze_powder", font:"spiced:icons"}, \
 ]
 

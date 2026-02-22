@@ -18,7 +18,7 @@
 
 execute if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"cooking_oil"}}}}}] \
         if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"ethanol"}}}}}] \
-        if data storage cnk:temp cooking_pot.Items[{id:"minecraft:white_wool"}] \
+        if data storage cnk:temp cooking_pot.Items[{id:"minecraft:paper"}] \
         if data storage cnk:temp cooking_pot.Items[{id:"minecraft:blaze_powder"}] \
         if function cnk:cooking_pot/crafting/lock \
         run return run function spiced:cooking_pot/recipes/flaming_cocktail
