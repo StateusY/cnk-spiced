@@ -1,0 +1,1 @@
+$clear @p[tag=spiced.interact_meat_grinder] $(id)[minecraft:custom_data=$(custom_data)] $(count)

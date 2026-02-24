@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"spiced.meat_grinder_interaction\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "spiced:meat_grinder/hit/main"
+  }
+}

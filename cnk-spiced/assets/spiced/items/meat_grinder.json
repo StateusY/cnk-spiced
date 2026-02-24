@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "spiced:item/meat_grinder_pestle"
+    "model": "spiced:block/meat_grinder"
   }
 }

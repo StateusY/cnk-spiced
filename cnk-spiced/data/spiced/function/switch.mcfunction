@@ -1,2 +1,3 @@
 execute if data block ~ ~ ~ components."minecraft:custom_data".cnk.block{type:"mortar_and_pestle"} run return run function spiced:mortar_and_pestle/place
 execute if data block ~ ~ ~ components."minecraft:custom_data".cnk.block{type:"preparation_plate"} run return run function spiced:preparation_plate/place
+execute if data block ~ ~ ~ components."minecraft:custom_data".cnk.block{type:"meat_grinder"} run return run function spiced:meat_grinder/place
