@@ -72,6 +72,8 @@
         {"type":"bitmap","file":"spiced:icon/item/paper.png","ascent":15,"height":16,"chars":["\ud070"]},
         {"type":"bitmap","file":"spiced:icon/item/any_pepper.png","ascent":15,"height":16,"chars":["\ud071"]},
         {"type":"bitmap","file":"spiced:icon/item/any_grease.png","ascent":15,"height":16,"chars":["\ud072"]},
+        {"type":"bitmap","file":"spiced:icon/item/mustard_seeds.png","ascent":15,"height":16,"chars":["\ud073"]},
+        {"type":"bitmap","file":"spiced:icon/item/mustard_powder.png","ascent":15,"height":16,"chars":["\ud074"]},
 
         {"type":"bitmap","file":"spiced:icon/misc/spiced_indicator.png","ascent":6,"height":8,"chars":["\ue001"]}
     ]

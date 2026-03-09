@@ -13,8 +13,8 @@
                 "minecraft:item_name": {"translate":"item.spiced.bell_pepper","fallback":"Bell Pepper"},
                 "minecraft:item_model": "spiced:bell_pepper",
                 "minecraft:food": {
-                  "nutrition": 3,
-                  "saturation": 1.7
+                  "nutrition": 1,
+                  "saturation": 0
                 },
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"bell_pepper"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},

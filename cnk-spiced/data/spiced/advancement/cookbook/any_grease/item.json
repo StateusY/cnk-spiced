@@ -1,0 +1,30 @@
+{
+  "parent": "cnk:cookbook/root",
+  "criteria": {
+    "cnk:butter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {"items":"minecraft:poisonous_potato","predicates":{"minecraft:custom_data": {"cnk":{"ingredient":{"type":"butter"}}}}}
+        ]
+      }
+    },
+    "cnk:cooking_oil": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {"items":"minecraft:poisonous_potato","predicates":{"minecraft:custom_data": {"cnk":{"ingredient":{"type":"cooking_oil"}}}}}
+        ]
+      }
+    }
+  },
+    "requirements": [
+    [
+      "cnk:butter",
+      "cnk:cooking_oil"
+    ]
+  ],
+  "rewards": {
+    "function": "spiced:cookbook/grant/any_grease"
+  }
+}

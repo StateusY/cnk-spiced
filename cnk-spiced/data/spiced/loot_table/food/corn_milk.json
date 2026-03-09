@@ -13,8 +13,8 @@
                 "minecraft:item_name": {"translate":"item.spiced.corn_milk","fallback":"Corn Milk"},
                 "minecraft:item_model": "spiced:corn_milk",
                 "minecraft:food": {
-                  "nutrition": 3,
-                  "saturation": 1.4
+                  "nutrition": 7,
+                  "saturation": 10
                 },
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"corn_milk"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},

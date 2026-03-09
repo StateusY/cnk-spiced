@@ -14,7 +14,7 @@
                 "minecraft:item_model": "spiced:apple_cider_vinegar",
                 "minecraft:food": {
                   "nutrition": 3,
-                  "saturation": 1.7
+                  "saturation": 9
                 },
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"apple_cider_vinegar"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},

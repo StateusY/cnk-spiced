@@ -17,9 +17,22 @@
 #         if function cnk:mixing_bowl/mix/lock \
 #         run return run data modify entity @s item.components."minecraft:custom_data".cnk.mix_callback set value "spiced:mixing_bowl/recipes/black_concrete"
 
-execute if score $mixing_bowl_item_count cnk.dummy matches 2 \
+execute if score $mixing_bowl_item_count cnk.dummy matches 3 \
         if data storage cnk:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"corn"}}}}}] \
         if function cnk:mixing_bowl/mix/generic/milk if score $milk_count cnk.dummy matches 1 \
         if data storage cnk:temp mixing_bowl.Items[{id:"minecraft:sugar"}] \
         if function cnk:mixing_bowl/mix/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".cnk.mix_callback set value "spiced:mixing_bowl/recipes/corn_milk"
+
+execute if score $mixing_bowl_item_count cnk.dummy matches 2 \
+        if data storage cnk:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"jambalaya_seasoning"}}}}}] \
+        if function cnk:cooking_pot/crafting/generic/chicken if score $chicken_count cnk.dummy matches 1 \
+        if function cnk:mixing_bowl/mix/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".cnk.mix_callback set value "spiced:mixing_bowl/recipes/cajun_chicken"
+
+execute if score $mixing_bowl_item_count cnk.dummy matches 3 \
+        if data storage cnk:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"cajun_meats"}}}}}] \
+        if data storage cnk:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"cajun_veggies"}}}}}] \
+        if data storage cnk:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"cajun_rice"}}}}}] \
+        if function cnk:mixing_bowl/mix/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".cnk.mix_callback set value "spiced:mixing_bowl/recipes/jambalaya"

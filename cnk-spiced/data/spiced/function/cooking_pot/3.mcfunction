@@ -15,11 +15,11 @@
 # the cnk:temp cooking_pot.Items storage contains the contents of the cooking pot, so you can check for any sort of data!
 
 # cnk:cooking_pot/crafting/lock MUST be called and MUST be called last, this handles the cooking process and decides when cooking is complete
-execute if data storage cnk:temp cooking_pot.Items[{id:"minecraft:pumpkin"}] \
-        if data storage cnk:temp cooking_pot.Items[{id:"minecraft:sugar"}] \
-        if function cnk:cooking_pot/crafting/generic/egg if score $egg_count cnk.dummy matches 1 \
-        if function cnk:cooking_pot/crafting/lock \
-        run return run function spiced:cooking_pot/recipes/pumpkin_pie
+# execute if data storage cnk:temp cooking_pot.Items[{id:"minecraft:pumpkin"}] \
+#         if data storage cnk:temp cooking_pot.Items[{id:"minecraft:sugar"}] \
+#         if function cnk:cooking_pot/crafting/generic/egg if score $egg_count cnk.dummy matches 1 \
+#         if function cnk:cooking_pot/crafting/lock \
+#         run return run function spiced:cooking_pot/recipes/pumpkin_pie
 
 execute if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"cooking_oil"}}}}}] \
         if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"sliced_potato"}}}}}] \

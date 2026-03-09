@@ -15,3 +15,12 @@
 # the cnk:temp cooking_pot.Items storage contains the contents of the cooking pot, so you can check for any sort of data!
 
 # cnk:cooking_pot/crafting/lock MUST be called and MUST be called last, this handles the cooking process and decides when cooking is complete
+
+execute \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"diced_celery"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"diced_bell_pepper"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"diced_onion"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"minced_garlic"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"cajun_seasoning"}}}}}] \
+        if function cnk:cooking_pot/crafting/lock \
+        run return run function spiced:cooking_pot/recipes/cajun_veggies

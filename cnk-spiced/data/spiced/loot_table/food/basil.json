@@ -13,8 +13,8 @@
                 "minecraft:item_name": {"translate":"item.spiced.basil","fallback":"Basil"},
                 "minecraft:item_model": "spiced:basil",
                 "minecraft:food": {
-                  "nutrition": 3,
-                  "saturation": 1.7
+                  "nutrition": 1,
+                  "saturation": 0
                 },
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"basil"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},

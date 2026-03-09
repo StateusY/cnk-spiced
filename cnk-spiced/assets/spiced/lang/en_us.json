@@ -71,6 +71,8 @@
   "book.item.spiced.worchester_spice_mix": "\ud070",
   "book.item.spiced.any_pepper": "\ud071",
   "book.item.spiced.any_grease": "\ud072",
+  "book.item.spiced.mustard_seeds": "\ud073",
+  "book.item.spiced.mustard_powder": "\ud074",
   
   "book.spiced.mortar_and_pestle": "\ue001",
   "book.spiced.preparation_plate": "\ue002",
@@ -133,11 +135,13 @@
   "item.spiced.sliced_tomato": "Sliced Tomato",
   "item.spiced.soy_sauce": "Soy Sauce",
   "item.spiced.soybeans": "Soybeans",
-  "item.spiced.thyme": "Thymes",
+  "item.spiced.thyme": "Thyme",
   "item.spiced.worchester_sauce": "Worchester Sauce",
   "item.spiced.worchester_spice_mix": "Worchester Spice Mix",
   "item.spiced.any_pepper": "Any Pepper",
   "item.spiced.any_grease": "Any Grease",
+  "item.spiced.mustard_seeds": "Mustard Seeds",
+  "item.spiced.mustard_powder": "Mustard Powder",
 
 
   "item.spiced.mortar_and_pestle": "Mortar and Pestle",

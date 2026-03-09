@@ -37,3 +37,19 @@ execute \
         if function cnk:cooking_pot/crafting/generic/dye if score $dye_count cnk.dummy matches 1 \
         if function cnk:cooking_pot/crafting/lock \
         run return run function spiced:cooking_pot/recipes/crayon/main
+
+execute \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"worchester_sauce"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"sliced_tomato"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"stock"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"rice"}}}}}] \
+        if function cnk:cooking_pot/crafting/lock \
+        run return run function spiced:cooking_pot/recipes/cajun_rice
+
+execute \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"sliced_seared_sausage"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"cajun_chicken"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"sliced_okra"}}}}}] \
+        if function cnk:cooking_pot/crafting/generic/fish if score $fish_count cnk.dummy matches 1 \
+        if function cnk:cooking_pot/crafting/lock \
+        run return run function spiced:cooking_pot/recipes/cajun_meats
