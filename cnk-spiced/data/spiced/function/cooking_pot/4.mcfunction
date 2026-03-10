@@ -53,3 +53,11 @@ execute \
         if function cnk:cooking_pot/crafting/generic/fish if score $fish_count cnk.dummy matches 1 \
         if function cnk:cooking_pot/crafting/lock \
         run return run function spiced:cooking_pot/recipes/cajun_meats
+
+execute \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"worchester_spice_mix"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"apple_cider_vinegar"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"soy_sauce"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{id:"minecraft:sugar"}] \
+        if function cnk:cooking_pot/crafting/lock \
+        run return run function spiced:cooking_pot/recipes/worchester_sauce
