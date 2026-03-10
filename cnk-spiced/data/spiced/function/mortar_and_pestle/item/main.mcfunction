@@ -1,4 +1,4 @@
-execute if score @s cnk.item_count matches 4.. run return run function spiced:mortar_and_pestle/mash/main
+execute if score @s cnk.item_count matches 5.. run return run function spiced:mortar_and_pestle/mash/main
 
 scoreboard players set $hand_place cnk.dummy 1
 

@@ -35,3 +35,12 @@ data modify storage cnk:temp mortar_and_pestle.find_item.custom_data set from st
 execute unless data storage cnk:temp mortar_and_pestle.find_item.custom_data run function spiced:mortar_and_pestle/repeat/check/macro_no_component with storage cnk:temp mortar_and_pestle.find_item
 execute if data storage cnk:temp mortar_and_pestle.find_item.custom_data run function spiced:mortar_and_pestle/repeat/check/macro_component with storage cnk:temp mortar_and_pestle.find_item
 execute if score $items_found cnk.dummy matches 0 run return fail
+
+execute unless score $compress_item_count cnk.dummy matches 5.. run return fail
+data modify storage cnk:temp mortar_and_pestle.find_item.id set from storage cnk:temp mortar_and_pestle.compress[4].id
+execute store result score $count cnk.dummy run data get storage cnk:temp mortar_and_pestle.compress[4].count
+data remove storage cnk:temp mortar_and_pestle.find_item.custom_data
+data modify storage cnk:temp mortar_and_pestle.find_item.custom_data set from storage cnk:temp mortar_and_pestle.compress[4].components."minecraft:custom_data"
+execute unless data storage cnk:temp mortar_and_pestle.find_item.custom_data run function spiced:mortar_and_pestle/repeat/check/macro_no_component with storage cnk:temp mortar_and_pestle.find_item
+execute if data storage cnk:temp mortar_and_pestle.find_item.custom_data run function spiced:mortar_and_pestle/repeat/check/macro_component with storage cnk:temp mortar_and_pestle.find_item
+execute if score $items_found cnk.dummy matches 0 run return fail

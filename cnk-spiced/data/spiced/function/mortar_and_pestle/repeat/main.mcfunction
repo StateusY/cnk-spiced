@@ -33,4 +33,8 @@ execute unless score $bowl_item_count cnk.dummy matches 4.. run return run funct
 data modify storage cnk:temp mortar_and_pestle.input set from storage cnk:temp mortar_and_pestle.last_recipe[3]
 function spiced:mortar_and_pestle/repeat/insert
 
+execute unless score $bowl_item_count cnk.dummy matches 5.. run return run function spiced:mortar_and_pestle/mash/main
+data modify storage cnk:temp mortar_and_pestle.input set from storage cnk:temp mortar_and_pestle.last_recipe[4]
+function spiced:mortar_and_pestle/repeat/insert
+
 function spiced:mortar_and_pestle/mash/main
