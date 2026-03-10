@@ -9,7 +9,7 @@ data modify storage cnk:temp register.ingredients set value [ \
     {key:"item.spiced.rosemary", font:"spiced:icons"}, \
     {key:"item.spiced.thyme", font:"spiced:icons"}, \
     {key:"item.spiced.oregano", font:"spiced:icons"}, \
-    {key:"item.spiced.majoram", font:"spiced:icons"}, \
+    {key:"item.spiced.marjoram", font:"spiced:icons"}, \
     {key:"item.spiced.basil", font:"spiced:icons"}, \
 ]
 

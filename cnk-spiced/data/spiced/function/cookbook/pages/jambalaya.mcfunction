@@ -1,15 +1,14 @@
 # for comprehensive comments, see the pumpkin pie page
 execute store result storage cnk:temp register.page_number int 1 run scoreboard players get $global_cookbook_page cnk.dummy
 
-data modify storage cnk:temp register.tool set value "spiced.mortar_and_pestle"
-data modify storage cnk:temp register.page_name set value "item.spiced.jumbalaya_seasoning"
+data modify storage cnk:temp register.tool set value "cnk.cooking_pot"
+data modify storage cnk:temp register.page_name set value "item.spiced.jambalaya"
 data modify storage cnk:temp register.recipe_icon_font set value "spiced:icons"
 
 data modify storage cnk:temp register.ingredients set value [ \
-    {key:"item.spiced.salt", font:"spiced:icons"}, \
-    {key:"item.spiced.black_pepper", font:"spiced:icons"}, \
-    {key:"item.spiced.italian_seasoning", font:"spiced:icons"}, \
-    {key:"item.spiced.cajun_seasoning", font:"spiced:icons"}, \
+    {key:"item.spiced.cajun_rice", font:"spiced:icons"}, \
+    {key:"item.spiced.cajun_meats", font:"spiced:icons"}, \
+    {key:"item.spiced.cajun_veggies", font:"spiced:icons"}, \
 ]
 
 data modify storage cnk:temp register.source set value {key:"spiced.source", font:"spiced:icons"}

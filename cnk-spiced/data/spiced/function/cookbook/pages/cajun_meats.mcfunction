@@ -4,7 +4,7 @@ data modify storage cnk:temp register.tool set value "cnk.cooking_pot"
 data modify storage cnk:temp register.page_name set value "item.spiced.cajun_meats"
 data modify storage cnk:temp register.recipe_icon_font set value "spiced:icons"
 data modify storage cnk:temp register.ingredients set value [ \
-    {key:"item.spiced.sliced_seared_saucage", font:"spiced:icons"}, \
+    {key:"item.spiced.sliced_seared_sausage", font:"spiced:icons"}, \
     {key:"item.spiced.sliced_okra", font:"spiced:icons"}, \
     {key:"item.cnk.any_fish", font:"cnk.book:icons"}, \
     {key:"item.spiced.cajun_chicken", font:"spiced:icons"}, \

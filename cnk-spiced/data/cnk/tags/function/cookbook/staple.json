@@ -1,10 +1,27 @@
 {
   "values": [
     "spiced:cookbook/pages/salt",
+    "spiced:cookbook/pages/sliced_bell_pepper",
+    "spiced:cookbook/pages/diced_bell_pepper",
+    "spiced:cookbook/pages/paprika",
+    "spiced:cookbook/pages/sliced_celery",
+    "spiced:cookbook/pages/diced_celery",
+    "spiced:cookbook/pages/sliced_okra",
+    "spiced:cookbook/pages/sliced_onion",
+    "spiced:cookbook/pages/diced_onion",
+    "spiced:cookbook/pages/onion_powder",
     "spiced:cookbook/pages/sliced_potato",
     "spiced:cookbook/pages/diced_potato",
     "spiced:cookbook/pages/mashed_potatoes",
+    "spiced:cookbook/pages/sliced_tomato",
+    "spiced:cookbook/pages/ground_cinnamon",
+    "spiced:cookbook/pages/minced_garlic",
+    "spiced:cookbook/pages/garlic_powder",
     "spiced:cookbook/pages/ice_cubes",
-    "spiced:cookbook/pages/crushed_ice"
+    "spiced:cookbook/pages/crushed_ice",
+    "spiced:cookbook/pages/cajun_seasoning",
+    "spiced:cookbook/pages/italian_seasoning",
+    "spiced:cookbook/pages/jambalaya_seasoning",
+    "spiced:cookbook/pages/worchester_spice_mix"
    ] 
 }

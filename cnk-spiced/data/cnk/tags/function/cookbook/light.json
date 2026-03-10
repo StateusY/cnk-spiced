@@ -1,6 +1,9 @@
 {
   "values": [
     "spiced:cookbook/pages/mashed_potatoes_side",
-    "spiced:cookbook/pages/flaming_cocktail"
+    "spiced:cookbook/pages/flaming_cocktail",
+    "spiced:cookbook/pages/seared_sausage",
+    "spiced:cookbook/pages/sliced_seared_sausage",
+    "spiced:cookbook/pages/cajun_chicken"
    ] 
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "spiced:item/jumbalaya_seasoning"
+    "layer0": "spiced:item/ball_of_lettuce"
   }
 }

@@ -7,7 +7,7 @@ data modify storage cnk:temp register.ingredients set value [ \
     {key:"item.spiced.worchester_spice_mix", font:"spiced:icons"}, \
     {key:"item.spiced.soy_sauce", font:"spiced:icons"}, \
     {key:"item.spiced.apple_cider_vinegar", font:"spiced:icons"}, \
-    {key:"item.cnk.sugar", font:"cnk.book:icons"}, \
+    {key:"item.minecraft.sugar", font:"cnk.book:icons"}, \
 ]
 
 data modify storage cnk:temp register.source set value {key:"spiced.source", font:"spiced:icons"}

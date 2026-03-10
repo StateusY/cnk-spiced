@@ -76,7 +76,7 @@ execute if score $mortar_and_pestle_item_count cnk.dummy matches 4 \
 
 execute if score $mortar_and_pestle_item_count cnk.dummy matches 5 \
         if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"oregano"}}}}}] \
-        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"majoram"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"marjoram"}}}}}] \
         if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"rosemary"}}}}}] \
         if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"thyme"}}}}}] \
         if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"basil"}}}}}] \

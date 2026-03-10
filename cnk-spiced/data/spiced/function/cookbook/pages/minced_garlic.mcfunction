@@ -6,7 +6,7 @@ data modify storage cnk:temp register.page_name set value "item.spiced.minced_ga
 data modify storage cnk:temp register.recipe_icon_font set value "spiced:icons"
 
 data modify storage cnk:temp register.ingredients set value [ \
-    {key:"item.spiced.minced_garlic", font:"spiced:icons"}, \
+    {key:"item.spiced.garlic", font:"spiced:icons"}, \
 ]
 
 data modify storage cnk:temp register.source set value {key:"spiced.source", font:"spiced:icons"}
