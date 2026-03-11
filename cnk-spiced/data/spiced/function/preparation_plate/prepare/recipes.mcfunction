@@ -43,3 +43,11 @@ execute if score $preparation_plate_item_count cnk.dummy matches 4 \
         if data storage cnk:temp preparation_plate.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"parsley"}}}}}] \
         if function spiced:preparation_plate/prepare/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.prepare_callback set value "spiced:recipes/preparation_plate/mashed_potatoes_side"
+
+execute if score $preparation_plate_item_count cnk.dummy matches 4 \
+        if data storage cnk:temp preparation_plate.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"cooking_oil"}}}}}] \
+        if data storage cnk:temp preparation_plate.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"ethanol"}}}}}] \
+        if data storage cnk:temp preparation_plate.Items[{id:"minecraft:paper"}] \
+        if data storage cnk:temp preparation_plate.Items[{id:"minecraft:blaze_powder"}] \
+        if function spiced:preparation_plate/prepare/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".spiced.prepare_callback set value "spiced:recipes/preparation_plate/flaming_cocktail"

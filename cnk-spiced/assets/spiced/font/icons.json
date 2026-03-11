@@ -19,7 +19,7 @@
         {"type":"bitmap","file":"spiced:icon/item/ethanol.png","ascent":15,"height":16,"chars":["\ud017"]},
         {"type":"bitmap","file":"spiced:icon/item/flaming_cocktail.png","ascent":15,"height":16,"chars":["\ud018"]},
         {"type":"bitmap","file":"spiced:icon/item/bowl.png","ascent":15,"height":16,"chars":["\ud019"]},
-        {"type":"bitmap","file":"spiced:icon/item/texture_missing.png","ascent":15,"height":16,"chars":["\ud020"]},
+        {"type":"bitmap","file":"spiced:icon/item/tuff.png","ascent":15,"height":16,"chars":["\ud020"]},
         {"type":"bitmap","file":"spiced:icon/item/texture_missing.png","ascent":15,"height":16,"chars":["\ud021"]},
         {"type":"bitmap","file":"spiced:icon/item/blaze_powder.png","ascent":15,"height":16,"chars":["\ud022"]},
         {"type":"bitmap","file":"spiced:icon/item/honeycomb.png","ascent":15,"height":16,"chars":["\ud023"]},

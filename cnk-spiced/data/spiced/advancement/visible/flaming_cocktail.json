@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:poisonous_potato",
+      "components": {
+        "minecraft:item_model": "spiced:flaming_cocktail"
+      }
+    },
+    "title": {"translate":"advancement.spiced.flaming_cocktail.name","fallback":"Fiery!"},
+    "description": [{"translate":"advancement.spiced.flaming_cocktail.desc","fallback":"Don't drop it!"},{"text":"\n\n"},{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "spiced:visible/ethanol",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+            {
+            "items": "minecraft:splash_potion",
+            "predicates": {
+              "minecraft:custom_data": {"spiced":{"ingredient":{"type":"flaming_cocktail"}}}
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -43,6 +43,11 @@ execute if score $mortar_and_pestle_item_count cnk.dummy matches 1 \
         if function spiced:mortar_and_pestle/mash/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/ground_cinnamon"
 
+execute if score $mortar_and_pestle_item_count cnk.dummy matches 1 \
+        if data storage cnk:temp mortar_and_pestle.Items[{id:"minecraft:sugar"}] \
+        if function spiced:mortar_and_pestle/mash/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/powdered_sugar"
+
 execute if score $mortar_and_pestle_item_count cnk.dummy matches 3 \
         if data storage cnk:temp mortar_and_pestle.Items[{id:"minecraft:potato"}] \
         if function spiced:mortar_and_pestle/mash/generic/milk if score $milk_count cnk.dummy matches 1 \
@@ -73,6 +78,60 @@ execute if score $mortar_and_pestle_item_count cnk.dummy matches 4 \
         if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"mustard_powder"}}}}}] \
         if function spiced:mortar_and_pestle/mash/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/worchester_spice_mix"
+
+execute if score $mortar_and_pestle_item_count cnk.dummy matches 5 \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"cnk":{"ingredient":{"type":"lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"cnk":{"ingredient":{"type":"lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"cnk":{"ingredient":{"type":"lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"cnk":{"ingredient":{"type":"lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"cnk":{"ingredient":{"type":"lettuce"}}}}}] \
+        if function spiced:mortar_and_pestle/mash/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/ball_of_lettuce"
+
+execute if score $mortar_and_pestle_item_count cnk.dummy matches 5 \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"ball_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"ball_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"ball_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"ball_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"ball_of_lettuce"}}}}}] \
+        if function spiced:mortar_and_pestle/mash/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/chunk_of_lettuce"
+
+execute if score $mortar_and_pestle_item_count cnk.dummy matches 5 \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"chunk_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"chunk_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"chunk_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"chunk_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"chunk_of_lettuce"}}}}}] \
+        if function spiced:mortar_and_pestle/mash/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/mass_of_lettuce"
+
+execute if score $mortar_and_pestle_item_count cnk.dummy matches 5 \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"mass_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"mass_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"mass_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"mass_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"mass_of_lettuce"}}}}}] \
+        if function spiced:mortar_and_pestle/mash/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/pan_of_lettuce"
+
+execute if score $mortar_and_pestle_item_count cnk.dummy matches 5 \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"pan_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"pan_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"pan_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"pan_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"pan_of_lettuce"}}}}}] \
+        if function spiced:mortar_and_pestle/mash/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/portion_of_lettuce"
+
+execute if score $mortar_and_pestle_item_count cnk.dummy matches 5 \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"portion_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"portion_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"portion_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"portion_of_lettuce"}}}}}] \
+        if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"portion_of_lettuce"}}}}}] \
+        if function spiced:mortar_and_pestle/mash/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/reasonable_amount_of_lettuce"
 
 execute if score $mortar_and_pestle_item_count cnk.dummy matches 5 \
         if data storage cnk:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"oregano"}}}}}] \

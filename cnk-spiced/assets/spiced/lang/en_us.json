@@ -20,7 +20,7 @@
   "book.item.minecraft.bowl": "\ud019",
   "book.block.minecraft.tuff": "\ud020",
   "book.block.minecraft.white_wool": "\ud021",
-  "book.item.minecraft.blaze_powder": "\ud022",
+  "book.item.minecraft.empty": "\ud022",
   "book.item.minecraft.honeycomb": "\ud023",
   "book.item.spiced.crayon": "\ud024",
   "book.item.spiced.ender_feast": "\ud025",
@@ -150,12 +150,24 @@
   "item.spiced.portion_of_lettuce": "Portion of Lettuce",
   "item.spiced.reasonable_amount_of_lettuce": "Reasonable Amount of Lettuce",
 
-
   "item.spiced.mortar_and_pestle": "Mortar and Pestle",
   "item.spiced.preparation_plate": "Preparation Plate",
   "item.spiced.meat_grinder": "Meat Grinder",
 
   "subtitles.spiced.block.mortar_and_pestle.stir": "Pestle mashes in a Mortar",
+  
+  "advancement.spiced.lettuce_line.name": "Green Greed",
+  "advancement.spiced.lettuce_line.desc": "Obtain a reasonable amount of lettuce",
+  "advancement.spiced.mortar_and_pestle.name":"Mash n' Smash",
+  "advancement.spiced.mortar_and_pestle.desc":"Craft a mortar and pestle",
+  "advancement.spiced.ethanol.name":"Innovation Exploitation!",
+  "advancement.spiced.ethanol.desc": "Obtain ethanol, the fuel of the future",
+  "advancement.spiced.flaming_cocktail.name":"Fiery!",
+  "advancement.spiced.flaming_cocktail.desc":"Don't drop it!",
+  "advancement.spiced.preparation_plate.name":"Daintily Prepared",
+  "advancement.spiced.preparation_plate.desc":"Craft a preparation plate",
+  "advancement.spiced.jambalaya.name":"Cajun Creation",
+  "advancement.spiced.jambalaya.desc":"Cook a bowl of Jambalaya, one of five dishes in the King's Feast",
   
   "book.spiced.source": "\ue001",
   "spiced.tooltip": "\ua001\ub001C&K: Spiced"

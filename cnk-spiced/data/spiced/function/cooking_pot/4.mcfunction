@@ -16,13 +16,6 @@
 
 # cnk:cooking_pot/crafting/lock MUST be called and MUST be called last, this handles the cooking process and decides when cooking is complete
 
-execute if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"cooking_oil"}}}}}] \
-        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"ethanol"}}}}}] \
-        if data storage cnk:temp cooking_pot.Items[{id:"minecraft:paper"}] \
-        if data storage cnk:temp cooking_pot.Items[{id:"minecraft:blaze_powder"}] \
-        if function cnk:cooking_pot/crafting/lock \
-        run return run function spiced:cooking_pot/recipes/flaming_cocktail
-
 execute if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"rice"}}}}}] \
         if data storage cnk:temp cooking_pot.Items[{id:"minecraft:chorus_fruit"}] \
         if data storage cnk:temp cooking_pot.Items[{id:"minecraft:ender_pearl"}] \

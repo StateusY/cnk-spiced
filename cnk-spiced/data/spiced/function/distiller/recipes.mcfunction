@@ -32,3 +32,30 @@ execute \
         if function spiced:distiller/liquid_check/ethanol \
         if function cnk:distiller/crafting/short_lock \
         run return run function spiced:distiller/recipes/ethanol
+
+execute \
+        if score $unique_items cnk.dummy matches 3 \
+        if function cnk:distiller/crafting/generic/water if score $water_count cnk.dummy matches 1 \
+        if data storage cnk:temp distiller.Items[{id:"minecraft:apple"}] \
+        if data storage cnk:temp distiller.Items[{id:"minecraft:sugar"}] \
+        if function spiced:distiller/liquid_check/ethanol \
+        if function cnk:distiller/crafting/short_lock \
+        run return run function spiced:distiller/recipes/apple_cider_vinegar
+
+execute \
+        if score $unique_items cnk.dummy matches 3 \
+        if function cnk:distiller/crafting/generic/water if score $water_count cnk.dummy matches 1 \
+        if data storage cnk:temp distiller.Items[{id:"minecraft:apple"}] \
+        if data storage cnk:temp distiller.Items[{id:"minecraft:sugar"}] \
+        if function spiced:distiller/liquid_check/ethanol \
+        if function cnk:distiller/crafting/short_lock \
+        run return run function spiced:distiller/recipes/apple_cider_vinegar
+
+execute \
+        if score $unique_items cnk.dummy matches 3 \
+        if function cnk:distiller/crafting/generic/water if score $water_count cnk.dummy matches 1 \
+        if data storage cnk:temp distiller.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"soybeans"}}}}}] \
+        if data storage cnk:temp distiller.Items[{id:"minecraft:wheat"}] \
+        if function spiced:distiller/liquid_check/ethanol \
+        if function cnk:distiller/crafting/short_lock \
+        run return run function spiced:distiller/recipes/soy_sauce

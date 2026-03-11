@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:poisonous_potato",
+      "components": {
+        "minecraft:item_model": "spiced:jambalaya"
+      }
+    },
+    "title": {"translate":"advancement.spiced.jambalaya.name","fallback":"Cajun Creation"},
+    "description": [{"translate":"advancement.spiced.jambalaya.desc","fallback":"Cook a bowl of Jambalaya, one of five parts for the King's Feast"},{"text":"\n\n"},{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "cnk:visible/cookbook",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+            {
+            "items": "minecraft:poisonous_potato",
+            "predicates": {
+              "minecraft:custom_data": {"spiced":{"ingredient":{"type":"jambalaya"}}}
+            }
+          }
+        ]
+      }
+    }
+  }
+}

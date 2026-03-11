@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:poisonous_potato",
+      "components": {
+        "minecraft:item_model": "spiced:reasonable_amount_of_lettuce"
+      }
+    },
+    "title": {"translate":"advancement.spiced.lettuce_line.name","fallback":"Green Greed"},
+    "description": [{"translate":"advancement.spiced.lettuce_line.desc","fallback":"Obtain a reasonable amount of lettuce"},{"text":"\n\n"},{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "spiced:visible/mortar_and_pestle",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+            {
+            "items": "minecraft:poisonous_potato",
+            "predicates": {
+              "minecraft:custom_data": {"spiced":{"ingredient":{"type":"reasonable_amount_of_lettuce"}}}
+            }
+          }
+        ]
+      }
+    }
+  }
+}

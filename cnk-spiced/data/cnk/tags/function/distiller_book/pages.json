@@ -1,5 +1,7 @@
 {
   "values": [
+    "spiced:distiller_book/pages/apple_cider_vinegar",
+    "spiced:distiller_book/pages/soy_sauce",
     "spiced:distiller_book/pages/ethanol"
    ] 
 }

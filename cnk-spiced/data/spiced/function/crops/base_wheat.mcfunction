@@ -1,0 +1,4 @@
+
+# execute if entity @s[tag=cnk.tomato_crop] run return run function cnk:crops/tomato/tick
+# execute if entity @s[tag=cnk.corn_crop] run return run function cnk:crops/corn/tick
+# execute if entity @s[tag=cnk.grape_crop] run return run function cnk:crops/grape/tick

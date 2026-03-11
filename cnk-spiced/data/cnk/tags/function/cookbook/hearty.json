@@ -2,6 +2,7 @@
   "values": [
     "spiced:cookbook/pages/cajun_meats",
     "spiced:cookbook/pages/cajun_rice",
-    "spiced:cookbook/pages/cajun_veggies"
+    "spiced:cookbook/pages/cajun_veggies",
+    "spiced:cookbook/pages/pan_of_lettuce"
    ] 
 }
