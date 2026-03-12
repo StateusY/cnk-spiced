@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"translate":"item.spiced.the_smiling_man","fallback":"The Smiling Man"},
+                "minecraft:item_model": "spiced:kimlisung_item",
+                "minecraft:custom_data": {"cnk":{"block":{"type":"the_smiling_man"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+                "minecraft:profile": {"texture":"cnk:block/transparent_head"},
+                "tooltip_display": {"hidden_components":["minecraft:profile"]},
+                "minecraft:rarity":"common",
+                "!minecraft:equippable": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "description": {
+    "translate": "item.spiced.music_disc_green_regime.desc",
+    "fallback": "Stateus - Green Regime"
+  },
+  "comparator_output": 15,
+  "length_in_seconds": 83,
+  "sound_event": {"sound_id":"spiced:music_disc.green_regime"}
+}

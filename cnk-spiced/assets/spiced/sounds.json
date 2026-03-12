@@ -28,5 +28,13 @@
       }
     ],
     "subtitle": "subtitles.spiced.block.mortar_and_pestle.stir"
-  }
+  },
+  "music_disc.green_regime": {
+    "sounds": [
+      {
+        "name": "spiced:music_disc/green_regime",
+        "stream": true
+      }
+    ]
+  },
 }
