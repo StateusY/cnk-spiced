@@ -3,3 +3,4 @@ execute if entity @s[tag=spiced.preparation_plate] run return run function spice
 execute if entity @s[tag=spiced.meat_grinder] run return run function spiced:meat_grinder/tick
 execute if entity @s[tag=spiced.c4t_body] run return run function spiced:c4t_body/tick
 execute if entity @s[tag=spiced.the_smiling_man] run return run function spiced:the_smiling_man/tick
+execute if entity @s[tag=spiced.the_not_smiling_man] run return run function spiced:the_not_smiling_man/tick

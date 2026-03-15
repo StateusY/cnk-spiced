@@ -1,5 +1,7 @@
 {
   "values": [
-    "spiced:loaded"
+    "spiced:loaded",
+    "spiced:tick_5",
+    "spiced:tick_100",
    ] 
 }

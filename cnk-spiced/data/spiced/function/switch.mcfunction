@@ -3,3 +3,4 @@ execute if data block ~ ~ ~ components."minecraft:custom_data".cnk.block{type:"p
 execute if data block ~ ~ ~ components."minecraft:custom_data".cnk.block{type:"meat_grinder"} run return run function spiced:meat_grinder/place
 execute if data block ~ ~ ~ components."minecraft:custom_data".cnk.block{type:"c4t_body"} run return run function spiced:c4t_body/place
 execute if data block ~ ~ ~ components."minecraft:custom_data".cnk.block{type:"the_smiling_man"} run return run function spiced:the_smiling_man/place
+execute if data block ~ ~ ~ components."minecraft:custom_data".cnk.block{type:"the_not_smiling_man"} run return run function spiced:the_not_smiling_man/place

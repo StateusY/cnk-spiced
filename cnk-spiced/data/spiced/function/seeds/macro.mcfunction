@@ -8,3 +8,5 @@
 # $execute if items entity @s weapon.$(hand) *[minecraft:custom_data~{cnk:{ingredient:{type:"chili_pepper_seeds"}}}] run return run function cnk:seeds/chili_pepper/place
 
 $execute if items entity @s weapon.$(hand) *[minecraft:custom_data~{spiced:{ingredient:{type:"bell_pepper_seeds"}}}] run return run function spiced:seeds/bell_pepper/place
+
+$execute if items entity @s weapon.$(hand) *[minecraft:custom_data~{spiced:{ingredient:{type:"mustard_seeds"}}}] run return run function spiced:seeds/endroot/place

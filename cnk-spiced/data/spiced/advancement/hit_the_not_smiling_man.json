@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"spiced.the_not_smiling_man_interaction\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "spiced:the_not_smiling_man/hit/main"
+  }
+}

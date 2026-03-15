@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"translate":"item.spiced.boatload_of_soup","fallback":"Boatload of Soup"},
+                "minecraft:item_model": "spiced:boatload_of_soup",
+                "minecraft:food": {
+                  "nutrition": 15,
+                  "saturation": 7
+                },
+                "minecraft:consumable": {},
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"boatload_of_soup"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
