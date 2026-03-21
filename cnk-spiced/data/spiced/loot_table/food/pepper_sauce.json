@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"translate":"item.spiced.pepper_sauce","fallback":"Pepper Sauce"},
+                "minecraft:item_model": "spiced:pepper_sauce",
+                "minecraft:food": {
+                  "nutrition": 6,
+                  "saturation": 10
+                },
+                "minecraft:consumable": {},
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"pepper_sauce"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

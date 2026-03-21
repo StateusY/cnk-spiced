@@ -1,5 +1,6 @@
 {
   "values": [
+    "spiced:cookbook/pages/ground_beef",
     "spiced:cookbook/pages/salt",
     "spiced:cookbook/pages/sliced_bell_pepper",
     "spiced:cookbook/pages/diced_bell_pepper",
@@ -14,10 +15,12 @@
     "spiced:cookbook/pages/diced_potato",
     "spiced:cookbook/pages/mashed_potatoes",
     "spiced:cookbook/pages/sliced_tomato",
+    "spiced:cookbook/pages/diced_tomato",
     "spiced:cookbook/pages/ground_cinnamon",
     "spiced:cookbook/pages/minced_garlic",
     "spiced:cookbook/pages/garlic_powder",
     "spiced:cookbook/pages/mustard_powder",
+    "spiced:cookbook/pages/heavy_cream",
     "spiced:cookbook/pages/ice_cubes",
     "spiced:cookbook/pages/crushed_ice",
     "spiced:cookbook/pages/powdered_sugar",

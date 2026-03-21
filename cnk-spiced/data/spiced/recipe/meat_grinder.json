@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " t",
+    "psi",
+    "pp"
+  ],
+  "key": {
+    "s": "minecraft:iron_block",
+    "p": "minecraft:andesite",
+    "i": "minecraft:iron_ingot",
+    "t": "iron_trapdoor"
+  },
+  "result": {
+    "id": "minecraft:player_head",
+    "count": 1,
+    "components": {
+      "minecraft:item_name": {
+        "translate": "item.spiced.meat_grinder",
+        "fallback": "Meat Grinder"
+      },
+      "minecraft:item_model": "spiced:meat_grinder_item",
+      "minecraft:custom_data": {
+        "cnk": {
+          "block": {
+            "type": "mortar_and_pestle"
+          }
+        },
+        "smithed": {
+          "ignore": {
+            "functionality": true,
+            "crafting": true
+          }
+        }
+      },
+      "minecraft:lore": [
+        {
+          "translate": "spiced.tooltip",
+          "font": "cnk:tooltip",
+          "color": "white",
+          "italic": false
+        }
+      ],
+      "minecraft:profile": {
+        "texture": "cnk:block/transparent_head"
+      },
+      "tooltip_display": {
+        "hidden_components": [
+          "minecraft:profile"
+        ]
+      },
+      "minecraft:rarity": "common",
+      "!minecraft:equippable": {}
+    }
+  }
+}

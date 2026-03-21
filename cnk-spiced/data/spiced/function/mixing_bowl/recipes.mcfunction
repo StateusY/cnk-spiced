@@ -36,3 +36,11 @@ execute if score $mixing_bowl_item_count cnk.dummy matches 3 \
         if data storage cnk:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"cajun_rice"}}}}}] \
         if function cnk:mixing_bowl/mix/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".cnk.mix_callback set value "spiced:mixing_bowl/recipes/jambalaya"
+
+execute if score $mixing_bowl_item_count cnk.dummy matches 4 \
+        if function cnk:mixing_bowl/mix/generic/milk if score $milk_count cnk.dummy matches 1 \
+        if function cnk:mixing_bowl/mix/generic/milk if score $milk_count cnk.dummy matches 1 \
+        if function cnk:mixing_bowl/mix/generic/milk if score $milk_count cnk.dummy matches 1 \
+        if data storage cnk:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"butter"}}}}}] \
+        if function cnk:mixing_bowl/mix/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".cnk.mix_callback set value "spiced:mixing_bowl/recipes/heavy_cream"

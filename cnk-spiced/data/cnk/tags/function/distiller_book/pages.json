@@ -1,7 +1,11 @@
 {
   "values": [
+    "spiced:distiller_book/pages/sour_cream",
     "spiced:distiller_book/pages/apple_cider_vinegar",
+    "spiced:distiller_book/pages/vinegar",
     "spiced:distiller_book/pages/soy_sauce",
-    "spiced:distiller_book/pages/ethanol"
+    "spiced:distiller_book/pages/pepper_sauce",
+    "spiced:distiller_book/pages/ethanol",
+    "spiced:distiller_book/pages/v2"    
    ] 
 }

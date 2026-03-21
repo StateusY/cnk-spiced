@@ -15,3 +15,4 @@ execute if data storage cnk:temp cutting_board.item{components:{"minecraft:custo
 execute if data storage cnk:temp cutting_board.item{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"sliced_bell_pepper"}}}}} run return run function spiced:cutting_board/recipes/diced_bell_pepper
 execute if data storage cnk:temp cutting_board.item{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"sliced_onion"}}}}} run return run function spiced:cutting_board/recipes/diced_onion
 execute if data storage cnk:temp cutting_board.item{components:{"minecraft:custom_data":{"cnk":{"ingredient":{"type":"tomato"}}}}} run return run function spiced:cutting_board/recipes/sliced_tomato
+execute if data storage cnk:temp cutting_board.item{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"sliced_tomato"}}}}} run return run function spiced:cutting_board/recipes/diced_tomato
