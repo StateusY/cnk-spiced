@@ -227,6 +227,8 @@
   "advancement.spiced.preparation_plate.desc":"Craft a preparation plate",
   "advancement.spiced.jambalaya.name":"Cajun Creation",
   "advancement.spiced.jambalaya.desc":"Cook a bowl of Jambalaya, one of five dishes in the King's Feast",
+  "advancement.spiced.too_much_ethanol.name":"Ethanol Overdose",
+  "advancement.spiced.too_much_ethanol.desc":"Peter says no to ethanol",
   
   "book.spiced.source": "\ue001",
   "spiced.tooltip": "\ua001\ub001C&K: Spiced"

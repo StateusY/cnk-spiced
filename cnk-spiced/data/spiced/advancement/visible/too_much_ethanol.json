@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:poisonous_potato",
+      "components": {
+        "minecraft:item_model": "spiced:peter"
+      }
+    },
+    "title": {"translate":"advancement.spiced.too_much_ethanol.name","fallback":"Ethanol Overdose"},
+    "description": [{"translate":"advancement.spiced.too_much_ethanol.desc","fallback":"Peter says no to ethanol"},{"text":"\n\n"},{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "frame": "challenge"
+  },
+  "parent": "spiced:visible/ethanol",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+            {
+            "items": "minecraft:poisonous_potato",
+            "predicates": {
+              "minecraft:custom_data": {"spiced":{"ingredient":{"type":"ethanol"}}}
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -10,15 +10,52 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {"translate":"item.spiced.ethanol","fallback":"Ethanol"},
+                "minecraft:item_name": {
+                  "translate": "item.spiced.ethanol",
+                  "fallback": "Ethanol"
+                },
                 "minecraft:item_model": "spiced:ethanol",
                 "minecraft:food": {
                   "nutrition": 0,
                   "saturation": 0
                 },
-                "minecraft:consumable": {},
-                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"ethanol"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
-                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}]
+                "minecraft:consumable": {
+                  "animation": "drink",
+                  "sound": "minecraft:entity.generic.drink",
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:nausea",
+                          "duration": 60
+                        }
+                      ],
+                      "probability": 1
+                    }
+                  ]
+                },
+                "minecraft:custom_data": {
+                  "spiced": {
+                    "ingredient": {
+                      "type": "ethanol"
+                    }
+                  },
+                  "smithed": {
+                    "ignore": {
+                      "functionality": true,
+                      "crafting": true
+                    }
+                  }
+                },
+                "minecraft:lore": [
+                  {
+                    "translate": "spiced.tooltip",
+                    "font": "cnk:tooltip",
+                    "color": "white",
+                    "italic": false
+                  }
+                ]
               }
             }
           ]

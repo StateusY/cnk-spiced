@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item":
+        {
+            "items": "minecraft:poisonous_potato",
+            "predicates": {
+              "minecraft:custom_data": {"spiced":{"ingredient":{"type":"ethanol"}}}
+            }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "spiced:consume_ethanol"
+  }
+}

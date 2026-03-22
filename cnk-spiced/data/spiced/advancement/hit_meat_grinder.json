@@ -5,12 +5,12 @@
       "conditions": {
         "entity": {
           "type": "minecraft:interaction",
-          "nbt": "{Tags:[\"spiced.the_smiling_man_interaction\"]}"
+          "nbt": "{Tags:[\"spiced.meat_grinder_interaction\"]}"
         }
       }
     }
   },
   "rewards": {
-    "function": "spiced:the_smiling_man/hit/main"
+    "function": "spiced:meat_grinder/hit/main"
   }
 }

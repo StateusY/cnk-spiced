@@ -16,7 +16,7 @@ data modify storage cnk:temp register.page_name set value "item.spiced.pepper_sa
 
 # sets the ingredients
 data modify storage cnk:temp register.ingredients set value [ \
-    {key:"item.spiced.vinegar", font:"spiced:icons"}, \
+    {key:"item.spiced.any_vinegar", font:"spiced:icons"}, \
     {key:"item.spiced.paprika", font:"spiced:icons"}, \
     {key:"item.spiced.diced_bell_pepper", font:"spiced:icons"}, \
 ]
