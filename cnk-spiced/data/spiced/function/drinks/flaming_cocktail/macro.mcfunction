@@ -22,7 +22,7 @@ $loot $(give_or_spawn) loot { \
                     "minecraft:potion_contents" \
                   ] \
                 }, \
-                "minecraft:lore": [{"translate":"item.spiced.calendar.format","with":["$(year)","$(day)"],"color":"blue","italic":false},{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}], \
+                "minecraft:lore": [{"translate":"item.spiced.calendar.format","with":["$(year)","$(day)"],"color":"blue","italic":false},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}], \
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"flaming_cocktail"},}, "cnk":{"wine":{"time":$(gametime),"color":$(color)}},"smithed":{"ignore":{"functionality":true,"crafting":true}}} \
               } \
             } \

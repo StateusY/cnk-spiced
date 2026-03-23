@@ -13,7 +13,7 @@
                 "minecraft:item_name": {"translate":"item.spiced.music_disc_green_regime","fallback":"Music Disc"},
                 "minecraft:item_model": "spiced:music_disc_green_regime",
                 "minecraft:custom_data": {"spiced":{"disc":{"type":"green_regime"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
-                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}],
                 "minecraft:rarity": "uncommon",
                 "minecraft:jukebox_playable": "spiced:green_regime",
                 "!minecraft:consumable": {},

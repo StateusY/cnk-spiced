@@ -22,7 +22,7 @@
                     "minecraft:potion_contents"
                   ]
                 },
-                "minecraft:lore": [{"translate":"item.cnk.calendar.format", "with": ["∞", "-1"],"color":"blue","italic":false},{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+                "minecraft:lore": [{"translate":"item.cnk.calendar.format", "with": ["∞", "-1"],"color":"blue","italic":false},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}],
                 "minecraft:custom_data": {"cnk":{"ingredient":{"type":"creeping_wine"},"wine":{"time":1000000000000,"color":7358282}},"smithed":{"ignore":{"functionality":true,"crafting":true}}}
               }
             }

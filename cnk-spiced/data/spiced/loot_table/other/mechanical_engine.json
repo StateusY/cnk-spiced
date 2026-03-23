@@ -13,7 +13,7 @@
                 "minecraft:item_name": {"translate":"item.spiced.mechanical_engine","fallback":"Mechanical Engine"},
                 "minecraft:item_model": "spiced:mechanical_engine",
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"mechanical_engine"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
-                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}]
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
               }
             }
           ]

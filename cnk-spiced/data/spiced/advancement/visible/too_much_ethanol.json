@@ -7,7 +7,7 @@
       }
     },
     "title": {"translate":"advancement.spiced.too_much_ethanol.name","fallback":"Ethanol Overdose"},
-    "description": [{"translate":"advancement.spiced.too_much_ethanol.desc","fallback":"Peter says no to ethanol"},{"text":"\n\n"},{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+    "description": [{"translate":"advancement.spiced.too_much_ethanol.desc","fallback":"Peter says no to ethanol"},{"text":"\n\n"},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}],
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true,

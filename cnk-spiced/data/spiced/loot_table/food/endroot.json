@@ -18,7 +18,7 @@
                 },
                 "minecraft:consumable": {"sound": "minecraft:entity.generic.eat","on_consume_effects": [{"type": "minecraft:apply_effects","effects": [{"id": "minecraft:levitation","amplifier": 2,"duration": 45}]}]},
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"endroot"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
-                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}]
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
               }
             }
           ]

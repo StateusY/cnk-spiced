@@ -7,7 +7,7 @@
       }
     },
     "title": {"translate":"advancement.spiced.preparation_plate.name","fallback":"Daintily Prepared"},
-    "description": [{"translate":"advancement.spiced.preparation_plate.desc","fallback":"Craft a preparation plate"},{"text":"\n\n"},{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+    "description": [{"translate":"advancement.spiced.preparation_plate.desc","fallback":"Craft a preparation plate"},{"text":"\n\n"},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}],
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

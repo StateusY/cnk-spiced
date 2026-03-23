@@ -18,7 +18,7 @@
                 },
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"sliced_tomato"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
-                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}]
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
               }
             }
           ]

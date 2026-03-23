@@ -7,7 +7,7 @@
       }
     },
     "title": {"translate":"advancement.spiced.mortar_and_pestle.name","fallback":"Mash n' Smash"},
-    "description": [{"translate":"advancement.spiced.mortar_and_pestle.desc","fallback":"Craft a mortar and pestle"},{"text":"\n\n"},{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+    "description": [{"translate":"advancement.spiced.mortar_and_pestle.desc","fallback":"Craft a mortar and pestle"},{"text":"\n\n"},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}],
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

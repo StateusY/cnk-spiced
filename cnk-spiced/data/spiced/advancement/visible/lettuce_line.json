@@ -7,7 +7,7 @@
       }
     },
     "title": {"translate":"advancement.spiced.lettuce_line.name","fallback":"Green Greed"},
-    "description": [{"translate":"advancement.spiced.lettuce_line.desc","fallback":"Obtain a reasonable amount of lettuce"},{"text":"\n\n"},{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}],
+    "description": [{"translate":"advancement.spiced.lettuce_line.desc","fallback":"Obtain a reasonable amount of lettuce"},{"text":"\n\n"},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}],
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false

@@ -15,6 +15,32 @@
 # the cnk:temp cooking_pot.Items storage contains the contents of the cooking pot, so you can check for any sort of data!
 
 # cnk:cooking_pot/crafting/lock MUST be called and MUST be called last, this handles the cooking process and decides when cooking is complete
+execute \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"basil"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"salt"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"cooking_oil"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"minced_garlic"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"tomato_paste"}}}}}] \
+        if function cnk:cooking_pot/crafting/lock \
+        run return run function spiced:cooking_pot/recipes/tomato_sauce
+
+execute \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"diced_onion"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"diced_bell_pepper"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"rice"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"minced_garlic"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"sliced_okra"}}}}}] \
+        if function cnk:cooking_pot/crafting/lock \
+        run return run function spiced:cooking_pot/recipes/incomplete_okra_skillet
+
+execute \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"diced_tomato"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"stock"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"incomplete_okra_skillet"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"pepper_sauce"}}}}}] \
+        if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"thyme"}}}}}] \
+        if function cnk:cooking_pot/crafting/lock \
+        run return run function spiced:cooking_pot/recipes/okra_skillet
 
 execute \
         if data storage cnk:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"diced_celery"}}}}}] \

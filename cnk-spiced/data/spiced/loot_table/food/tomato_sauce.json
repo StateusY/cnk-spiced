@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"translate":"item.spiced.tomato_sauce","fallback":"Tomato Sauce"},
+                "minecraft:item_model": "spiced:tomato_sauce",
+                "minecraft:food": {
+                  "nutrition": 7,
+                  "saturation": 2.8
+                },
+                "minecraft:consumable": {},
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"tomato_sauce"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

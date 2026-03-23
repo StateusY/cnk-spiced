@@ -13,7 +13,7 @@
                 "minecraft:item_name": {"translate":"item.spiced.mecha_haybrains","fallback":"Mecha Haybrains"},
                 "minecraft:item_model": "spiced:mecha_haybrains",
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"mecha_haybrains"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
-                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}]
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
               }
             }
           ]

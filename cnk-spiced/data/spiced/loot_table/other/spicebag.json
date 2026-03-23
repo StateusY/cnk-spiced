@@ -13,7 +13,7 @@
                 "minecraft:item_name": {"translate":"item.spiced.spicebag_generic","fallback":"Spicebag"},
                 "minecraft:item_model": "spiced:spicebag_generic",
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"spicebag_generic"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
-                "minecraft:lore": [{"translate":"spiced.tooltip","font":"cnk:tooltip","color":"white","italic":false}]
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
               }
             }
           ]
