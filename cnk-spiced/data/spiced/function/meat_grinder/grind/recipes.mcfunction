@@ -41,7 +41,7 @@ execute if score $meat_grinder_item_count cnk.dummy matches 1 \
 #         if function spiced:meat_grinder/grind/generic/milk if score $milk_count cnk.dummy matches 1 \
 #         if data storage cnk:temp meat_grinder.Items[{components:{"minecraft:custom_data":{"cnk":{"ingredient":{"type":"butter"}}}}}] \
 #         if function spiced:meat_grinder/grind/lock \
-#         run return run data modify entity @s item.components."minecraft:custom_data".spiced.grind_callback set value "spiced:recipes/meat_grinder/grinded_potatoes"
+#         run return run data modify entity @s item.components."minecraft:custom_data".spiced.grind_callback set value "spiced:recipes/meat_grinder/mashed_potatoes"
 
 # # execute if score $mixing_bowl_item_count cnk.dummy matches 4 \
 #         if function cnk:mixing_bowl/mix/generic/ice if score $ice_count cnk.dummy matches 1 \

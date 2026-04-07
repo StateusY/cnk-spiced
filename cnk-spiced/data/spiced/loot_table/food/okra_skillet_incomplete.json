@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"translate":"item.spiced.okra_skillet_incomplete","fallback":"Incomplete Okra Skillet"},
+                "minecraft:item_model": "spiced:okra_skillet_incomplete",
+                "minecraft:food": {
+                  "nutrition": 0,
+                  "saturation": 0
+                },
+                "!minecraft:consumable": {},
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"okra_skillet_incomplete"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
