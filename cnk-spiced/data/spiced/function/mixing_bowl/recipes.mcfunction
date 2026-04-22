@@ -29,6 +29,7 @@ execute if score $mixing_bowl_item_count cnk.dummy matches 3 \
         if data storage cnk:temp mixing_bowl.Items[{id:"minecraft:sugar"}] \
         if function cnk:mixing_bowl/mix/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".cnk.mix_callback set value "spiced:mixing_bowl/recipes/corn_milk"
+#check if above milk count works with multiples
 
 execute if score $mixing_bowl_item_count cnk.dummy matches 3 \
         if data storage cnk:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"cajun_meats"}}}}}] \
