@@ -5,5 +5,4 @@ HEY! This is an addon datapack! It will do nothing or break if Crop and Kettle (
 This is the smithed booth spiced pack. It is shaved far down for demonstration purposes.
 
 Created By:
-Stateus
-Pan_Womsacz
+Stateus and Pan_Womsacz
