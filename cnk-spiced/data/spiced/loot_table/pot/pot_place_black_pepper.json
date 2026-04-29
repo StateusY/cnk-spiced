@@ -1,0 +1,36 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armadillo_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Pot Spawner Lettuce"
+                },
+                "minecraft:item_model": "minecraft:armadillo_scute",
+                "minecraft:entity_data": {
+                  "id": "minecraft:marker",
+                  "Tags": [
+                    "spiced_booth.pot_setup"
+                  ],
+                  "data": {
+                    "spiced_booth_pot_content": "lettuce"
+                  }
+                },
+                "minecraft:lore": [
+                  "Lettuce"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

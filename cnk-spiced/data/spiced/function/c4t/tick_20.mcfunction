@@ -1,1 +1,0 @@
-function spiced:c4t/ai/main
