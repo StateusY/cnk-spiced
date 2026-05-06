@@ -1,0 +1,49 @@
+#if recipe is not discoverable, just resolve all automatically
+execute if data storage spiced:temp cookbook.current_page{discoverable:false} run return run function spiced:cookbook/auto_resolve
+
+data modify storage spiced:temp cookbook.ingredient.check set from storage spiced:temp cookbook.current_page.page_name
+execute store result score $check_flag spiced.dummy run function spiced:cookbook/check_flag with storage spiced:temp cookbook.ingredient
+execute if score $check_flag spiced.dummy matches 0 unless data storage spiced:temp cookbook.current_page.static_title run tag @s add spiced.on_incomplete_page
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.page_name set from storage spiced:temp cookbook.ingredient.check
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.recipe_icon_font set from storage spiced:temp cookbook.current_page.recipe_icon_font
+
+data modify storage spiced:temp cookbook.ingredient.check set from storage spiced:temp cookbook.current_page.ingredients[0].key
+execute store result score $check_flag spiced.dummy run function spiced:cookbook/check_flag with storage spiced:temp cookbook.ingredient
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.slot_1 set from storage spiced:temp cookbook.ingredient.check
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.font_1 set from storage spiced:temp cookbook.current_page.ingredients[0].font
+
+execute if score $ingredient_count spiced.dummy matches ..1 run return fail
+data modify storage spiced:temp cookbook.ingredient.check set from storage spiced:temp cookbook.current_page.ingredients[1].key
+execute store result score $check_flag spiced.dummy run function spiced:cookbook/check_flag with storage spiced:temp cookbook.ingredient
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.slot_2 set from storage spiced:temp cookbook.ingredient.check
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.font_2 set from storage spiced:temp cookbook.current_page.ingredients[1].font
+
+execute if score $ingredient_count spiced.dummy matches ..2 run return fail
+data modify storage spiced:temp cookbook.ingredient.check set from storage spiced:temp cookbook.current_page.ingredients[2].key
+execute store result score $check_flag spiced.dummy run function spiced:cookbook/check_flag with storage spiced:temp cookbook.ingredient
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.slot_3 set from storage spiced:temp cookbook.ingredient.check
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.font_3 set from storage spiced:temp cookbook.current_page.ingredients[2].font
+
+execute if score $ingredient_count spiced.dummy matches ..3 run return fail
+data modify storage spiced:temp cookbook.ingredient.check set from storage spiced:temp cookbook.current_page.ingredients[3].key
+execute store result score $check_flag spiced.dummy run function spiced:cookbook/check_flag with storage spiced:temp cookbook.ingredient
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.slot_4 set from storage spiced:temp cookbook.ingredient.check
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.font_4 set from storage spiced:temp cookbook.current_page.ingredients[3].font
+
+execute if score $ingredient_count spiced.dummy matches ..4 run return fail
+data modify storage spiced:temp cookbook.ingredient.check set from storage spiced:temp cookbook.current_page.ingredients[4].key
+execute store result score $check_flag spiced.dummy run function spiced:cookbook/check_flag with storage spiced:temp cookbook.ingredient
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.slot_5 set from storage spiced:temp cookbook.ingredient.check
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.font_5 set from storage spiced:temp cookbook.current_page.ingredients[4].font
+
+execute if score $ingredient_count spiced.dummy matches ..5 run return fail
+data modify storage spiced:temp cookbook.ingredient.check set from storage spiced:temp cookbook.current_page.ingredients[5].key
+execute store result score $check_flag spiced.dummy run function spiced:cookbook/check_flag with storage spiced:temp cookbook.ingredient
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.slot_6 set from storage spiced:temp cookbook.ingredient.check
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.font_6 set from storage spiced:temp cookbook.current_page.ingredients[5].font
+
+execute if score $ingredient_count spiced.dummy matches ..6 run return fail
+data modify storage spiced:temp cookbook.ingredient.check set from storage spiced:temp cookbook.current_page.ingredients[6].key
+execute store result score $check_flag spiced.dummy run function spiced:cookbook/check_flag with storage spiced:temp cookbook.ingredient
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.slot_7 set from storage spiced:temp cookbook.ingredient.check
+execute if score $check_flag spiced.dummy matches 1 run data modify storage spiced:temp cookbook.data.font_7 set from storage spiced:temp cookbook.current_page.ingredients[6].font

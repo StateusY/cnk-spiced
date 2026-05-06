@@ -1,0 +1,1 @@
+$data modify storage spiced:temp cookbook.reference_page set from storage spiced:cookbook page_lookup."$(reference)"

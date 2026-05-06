@@ -1,0 +1,2 @@
+$execute positioned $(x) $(y) $(z) if block ~ ~ ~ minecraft:lectern if data block ~ ~ ~ Book run return run function spiced:cookbook/buttons/take_book/replace
+scoreboard players set $take_success spiced.dummy 0

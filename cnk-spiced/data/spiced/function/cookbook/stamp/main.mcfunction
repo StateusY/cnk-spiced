@@ -1,0 +1,2 @@
+execute if data storage spiced:temp cookbook.current_page.stamp.text run return run function spiced:cookbook/stamp/build with storage spiced:temp cookbook.current_page.stamp
+execute if data storage spiced:temp cookbook.current_page.stamp run data modify storage spiced:temp cookbook.data.stamp set from storage spiced:temp cookbook.current_page.stamp.icon

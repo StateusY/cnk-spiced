@@ -1,0 +1,1 @@
+$data modify storage spiced:cookbook database.$(uid) set value {}

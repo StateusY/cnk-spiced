@@ -1,0 +1,1 @@
+execute if score @s spiced.cookbook_previous_page matches 1.. run data modify storage spiced:temp cookbook.data.return set value "book.cnk.return.active.icon,'hover_event':{'action':'show_text','value':{'translate':book.cnk.return.active.text}},'click_event':{'action':'run_command','command':'trigger spiced.cookbook_buttons set 9931'}"

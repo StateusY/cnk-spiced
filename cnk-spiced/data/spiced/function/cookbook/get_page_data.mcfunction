@@ -1,0 +1,1 @@
+$data modify storage spiced:temp cookbook.current_page_data set from storage spiced:cookbook pages.$(current_page)

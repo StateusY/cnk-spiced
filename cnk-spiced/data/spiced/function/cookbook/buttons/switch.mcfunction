@@ -1,0 +1,48 @@
+# value map:
+# 9901 = previous page
+# 9902 = next page
+# 9903 = previous incomplete recipe
+# 9904 = next incomplete recipe
+# 9911 = reference 1
+# 9912 = reference 2
+# 9913 = reference 3
+# 9914 = reference 4
+# 9915 = reference 5
+# 9921 = front bookmark
+# 9922 = staple bookmark
+# 9923 = snack bookmark
+# 9924 = light bookmark
+# 9925 = hearty bookmark
+# 9926 = feast bookmark
+# 9927 = dessert bookmark
+# 9931 = return
+# 9991 = close dialog
+# 9992 = take book
+
+execute if score @s spiced.cookbook_buttons matches 9901 run function spiced:cookbook/buttons/previous_page
+execute if score @s spiced.cookbook_buttons matches 9902 run function spiced:cookbook/buttons/next_page
+
+execute if score @s spiced.cookbook_buttons matches 9903 run function spiced:cookbook/buttons/previous_incomplete_recipe
+execute if score @s spiced.cookbook_buttons matches 9904 run function spiced:cookbook/buttons/next_incomplete_recipe
+
+execute if score @s spiced.cookbook_buttons matches 9911 run function spiced:cookbook/buttons/reference_1
+execute if score @s spiced.cookbook_buttons matches 9912 run function spiced:cookbook/buttons/reference_2
+execute if score @s spiced.cookbook_buttons matches 9913 run function spiced:cookbook/buttons/reference_3
+execute if score @s spiced.cookbook_buttons matches 9914 run function spiced:cookbook/buttons/reference_4
+execute if score @s spiced.cookbook_buttons matches 9915 run function spiced:cookbook/buttons/reference_5
+
+execute if score @s spiced.cookbook_buttons matches 9921 run function spiced:cookbook/buttons/front_bookmark
+execute if score @s spiced.cookbook_buttons matches 9922 run function spiced:cookbook/buttons/staple_bookmark
+execute if score @s spiced.cookbook_buttons matches 9923 run function spiced:cookbook/buttons/snack_bookmark
+execute if score @s spiced.cookbook_buttons matches 9924 run function spiced:cookbook/buttons/light_bookmark
+execute if score @s spiced.cookbook_buttons matches 9925 run function spiced:cookbook/buttons/hearty_bookmark
+execute if score @s spiced.cookbook_buttons matches 9926 run function spiced:cookbook/buttons/feast_bookmark
+execute if score @s spiced.cookbook_buttons matches 9927 run function spiced:cookbook/buttons/dessert_bookmark
+
+execute if score @s spiced.cookbook_buttons matches 9931 run function spiced:cookbook/buttons/return
+
+execute if score @s spiced.cookbook_buttons matches 9991 run function spiced:cookbook/buttons/close
+execute if score @s spiced.cookbook_buttons matches 9992 run function spiced:cookbook/buttons/take_book/main
+
+scoreboard players reset @s spiced.cookbook_buttons
+scoreboard players enable @s spiced.cookbook_buttons
