@@ -1,0 +1,32 @@
+{
+    "namespace": "spiced",
+    "booth_name": "CNK: Spiced",
+    "bounding_boxes": {
+        "main": {
+            "position": {
+                "x": {"min": -135, "max": -102},
+                "y": {"min": 70, "max": 95},
+                "z": {"min": -39, "max": -20}
+            },
+            "on_player_enter": "summit_booth/bounds/entered",
+            "on_player_exit": "summit_booth/bounds/exited"
+        }
+    },
+    "ticking_functions": {
+        "spiced:summit_booth/master_tick": "1t"
+    },
+    "sticker_book": {
+        "background_color": "#1a48c3",
+        "region": "welded_woodlands",
+        "stickers": [
+            {
+                "sticker_id": "huntsman_pie",
+                "sticker_texture": "spiced:item/pack",
+                "sticker_name": "Cook up the Huntsman Pie!",
+                "unobtained_text": "Cook up the Huntsman Pie!",
+                "obtained_text": "Rewarded for cooking up the Huntsman Pie!"
+            }
+        ]
+    }
+}
+

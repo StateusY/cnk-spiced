@@ -1,0 +1,1 @@
+summon item_display ~ ~ ~ {Tags:["spiced_booth.blurb","summit.booth_entity.spiced"],item:{id:"minecraft:stick",count:1,components:{"minecraft:lore":[{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false},"\n",{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]}}}

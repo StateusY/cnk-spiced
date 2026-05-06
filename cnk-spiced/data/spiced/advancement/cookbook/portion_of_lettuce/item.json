@@ -1,5 +1,5 @@
 {
-  "parent": "cnk:cookbook/root",
+  "parent": "spiced:cookbook/root",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

@@ -1,0 +1,1 @@
+function spiced:summit_booth/place_plants

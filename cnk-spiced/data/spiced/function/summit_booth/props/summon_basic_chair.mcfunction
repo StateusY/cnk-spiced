@@ -1,0 +1,2 @@
+execute rotated ~ ~ run summon block_display ~ ~ ~ {Tags:["summit.booth_entity.spiced"],block_state:{Name:spruce_stairs}}
+summon interaction ~ ~ ~ {Tags: ["summit.interactable", "summit.static","summit.booth_entity.spiced"], data: {summit_interactable: {special:"sit",height:0.5}}}

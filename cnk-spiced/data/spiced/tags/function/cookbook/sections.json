@@ -1,0 +1,11 @@
+{
+  "values": [
+    "spiced:cookbook/sections/front/register",
+    "spiced:cookbook/sections/staple/register",
+    "spiced:cookbook/sections/snacks/register",
+    "spiced:cookbook/sections/light/register",
+    "spiced:cookbook/sections/hearty/register",
+    "spiced:cookbook/sections/feasts/register",
+    "spiced:cookbook/sections/desserts/register"
+   ] 
+}

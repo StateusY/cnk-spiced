@@ -1,5 +1,5 @@
 {
-  "parent": "cnk:cookbook/toasts",
+  "parent": "spiced:cookbook/toasts",
   "display": {
     "title": [{"translate":"book.cnk.toast.background","font":"cnk.book:advancement"},{"translate":"book.cnk.toast.unlock.ingredient","font":"cnk.book:advancement_text","color":"#7b613a"}],
     "icon": {

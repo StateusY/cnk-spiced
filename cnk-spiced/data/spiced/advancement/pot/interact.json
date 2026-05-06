@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "spiced:smithed_booth/pot/interact"
+    "function": "spiced:summit_booth/pot/interact"
   }
 }

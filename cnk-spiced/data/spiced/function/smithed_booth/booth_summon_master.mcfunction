@@ -1,1 +1,0 @@
-function spiced:smithed_booth/place_plants

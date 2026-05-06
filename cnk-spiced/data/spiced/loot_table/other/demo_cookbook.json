@@ -1,0 +1,32 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"translate":"item.spiced.cookbook","fallback":"The Spiced of Cooking Lite"},
+                "minecraft:item_model": "cnk.book:cookbook",
+                "minecraft:custom_data": {"spiced":{"cookbook":true},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:enchantment_glint_override": false,
+                "!written_book_content": {},
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:written_book_content"
+                  ]
+                },
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}],
+                "minecraft:max_stack_size": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
