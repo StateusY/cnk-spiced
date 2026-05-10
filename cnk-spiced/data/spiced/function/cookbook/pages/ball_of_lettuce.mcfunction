@@ -6,11 +6,11 @@ data modify storage spiced:temp register.page_name set value "item.spiced.ball_o
 data modify storage spiced:temp register.recipe_icon_font set value "spiced:icons"
 
 data modify storage spiced:temp register.ingredients set value [ \
-    {key:"item.spiced.lettuce", font:"cnk.book:icons"}, \
-    {key:"item.spiced.lettuce", font:"cnk.book:icons"}, \
-    {key:"item.spiced.lettuce", font:"cnk.book:icons"}, \
-    {key:"item.spiced.lettuce", font:"cnk.book:icons"}, \
-    {key:"item.spiced.lettuce", font:"cnk.book:icons"}, \
+    {key:"item.cnk.lettuce", font:"cnk.book:icons"}, \
+    {key:"item.cnk.lettuce", font:"cnk.book:icons"}, \
+    {key:"item.cnk.lettuce", font:"cnk.book:icons"}, \
+    {key:"item.cnk.lettuce", font:"cnk.book:icons"}, \
+    {key:"item.cnk.lettuce", font:"cnk.book:icons"}, \
 ]
 
 data modify storage spiced:temp register.source set value {key:"spiced.source", font:"spiced:icons"}

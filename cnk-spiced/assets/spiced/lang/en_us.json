@@ -283,5 +283,6 @@
   "advancement.spiced.too_much_ethanol.desc":"Peter says no to ethanol",
   
   "book.spiced.source": "\ue001",
+  "book.item.spiced.unknown": "\ue003",
   "spiced.tooltip": "\ua001\ub001C&K: Spiced"
 }

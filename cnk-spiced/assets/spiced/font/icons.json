@@ -139,6 +139,8 @@
         {"type":"bitmap","file":"spiced:icon/item/texture_missing.png","ascent":15,"height":16,"chars":["\ud137"]},
 
 
-        {"type":"bitmap","file":"spiced:icon/misc/spiced_indicator.png","ascent":6,"height":8,"chars":["\ue001"]}
+        {"type":"bitmap","file":"spiced:icon/misc/spiced_indicator.png","ascent":6,"height":8,"chars":["\ue001"]},
+        {"type":"bitmap","file":"spiced:icon/misc/cookbook_front_page.png","ascent":130,"height":140,"chars":["\ue002"]},
+        {"type":"bitmap","file":"spiced:icon/item/unknown.png","ascent":15,"height":16,"chars":["\ue003"]}
     ]
 }
