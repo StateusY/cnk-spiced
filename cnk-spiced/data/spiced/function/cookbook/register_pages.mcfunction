@@ -7,7 +7,9 @@ data remove storage spiced:temp key_map
 data remove storage spiced:temp register
 
 # register pages
-function #spiced:cookbook/sections
+function spiced:cookbook/sections/front/register
+#function #spiced:cookbook/front
+function #spiced:cookbook/demo
 
 # register the back page
-function spiced:cookbook/pages/back/register
+#function spiced:cookbook/pages/back/register

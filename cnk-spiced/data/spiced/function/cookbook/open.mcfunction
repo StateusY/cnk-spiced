@@ -12,9 +12,9 @@ data remove storage spiced:temp cookbook
 data merge storage spiced:temp { \
     cookbook: { \
         data: { \
-            source_key:"cnk.no_source", \
-            source_font:"cnk:book:base", \
-            tool_font:"cnk.book:base", \
+            source_key:"spiced.no_source", \
+            source_font:"spiced:icons", \
+            tool_font:"spiced:icons", \
             front_state: "idle", \
             staple_state: "idle", \
             snack_state: "idle", \
@@ -22,28 +22,28 @@ data merge storage spiced:temp { \
             hearty_state: "idle", \
             feast_state: "idle", \
             dessert_state: "idle", \
-            page_name: "item.cnk.unknown", \
-            recipe_icon_font: "cnk.book:base", \
-            slot_1: "item.cnk.unknown", \
-            font_1: "cnk.book:base", \
-            slot_2: "item.cnk.unknown", \
-            font_2: "cnk.book:base", \
-            slot_3: "item.cnk.unknown", \
-            font_3: "cnk.book:base", \
-            slot_4: "item.cnk.unknown", \
-            font_4: "cnk.book:base", \
-            slot_5: "item.cnk.unknown", \
-            font_5: "cnk.book:base", \
-            slot_6: "item.cnk.unknown", \
-            font_6: "cnk.book:base", \
-            slot_7: "item.cnk.unknown", \
-            font_7: "cnk.book:base", \
+            page_name: "item.spiced.unknown", \
+            recipe_icon_font: "spiced:icons", \
+            slot_1: "item.spiced.unknown", \
+            font_1: "spiced:icons", \
+            slot_2: "item.spiced.unknown", \
+            font_2: "spiced:icons", \
+            slot_3: "item.spiced.unknown", \
+            font_3: "spiced:icons", \
+            slot_4: "item.spiced.unknown", \
+            font_4: "spiced:icons", \
+            slot_5: "item.spiced.unknown", \
+            font_5: "spiced:icons", \
+            slot_6: "item.spiced.unknown", \
+            font_6: "spiced:icons", \
+            slot_7: "item.spiced.unknown", \
+            font_7: "spiced:icons", \
             stamp: "book.cnk.stamp.none", \
-            return: "book.cnk.return.inactive.icon", \
+            return: "book.spiced.return.inactive.icon", \
             lectern_button:",", \
             button_width: 211, \
-            previous_incomplete_recipe: "book.cnk.empty_incomplete_recipe", \
-            next_incomplete_recipe: "book.cnk.empty_incomplete_recipe" \
+            previous_incomplete_recipe: "book.spiced.empty_incomplete_recipe", \
+            next_incomplete_recipe: "book.spiced.empty_incomplete_recipe" \
         } \
     } \
 }

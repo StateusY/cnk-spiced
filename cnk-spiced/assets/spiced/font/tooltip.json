@@ -9,7 +9,7 @@
     },
     {
       "type": "bitmap",
-      "file": "cnk:font/tooltip.png",
+      "file": "spiced:font/tooltip.png",
       "ascent": 8,
       "chars": [
         "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",

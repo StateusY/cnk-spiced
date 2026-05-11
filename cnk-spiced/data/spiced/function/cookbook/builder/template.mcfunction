@@ -1,27 +1,27 @@
 $dialog show @s { \
   "type": "minecraft:multi_action", \
-  "title": {"translate":"item.cnk.cookbook"}, \
+  "title": {"text":"The Craft of Cooking"}, \
   "body": [ \
     { \
       "type": "minecraft:plain_message", \
       "width": 211, \
       "contents": [{ \
-            "translate":"book.cnk.$(ingredient_count)_recipe","font":"cnk.book:base","shadow_color":0,"color":"white","with":[ \
+            "translate":"book.spiced.$(ingredient_count)_recipe","font":"spiced:icons","shadow_color":0,"color":"white","with":[ \
                 {"translate":$(page_name),"color":"#7b613a","font":"minecraft:default"}, \
                 $(ingredients) \
                 {"translate":"book.$(tool)","font":"$(tool_font)"}, \
                 {"translate":"book.$(page_name)","font":"$(recipe_icon_font)"}, \
-                {"translate":book.tab.cnk.front.$(front_state),"hover_event":{"action":"show_text","value":{"translate":book.cnk.section.front}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9921"}}, \
-                {"translate":book.tab.cnk.staple.$(staple_state),"hover_event":{"action":"show_text","value":{"translate":book.cnk.section.staple}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9922"}}, \
-                {"translate":book.tab.cnk.snack.$(snack_state),"hover_event":{"action":"show_text","value":{"translate":book.cnk.section.snack}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9923"}}, \
-                {"translate":book.tab.cnk.light.$(light_state),"hover_event":{"action":"show_text","value":{"translate":book.cnk.section.light}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9924"}}, \
-                {"translate":book.tab.cnk.hearty.$(hearty_state),"hover_event":{"action":"show_text","value":{"translate":book.cnk.section.hearty}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9925"}}, \
-                {"translate":book.tab.cnk.feast.$(feast_state),"hover_event":{"action":"show_text","value":{"translate":book.cnk.section.feast}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9926"}}, \
-                {"translate":book.tab.cnk.dessert.$(dessert_state),"hover_event":{"action":"show_text","value":{"translate":book.cnk.section.dessert}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9927"}}, \
+                {"translate":book.tab.spiced.front.$(front_state),"font":"spiced:icons","hover_event":{"action":"show_text","value":{"text":"Front Page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9921"}}, \
+                {"translate":book.tab.spiced.filler}, \
+                {"translate":book.tab.spiced.filler}, \
+                {"translate":book.tab.spiced.filler}, \
+                {"translate":book.tab.spiced.filler}, \
+                {"translate":book.tab.spiced.filler}, \
+                {"translate":book.tab.spiced.filler}, \
                 {"translate":$(stamp)}, \
                 {"translate":$(return)}, \
-                {"translate":book.cnk.bottom_line,"with":[{"translate":book.cnk.page_number.$(page_number_width),"font":"cnk.book:small_text","with":[{"text":"$(current_page)","color":"#927359"}]}]}, \
-                {"translate":book.cnk.cookbook_navigation,"with":[{"translate":book.cnk.previous_page,"hover_event":{"action":"show_text","value":{"translate":book.cnk.previous_page.hover}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9901"}},{"translate":$(previous_incomplete_recipe)},{"translate":book.$(source_key),"font":"$(source_font)","hover_event":{"action":"show_text","value":{"translate":$(source_key)}}},{"translate":$(next_incomplete_recipe)},{"translate":book.cnk.next_page,"hover_event":{"action":"show_text","value":{"translate":book.cnk.next_page.hover}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9902"}}]} \
+                {"translate":book.spiced.bottom_line,"with":[{"translate":book.spiced.page_number.$(page_number_width),"font":"spiced:small_text","with":[{"text":"$(current_page)","color":"#927359"}]}]}, \
+                {"translate":book.spiced.cookbook_navigation,"with":[{"translate":book.spiced.previous_page,"hover_event":{"action":"show_text","value":{"text":"Previous page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9901"}},{"translate":$(previous_incomplete_recipe)},{"translate":book.$(source_key),"font":"$(source_font)","hover_event":{"action":"show_text","value":{"translate":$(source_key)}}},{"translate":$(next_incomplete_recipe)},{"translate":book.spiced.next_page,"hover_event":{"action":"show_text","value":{"text":"Next page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9902"}}]} \
             ] \
         }] \
     }, \
