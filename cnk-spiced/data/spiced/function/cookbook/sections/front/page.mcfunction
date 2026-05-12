@@ -1,13 +1,13 @@
 $dialog show @s { \
   "type": "minecraft:multi_action", \
-  "title": {"translate":"item.cnk.cookbook"}, \
+  "title": {"text":"The Craft of Cooking"}, \
   "body": [ \
     { \
       "type": "minecraft:plain_message", \
       "width": 211, \
       "contents": [{ \
             "translate":"book.spiced.front_page","font":"spiced:icons","shadow_color":0,"color":"white","with":[ \
-                {"translate":book.tab.spiced.front.$(front_state),"hover_event":{"action":"show_text","value":{"text":"Front Page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9921"}}, \
+                {"translate":book.tab.spiced.front.$(front_state),"font":"spiced:icons","hover_event":{"action":"show_text","value":{"text":"Front Page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9921"}}, \
                 {"translate":book.tab.spiced.filler}, \
                 {"translate":book.tab.spiced.filler}, \
                 {"translate":book.tab.spiced.filler}, \

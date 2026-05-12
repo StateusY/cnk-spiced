@@ -6,7 +6,7 @@ $dialog show @s { \
       "type": "minecraft:plain_message", \
       "width": 211, \
       "contents": [{ \
-            "translate":"book.spiced.back_page","font":"spiced:icons","shadow_color":0,"color":"white","with":[ \
+            "translate":"book.spiced.info_page","font":"spiced:icons","shadow_color":0,"color":"white","with":[ \
                 {"translate":book.tab.spiced.front.$(front_state),"font":"spiced:icons","hover_event":{"action":"show_text","value":{"text":"Front Page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9921"}}, \
                 {"translate":book.tab.spiced.filler}, \
                 {"translate":book.tab.spiced.filler}, \
@@ -14,7 +14,8 @@ $dialog show @s { \
                 {"translate":book.tab.spiced.filler}, \
                 {"translate":book.tab.spiced.filler}, \
                 {"translate":book.tab.spiced.filler}, \
-                {"translate":book.spiced.cookbook_back_navigation,"with":[{"translate":book.spiced.previous_page,"hover_event":{"action":"show_text","value":{"text":"Previous page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9901"}},{"translate":$(previous_incomplete_recipe)}]} \
+                {"translate":book.spiced.bottom_line,"with":[{"translate":book.spiced.page_number.$(page_number_width),"font":"spiced:small_text","with":[{"text":"$(current_page)","color":"#927359"}]}]}, \
+                {"translate":book.spiced.cookbook_navigation,"with":[{"translate":book.spiced.previous_page,"hover_event":{"action":"show_text","value":{"text":"Previous page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9901"}},{"translate":$(previous_incomplete_recipe)},{"translate":book.$(source_key),"font":"$(source_font)","hover_event":{"action":"show_text","value":{"translate":$(source_key)}}},{"translate":$(next_incomplete_recipe)},{"translate":book.spiced.next_page,"hover_event":{"action":"show_text","value":{"text":"Next page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9902"}}]} \
             ] \
         }] \
     }, \

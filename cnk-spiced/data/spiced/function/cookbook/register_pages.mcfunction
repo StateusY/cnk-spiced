@@ -12,4 +12,4 @@ function spiced:cookbook/sections/front/register
 function #spiced:cookbook/demo
 
 # register the back page
-#function spiced:cookbook/pages/back/register
+function spiced:cookbook/pages/back/register

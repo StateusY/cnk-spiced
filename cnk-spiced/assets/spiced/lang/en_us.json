@@ -19,7 +19,10 @@
   "book.item.spiced.huntsman_pie_incomplete": "\ud118",
   "book.item.spiced.huntsman_pie": "\ud119",
 
-  "book.spiced.mortar_and_pestle": "\ue001",
+  "book.spiced.mortar_and_pestle": "\uf001",
+  "book.spiced.cooking_pot": "\uf002",
+  "book.spiced.cutting_board": "\uf003",
+  "book.spiced.mixing_bowl": "\uf004",
 
 
   "spiced.source": "C&K: Spiced",
@@ -42,9 +45,12 @@
 
   "subtitles.spiced.block.mortar_and_pestle.stir": "Pestle mashes in a Mortar",
   
+  "item.spiced.unknown": "?????????",
   "book.spiced.source": "\ue001",
   "book.item.spiced.unknown": "\ue002",
   "book.spiced.front_page": "\ue004\ub026\ue003\ub026\n\n\n\ub013%1$s\n\n\ub064%2$s\n\n\ub013%3$s\n\n\ub013%4$s\n\n\ub013%5$s\n\n\ub013%6$s\n\n\ub013%7$s\n\ue005   \n %8$s\n%9$s",
+  "book.spiced.back_page": "\ue004\ub026\ue003\ub026\n\n\n\ub013%1$s\n\n\ub013%2$s\n\n\ub013%3$s\n\n\ub013%4$s\n\ue027\n\ub013%5$s\n\n\ub013%6$s\n\n\ub013%7$s\n\n\n%8$s",
+  "book.spiced.info_page": "\ue004\ub026\ue003\ub026\n\n\n\ub013%1$s\ub013%2$s\n\n\ub013%3$s\n\n\ub013%4$s\n\ue028\n\ub013%5$s\n\n\ub013%6$s\n\n\ub013%7$s\n\n\n %8$s\n%9$s",
   "book.spiced.1_recipe": "\ue004\ub026\ue003\ub026\n\ue015\n%1$s\n\ub013%5$s\n\n\ub014%2$s\ub015%6$s\n\n\ub027\ue016\ub028%7$s\n\n\ub013%8$s\n\n\ub013%9$s\n\n\ub013%10$s\n%3$s\n\ub013%11$s\n%12$s\ub065\uc995\ub048%4$s\ua997\ue021\ub066\n\ub068%14$s\ub067%13$s\n%15$s",
   "book.spiced.2_recipe": "\ue004\ub026\ue003\ub026\n\ue015\n%1$s\n\ub013%6$s\n\n\ub013%7$s\n%2$s\ub001%3$s\n\ub013%8$s\n\ue020\ub004\ue018   \n\ub013%9$s\n\n\ub013%10$s\n\n\ub013%11$s\n%4$s\n\ub013%12$s\n%13$s\ub065\uc995\ub048%5$s\ua997\ue021\ub066\n\ub068%15$s\ub067%14$s\n%16$s",
   "book.spiced.3_recipe": "\ue004\ub026\ue003\ub026\n\ue015\n%1$s\n\ub013%7$s\n\n\ub014%3$s\ub015%8$s\n%2$s\ub001%4$s\n\ub027\ue016\ub028%9$s\n\ue020\ub004\ue018   \n\ub013%10$s\n\n\ub013%11$s\n\n\ub013%12$s\n%5$s\n\ub013%13$s\n%14$s\ub065\uc995\ub048%6$s\ua997\ue021\ub066\n\ub068%16$s\ub067%15$s\n%17$s",
@@ -70,6 +76,8 @@
   "book.spiced.return.active.icon": "\ue024",
   "book.spiced.return.active.text": "Return",
   "book.spiced.return.inactive.icon": "\ue025",
+  "book.spiced.stamp.none": "\ue026",
+  "book.spiced.cookbook_back_navigation": "%1$s%2$s\ub070",
   
   "book.spiced.cookbook_navigation": "%1$s%2$s\ub069%3$s\ub069%4$s%5$s\ub046",
 

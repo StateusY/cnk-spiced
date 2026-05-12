@@ -16,12 +16,6 @@ data merge storage spiced:temp { \
             source_font:"spiced:icons", \
             tool_font:"spiced:icons", \
             front_state: "idle", \
-            staple_state: "idle", \
-            snack_state: "idle", \
-            light_state: "idle", \
-            hearty_state: "idle", \
-            feast_state: "idle", \
-            dessert_state: "idle", \
             page_name: "item.spiced.unknown", \
             recipe_icon_font: "spiced:icons", \
             slot_1: "item.spiced.unknown", \
@@ -38,7 +32,7 @@ data merge storage spiced:temp { \
             font_6: "spiced:icons", \
             slot_7: "item.spiced.unknown", \
             font_7: "spiced:icons", \
-            stamp: "book.cnk.stamp.none", \
+            stamp: "book.spiced.stamp.none", \
             return: "book.spiced.return.inactive.icon", \
             lectern_button:",", \
             button_width: 211, \
