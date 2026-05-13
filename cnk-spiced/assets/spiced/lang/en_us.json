@@ -56,6 +56,8 @@
   "book.spiced.3_recipe": "\ue004\ub026\ue003\ub026\n\ue015\n%1$s\n\ub013%7$s\n\n\ub014%3$s\ub015%8$s\n%2$s\ub001%4$s\n\ub027\ue016\ub028%9$s\n\ue020\ub004\ue018   \n\ub013%10$s\n\n\ub013%11$s\n\n\ub013%12$s\n%5$s\n\ub013%13$s\n%14$s\ub065\uc995\ub048%6$s\ua997\ue021\ub066\n\ub068%16$s\ub067%15$s\n%17$s",
   "book.spiced.4_recipe": "\ue004\ub026\ue003\ub026\n\ue015\n%1$s\n\ub013%8$s\n\n\ub022%3$s\ub008%4$s\ub023%9$s\n%2$s\ub010%5$s \n\ub024\ue016\ub009\ue016 \ub025%10$s\n\ue020\ub011\ue018   \n\ub013%11$s\n\n\ub013%12$s\n\n\ub013%13$s\n%6$s\n\ub013%14$s\n%15$s\ub065\uc995\ub048%7$s\ua997\ue021\ub066\n\ub068%17$s\ub067%16$s\n%18$s",
   "book.spiced.5_recipe": "\ue004\ub026\ue003\ub026\n\ue015\n%1$s\n\ub013%9$s\n\n\ub014%4$s\ub015%10$s\n%3$s\ub001%5$s\n\ub016%2$s\ub002\ue016\ub003%6$s \ub017%11$s\n\ue020\ub004\ue018   \n\ub018\ue019\ub005\ue017  \ub019%12$s\n\n\ub013%13$s\n\n\ub013%14$s\n%7$s\n\ub013%15$s\n%16$s\ub065\uc995\ub048%8$s\ua997\ue021\ub066\n\ub068%18$s\ub067%17$s\n%19$s",
+    "book.cnk.5_recipe": "\ua058\ub026\ua032\ub026\n\ua000\n%1$s\n\ub013%9$s\n\n\ub014%4$s\ub015%10$s\n%3$s\ub001%5$s\n\ub016%2$s\ub002\ua001\ub003%6$s \ub017%11$s\n\ua005\ub004\ua003   \n\ub018\ua004\ub005\ua002  \ub019%12$s\n\n\ub013%13$s\n\n\ub013%14$s\n%7$s\n\ub013%15$s\n%16$s\ub065\uc995\ub048%8$s\ua997\ua007\ub066\n\ub068%18$s\ub067%17$s\n%19$s",
+    
   "book.spiced.ingredient_template": "\uc995\ub048%1$s\ua998\ue022",
   "book.tab.spiced.filler": "\ue006",
   "book.tab.spiced.front.idle": "\ue007",
@@ -81,6 +83,6 @@
   
   "book.spiced.cookbook_navigation": "%1$s%2$s\ub069%3$s\ub069%4$s%5$s\ub046",
 
-  "spiced.tooltip": "\ue016\ub001C&K: Spiced",
+  "spiced.tooltip": "\ua001\ub001C&K: Spiced",
   "spiced.loaded": "loaded!"
 }

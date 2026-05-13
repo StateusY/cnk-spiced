@@ -11,4 +11,4 @@ data modify storage spiced:temp register.ingredients set value [ \
 
 data modify storage spiced:temp register.source set value {key:"spiced.source", font:"spiced:icons"}
 
-function spiced:cookbook/pages/register
+function spiced:cookbook/pages/page_gen/register

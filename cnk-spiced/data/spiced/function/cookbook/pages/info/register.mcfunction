@@ -3,4 +3,4 @@ data modify storage spiced:temp register.page_name set value "info"
 data modify storage spiced:temp register.dialog_function set value "spiced:cookbook/pages/info/page"
 data modify storage spiced:temp register.source set value {key:"spiced.source", font:"spiced:icons"}
 
-function spiced:cookbook/pages/register
+function spiced:cookbook/pages/page_gen/register

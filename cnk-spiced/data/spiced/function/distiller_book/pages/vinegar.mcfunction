@@ -28,4 +28,4 @@ data modify storage cnk:temp register.source set value {key:"spiced.source", fon
 # also like the cookbook, fonts in here are managed automatically, so no conflicts!
 
 # register the page
-function cnk:distiller_book/pages/register
+function cnk:distiller_book/pages/page_gen/register

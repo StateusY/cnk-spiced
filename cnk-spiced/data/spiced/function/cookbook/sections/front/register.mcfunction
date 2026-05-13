@@ -4,7 +4,7 @@ execute store result storage spiced:temp register.page_number int 1 run scoreboa
 data modify storage spiced:temp register.page_name set value "front"
 data modify storage spiced:temp register.dialog_function set value "spiced:cookbook/sections/front/page"
 
-function spiced:cookbook/pages/register
+function spiced:cookbook/pages/page_gen/register
 
 # register internal pages
 function #spiced:cookbook/front
