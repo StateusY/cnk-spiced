@@ -1,12 +1,14 @@
 {
-   "pack":{
-    "pack_format":69,
-    "max_format": 75,
-    "min_format": 63,
+  "id": "cnk_spiced",
+  "pack":{
     "description":"Spiced, an addon for Crop and Kettle!",
-    "supported_formats": {
-      "max_inclusive": 75,
-      "min_inclusive": 63
-    }
+    "min_format": [
+      84,
+      0
+    ],
+    "max_format": [
+      84,
+      0
+    ]
   }
 }
