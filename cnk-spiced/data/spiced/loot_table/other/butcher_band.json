@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"text":"Butcher Band"},
+                "minecraft:item_model": "spiced:butcher_band",
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"butcher_band"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:lore": [{"text":"you should not have this item, please report a bug on the cnk discord to Stateus (ping him)"},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}],
+                "minecraft:equippable": {"slot": "head"}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
