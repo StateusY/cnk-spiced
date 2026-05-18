@@ -21,7 +21,7 @@
       },
       "minecraft:item_model": "spiced:meat_grinder_item",
       "minecraft:custom_data": {
-        "cnk": {
+        "spiced": {
           "block": {
             "type": "mortar_and_pestle"
           }
@@ -36,13 +36,13 @@
       "minecraft:lore": [
         {
           "translate": "spiced.tooltip",
-          "font": "cnk:tooltip",
+          "font": "spiced:tooltip",
           "color": "white",
           "italic": false
         }
       ],
       "minecraft:profile": {
-        "texture": "cnk:block/transparent_head"
+        "texture": "spiced:block/transparent_head"
       },
       "tooltip_display": {
         "hidden_components": [

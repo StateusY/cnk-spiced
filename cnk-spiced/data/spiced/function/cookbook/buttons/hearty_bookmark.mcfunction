@@ -1,6 +1,6 @@
 scoreboard players reset @s spiced.cookbook_previous_page
 
-execute at @s run playsound cnk:item.cookbook.section_flip neutral @s ~ ~ ~ 1 1
+execute at @s run playsound spiced:item.cookbook.section_flip neutral @s ~ ~ ~ 1 1
 
 scoreboard players operation $next_page spiced.dummy = $hearty_page spiced.dummy
 function spiced:cookbook/buttons/check_incomplete_recipe/main

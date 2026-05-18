@@ -1,0 +1,45 @@
+-any_meat
+-ball of lettuce
+-black pepper
+-bottle
+-bread
+-butter
+-celery1
+-chicken
+-chunk of lettuce
+-cinnamon
+-cooking oil
+-cooking pot
+-cutting board
+-diced bread
+-diced celery
+-diced onion
+-dough
+-egg
+-flour
+-ground cinnamon
+-huntsman pie
+-incomp huntsman pie 1
+-incomp huntsman pie 2
+-knife
+-lettuce
+-mass of lettuce
+-milk
+-mixing_bowl
+-mortar and pestle
+-not smiling man
+-onion
+-pan of lettuce
+-pastry dough
+-pork
+-portion of lettuce
+-salt
+-sliced bread
+-sliced celery
+-sliced onion
+-smiling man
+-sticker sprite
+-stock
+-sunflower
+-water
+-wheat

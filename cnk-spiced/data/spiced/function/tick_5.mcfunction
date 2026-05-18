@@ -1,5 +1,5 @@
-schedule function cnk:tick_5 5t replace
+schedule function spiced:tick_5 5t replace
 
-execute as @e[type=minecraft:item_display,tag=cnk.base_wheat,tag=cnk.ticking_crop,predicate=!cnk:wheat_0] at @s run function cnk:crops/base_wheat
-execute as @e[type=minecraft:item_display,tag=cnk.base_pumpkin,tag=cnk.ticking_crop,predicate=!cnk:pumpkin_0] at @s run function cnk:crops/base_pumpkin
-execute as @e[type=minecraft:item_display,tag=cnk.base_propagule,tag=cnk.ticking_crop,predicate=!cnk:propagule_0] at @s run function cnk:crops/base_propagule
+execute as @e[type=minecraft:item_display,tag=spiced.base_wheat,tag=spiced.ticking_crop,predicate=!spiced:wheat_0] at @s run function spiced:crops/base_wheat
+execute as @e[type=minecraft:item_display,tag=spiced.base_pumpkin,tag=spiced.ticking_crop,predicate=!spiced:pumpkin_0] at @s run function spiced:crops/base_pumpkin
+execute as @e[type=minecraft:item_display,tag=spiced.base_propagule,tag=spiced.ticking_crop,predicate=!spiced:propagule_0] at @s run function spiced:crops/base_propagule

@@ -1,0 +1,2 @@
+execute positioned ~ ~-0.5 ~ unless predicate spiced:partial_block positioned ~ ~ ~ run return run function spiced:mixing_bowl/break/break
+execute if score @s spiced.hit_count matches 1.. run function spiced:mixing_bowl/break/check

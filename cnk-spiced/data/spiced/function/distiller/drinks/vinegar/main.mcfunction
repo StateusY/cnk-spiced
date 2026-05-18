@@ -1,8 +1,8 @@
 # this is the callback functions thats called when a player removes the liquid from the basin using a glass bottle!
-# removal of the glass bottle from the player is handled by cnk, all you need to do is give the player the right item
-execute if entity @s[predicate=cnk:inventory_full] run return run loot spawn ~ ~ ~ loot spiced:food/vinegar
+# removal of the glass bottle from the player is handled by spiced, all you need to do is give the player the right item
+execute if entity @s[predicate=spiced:inventory_full] run return run loot spawn ~ ~ ~ loot spiced:food/vinegar
 loot give @s loot spiced:food/vinegar
 
-# its possible, if you're using loot tables, that you need to add handling for when the player's inventory is full. cnk provides a predicate to check for that, see the example code below:
-# execute if entity @s[predicate=cnk:inventory_full] run return run loot spawn ~ ~ ~ loot cnk:food/beer
-# loot give @s loot cnk:food/beer
+# its possible, if you're using loot tables, that you need to add handling for when the player's inventory is full. spiced provides a predicate to check for that, see the example code below:
+# execute if entity @s[predicate=spiced:inventory_full] run return run loot spawn ~ ~ ~ loot spiced:food/beer
+# loot give @s loot spiced:food/beer

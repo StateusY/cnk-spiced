@@ -8,13 +8,13 @@ function spiced:recipes/distiller/generic/wine
 # sets the colour of the liquid to be output, this is the colour that will also appear in the basin
 # the minecraft wiki has a useful tool for converting colours to decimal format
 # https://minecraft.wiki/w/Data_component_format#custom_model_data
-data modify storage cnk:temp distiller.color set value 15001015
+data modify storage spiced:temp distiller.color set value 15001015
 
 # sets the callback function that will be called when a player uses a glass bottle on the basin with liquid in it
-data modify storage cnk:temp distiller.callback set value "spiced:distiller/drinks/vinegar/main"
+data modify storage spiced:temp distiller.callback set value "spiced:distiller/drinks/vinegar/main"
 
 # sets the liquid type, used in the liquid_check functions so must match
-data modify storage cnk:temp distiller.liquid set value "vinegar"
+data modify storage spiced:temp distiller.liquid set value "vinegar"
 
 # MUST be called, handles animations and setting the data on the basin
-function cnk:distiller/crafting/finish_distilling
+function spiced:distiller/crafting/finish_distilling

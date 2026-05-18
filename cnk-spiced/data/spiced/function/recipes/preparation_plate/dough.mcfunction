@@ -1,4 +1,4 @@
-loot spawn ~ ~-0.3 ~ loot cnk:food/dough
+loot spawn ~ ~-0.3 ~ loot spiced:food/dough
 
 function spiced:recipes/preparation_plate/remove_generic/water
 

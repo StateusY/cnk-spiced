@@ -8,7 +8,7 @@ data modify storage spiced:temp register.recipe_icon_font set value "spiced:icon
 data modify storage spiced:temp register.ingredients set value [ \
     {key:"item.minecraft.egg", font:"spiced:icons"}, \
     {key:"item.spiced.flour", font:"spiced:icons"}, \
-    {key:"item.cnk.butter", font:"spiced:icons"}, \
+    {key:"item.spiced.butter", font:"spiced:icons"}, \
     {key:"item.spiced.salt", font:"spiced:icons"}, \
 ]
 

@@ -1,18 +1,18 @@
-execute store result score @s cnk.rotation run data get entity @s Rotation[0]
-scoreboard players add @s cnk.rotation 180
+execute store result score @s spiced.rotation run data get entity @s Rotation[0]
+scoreboard players add @s spiced.rotation 180
 
-scoreboard players add @s cnk.rotation 36
+scoreboard players add @s spiced.rotation 36
 
-scoreboard players set $360 cnk.dummy 360
-scoreboard players operation @s cnk.rotation %= $360 cnk.dummy
+scoreboard players set $360 spiced.dummy 360
+scoreboard players operation @s spiced.rotation %= $360 spiced.dummy
 
-scoreboard players remove @s cnk.rotation 180
+scoreboard players remove @s spiced.rotation 180
 
-execute store result entity @s Rotation[0] int 1 run scoreboard players get @s cnk.rotation
+execute store result entity @s Rotation[0] int 1 run scoreboard players get @s spiced.rotation
 
-data modify storage cnk:temp meat_grinder.id set from entity @s item.id
-data remove storage cnk:temp meat_grinder.components
-data modify storage cnk:temp meat_grinder.components set from entity @s item.components
+data modify storage spiced:temp meat_grinder.id set from entity @s item.id
+data remove storage spiced:temp meat_grinder.components
+data modify storage spiced:temp meat_grinder.components set from entity @s item.components
 
-execute if data storage cnk:temp meat_grinder.components run return run function spiced:meat_grinder/grind/particle_components with storage cnk:temp meat_grinder
-function spiced:meat_grinder/grind/particle with storage cnk:temp meat_grinder
+execute if data storage spiced:temp meat_grinder.components run return run function spiced:meat_grinder/grind/particle_components with storage spiced:temp meat_grinder
+function spiced:meat_grinder/grind/particle with storage spiced:temp meat_grinder

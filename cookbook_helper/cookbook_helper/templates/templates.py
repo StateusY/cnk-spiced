@@ -1,5 +1,5 @@
 advancement = """{
-  \"parent\": \"cnk:cookbook/root\",
+  \"parent\": \"spiced:cookbook/root\",
   \"criteria\": {
     \"requirement\": {
       \"trigger\": \"minecraft:inventory_changed\",
@@ -22,9 +22,9 @@ advancement = """{
 """
 
 toast = """{
-  \"parent\": \"cnk:cookbook/toasts\",
+  \"parent\": \"spiced:cookbook/toasts\",
   \"display\": {
-    \"title\": [{\"translate\":\"book.cnk.toast.background\",\"font\":\"cnk.book:advancement\"},{\"translate\":\"book.cnk.toast.unlock.ingredient\",\"font\":\"cnk.book:advancement_text\",\"color\":\"#7b613a\"}],
+    \"title\": [{\"translate\":\"book.spiced.toast.background\",\"font\":\"spiced.book:advancement\"},{\"translate\":\"book.spiced.toast.unlock.ingredient\",\"font\":\"spiced.book:advancement_text\",\"color\":\"#7b613a\"}],
     \"icon\": {
       \"id\": \"minecraft:poisonous_potato\",
       \"components\": {\"minecraft:item_model\": \"%(namespace)s:%(name)s\"}
@@ -40,10 +40,10 @@ toast = """{
 }
 """
 
-grant_flag = """function cnk:cookbook/database/set/main {flag:"%(type)s.%(namespace)s.%(name)s"}
-execute if score $set_success cnk.dummy matches 0 run return run advancement revoke @s only cnk:cookbook/%(name)s/item
+grant_flag = """function spiced:cookbook/database/set/main {flag:"%(type)s.%(namespace)s.%(name)s"}
+execute if score $set_success spiced.dummy matches 0 run return run advancement revoke @s only spiced:cookbook/%(name)s/item
 
-advancement grant @s[tag=!cnk.cookbook_unlock,tag=!cnk.no_toasts] only cnk:cookbook/%(name)s/toast"""
+advancement grant @s[tag=!spiced.cookbook_unlock,tag=!spiced.no_toasts] only spiced:cookbook/%(name)s/toast"""
 
 font = "{\n    \"providers\": [\n%(characters)s    ]\n}"
 

@@ -1,7 +1,7 @@
 {
   "parent": "spiced:cookbook/toasts",
   "display": {
-    "title": [{"translate":"book.cnk.toast.background","font":"cnk.book:advancement"},{"translate":"book.cnk.toast.unlock.recipe","font":"cnk.book:advancement_text","color":"#7b613a"}],
+    "title": [{"translate":"book.spiced.toast.background","font":"spiced.book:advancement"},{"translate":"book.spiced.toast.unlock.recipe","font":"spiced.book:advancement_text","color":"#7b613a"}],
     "icon": {
       "id": "minecraft:poisonous_potato",
       "components": {"minecraft:item_model": "spiced:ball_of_lettuce"}

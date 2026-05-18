@@ -44,7 +44,7 @@
                   },
                   {
                     "translate": "spiced.tooltip",
-                    "font": "cnk:tooltip",
+                    "font": "spiced:tooltip",
                     "color": "white",
                     "italic": false
                   }

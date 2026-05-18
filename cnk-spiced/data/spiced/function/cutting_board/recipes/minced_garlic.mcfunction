@@ -2,4 +2,4 @@
 loot spawn ~ ~-0.3 ~ loot spiced:food/minced_garlic
 
 # this function MUST be called, tidies up the item and triggers sound and durability changes
-function cnk:cutting_board/cut/finish
+function spiced:cutting_board/cut/finish

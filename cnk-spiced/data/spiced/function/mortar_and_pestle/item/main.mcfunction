@@ -1,7 +1,7 @@
-execute if score @s cnk.item_count matches 5.. run return run function spiced:mortar_and_pestle/mash/main
+execute if score @s spiced.item_count matches 5.. run return run function spiced:mortar_and_pestle/mash/main
 
-scoreboard players set $hand_place cnk.dummy 1
+scoreboard players set $hand_place spiced.dummy 1
 
-scoreboard players operation $global cnk.item_count = @s cnk.item_count
+scoreboard players operation $global spiced.item_count = @s spiced.item_count
 execute summon minecraft:item_display at @s run function spiced:mortar_and_pestle/item/place
-scoreboard players operation @s cnk.item_count = $global cnk.item_count
+scoreboard players operation @s spiced.item_count = $global spiced.item_count

@@ -7,11 +7,11 @@
 function spiced:recipes/remove_generic/grease
 
 # remove the ingredient
-function cnk:recipes/remove_generic/pork
+function spiced:recipes/remove_generic/pork
 
 
 # spawn the result
 loot spawn ~ ~0.25 ~ loot spiced:food/seared_sausage
 
 # MUST be called, handles animations/sounds and reset of data
-function cnk:cooking_pot/effects/finish_cooking
+function spiced:cooking_pot/effects/finish_cooking

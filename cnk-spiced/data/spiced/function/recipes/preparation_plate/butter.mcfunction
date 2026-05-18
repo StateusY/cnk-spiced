@@ -1,4 +1,4 @@
-loot spawn ~ ~-0.3 ~ loot cnk:food/butter
+loot spawn ~ ~-0.3 ~ loot spiced:food/butter
 
 function spiced:recipes/preparation_plate/remove_generic/milk
 

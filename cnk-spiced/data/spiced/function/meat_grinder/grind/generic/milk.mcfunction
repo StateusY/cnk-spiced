@@ -1,7 +1,7 @@
-scoreboard players set $milk_count cnk.dummy 0
+scoreboard players set $milk_count spiced.dummy 0
 
-execute if data storage cnk:temp meat_grinder.Items[{components:{"minecraft:custom_data":{cnk:{ingredient:{type:"milk_bottle"}}}}}] run scoreboard players add $milk_count cnk.dummy 1
-execute if data storage cnk:temp meat_grinder.Items[{id:"minecraft:milk_bucket"}] run scoreboard players add $milk_count cnk.dummy 1
-execute if data storage cnk:temp meat_grinder.Items[{components:{"minecraft:custom_data":{cnk:{pail:{liquid:"milk"}}}}}] run scoreboard players add $milk_count cnk.dummy 1
+execute if data storage spiced:temp meat_grinder.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"milk_bottle"}}}}}] run scoreboard players add $milk_count spiced.dummy 1
+execute if data storage spiced:temp meat_grinder.Items[{id:"minecraft:milk_bucket"}] run scoreboard players add $milk_count spiced.dummy 1
+execute if data storage spiced:temp meat_grinder.Items[{components:{"minecraft:custom_data":{spiced:{pail:{liquid:"milk"}}}}}] run scoreboard players add $milk_count spiced.dummy 1
 
 return 1

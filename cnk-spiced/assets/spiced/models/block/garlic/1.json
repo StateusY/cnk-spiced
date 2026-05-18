@@ -1,5 +1,5 @@
 {
-  "parent":"cnk:block/1_block_crop_cross",
+  "parent":"spiced:block/1_block_crop_cross",
   "textures": {
     "crop": "spiced:block/garlic/1",
     "particle": "spiced:block/garlic/1"

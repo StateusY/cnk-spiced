@@ -10,15 +10,15 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {"translate":"item.cnk.lettuce","fallback":"Lettuce"},
-                "minecraft:item_model": "cnk:lettuce",
+                "minecraft:item_name": {"translate":"item.spiced.lettuce","fallback":"Lettuce"},
+                "minecraft:item_model": "spiced:lettuce",
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 0
                 },
                 "minecraft:consumable": {},
-                "minecraft:custom_data": {"cnk":{"ingredient":{"type":"lettuce"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
-                "minecraft:lore": [{"translate":"cnk.tooltip","font":"cnk:tooltip","color":"white","italic":false}]
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"lettuce"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
               }
             }
           ]

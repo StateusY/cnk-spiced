@@ -1,5 +1,5 @@
-scoreboard players set $cookie_count cnk.dummy 0
+scoreboard players set $cookie_count spiced.dummy 0
 
-execute store result score $cookie_count cnk.dummy run data remove storage cnk:temp mortar_and_pestle.Items[{id:"minecraft:cookie"}]
+execute store result score $cookie_count spiced.dummy run data remove storage spiced:temp mortar_and_pestle.Items[{id:"minecraft:cookie"}]
 
 return 1

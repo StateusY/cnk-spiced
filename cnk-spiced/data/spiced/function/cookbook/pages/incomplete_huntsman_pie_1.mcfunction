@@ -7,8 +7,8 @@ data modify storage spiced:temp register.recipe_icon_font set value "spiced:icon
 
 data modify storage spiced:temp register.ingredients set value [ \
     {key:"item.spiced.sliced_celery", font:"spiced:icons"}, \
-    {key:"item.cnk.stock", font:"spiced:icons"}, \
-    {key:"item.cnk.cooking_oil", font:"spiced:icons"}, \
+    {key:"item.spiced.stock", font:"spiced:icons"}, \
+    {key:"item.spiced.cooking_oil", font:"spiced:icons"}, \
     {key:"item.spiced.sliced_onion", font:"spiced:icons"}, \
 ]
 
