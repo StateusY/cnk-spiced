@@ -3,10 +3,11 @@ tellraw @a [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white
 scoreboard objectives add spiced.mash_time dummy
 scoreboard objectives add spiced.prepare_time dummy
 scoreboard objectives add spiced.grind_time dummy
-scoreboard objectives add spiced.flaming_cocktail minecraft.used:minecraft.splash_potion
 
-scoreboard objectives add spiced.ethanol_drunk dummy
+scoreboard objectives add spiced.hit_count dummy
+scoreboard objectives add spiced.hit_timer dummy
 
+scoreboard objectives add spiced.item_count dummy
 
 # general use constants
 scoreboard objectives add spiced.constant dummy
@@ -14,7 +15,7 @@ scoreboard objectives add spiced.dummy dummy
 scoreboard players set $1 spiced.constant 1
 scoreboard players set $1000 spiced.constant 1000
 
-kill @e[tag=spiced.booth]
+kill @e[tag=summit.booth_entity.spiced]
 function spiced:summit_booth/booth_summon_master
 scoreboard objectives add mypack dummy
 function spiced:cookbook/register_pages

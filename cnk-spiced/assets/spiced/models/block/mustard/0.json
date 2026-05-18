@@ -1,8 +1,0 @@
-{
-  "parent":"spiced:block/1_block_crop_cross",
-  "textures": {
-    "crop": "spiced:block/mustard/0",
-    "particle": "spiced:block/mustard/0"
-
-  }
-}

@@ -1,0 +1,17 @@
+{
+  "parent": "spiced:cookbook/toasts",
+  "display": {
+    "title": [{"translate":"book.spiced.toast.background","font":"spiced:advancement"},{"translate":"book.spiced.toast.unlock.ingredient","font":"spiced:advancement_text","color":"#7b613a"}],
+    "icon": {
+      "id": "minecraft:potion",
+      "components": {"minecraft:potion_contents": {"potion":"minecraft:water"}}
+    },
+    "description": "",
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

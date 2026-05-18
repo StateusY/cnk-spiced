@@ -4,9 +4,23 @@
   "book.item.spiced.mass_of_lettuce": "\ud003",
   "book.item.spiced.pan_of_lettuce": "\ud004",
   "book.item.spiced.portion_of_lettuce": "\ud005",
-  "book.item.spiced.reasonable_amount_of_lettuce": "\ud006",
+  "book.item.spiced.cinnamon": "\ud006",
+  "book.item.spiced.dough": "\ud007",
+  "book.item.spiced.any_meat": "\ud008",
+  "book.item.minecraft.bread": "\ud009",
+  "book.item.minecraft.chicken": "\ud010",
+  "book.item.spiced.diced_bread": "\ud011",
   "book.item.spiced.salt": "\ud012",
-  "book.block.minecraft.tuff": "\ud020",
+  "book.item.minecraft.egg": "\ud013",
+  "book.item.spiced.flour": "\ud014",
+  "book.item.minecraft.glass_bottle": "\ud015",
+  "book.item.spiced.lettuce": "\ud016",
+  "book.item.spiced.milk_bottle": "\ud017",
+  "book.item.spiced.pastry_dough": "\ud018",
+  "book.item.minecraft.porkchop": "\ud019",
+  "book.item.spiced.sliced_bread": "\ud020",
+  "book.item.minecraft.water": "\ud021",
+  "book.item.minecraft.wheat": "\ud022",
   "book.item.spiced.black_pepper": "\ud035",
   "book.item.spiced.celery": "\ud041",
   "book.item.spiced.diced_celery": "\ud043",
@@ -26,7 +40,23 @@
 
 
   "spiced.source": "C&K: Spiced",
+  "item.spiced.cinnamon": "Cinnamon",
+  "item.spiced.dough": "Dough",
+  "item.spiced.any_meat": "Any Meat",
+  "item.minecraft.bread": "Bread",
+  "item.minecraft.chicken": "Chicken",
+  "item.spiced.diced_bread": "Diced Bread",
   "item.spiced.salt": "Salt",
+  "item.minecraft.egg": "Eggsssssssss",
+  "item.spiced.flour": "Flour",
+  "item.minecraft.glass_bottle": "Glass Bottle",
+  "item.spiced.lettuce": "Lettuce",
+  "item.spiced.milk_bottle": "Milk Bottle",
+  "item.spiced.pastry_dough": "Pastry Dough",
+  "item.minecraft.porkchop": "Porkchop",
+  "item.spiced.sliced_bread": "Sliced Bread",
+  "item.minecraft.water": "Water",
+  "item.minecraft.wheat": "Wheat",
   "item.spiced.black_pepper": "Black Pepper",
   "item.spiced.celery": "Celery",
   "item.spiced.diced_celery": "Diced Celery",
@@ -40,10 +70,11 @@
   "item.spiced.huntsman_pie": "Huntsman Pie",
 
   "item.spiced.mortar_and_pestle": "Mortar and Pestle",
-  "item.spiced.c4t_body": "C4T",
-  "item.spiced.c4t_body.desc": "Computer Controlled Cat-like Creature Technology",
 
   "subtitles.spiced.block.mortar_and_pestle.stir": "Pestle mashes in a Mortar",
+  
+  "item.spiced.incomplete_one-third": " [1/3]",
+  "item.spiced.incomplete_two-thirds": " [2/3]",
   
   "item.spiced.unknown": "?????????",
   "book.spiced.source": "\ue001",
@@ -82,6 +113,12 @@
   
   "book.spiced.cookbook_navigation": "%1$s%2$s\ub069%3$s\ub069%4$s%5$s\ub046",
 
+  "book.spiced.toast.background": "\ua0a0a\ua022b\ua022c\ua022d\ua022e\ua022f\ua022g\ua022h\ua022i\ua022j\ua022k\ua022l\ua022m\ua022n\ua022o\ua022p\ua022q\ua022r\ua022s\ua0a1",
+  "book.spiced.toast.unlock.ingredient": "Ingredient unlocked!",
+  "book.spiced.toast.unlock.recipe": "Recipe unlocked!",
+  
+
   "spiced.tooltip": "\ua001\ub001C&K: Spiced",
+  "spiced.cnk_tooltip": "\ua001\ub001Crop & Kettle",
   "spiced.loaded": "loaded!"
 }

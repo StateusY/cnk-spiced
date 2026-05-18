@@ -24,7 +24,7 @@ advancement = """{
 toast = """{
   \"parent\": \"spiced:cookbook/toasts\",
   \"display\": {
-    \"title\": [{\"translate\":\"book.spiced.toast.background\",\"font\":\"spiced.book:advancement\"},{\"translate\":\"book.spiced.toast.unlock.ingredient\",\"font\":\"spiced.book:advancement_text\",\"color\":\"#7b613a\"}],
+    \"title\": [{\"translate\":\"book.spiced.toast.background\",\"font\":\"spiced:advancement\"},{\"translate\":\"book.spiced.toast.unlock.ingredient\",\"font\":\"spiced:advancement_text\",\"color\":\"#7b613a\"}],
     \"icon\": {
       \"id\": \"minecraft:poisonous_potato\",
       \"components\": {\"minecraft:item_model\": \"%(namespace)s:%(name)s\"}

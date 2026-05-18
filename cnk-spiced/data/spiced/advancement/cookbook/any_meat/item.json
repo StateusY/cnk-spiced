@@ -1,0 +1,39 @@
+{
+  "parent": "spiced:cookbook/root",
+  "criteria": {
+    "minecraft:porkchop": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {"items": "minecraft:porkchop"}
+        ]
+      }
+    },
+    "minecraft:beef": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {"items": "minecraft:beef"}
+        ]
+      }
+    },
+    "minecraft:chicken": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {"items": "minecraft:chicken"}
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "minecraft:porkchop",
+      "minecraft:beef",
+      "minecraft:chicken"
+    ]
+  ],
+  "rewards": {
+    "function": "spiced:cookbook/grant/any_meat"
+  }
+}

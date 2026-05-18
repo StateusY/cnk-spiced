@@ -1,1 +1,1 @@
-function spiced:summit_booth/place_plants
+function spiced:summit_booth/placements
