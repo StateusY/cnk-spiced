@@ -1,6 +1,6 @@
 data modify storage spiced:temp mortar_and_pestle.last_recipe set from entity @s item.components."minecraft:custom_data".spiced.last_recipe
 data modify storage spiced:temp mortar_and_pestle.last_recipe[].count set value 1
-execute if data storage spiced:temp mortar_and_pestle.last_recipe[{components:{"minecraft:custom_data":{spiced:{block:{type:"pail"}}}}}] run function spiced:mortar_and_pestle/repeat/pail
+# execute if data storage spiced:temp mortar_and_pestle.last_recipe[{components:{"minecraft:custom_data":{spiced:{block:{type:"pail"}}}}}] run function spiced:mortar_and_pestle/repeat/pail
 execute store result score $bowl_item_count spiced.dummy run data get storage spiced:temp mortar_and_pestle.last_recipe
 
 #remove duplicates, increase count

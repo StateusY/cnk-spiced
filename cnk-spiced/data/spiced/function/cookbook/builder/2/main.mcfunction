@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 data modify storage spiced:temp cookbook.ingredient.id set from storage spiced:temp cookbook.current_page.ingredients[0].key
 data modify storage spiced:temp cookbook.ingredient.font set from storage spiced:temp cookbook.data.font_1
 data modify storage spiced:temp cookbook.ingredient.flag set from storage spiced:temp cookbook.data.slot_1

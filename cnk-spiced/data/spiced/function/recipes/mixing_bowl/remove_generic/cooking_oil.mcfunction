@@ -1,0 +1,2 @@
+function spiced:mixing_bowl/mix/get_items
+execute if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"cooking_oil"}}}}}] run loot spawn ~ ~-0.3 ~ loot spiced:other/glass_bottle
