@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 scoreboard players set $cut_check spiced.dummy 0
 data modify storage spiced:temp cutting_board.item set from entity @s item
 

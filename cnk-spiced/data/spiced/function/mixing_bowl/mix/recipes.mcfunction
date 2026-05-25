@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 execute if score $mixing_bowl_item_count spiced.dummy matches 2 \
         if data storage spiced:temp mixing_bowl.Items[{id:"minecraft:wheat"}] \
         if function spiced:mixing_bowl/mix/generic/water if score $water_count spiced.dummy matches 1 \

@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 execute \
         if data storage spiced:temp cooking_pot.Items[{id:"minecraft:sugar"}] \
         if function spiced:cooking_pot/crafting/generic/dye if score $dye_count spiced.dummy matches 1 \

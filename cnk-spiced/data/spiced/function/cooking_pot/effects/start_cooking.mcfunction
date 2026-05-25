@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 item modify entity @s contents {"function":"minecraft:set_custom_model_data","flags":{"mode":"replace_section","size":1,"offset":0,"values":[true]}}
 
 execute if entity @s[tag=spiced.stove] run playsound minecraft:block.fire.ambient block @a[distance=..6] ~ ~ ~ 0.2 0.5

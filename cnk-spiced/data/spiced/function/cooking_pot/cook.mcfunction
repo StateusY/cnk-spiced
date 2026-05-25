@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 scoreboard players set $cooking_pot_lock spiced.dummy 0
 execute if score $unique_items spiced.dummy matches 1 run function #spiced:recipes/cooking_pot/1
 execute if score $unique_items spiced.dummy matches 2 run function #spiced:recipes/cooking_pot/2

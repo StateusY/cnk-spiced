@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 execute if score $hit_mixing_bowl_check spiced.dummy matches 1 run return fail
 
 execute on attacker if entity @s[tag=spiced.hit_mixing_bowl] run scoreboard players set $hit_mixing_bowl_check spiced.dummy 1

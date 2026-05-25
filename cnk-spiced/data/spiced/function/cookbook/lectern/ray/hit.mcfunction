@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 execute align xyz summon minecraft:marker run function spiced:cookbook/lectern/ray/store_pos
 execute store result score @s spiced.lectern_x run data get storage spiced:temp lectern.pos[0]
 execute store result score @s spiced.lectern_y run data get storage spiced:temp lectern.pos[1]

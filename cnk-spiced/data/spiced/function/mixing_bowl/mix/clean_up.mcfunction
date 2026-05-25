@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 data modify entity @s item.components."minecraft:custom_data".spiced set value {}
 tag @s add spiced.finished_mixing_bowl
 execute on passengers if entity @s[type=minecraft:item_display,tag=spiced.mixing_bowl_item] run data modify entity @n[tag=spiced.finished_mixing_bowl] item.components."minecraft:custom_data".spiced.last_recipe append from entity @s item

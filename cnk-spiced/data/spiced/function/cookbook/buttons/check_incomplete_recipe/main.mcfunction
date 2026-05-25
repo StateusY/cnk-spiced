@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 #check if we were on a incomplete page, if so then we have to recalculate
 execute if entity @s[tag=spiced.on_incomplete_page] run return run function spiced:cookbook/buttons/check_incomplete_recipe/reset
 

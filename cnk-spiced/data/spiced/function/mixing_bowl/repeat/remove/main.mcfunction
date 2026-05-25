@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 execute unless score $compress_item_count spiced.dummy matches 1.. run return fail
 data modify storage spiced:temp mixing_bowl.remove_item.id set from storage spiced:temp mixing_bowl.compress[0].id
 data modify storage spiced:temp mixing_bowl.remove_item.count set from storage spiced:temp mixing_bowl.compress[0].count

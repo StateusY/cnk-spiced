@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 $execute if data storage spiced:temp compress.'$(compress_item)' store result score $count spiced.dummy run data get storage spiced:temp mixing_bowl.compress[$(compress_item)].count
 $execute if data storage spiced:temp compress.'$(compress_item)' store result storage spiced:temp mixing_bowl.compress[$(compress_item)].count int 1 run return run scoreboard players add $count spiced.dummy 1
 

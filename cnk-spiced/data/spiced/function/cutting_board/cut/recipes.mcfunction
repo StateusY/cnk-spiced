@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 execute if data storage spiced:temp cutting_board.item{id:"minecraft:acacia_log"} run return run function spiced:recipes/cutting_board/cinnamon
 execute if entity @p[tag=spiced.interact_cutting_board,predicate=spiced:ritual_dagger,distance=..20] if data storage spiced:temp cutting_board.item{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"mystery_meat"}}}}} run return run function spiced:recipes/cutting_board/meat_guide
 

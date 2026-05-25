@@ -1,1 +1,0 @@
-execute if entity @s[tag=spiced.projectile] at @s run return run function spiced:projectiles

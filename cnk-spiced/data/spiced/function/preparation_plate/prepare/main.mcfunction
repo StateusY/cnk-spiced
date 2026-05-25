@@ -1,2 +1,0 @@
-function spiced:preparation_plate/prepare/get_items
-function #spiced:recipes/preparation_plate

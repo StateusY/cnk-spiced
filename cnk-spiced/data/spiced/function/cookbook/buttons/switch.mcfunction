@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 # value map:
 # 9901 = previous page
 # 9902 = next page
@@ -32,12 +38,12 @@ execute if score @s spiced.cookbook_buttons matches 9914 run function spiced:coo
 execute if score @s spiced.cookbook_buttons matches 9915 run function spiced:cookbook/buttons/reference_5
 
 execute if score @s spiced.cookbook_buttons matches 9921 run function spiced:cookbook/buttons/front_bookmark
-execute if score @s spiced.cookbook_buttons matches 9922 run function spiced:cookbook/buttons/staple_bookmark
-execute if score @s spiced.cookbook_buttons matches 9923 run function spiced:cookbook/buttons/snack_bookmark
-execute if score @s spiced.cookbook_buttons matches 9924 run function spiced:cookbook/buttons/light_bookmark
-execute if score @s spiced.cookbook_buttons matches 9925 run function spiced:cookbook/buttons/hearty_bookmark
-execute if score @s spiced.cookbook_buttons matches 9926 run function spiced:cookbook/buttons/feast_bookmark
-execute if score @s spiced.cookbook_buttons matches 9927 run function spiced:cookbook/buttons/dessert_bookmark
+# execute if score @s spiced.cookbook_buttons matches 9922 run function spiced:cookbook/buttons/staple_bookmark
+# execute if score @s spiced.cookbook_buttons matches 9923 run function spiced:cookbook/buttons/snack_bookmark
+# execute if score @s spiced.cookbook_buttons matches 9924 run function spiced:cookbook/buttons/light_bookmark
+# execute if score @s spiced.cookbook_buttons matches 9925 run function spiced:cookbook/buttons/hearty_bookmark
+# execute if score @s spiced.cookbook_buttons matches 9926 run function spiced:cookbook/buttons/feast_bookmark
+# execute if score @s spiced.cookbook_buttons matches 9927 run function spiced:cookbook/buttons/dessert_bookmark
 
 execute if score @s spiced.cookbook_buttons matches 9931 run function spiced:cookbook/buttons/return
 

@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 #if recipe is not discoverable, just resolve all automatically
 execute if data storage spiced:temp cookbook.current_page{discoverable:false} run return run function spiced:cookbook/auto_resolve
 

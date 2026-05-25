@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 advancement grant @p[tag=spiced.interact_mixing_bowl,distance=..20] only spiced:visible/remix
 
 data modify storage spiced:temp mixing_bowl.last_recipe set from entity @s item.components."minecraft:custom_data".spiced.last_recipe

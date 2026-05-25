@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 execute if data storage spiced:temp register.ingredients[0] run function spiced:cookbook/pages/page_gen/check_font with storage spiced:temp register.ingredients[0]
 execute if data storage spiced:temp register.ingredients[0] run data modify storage spiced:temp register.ingredients[0].font set from storage spiced:temp register.temp_font
 

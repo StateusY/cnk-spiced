@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 execute if score @s spiced.cookbook_current_page >= $front_page spiced.dummy if score @s spiced.cookbook_current_page < $staple_page spiced.dummy run return run data modify storage spiced:temp cookbook.data.front_state set value "active"
 # execute if score @s spiced.cookbook_current_page >= $staple_page spiced.dummy if score @s spiced.cookbook_current_page < $snacks_page spiced.dummy run return run data modify storage spiced:temp cookbook.data.staple_state set value "active"
 # execute if score @s spiced.cookbook_current_page >= $snacks_page spiced.dummy if score @s spiced.cookbook_current_page < $light_page spiced.dummy run return run data modify storage spiced:temp cookbook.data.snack_state set value "active"
