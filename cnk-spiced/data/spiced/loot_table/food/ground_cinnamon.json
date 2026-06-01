@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {"translate":"item.spiced.ground_cinnamon","fallback":"Ground Cinnamon"},
+                "minecraft:item_name": {"translate":"item.spiced.ground_cinnamon","fallback":"ERROR: RESOURCE PACK NOT ENABLED"},
                 "minecraft:item_model": "spiced:ground_cinnamon",
                 "minecraft:food": {
                   "nutrition": 0,

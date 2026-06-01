@@ -11,12 +11,17 @@ scoreboard objectives add spiced.item_count dummy
 scoreboard objectives add spiced.mix_time dummy
 scoreboard objectives add spiced.rotation dummy
 
+scoreboard objectives add spiced.timer dummy
+scoreboard objectives add spiced.cook_cooldown dummy
+scoreboard objectives add spiced.cook_time dummy
+
 # general use constants
 scoreboard objectives add spiced.constant dummy
 scoreboard objectives add spiced.dummy dummy
 scoreboard players set $1 spiced.constant 1
 scoreboard players set $1000 spiced.constant 1000
 
+execute as @e[tag=summit.booth_entity.spiced] on passengers run kill @s
 kill @e[tag=summit.booth_entity.spiced]
 function spiced:summit_booth/booth_summon_master
 scoreboard objectives add mypack dummy
@@ -33,7 +38,6 @@ scoreboard objectives add spiced.previous_incomplete_recipe dummy
 scoreboard objectives add spiced.next_incomplete_recipe dummy
 
 scoreboard objectives add spiced.uid dummy
-scoreboard objectives add spiced.settings trigger
 scoreboard objectives add spiced.use_lectern minecraft.custom:minecraft.interact_with_lectern
 
 function spiced:tick_2

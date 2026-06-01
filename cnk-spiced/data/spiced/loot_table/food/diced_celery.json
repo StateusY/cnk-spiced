@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {"translate":"item.spiced.diced_celery","fallback":"Diced Celery"},
+                "minecraft:item_name": {"translate":"item.spiced.diced_celery","fallback":"ERROR: RESOURCE PACK NOT ENABLED"},
                 "minecraft:item_model": "spiced:diced_celery",
                 "minecraft:food": {
                   "nutrition": 1,

@@ -75,6 +75,7 @@ data/spiced/function/cookbook/database/reset/main
 data/spiced/function/cookbook/database/set/macro
 data/spiced/function/cookbook/database/set/main
 data/spiced/function/cookbook/grant/any_meat
+data/spiced/function/cookbook/grant/bread
 data/spiced/function/cookbook/grant/butter
 data/spiced/function/cookbook/grant/chicken
 data/spiced/function/cookbook/grant/cinnamon
@@ -85,6 +86,7 @@ data/spiced/function/cookbook/grant/glass_bottle
 data/spiced/function/cookbook/grant/lettuce
 data/spiced/function/cookbook/grant/milk_bottle
 data/spiced/function/cookbook/grant/porkchop
+data/spiced/function/cookbook/grant/stock
 data/spiced/function/cookbook/grant/sunflower
 data/spiced/function/cookbook/grant/wheat
 data/spiced/function/cookbook/grant/water

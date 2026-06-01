@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {"translate":"item.spiced.salt","fallback":"Salt"},
+                "minecraft:item_name": {"translate":"item.spiced.salt","fallback":"ERROR: RESOURCE PACK NOT ENABLED"},
                 "minecraft:item_model": "spiced:salt",
                 "minecraft:food": {
                   "nutrition": 0,

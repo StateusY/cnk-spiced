@@ -2,7 +2,7 @@ setblock ~ ~ ~ minecraft:air
 
 playsound minecraft:block.bamboo_wood.place block @a ~ ~ ~ 1 2
 
-data modify storage spiced:temp rotation set value 0
+data modify storage spiced:temp rotation set value -500
 execute if score $rotation spiced.dummy matches 1350..1800 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify storage spiced:temp rotation set value -90
 execute if score $rotation spiced.dummy matches -1800..-1350 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify storage spiced:temp rotation set value -90
 execute if score $rotation spiced.dummy matches -1350..-450 align xyz positioned ~0.5 ~0.5 ~0.5 run data modify storage spiced:temp rotation set value 0

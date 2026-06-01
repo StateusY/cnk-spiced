@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {"translate":"item.spiced.mixing_bowl","fallback":"Mixing Bowl"},
+                "minecraft:item_name": {"translate":"item.spiced.mixing_bowl","fallback":"ERROR: RESOURCE PACK NOT ENABLED"},
                 "minecraft:item_model": "spiced:mixing_bowl_item",
                 "minecraft:custom_data": {"spiced":{"block":{"type":"mixing_bowl","partial_placeable":true}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
                 "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}],

@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {"translate":"item.spiced.mass_of_lettuce","fallback":"Mass of Lettuce"},
+                "minecraft:item_name": {"translate":"item.spiced.mass_of_lettuce","fallback":"ERROR: RESOURCE PACK NOT ENABLED"},
                 "minecraft:item_model": "spiced:mass_of_lettuce",
                 "minecraft:food": {
                   "nutrition": 16,

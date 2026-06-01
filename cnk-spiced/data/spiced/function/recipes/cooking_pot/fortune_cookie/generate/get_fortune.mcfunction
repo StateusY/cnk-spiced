@@ -1,1 +1,0 @@
-$data modify storage spiced:temp fortune_cookie.fortune set from storage spiced:temp fortune_cookie.fortunes[$(chosen_index)]

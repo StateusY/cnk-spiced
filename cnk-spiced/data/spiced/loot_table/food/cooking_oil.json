@@ -12,7 +12,7 @@
               "components": {
                 "minecraft:item_name": {
                   "translate": "item.spiced.cooking_oil",
-                  "fallback": "Cooking Oil"
+                  "fallback": "ERROR: RESOURCE PACK NOT ENABLED"
                 },
                 "minecraft:item_model": "spiced:cooking_oil",
                 "minecraft:food": {

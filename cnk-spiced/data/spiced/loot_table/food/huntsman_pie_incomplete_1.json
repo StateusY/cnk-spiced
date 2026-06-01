@@ -10,14 +10,14 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": [{"translate":"item.spiced.huntsman_pie_incomplete","fallback":"Incomplete Huntsman Pie"},{"translate":"item.spiced.incomplete_one-third","fallback":" [1/3]"}],
+                "minecraft:item_name": [{"translate":"item.spiced.huntsman_pie_incomplete","fallback":"ERROR: RESOURCE PACK NOT ENABLED"},{"translate":"item.spiced.incomplete_one-third","fallback":"ERROR: RESOURCE PACK NOT ENABLED"}],
                 "minecraft:item_model": "spiced:huntsman_pie_incomplete_1",
                 "minecraft:food": {
                   "nutrition": 1,
                   "saturation": 0
                 },
                 "minecraft:consumable": {},
-                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"huntsman_pie_incomplete"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"huntsman_pie_incomplete_1"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
                 "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
               }
             }

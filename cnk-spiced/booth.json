@@ -16,15 +16,29 @@
         "spiced:summit_booth/master_tick": "1t"
     },
     "sticker_book": {
-        "background_color": "#1a48c3",
+        "background_color": "#f17515",
         "region": "welded_woodlands",
         "stickers": [
             {
+                "sticker_id": "spiced_booth",
+                "sticker_texture": "spiced:sticker/spiced_booth",
+                "sticker_name": "Spiced Booth",
+                "unobtained_text": "Enter the C&K: Spiced Booth in the Welded Woodlands.",
+                "obtained_text": "Welcome to the Spiced Booth!"
+            },
+            {
                 "sticker_id": "huntsman_pie",
-                "sticker_texture": "spiced:item/pack",
-                "sticker_name": "Cook up the Huntsman Pie!",
+                "sticker_texture": "spiced:sticker/huntsman_pie",
+                "sticker_name": "Huntsman Pie",
                 "unobtained_text": "Cook up the Huntsman Pie!",
                 "obtained_text": "Rewarded for cooking up the Huntsman Pie!"
+            },
+            {
+                "sticker_id": "lettuce_line",
+                "sticker_texture": "spiced:sticker/lettuce_line",
+                "sticker_name": "Lettuce Compress",
+                "unobtained_text": "Follow the hint at the back of the book...",
+                "obtained_text": "Obtained a Reasonable Amount of Lettuce"
             }
         ]
     }

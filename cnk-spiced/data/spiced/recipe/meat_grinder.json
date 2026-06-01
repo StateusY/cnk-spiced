@@ -17,7 +17,7 @@
     "components": {
       "minecraft:item_name": {
         "translate": "item.spiced.meat_grinder",
-        "fallback": "Meat Grinder"
+        "fallback": "ERROR: RESOURCE PACK NOT ENABLED"
       },
       "minecraft:item_model": "spiced:meat_grinder_item",
       "minecraft:custom_data": {

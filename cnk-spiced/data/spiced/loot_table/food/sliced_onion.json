@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {"translate":"item.spiced.sliced_onion","fallback":"Sliced Onion"},
+                "minecraft:item_name": {"translate":"item.spiced.sliced_onion","fallback":"ERROR: RESOURCE PACK NOT ENABLED"},
                 "minecraft:item_model": "spiced:sliced_onion",
                 "minecraft:food": {
                   "nutrition": 1,

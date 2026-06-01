@@ -1,1 +1,0 @@
-$loot spawn ~ ~0.25 ~ loot spiced:food/festive_cookie/$(color)

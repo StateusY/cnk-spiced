@@ -23,21 +23,14 @@ execute unless items block ~ ~ ~ container.* * run return run execute if score @
 data modify storage spiced:temp cooking_pot.Items set from block ~ ~ ~ Items
 
 # sanitise data
-execute if data storage spiced:temp cooking_pot.Items[{components:{"minecraft:custom_data":{fathoms:{}}}}] run function spiced:cooking_pot/fathoms
+#execute if data storage spiced:temp cooking_pot.Items[{components:{"minecraft:custom_data":{fathoms:{}}}}] run function spiced:cooking_pot/fathoms
 data remove storage spiced:temp cooking_pot.Items[{components:{"minecraft:custom_data":{}}}].id
-
-# make sourdough count as bread
-execute if data storage spiced:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"sourdough_bread"}}}}}] run data modify storage spiced:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"sourdough_bread"}}}}}].id set value "minecraft:bread"
 
 data modify storage spiced:temp unique_items_check set value []
 data modify storage spiced:temp unique_items_check set from storage spiced:temp cooking_pot.Items
 
-# sanitise for pails
-data remove storage spiced:temp unique_items_check[{components:{"minecraft:custom_data":{spiced:{pail:{}}}}}].components."minecraft:custom_data".spiced.pail.quantity
-
 function spiced:cooking_pot/crafting/get_unique
 
 execute if entity @s[tag=!spiced.stove] run function spiced:cooking_pot/cook
-execute if entity @s[tag=spiced.stove] positioned ^ ^-0.4 ^0.7 run function spiced:cooking_pot/cook
 
 execute if score $cooking_pot_lock spiced.dummy matches 0 if score @s spiced.cook_time matches 1.. run function spiced:cooking_pot/stop
