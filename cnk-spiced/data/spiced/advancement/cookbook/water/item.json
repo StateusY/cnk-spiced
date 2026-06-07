@@ -1,50 +1,26 @@
 {
   "parent": "spiced:cookbook/root",
   "criteria": {
-    "minecraft:water_bucket": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          { 
-            "items": "minecraft:water_bucket"
-          }
-        ]
-      }
-    },
-    "minecraft:water_bottle": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          { 
-            "items": "minecraft:potion",
-            "components": {
-              "minecraft:potion_contents": {"potion":"minecraft:water"}
-            }
-          }
-        ]
-      }
-    },
-    "spiced:water_pail": {
+    "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": "minecraft:player_head",
+            "items": "minecraft:poisonous_potato",
             "predicates": {
-              "minecraft:custom_data": {"spiced":{"pail":{"liquid":"water"}}}
+              "minecraft:custom_data": {
+                "spiced": {
+                  "ingredient": {
+                    "type": "water"
+                  }
+                }
+              }
             }
           }
         ]
       }
     }
   },
-    "requirements": [
-    [
-      "minecraft:water_bucket",
-      "minecraft:water_bottle",
-      "spiced:water_pail"
-    ]
-  ],
   "rewards": {
     "function": "spiced:cookbook/grant/water"
   }

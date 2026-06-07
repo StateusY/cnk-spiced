@@ -11,7 +11,7 @@ execute \
         if data storage spiced:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"huntsman_pie_incomplete_2"}}}}}] \
         if data storage spiced:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"black_pepper"}}}}}] \
         if data storage spiced:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"pastry_dough"}}}}}] \
-        if data storage spiced:temp cooking_pot.Items[{id:"minecraft:chicken"}] \
-        if data storage spiced:temp cooking_pot.Items[{id:"minecraft:porkchop"}] \
+        if data storage spiced:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"chicken"}}}}}] \
+        if data storage spiced:temp cooking_pot.Items[{components:{"minecraft:custom_data":{spiced:{ingredient:{type:"porkchop"}}}}}] \
         if function spiced:cooking_pot/crafting/lock \
         run return run function spiced:recipes/cooking_pot/huntsman_pie

@@ -5,8 +5,17 @@
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
-          { 
-            "items": "minecraft:wheat"
+          {
+            "items": "minecraft:poisonous_potato",
+            "predicates": {
+              "minecraft:custom_data": {
+                "spiced": {
+                  "ingredient": {
+                    "type": "wheat"
+                  }
+                }
+              }
+            }
           }
         ]
       }

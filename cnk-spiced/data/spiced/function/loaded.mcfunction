@@ -15,6 +15,8 @@ scoreboard objectives add spiced.timer dummy
 scoreboard objectives add spiced.cook_cooldown dummy
 scoreboard objectives add spiced.cook_time dummy
 
+scoreboard objectives add spiced.get_water minecraft.used:minecraft.glass_bottle
+
 # general use constants
 scoreboard objectives add spiced.constant dummy
 scoreboard objectives add spiced.dummy dummy

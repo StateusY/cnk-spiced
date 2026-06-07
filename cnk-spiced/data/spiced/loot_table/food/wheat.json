@@ -5,7 +5,18 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:wheat"
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"translate":"item.minecraft.wheat","fallback":"ERROR: RESOURCE PACK NOT ENABLED"},
+                "minecraft:item_model": "minecraft:wheat",
+                "!minecraft:consumable": {},
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"wheat"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}}
+              }
+            }
+          ]
         }
       ]
     }

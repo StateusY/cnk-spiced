@@ -6,7 +6,16 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:bread"
+            "items": "minecraft:poisonous_potato",
+            "predicates": {
+              "minecraft:custom_data": {
+                "spiced": {
+                  "ingredient": {
+                    "type": "bread"
+                  }
+                }
+              }
+            }
           }
         ]
       }

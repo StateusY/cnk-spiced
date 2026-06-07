@@ -101,10 +101,18 @@ execute align xyz run summon item_display 221 75.5 185 {item_display:"ground",Ta
 ] \
 }
 
-execute align xyz run summon item_display 208 69 176 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:wheat_bale"}},Passengers:\
+execute align xyz run summon item_display 208 69 176 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.38268346f, 0.0f, 0.9238795f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:wheat_bale"}},Passengers:\
 [ \
-    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/wheat_bale"}},height:1.2,width:1.2,response:true},\
-    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/wheat_bale"}},height:-0.6,width:1.2,response:true},\
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/wheat_bale"}},height:1.2,width:1.5,response:true},\
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/wheat_bale"}},height:-0.6,width:1.5,response:true},\
+    {id:"minecraft:item_display",Tags:["smithed.static","summit.booth_entity.spiced"],item: {count: 1, id: "minecraft:wheat"}, transformation: {left_rotation: [0.17055333f, 0.74101645f, 0.009178937f, 0.6494013f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.7f, 0.5f, 0.387f]}}, \
+    {id:"minecraft:item_display",Tags:["smithed.static","summit.booth_entity.spiced"],item: {count: 1, id: "minecraft:wheat"}, transformation: {left_rotation: [-0.08214273f, -0.6239365f, 0.10143797f, 0.7704975f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-0.4f, 0.6f, -0.7f]}}, \
+    {id:"minecraft:item_display",Tags:["smithed.static","summit.booth_entity.spiced"],item: {count: 1, id: "minecraft:wheat"}, transformation: {left_rotation: [-0.20030184f, 0.68645394f, -0.21331298f, 0.665701f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 0.8f, 0.2f]}}, \
+    {id:"minecraft:item_display",Tags:["smithed.static","summit.booth_entity.spiced"],item: {count: 1, id: "minecraft:wheat"}, transformation: {left_rotation: [0.10143793f, 0.7704974f, 0.082142726f, 0.6239365f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.4f, 0.4f, 0.6f]}}, \
+    {id:"minecraft:item_display",Tags:["smithed.static","summit.booth_entity.spiced"],item: {count: 1, id: "minecraft:wheat"}, transformation: {left_rotation: [0.2032888f, -0.17400773f, 0.7668287f, -0.5834114f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.55f, 0.3f, -0.45f]}}, \
+    {id:"minecraft:item_display",Tags:["smithed.static","summit.booth_entity.spiced"],item: {count: 1, id: "minecraft:wheat"}, transformation: {left_rotation: [0.6532815f, 0.27059808f, -0.27059808f, 0.6532815f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-1.0f, -0.5f, 0.8f]}}, \
+    {id:"minecraft:item_display",Tags:["smithed.static","summit.booth_entity.spiced"],item: {count: 1, id: "minecraft:wheat"}, transformation: {left_rotation: [0.704927f, -0.055478975f, 0.055478975f, 0.704927f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [-1.0f, -0.5f, -1.0f]}}, \
+    {id:"minecraft:item_display",Tags:["smithed.static","summit.booth_entity.spiced"],item: {count: 1, id: "minecraft:wheat"}, transformation: {left_rotation: [-0.043168034f, -0.7057879f, 0.7057879f, -0.043168034f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.9f, -0.5f, 0.8f]}}, \
 ] \
 }
 
@@ -131,3 +139,17 @@ execute align xyz run summon item_display 205 69.5 194 {item_display:"ground",Ta
 ] \
 }
 
+execute align xyz run summon item_display 198 64.5 185 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:water_bucket"}},Passengers:\
+[ \
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/water_bucket"}},height:0.2,width:0.6,response:true},\
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/water_bucket"}},height:-0.6,width:0.6,response:true},\
+] \
+}
+execute align xyz run summon item_display 228 66.5 185 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:water_bucket"}},Passengers:\
+[ \
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/water_bucket"}},height:0.2,width:0.6,response:true},\
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/water_bucket"}},height:-0.6,width:0.6,response:true},\
+] \
+}
+
+execute align xyz run summon item_display 190 56 195 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 1f, 0.0f, 0f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:pearl_jam_plush_block"}}}

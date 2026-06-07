@@ -3,4 +3,4 @@ execute unless items entity @s weapon.mainhand glass_bottle run return run title
 
 playsound minecraft:item.bottle.fill block @a[distance=..15]
 item modify entity @s[gamemode=!creative] weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
-loot give @s loot spiced:food/milk_bottle
+loot give @s loot spiced:food/water_bottle

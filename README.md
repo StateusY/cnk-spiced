@@ -147,20 +147,12 @@ data/spiced/function/cooking_pot/interact/store
 data/spiced/function/cooking_pot/post_cook/find
 data/spiced/function/cooking_pot/post_cook/on_chef
 
-data/spiced/function/cutting_board/in_partial
 data/spiced/function/cutting_board/macro
 data/spiced/function/cutting_board/place
-data/spiced/function/cutting_board/tick
-data/spiced/function/cutting_board/break/break
-data/spiced/function/cutting_board/break/check
 data/spiced/function/cutting_board/cut/finish
 data/spiced/function/cutting_board/cut/main
 data/spiced/function/cutting_board/cut/on_chef
 data/spiced/function/cutting_board/cut/recipes
-data/spiced/function/cutting_board/cut/durability/apply
-data/spiced/function/cutting_board/cut/durability/break
-data/spiced/function/cutting_board/cut/durability/handle
-data/spiced/function/cutting_board/cut/durability/unbreaking
 data/spiced/function/cutting_board/hit/check
 data/spiced/function/cutting_board/hit/main
 data/spiced/function/cutting_board/interact/check
@@ -180,12 +172,9 @@ data/spiced/function/gu/zzz/get_hexes
 data/spiced/function/gu/zzz/load
 data/spiced/function/gu/zzz/store_uuid
 
-data/spiced/function/mixing_bowl/in_partial
 data/spiced/function/mixing_bowl/macro
 data/spiced/function/mixing_bowl/place
 data/spiced/function/mixing_bowl/tick
-data/spiced/function/mixing_bowl/break/break
-data/spiced/function/mixing_bowl/break/check
 data/spiced/function/mixing_bowl/hit/check
 data/spiced/function/mixing_bowl/hit/main
 data/spiced/function/mixing_bowl/hit/remove_last

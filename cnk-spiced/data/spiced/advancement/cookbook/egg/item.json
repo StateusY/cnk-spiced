@@ -1,66 +1,26 @@
 {
   "parent": "spiced:cookbook/root",
   "criteria": {
-    "minecraft:egg": {
+    "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
-          { 
-            "items": "minecraft:egg"
-          }
-        ]
-      }
-    },
-    "minecraft:blue_egg": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          { 
-            "items": "minecraft:blue_egg"
-          }
-        ]
-      }
-    },
-    "minecraft:brown_egg": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          { 
-            "items": "minecraft:brown_egg"
-          }
-        ]
-      }
-    },
-    "minecraft:turtle_egg": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          { 
-            "items": "minecraft:turtle_egg"
-          }
-        ]
-      }
-    },
-    "minecraft:sniffer_egg": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          { 
-            "items": "minecraft:sniffer_egg"
+          {
+            "items": "minecraft:poisonous_potato",
+            "predicates": {
+              "minecraft:custom_data": {
+                "spiced": {
+                  "ingredient": {
+                    "type": "egg"
+                  }
+                }
+              }
+            }
           }
         ]
       }
     }
   },
-  "requirements": [
-    [
-      "minecraft:egg",
-      "minecraft:blue_egg",
-      "minecraft:brown_egg",
-      "minecraft:turtle_egg",
-      "minecraft:sniffer_egg"
-    ]
-  ],
   "rewards": {
     "function": "spiced:cookbook/grant/egg"
   }

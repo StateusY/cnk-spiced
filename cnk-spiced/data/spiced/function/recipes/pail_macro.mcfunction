@@ -1,1 +1,0 @@
-$execute at @s run item modify block ~ ~ ~ container.$(slot) [{"function":"minecraft:set_custom_data","tag":{"spiced":{"pail":{"quantity":$(pail_quantity)}}}},{"function":"minecraft:set_lore","lore":[{"translate":"tooltip.spiced.pail.quantity","with":["$(pail_quantity)","32"],"color":"gray","italic":false}],"mode":"replace_section","offset":0,"size":1}]
