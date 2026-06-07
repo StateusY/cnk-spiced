@@ -1,1 +1,0 @@
-$loot spawn ~ ~.7 ~ loot spiced:pot/items/$(spiced_booth_pot_content)
