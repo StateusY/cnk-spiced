@@ -11,7 +11,7 @@
               "minecraft:custom_data": {
                 "spiced": {
                   "ingredient": {
-                    "type": "water"
+                    "type": "water_bottle"
                   }
                 }
               }

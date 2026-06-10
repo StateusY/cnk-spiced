@@ -145,3 +145,12 @@ execute align xyz run summon item_display 208 69 176 {item_display:"ground",Tags
     {id:"minecraft:item_display",Tags:["smithed.static","summit.booth_entity.spiced"],item: {count: 1, id: "minecraft:wheat"}, transformation: {left_rotation: [-0.043168034f, -0.7057879f, 0.7057879f, -0.043168034f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.9f, -0.5f, 0.8f]}}, \
 ] \
 }
+
+# lettuce fountain in fountain
+execute align xyz run summon item_display 185 53.5 178 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.001f,1.001f,1.001f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:fountain_base"}}}
+execute align xyz run summon item_display 185 55.375 178 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.1305262f, 0.0f, 0.9914449f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.001f,1.001f,1.001f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:fountain_statue"}},Passengers:\
+[ \
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/lettuce_fountain"}},height:1.2,width:1,response:true},\
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/lettuce_fountain"}},height:-0.6,width:1,response:true}\
+] \
+}

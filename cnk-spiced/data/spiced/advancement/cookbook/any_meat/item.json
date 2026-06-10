@@ -5,15 +5,17 @@
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
-          {"items": "minecraft:porkchop"}
-        ]
-      }
-    },
-    "minecraft:beef": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {"items": "minecraft:beef"}
+          {"items": "minecraft:poisonous_potato",
+            "predicates": {
+              "minecraft:custom_data": {
+                "spiced": {
+                  "ingredient": {
+                    "type": "porkchop"
+                  }
+                }
+              }
+            }
+          }
         ]
       }
     },
@@ -21,7 +23,17 @@
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
-          {"items": "minecraft:chicken"}
+          {"items": "minecraft:poisonous_potato",
+            "predicates": {
+              "minecraft:custom_data": {
+                "spiced": {
+                  "ingredient": {
+                    "type": "chicken"
+                  }
+                }
+              }
+            }
+          }
         ]
       }
     }
@@ -29,7 +41,6 @@
   "requirements": [
     [
       "minecraft:porkchop",
-      "minecraft:beef",
       "minecraft:chicken"
     ]
   ],

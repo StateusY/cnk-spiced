@@ -38,6 +38,7 @@ scoreboard players set $1 spiced.constant 1
 scoreboard players set $16 spiced.constant 16
 scoreboard players set $64 spiced.constant 64
 scoreboard players set $1000 spiced.constant 1000
+scoreboard players set $15625 spiced.constant 15625
 
 # clear old entities
 execute as @e[tag=summit.booth_entity.spiced] on passengers run kill @s

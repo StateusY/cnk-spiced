@@ -12,3 +12,11 @@
 
 # huntsman pie info
 # tellraw @s [{text:"These are the workstations that you can use to make the Huntsman Pie! Hopefully you enjoy this little sample of "},{text:"Spiced","font":"spiced:tooltip"},{text:"'s cooking structure!\n\nRead the first page of your cookbook to begin!"}]
+
+playsound minecraft:block.creaking_heart.idle master @s ~ ~ ~ 0.47 0.6
+schedule function
+execute if score @s delay matches 0 run playsound minecraft:block.creaking_heart.idle master @s ~ ~ ~ 0.47 0.6
+execute if score @s delay matches 7 run playsound minecraft:block.dried_ghast.transition master @s ~ ~ ~ 0.49 0.56
+execute if score @s delay matches 10 run playsound minecraft:block.creaking_heart.spawn master @s ~ ~ ~ 0.01 0.5
+execute if score @s delay matches 12 run playsound minecraft:block.creaking_heart.place master @s ~ ~ ~ 0.13 0.5
+execute if score @s delay matches 16 run playsound minecraft:entity.warden.heartbeat master @s ~ ~ ~ 0.23 0.69

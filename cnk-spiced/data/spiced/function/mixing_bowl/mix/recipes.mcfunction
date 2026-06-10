@@ -5,8 +5,8 @@
 #------------------------------------------------------------------------------------
 
 execute if score $mixing_bowl_item_count spiced.dummy matches 2 \
-        if data storage spiced:temp mixing_bowlmixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"wheat"}}}}}] \
-        if function spiced:mixing_bowl/mix/generic/water if score $water_count spiced.dummy matches 1 \
+        if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"wheat"}}}}}] \
+        if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"water_bottle"}}}}}] \
         if function spiced:mixing_bowl/mix/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mix_callback set value "spiced:recipes/mixing_bowl/dough"
 
