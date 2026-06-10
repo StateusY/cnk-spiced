@@ -1,5 +1,6 @@
 tellraw @a [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false},{text:" ","font":"minecraft:default"},{"translate":spiced.loaded,"font":"minecraft:default"}]
 
+# blocks
 scoreboard objectives add spiced.mash_time dummy
 scoreboard objectives add spiced.prepare_time dummy
 scoreboard objectives add spiced.grind_time dummy
@@ -17,18 +18,6 @@ scoreboard objectives add spiced.cook_time dummy
 
 scoreboard objectives add spiced.get_water minecraft.used:minecraft.glass_bottle
 
-# general use constants
-scoreboard objectives add spiced.constant dummy
-scoreboard objectives add spiced.dummy dummy
-scoreboard players set $1 spiced.constant 1
-scoreboard players set $1000 spiced.constant 1000
-
-execute as @e[tag=summit.booth_entity.spiced] on passengers run kill @s
-kill @e[tag=summit.booth_entity.spiced]
-function spiced:summit_booth/booth_summon_master
-scoreboard objectives add mypack dummy
-function spiced:cookbook/register_pages
-
 # book
 scoreboard objectives add spiced.use_book minecraft.used:minecraft.written_book
 scoreboard objectives add spiced.cookbook_buttons trigger
@@ -42,11 +31,20 @@ scoreboard objectives add spiced.next_incomplete_recipe dummy
 scoreboard objectives add spiced.uid dummy
 scoreboard objectives add spiced.use_lectern minecraft.custom:minecraft.interact_with_lectern
 
+# general use constants
+scoreboard objectives add spiced.constant dummy
+scoreboard objectives add spiced.dummy dummy
+scoreboard players set $1 spiced.constant 1
+scoreboard players set $16 spiced.constant 16
+scoreboard players set $64 spiced.constant 64
+scoreboard players set $1000 spiced.constant 1000
+
+# clear old entities
+execute as @e[tag=summit.booth_entity.spiced] on passengers run kill @s
+kill @e[tag=summit.booth_entity.spiced]
+setblock 220 66 189 air
+
+# functions
+function spiced:summit_booth/placements/main
+function spiced:cookbook/register_pages
 function spiced:tick_2
-
-#------------------------------------------------------------------------------------
-# HEY! This file is code from Crop & Kettle by Creature Comforts!
-# We have been given permission to utilize it for use at smithed summit by MaybeJake.
-# We do NOT claim any legal right or creative license to this file.
-#------------------------------------------------------------------------------------
-

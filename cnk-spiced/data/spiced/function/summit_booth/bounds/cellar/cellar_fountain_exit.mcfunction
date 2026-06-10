@@ -1,6 +1,6 @@
-tag @s remove spiced.cellar_dwellar
-effect clear @s minecraft:blindness
-tp @s 218 66 189 ~180 ~
+stopsound @s ambient spiced:ambient.fountain.guitar
+effect give @s minecraft:blindness infinite 0 true
+tp @s 193 53 177 ~90 ~
 
 playsound minecraft:block.wooden_door.open block @s ~ ~ ~ 1 0.3
 playsound minecraft:block.wooden_door.open block @s ~ ~ ~ 1 0.5

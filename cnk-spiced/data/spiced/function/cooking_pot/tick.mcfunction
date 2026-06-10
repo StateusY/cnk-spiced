@@ -4,8 +4,6 @@
 # We do NOT claim any legal right or creative license to this file.
 #------------------------------------------------------------------------------------
 
-execute unless block ~ ~ ~ minecraft:hopper[facing=down] run return run function spiced:cooking_pot/break
-
 function spiced:cooking_pot/effects/flame
 
 scoreboard players add @s spiced.timer 1

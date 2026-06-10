@@ -1,1 +1,0 @@
-function spiced:summit_booth/placements

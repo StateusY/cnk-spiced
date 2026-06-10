@@ -120,9 +120,7 @@ data/spiced/function/cookbook/sections/front/register
 data/spiced/function/cookbook/stamp/build
 data/spiced/function/cookbook/stamp/main
 
-data/spiced/function/cooking_pot/break
 data/spiced/function/cooking_pot/cook
-data/spiced/function/cooking_pot/drop
 data/spiced/function/cooking_pot/macro
 data/spiced/function/cooking_pot/place
 data/spiced/function/cooking_pot/stop

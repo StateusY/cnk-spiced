@@ -126,5 +126,15 @@
       }
     ],
     "subtitle": "subtitles.spiced.block.mixing_bowl.stir"
+  },
+  "ambient.fountain.guitar": {
+    "sounds": [
+      {
+        "name": "spiced:guitar",
+        "attenuation_distance": 6,
+        "volume": 0.8
+      }
+    ],
+    "subtitle": "subtitles.spiced.block.mixing_bowl.stir"
   }
 }
