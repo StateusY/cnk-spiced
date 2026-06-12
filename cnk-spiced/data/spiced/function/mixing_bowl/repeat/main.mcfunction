@@ -4,8 +4,6 @@
 # We do NOT claim any legal right or creative license to this file.
 #------------------------------------------------------------------------------------
 
-advancement grant @p[tag=spiced.interact_mixing_bowl,distance=..20] only spiced:visible/remix
-
 data modify storage spiced:temp mixing_bowl.last_recipe set from entity @s item.components."minecraft:custom_data".spiced.last_recipe
 data modify storage spiced:temp mixing_bowl.last_recipe[].count set value 1
 execute if data storage spiced:temp mixing_bowl.last_recipe[{components:{"minecraft:custom_data":{spiced:{block:{type:"pail"}}}}}] run function spiced:mixing_bowl/repeat/pail

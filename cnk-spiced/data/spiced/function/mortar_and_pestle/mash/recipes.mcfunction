@@ -13,32 +13,32 @@ execute if score $mortar_and_pestle_item_count spiced.dummy matches 1 \
         if function spiced:mortar_and_pestle/mash/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/ground_cinnamon"
 
-execute if score $mortar_and_pestle_item_count spiced.dummy matches 5 \
-        if function spiced:mortar_and_pestle/mash/generic/duplicate/lettuce if score $lettuce_count spiced.dummy matches 5 \
+execute if score $mortar_and_pestle_item_count spiced.dummy matches 3 \
+        if function spiced:mortar_and_pestle/mash/generic/duplicate/lettuce if score $lettuce_count spiced.dummy matches 3 \
         if function spiced:mortar_and_pestle/mash/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/ball_of_lettuce"
 
-execute if score $mortar_and_pestle_item_count spiced.dummy matches 5 \
-        if function spiced:mortar_and_pestle/mash/generic/duplicate/ball_of_lettuce if score $ball_of_lettuce_count spiced.dummy matches 5 \
+execute if score $mortar_and_pestle_item_count spiced.dummy matches 3 \
+        if function spiced:mortar_and_pestle/mash/generic/duplicate/ball_of_lettuce if score $ball_of_lettuce_count spiced.dummy matches 3 \
         if function spiced:mortar_and_pestle/mash/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/chunk_of_lettuce"
 
-execute if score $mortar_and_pestle_item_count spiced.dummy matches 5 \
-        if function spiced:mortar_and_pestle/mash/generic/duplicate/chunk_of_lettuce if score $chunk_of_lettuce_count spiced.dummy matches 5 \
+execute if score $mortar_and_pestle_item_count spiced.dummy matches 3 \
+        if function spiced:mortar_and_pestle/mash/generic/duplicate/chunk_of_lettuce if score $chunk_of_lettuce_count spiced.dummy matches 3 \
         if function spiced:mortar_and_pestle/mash/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/mass_of_lettuce"
 
-execute if score $mortar_and_pestle_item_count spiced.dummy matches 5 \
-        if function spiced:mortar_and_pestle/mash/generic/duplicate/mass_of_lettuce if score $mass_of_lettuce_count spiced.dummy matches 5 \
+execute if score $mortar_and_pestle_item_count spiced.dummy matches 3 \
+        if function spiced:mortar_and_pestle/mash/generic/duplicate/mass_of_lettuce if score $mass_of_lettuce_count spiced.dummy matches 3 \
         if function spiced:mortar_and_pestle/mash/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/pan_of_lettuce"
 
-execute if score $mortar_and_pestle_item_count spiced.dummy matches 5 \
-        if function spiced:mortar_and_pestle/mash/generic/duplicate/pan_of_lettuce if score $pan_of_lettuce_count spiced.dummy matches 5 \
+execute if score $mortar_and_pestle_item_count spiced.dummy matches 3 \
+        if function spiced:mortar_and_pestle/mash/generic/duplicate/pan_of_lettuce if score $pan_of_lettuce_count spiced.dummy matches 3 \
         if function spiced:mortar_and_pestle/mash/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/portion_of_lettuce"
 
-execute if score $mortar_and_pestle_item_count spiced.dummy matches 5 \
-        if function spiced:mortar_and_pestle/mash/generic/duplicate/portion_of_lettuce if score $portion_of_lettuce_count spiced.dummy matches 5 \
+execute if score $mortar_and_pestle_item_count spiced.dummy matches 3 \
+        if function spiced:mortar_and_pestle/mash/generic/duplicate/portion_of_lettuce if score $portion_of_lettuce_count spiced.dummy matches 3 \
         if function spiced:mortar_and_pestle/mash/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/reasonable_amount_of_lettuce"

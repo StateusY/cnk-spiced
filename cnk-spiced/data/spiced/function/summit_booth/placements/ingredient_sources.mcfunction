@@ -31,28 +31,28 @@ execute align xyz run summon item_display 196 65.5 170 {item_display:"ground",Ta
 # - BAGS -
 
 # salt bag by cabin
-execute align xyz run summon item_display 218 66.5 193 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:salt_bag"}},Passengers:\
-[ \
-    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/salt_bag"}},height:0.6,width:1.2,response:true},\
-    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/salt_bag"}},height:-0.6,width:1.2,response:true},\
-] \
-}
+# execute align xyz run summon item_display 218 66.5 193 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:salt_bag"}},Passengers:\
+# [ \
+#     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/salt_bag"}},height:0.6,width:1.2,response:true},\
+#     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/salt_bag"}},height:-0.6,width:1.2,response:true},\
+# ] \
+# }
 
 # black pepper bag by cabin
-execute align xyz run summon item_display 224 67.5 195 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:black_pepper_bag"}},Passengers:\
-[ \
-    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/black_pepper_bag"}},height:0.6,width:1.2,response:true},\
-    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/black_pepper_bag"}},height:-0.6,width:1.2,response:true},\
-] \
-}
+# execute align xyz run summon item_display 224 67.5 195 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:black_pepper_bag"}},Passengers:\
+# [ \
+#     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/black_pepper_bag"}},height:0.6,width:1.2,response:true},\
+#     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/black_pepper_bag"}},height:-0.6,width:1.2,response:true},\
+# ] \
+# }
 
 # cinnamon bag in cabin
-execute align xyz run summon item_display 227 66.5 190 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:cinnamon_bag"}},Passengers:\
-[ \
-    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/cinnamon_bag"}},height:0.6,width:1.2,response:true},\
-    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/cinnamon_bag"}},height:-0.6,width:1.2,response:true},\
-] \
-}
+# execute align xyz run summon item_display 227 66.5 190 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:cinnamon_bag"}},Passengers:\
+# [ \
+#     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/cinnamon_bag"}},height:0.6,width:1.2,response:true},\
+#     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/cinnamon_bag"}},height:-0.6,width:1.2,response:true},\
+# ] \
+# }
 
 
 # - BUCKETS -
@@ -75,6 +75,13 @@ execute align xyz run summon item_display 198 64.5 185 {item_display:"ground",Ta
 
 # water bucket 2 in cabin
 execute align xyz run summon item_display 228 66.5 185 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:water_bucket"}},Passengers:\
+[ \
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/water_bucket"}},height:0.2,width:0.6,response:true},\
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/water_bucket"}},height:-0.6,width:0.6,response:true},\
+] \
+}
+# water bucket 3 on boat
+execute align xyz run summon item_display 213 66.5 205 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:water_bucket"}},Passengers:\
 [ \
     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/water_bucket"}},height:0.2,width:0.6,response:true},\
     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/water_bucket"}},height:-0.6,width:0.6,response:true},\
@@ -147,10 +154,17 @@ execute align xyz run summon item_display 208 69 176 {item_display:"ground",Tags
 }
 
 # lettuce fountain in fountain
-execute align xyz run summon item_display 185 53.5 178 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.001f,1.001f,1.001f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:fountain_base"}}}
-execute align xyz run summon item_display 185 55.375 178 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.1305262f, 0.0f, 0.9914449f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.001f,1.001f,1.001f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:fountain_statue"}},Passengers:\
+execute align xyz run summon item_display 185 53.5 178 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.001f,1.001f,1.001f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:fountain_base"}},Passengers:\
 [ \
-    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/lettuce_fountain"}},height:1.2,width:1,response:true},\
-    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/lettuce_fountain"}},height:-0.6,width:1,response:true}\
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/lettuce_fountain"}},height:3.2,width:1,response:true} \
+    ] \
+}
+
+execute align xyz run summon interaction 185 53.5 178 {Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/lettuce_fountain"}},height:0.2,width:2.5,response:true}
+execute align xyz run summon item_display 185 55.375 178 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced","spiced.lettuce_statue"],transformation:{left_rotation: [0.0f, 0.1305262f, 0.0f, 0.9914449f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:fountain_statue"}},Passengers:\
+[ \
+    {id:"minecraft:item_display",Tags:["smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [-0.120244995f, -0.5608763f, 0.19247305f, 0.79618657f],right_rotation:[0f,0f,0f,1f],translation:[-0.6f,0.45f,-0.3f],scale:[1f,1f,1f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:petrified_brush"}}},\
+    {id:"minecraft:item_display",Tags:["smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [-0.04744964f, 0.9088989f, 0.19770616f, 0.36409298f],right_rotation:[0f,0f,0f,1f],translation:[0.7f,1.6f,0.7f],scale:[0.9f,0.9f,0.9f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:petrified_lettuce"}}}\
 ] \
 }
+execute align xyz run summon interaction 186.3125 56.4375 179.1875 {Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/lettuce_fountain"}},height:0.9,width:1,response:true}

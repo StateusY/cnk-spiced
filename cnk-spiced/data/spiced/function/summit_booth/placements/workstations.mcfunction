@@ -10,3 +10,9 @@ execute positioned 220 67 188 run function spiced:cutting_board/place
 scoreboard players set $rotation spiced.dummy -500
 data modify storage spiced:temp block.data set from block ~ ~ ~
 execute positioned 220 67 187 run function spiced:mixing_bowl/place
+
+# nook mortar and pestles
+execute positioned 180 54 191 run function spiced:mortar_and_pestle/place
+execute positioned 181 54 191 run function spiced:mortar_and_pestle/place
+execute positioned 182 54 192 run function spiced:mortar_and_pestle/place
+execute positioned 179 54 192 run function spiced:mortar_and_pestle/place

@@ -8,7 +8,7 @@ execute if score $global spiced.item_count matches 5 run data merge entity @s {t
 execute if score $hand_place spiced.dummy matches 1 run item replace entity @s contents from entity @p[tag=spiced.interact_mortar_and_pestle] weapon.mainhand
 execute if score $hand_place spiced.dummy matches 0 run data modify entity @s item set from storage spiced:temp mortar_and_pestle.input
 
-execute at @s rotated as @n[type=minecraft:item_display,tag=spiced.mortar_and_pestle] run tp @s ~ ~ ~ ~ ~
+execute at @s rotated as @n[type=minecraft:item_display,tag=spiced.mortar_and_pestle] run rotate @s ~ ~
 ride @s mount @n[type=minecraft:item_display,tag=spiced.mortar_and_pestle]
 playsound minecraft:block.bamboo_wood.step block @a ~ ~ ~ 1 2
 
