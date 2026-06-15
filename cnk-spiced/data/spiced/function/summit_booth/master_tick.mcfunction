@@ -3,9 +3,6 @@ execute positioned 223 57 180 as @a[distance=..3,gamemode=!creative] run functio
 execute positioned 178 53 188 as @a[distance=..0.5,gamemode=!creative] at @s run function spiced:summit_booth/bounds/cellar/fountain/enter1
 execute positioned 176 53 185 as @a[distance=..0.5,gamemode=!creative] at @s run function spiced:summit_booth/bounds/cellar/fountain/exit1
 execute positioned 193 53 174 as @a[distance=..0.5,gamemode=!creative] at @s run function spiced:summit_booth/bounds/cellar/fountain/exit2
-execute positioned 189 53 170 as @a[distance=..0.5,gamemode=!creative] at @s run function spiced:summit_booth/bounds/cellar/nook/enter
-execute positioned 186 53 199 as @a[distance=..0.5,gamemode=!creative] at @s run function spiced:summit_booth/bounds/cellar/nook/exit
-
 
 
 execute positioned 217 66 184 as @a[distance=..3,gamemode=!creative, tag=!spiced.entered_booth] run function spiced:summit_booth/bounds/cabin/enter

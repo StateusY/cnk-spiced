@@ -1,1 +1,0 @@
-execute as @a[tag=spiced.trapdoor_passage] at @s run function spiced:summit_booth/bounds/trapdoor_passage_sfx
