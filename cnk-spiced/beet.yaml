@@ -1,0 +1,22 @@
+data_pack:
+  load: .
+  min_format: [94,1]
+  max_format: [107,1]
+
+resource_pack:
+  load: .
+  min_format: [75,0]
+  max_format: [88,0]
+
+require:
+  - cnk-spiced.plugins.recipes.load_recipes
+
+pipeline:
+  - cnk-spiced.plugins.recipes
+  - mecha
+
+output: .build
+
+"description": [
+  {"text":"Spiced, an addon for Crop and Kettle!"}
+]
