@@ -1,1 +1,1 @@
-say exited spiced's booth
+# say exited spiced's booth
