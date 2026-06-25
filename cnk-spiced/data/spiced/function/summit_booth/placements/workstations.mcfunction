@@ -1,6 +1,7 @@
 # this function places all 4 workstations present in the cabin
 
-execute positioned 220 67 190 run function spiced:mortar_and_pestle/place
+execute positioned 220 67 191 run function spiced:mortar_and_pestle/place
+execute positioned 220 66 190 run function spiced:cooking_pot/place
 execute positioned 220 66 189 run function spiced:cooking_pot/place
 
 scoreboard players set $rotation spiced.dummy 0
