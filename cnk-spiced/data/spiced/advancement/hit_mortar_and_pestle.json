@@ -5,7 +5,7 @@
       "conditions": {
         "entity": {
           "minecraft:entity_type": "minecraft:interaction",
-          "nbt": "{Tags:[\"spiced.mortar_and_pestle_interaction\"]}"
+          "minecraft:entity_tags":{"any_of":["spiced.mortar_and_pestle_interaction"]}
         }
       }
     }

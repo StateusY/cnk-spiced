@@ -10,8 +10,8 @@ data modify storage spiced:temp register.tool set value "spiced.mixing_bowl"
 data modify storage spiced:temp register.page_name set value "item.spiced.dough"
 data modify storage spiced:temp register.recipe_icon_font set value "spiced:icons"
 data modify storage spiced:temp register.ingredients set value [ \
-    {key:"item.minecraft.wheat", font:"spiced:icons"}, \
-    {key:"item.minecraft.water", font:"spiced:icons"}, \
+    {key:"item.spiced.flour", font:"spiced:icons"}, \
+    {key:"item.spiced.water", font:"spiced:icons"}, \
 ]
 
 data modify storage spiced:temp register.source set value {key:"spiced.source", font:"spiced:icons"}

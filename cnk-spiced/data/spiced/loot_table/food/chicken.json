@@ -10,7 +10,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": {"translate":"item.minecraft.chicken","fallback":"ERROR: RESOURCE PACK NOT ENABLED"},
+                "minecraft:item_name": {"translate":"item.spiced.chicken","fallback":"ERROR: RESOURCE PACK NOT ENABLED"},
                 "minecraft:item_model": "minecraft:chicken",
                 "minecraft:food": {
                   "nutrition": 2,

@@ -5,7 +5,7 @@ data modify storage spiced:temp register.page_name set value "item.spiced.pastry
 data modify storage spiced:temp register.recipe_icon_font set value "spiced:icons"
 
 data modify storage spiced:temp register.ingredients set value [ \
-    {key:"item.minecraft.egg", font:"spiced:icons"}, \
+    {key:"item.spiced.egg", font:"spiced:icons"}, \
     {key:"item.spiced.flour", font:"spiced:icons"}, \
     {key:"item.spiced.butter", font:"spiced:icons"}, \
     {key:"item.spiced.salt", font:"spiced:icons"}, \

@@ -5,7 +5,7 @@
       "conditions": {
         "entity": {
           "minecraft:entity_type": "minecraft:interaction",
-          "nbt": "{Tags:[\"spiced.cutting_board_interaction\"]}"
+          "minecraft:entity_tags":{"any_of":["spiced.cutting_board_interaction"]}
         }
       }
     }

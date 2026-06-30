@@ -28,33 +28,6 @@ execute align xyz run summon item_display 196 65.5 170 {item_display:"ground",Ta
 }
 
 
-# - BAGS -
-
-# salt bag by cabin
-# execute align xyz run summon item_display 218 66.5 193 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:salt_bag"}},Passengers:\
-# [ \
-#     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/salt_bag"}},height:0.6,width:1.2,response:true},\
-#     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/salt_bag"}},height:-0.6,width:1.2,response:true},\
-# ] \
-# }
-
-# black pepper bag by cabin
-# execute align xyz run summon item_display 224 67.5 195 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:black_pepper_bag"}},Passengers:\
-# [ \
-#     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/black_pepper_bag"}},height:0.6,width:1.2,response:true},\
-#     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/black_pepper_bag"}},height:-0.6,width:1.2,response:true},\
-# ] \
-# }
-
-# cinnamon bag in cabin
-# execute align xyz run summon item_display 227 66.5 190 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:cinnamon_bag"}},Passengers:\
-# [ \
-#     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/cinnamon_bag"}},height:0.6,width:1.2,response:true},\
-#     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/cinnamon_bag"}},height:-0.6,width:1.2,response:true},\
-# ] \
-# }
-
-
 # - BUCKETS -
 
 # milk bucket in exterior
@@ -81,7 +54,7 @@ execute align xyz run summon item_display 228 66.5 185 {item_display:"ground",Ta
 ] \
 }
 # water bucket 3 on boat
-execute align xyz run summon item_display 213 66.5 205 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:water_bucket"}},Passengers:\
+execute align xyz run summon item_display 209 66.5 205 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:water_bucket"}},Passengers:\
 [ \
     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/water_bucket"}},height:0.2,width:0.6,response:true},\
     {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/water_bucket"}},height:-0.6,width:0.6,response:true},\

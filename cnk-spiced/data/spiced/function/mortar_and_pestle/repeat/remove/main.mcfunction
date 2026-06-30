@@ -1,3 +1,9 @@
+#------------------------------------------------------------------------------------
+# HEY! This file is code from Crop & Kettle by Creature Comforts!
+# We have been given permission to utilize it for use at smithed summit by MaybeJake.
+# We do NOT claim any legal right or creative license to this file.
+#------------------------------------------------------------------------------------
+
 execute unless score $compress_item_count spiced.dummy matches 1.. run return fail
 data modify storage spiced:temp mortar_and_pestle.remove_item.id set from storage spiced:temp mortar_and_pestle.compress[0].id
 data modify storage spiced:temp mortar_and_pestle.remove_item.count set from storage spiced:temp mortar_and_pestle.compress[0].count
@@ -27,13 +33,5 @@ data modify storage spiced:temp mortar_and_pestle.remove_item.id set from storag
 data modify storage spiced:temp mortar_and_pestle.remove_item.count set from storage spiced:temp mortar_and_pestle.compress[3].count
 data remove storage spiced:temp mortar_and_pestle.remove_item.custom_data
 data modify storage spiced:temp mortar_and_pestle.remove_item.custom_data set from storage spiced:temp mortar_and_pestle.compress[3].components."minecraft:custom_data"
-execute unless data storage spiced:temp mortar_and_pestle.remove_item.custom_data run function spiced:mortar_and_pestle/repeat/remove/macro_no_component with storage spiced:temp mortar_and_pestle.remove_item
-execute if data storage spiced:temp mortar_and_pestle.remove_item.custom_data run function spiced:mortar_and_pestle/repeat/remove/macro_component with storage spiced:temp mortar_and_pestle.remove_item
-
-execute unless score $compress_item_count spiced.dummy matches 5.. run return fail
-data modify storage spiced:temp mortar_and_pestle.remove_item.id set from storage spiced:temp mortar_and_pestle.compress[4].id
-data modify storage spiced:temp mortar_and_pestle.remove_item.count set from storage spiced:temp mortar_and_pestle.compress[4].count
-data remove storage spiced:temp mortar_and_pestle.remove_item.custom_data
-data modify storage spiced:temp mortar_and_pestle.remove_item.custom_data set from storage spiced:temp mortar_and_pestle.compress[4].components."minecraft:custom_data"
 execute unless data storage spiced:temp mortar_and_pestle.remove_item.custom_data run function spiced:mortar_and_pestle/repeat/remove/macro_no_component with storage spiced:temp mortar_and_pestle.remove_item
 execute if data storage spiced:temp mortar_and_pestle.remove_item.custom_data run function spiced:mortar_and_pestle/repeat/remove/macro_component with storage spiced:temp mortar_and_pestle.remove_item

@@ -8,8 +8,8 @@ data modify storage spiced:temp register.ingredients set value [ \
     {key:"item.spiced.pastry_dough", font:"spiced:icons"}, \
     {key:"item.spiced.black_pepper", font:"spiced:icons"}, \
     {key:"item.spiced.huntsman_pie_incomplete_2", font:"spiced:icons"}, \
-    {key:"item.minecraft.chicken", font:"spiced:icons"}, \
-    {key:"item.minecraft.porkchop", font:"spiced:icons"}, \
+    {key:"item.spiced.chicken", font:"spiced:icons"}, \
+    {key:"item.spiced.porkchop", font:"spiced:icons"}, \
 ]
 
 data modify storage spiced:temp register.source set value {key:"spiced.source", font:"spiced:icons"}

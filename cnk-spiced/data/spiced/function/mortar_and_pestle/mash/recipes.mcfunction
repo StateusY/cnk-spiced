@@ -4,11 +4,6 @@ execute if score $mortar_and_pestle_item_count spiced.dummy matches 1 \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/flour"
 
 execute if score $mortar_and_pestle_item_count spiced.dummy matches 1 \
-        if data storage spiced:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"diced_onion"}}}}}] \
-        if function spiced:mortar_and_pestle/mash/lock \
-        run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/onion_powder"
-
-execute if score $mortar_and_pestle_item_count spiced.dummy matches 1 \
         if data storage spiced:temp mortar_and_pestle.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"cinnamon"}}}}}] \
         if function spiced:mortar_and_pestle/mash/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:recipes/mortar_and_pestle/ground_cinnamon"
