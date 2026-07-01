@@ -1,0 +1,18 @@
+{
+  "parent": "spiced:cookbook/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:sugar"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "spiced:cookbook/grant/sugar"
+  }
+}

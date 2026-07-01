@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {"translate":"item.spiced.translation_key","fallback":"ERROR: RESOURCE PACK NOT ENABLED"},
+                "minecraft:item_model": "spiced:translation_key",
+                "!minecraft:consumable":{},
+                "minecraft:max_stack_size": 1,
+                "minecraft:custom_data": {"spiced":{"translation_key":true, "type":"study"},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:lore": [{"text":"Use on C4T to enable Felinese translation. - Study","color":"gray"},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
+            }
+          }
+          ]
+        }
+      ]
+    }
+  ]
+}

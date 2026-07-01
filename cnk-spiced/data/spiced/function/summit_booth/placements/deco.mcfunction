@@ -8,7 +8,7 @@ execute align xyz run summon item_display 190 56 195 {item_display:"ground",Tags
 
 # c4t plush on roof
 execute align xyz run summon item_display 215.5 86.5 189.5 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, -0.6156615f, 0.0f, 0.78801084f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:c4t"}}}
-summon minecraft:interaction 215.5 86 189.5 {Tags:["smithed.interactable","smithed.static","summit.booth_entity.spiced"], data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/extras/discord_link"}},height:0.8,width:1.01,response:true}
+summon minecraft:interaction 215.5 86 189.5 {Tags:["summit.interactable","smithed.static","summit.booth_entity.spiced"], data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/extras/c4t/main"}},height:0.8,width:1.01,response:true}
 
 # cnk pail in exterior
 execute align xyz run summon item_display 205 69.5 195 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0f, 0.0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:pail"}}}
@@ -24,6 +24,15 @@ execute align xyz run summon item_display 224.5 67.5 180.5 {item_display:"ground
 
 # hull sign on boat
 execute align xyz run summon item_display 210.5 66.5 203.5 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.9914449f, 0.13052619f, 0.0f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:hull_sign"}}}
+
+# AJ crates under cabin
+summon minecraft:item_display 221.25 62.875 187.6875 {Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],item: {components: {"minecraft:custom_model_data": {strings: ["default"]}, "minecraft:item_model": "aj_booth_rigs:blueprint/crate/bone"}, count: 1, id: "minecraft:white_dye"}, item_display: "head", transformation: {left_rotation: [-0.15187614f, -0.4774443f, -0.08418632f, 0.86133224f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]}}
+summon minecraft:item_display 221.25 63.1875 186.5 {Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],item: {components: {"minecraft:custom_model_data": {strings: ["default"]}, "minecraft:item_model": "aj_booth_rigs:blueprint/crate/bone"}, count: 1, id: "minecraft:white_dye"}, item_display: "head", transformation: {left_rotation: [-0.14464736f, 0.95575666f, -0.19515632f, -0.16589294f], right_rotation: [0.0f, 0.0f, 0.0f, 1.0f], scale: [1.0f, 1.0f, 1.0f], translation: [0.0f, 0.0f, 0.0f]}}
+
+# AJ crates in cellar
+summon minecraft:item_display 192.5625 53.8125 197.0625 {Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],item: {components: {"minecraft:custom_model_data": {strings: ["default"]}, "minecraft:item_model": "aj_booth_rigs:blueprint/crate/bone"}, count: 1, id: "minecraft:white_dye"}, item_display: "head"}
+summon minecraft:item_display 191.6875 53.8125 197.0 {Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],item: {components: {"minecraft:custom_model_data": {strings: ["default"]}, "minecraft:item_model": "aj_booth_rigs:blueprint/crate/bone"}, count: 1, id: "minecraft:white_dye"}, item_display: "head"}
+summon minecraft:item_display 190.75 53.8125 197.125 {Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],item: {components: {"minecraft:custom_model_data": {strings: ["default"]}, "minecraft:item_model": "aj_booth_rigs:blueprint/crate/bone"}, count: 1, id: "minecraft:white_dye"}, item_display: "head"}
 
 # sky light at fountian
 # spot light at fountain

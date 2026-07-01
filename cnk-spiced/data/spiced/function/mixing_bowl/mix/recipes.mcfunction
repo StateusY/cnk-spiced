@@ -10,6 +10,19 @@ execute if score $mixing_bowl_item_count spiced.dummy matches 2 \
         if function spiced:mixing_bowl/mix/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mix_callback set value "spiced:recipes/mixing_bowl/dough"
 
+execute if score $mixing_bowl_item_count spiced.dummy matches 2 \
+        if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"eggnog"}}}}}] \
+        if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"cinnamon"}}}}}] \
+        if function spiced:mixing_bowl/mix/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".spiced.mix_callback set value "spiced:recipes/mixing_bowl/cinna_shake"
+
+execute if score $mixing_bowl_item_count spiced.dummy matches 3 \
+        if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"egg"}}}}}] \
+        if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"milk_bottle"}}}}}] \
+        if data storage spiced:temp mixing_bowl.Items[{id:"minecraft:sugar"}] \
+        if function spiced:mixing_bowl/mix/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".spiced.mix_callback set value "spiced:recipes/mixing_bowl/eggnog"
+
 execute if score $mixing_bowl_item_count spiced.dummy matches 4 \
         if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"salt"}}}}}] \
         if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"flour"}}}}}] \

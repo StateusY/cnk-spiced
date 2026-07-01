@@ -35,7 +35,9 @@
         {"type":"bitmap","file":"spiced:icon/item/onion.png","ascent":15,"height":16,"chars":["\ud055"]},
         {"type":"bitmap","file":"spiced:icon/item/sliced_celery.png","ascent":15,"height":16,"chars":["\ud061"]},
         {"type":"bitmap","file":"spiced:icon/item/sliced_onion.png","ascent":15,"height":16,"chars":["\ud063"]},
-        {"type":"bitmap","file":"spiced:icon/item/huntsman_pie_incomplete.png","ascent":15,"height":16,"chars":["\ud118"]},
+        {"type":"bitmap","file":"spiced:icon/item/huntsman_pie_incomplete.png","ascent":15,"height":16,"chars":["\ud117"]},
+        {"type":"bitmap","file":"spiced:icon/item/huntsman_pie_incomplete_1.png","ascent":15,"height":16,"chars":["\ud118"]},
+        {"type":"bitmap","file":"spiced:icon/item/huntsman_pie_incomplete_2.png","ascent":15,"height":16,"chars":["\ud119"]},
         {"type":"bitmap","file":"spiced:icon/item/huntsman_pie.png","ascent":15,"height":16,"chars":["\ud119"]},
 
 
