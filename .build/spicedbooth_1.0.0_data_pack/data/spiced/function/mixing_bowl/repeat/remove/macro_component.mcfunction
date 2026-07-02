@@ -1,0 +1,1 @@
+$clear @p[tag=spiced.interact_mixing_bowl,distance=..20] $(id)[minecraft:custom_data=$(custom_data)] $(count)

@@ -1,0 +1,20 @@
+{
+  "pack": {
+    "description": [
+      [
+        {
+          "text": "Spiced, an addon for Crop and Kettle!"
+        }
+      ]
+    ],
+    "min_format": [
+      75,
+      0
+    ],
+    "max_format": [
+      88,
+      0
+    ]
+  },
+  "id": "cnk_spiced"
+}

@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "minecraft:entity_type": "minecraft:interaction",
+          "minecraft:entity_tags":{"any_of":["spiced.mortar_and_pestle_interaction"]}
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "spiced:mortar_and_pestle/hit/main"
+  }
+}

@@ -1,0 +1,3 @@
+execute if entity @s[tag=spiced.on_incomplete_page] run return run function spiced:cookbook/buttons/check_incomplete_recipe/reset
+execute if score $next_page spiced.dummy < @s spiced.cookbook_current_page unless score @s spiced.previous_incomplete_recipe matches -1 if score $next_page spiced.dummy < @s spiced.previous_incomplete_recipe run return run function spiced:cookbook/buttons/check_incomplete_recipe/reset
+execute if score $next_page spiced.dummy > @s spiced.cookbook_current_page unless score @s spiced.next_incomplete_recipe matches -1 if score $next_page spiced.dummy > @s spiced.next_incomplete_recipe run return run function spiced:cookbook/buttons/check_incomplete_recipe/reset

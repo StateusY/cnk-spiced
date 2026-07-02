@@ -1,0 +1,2 @@
+data/main/function/on_load.mcfunction:cad409d433254b4cd013978d586c748af4a2cbd6
+data/minecraft/tags/function/load.json:590fbeeb29086c33de402f3a700093f577ad6c55

@@ -1,0 +1,21 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "when": [
+          "gui"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "spiced:item/cutting_board"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "spiced:block/cutting_board"
+    },
+    "property": "minecraft:display_context"
+  }
+}

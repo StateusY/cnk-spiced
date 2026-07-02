@@ -1,6 +1,7 @@
 
 
-
+# blank key warn
+execute if items entity @s weapon.mainhand minecraft:poisonous_potato[minecraft:custom_data~{"spiced":{"translation_key":true, "type":"blank"}}] run return run function spiced:summit_booth/extras/c4t/translation/blank
 
 # if no keys enabled, then activate key
 execute if items entity @s[advancements={spiced:c4t_translation_flair=false,spiced:c4t_translation_spite=false,spiced:c4t_translation_study=false}] weapon.mainhand minecraft:poisonous_potato[minecraft:custom_data~{"spiced":{"translation_key":true}}] run return run function spiced:summit_booth/extras/c4t/translation/activate
@@ -19,9 +20,9 @@ execute if items entity @s[advancements={spiced:c4t_translation_study=true}] wea
 execute if entity @s[advancements={spiced:c4t_translation_flair=false,spiced:c4t_translation_spite=false,spiced:c4t_translation_study=false}] run return run function spiced:summit_booth/extras/c4t/translation/untranslated
 
 # if key enabled, then speak
-execute if entity @s[advancements={spiced:c4t_translation_flair=true}] run return run function spiced:summit_booth/extras/c4t/flair_speak
-execute if entity @s[advancements={spiced:c4t_translation_spite=true}] run return run function spiced:summit_booth/extras/c4t/spite_speak
-execute if entity @s[advancements={spiced:c4t_translation_study=true}] run return run function spiced:summit_booth/extras/c4t/study_speak
+execute if entity @s[advancements={spiced:c4t_translation_flair=true}] run return run function spiced:summit_booth/extras/c4t/flavor_control/flair_main
+execute if entity @s[advancements={spiced:c4t_translation_spite=true}] run return run function spiced:summit_booth/extras/c4t/flavor_control/spite_main
+execute if entity @s[advancements={spiced:c4t_translation_study=true}] run return run function spiced:summit_booth/extras/c4t/flavor_control/study_main
 
 
 

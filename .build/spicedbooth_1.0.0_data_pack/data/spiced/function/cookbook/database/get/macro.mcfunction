@@ -1,0 +1,1 @@
+$return run data modify storage spiced:temp database.player_data set from storage spiced:cookbook database.$(uid)

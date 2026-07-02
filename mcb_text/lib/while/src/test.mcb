@@ -1,0 +1,99 @@
+import ./while.mcbt
+
+function load minecraft:load {
+	scoreboard objectives add v dummy
+}
+
+function test_while {
+	say Sync test
+	scoreboard players set #test v 5
+	while execute if score #test v matches 1.. run {
+		scoreboard players remove #test v 1
+		tellraw @a {score:{name:'#test',objective:'v'}}
+	} finally {
+		say while loop ended
+	}
+
+	say Fail first sync test
+	while execute if score #test v matches 1.. run {
+		scoreboard players remove #test v 1
+		tellraw @a {score:{name:'#test',objective:'v'}}
+	} finally {
+		say This should not be printed
+	}
+
+	say Async test
+	scoreboard players set #test v 5
+	while 10t execute if score #test v matches 1.. run {
+		scoreboard players remove #test v 1
+		tellraw @a {score:{name:'#test',objective:'v'}}
+	} finally {
+		say while loop ended
+	}
+
+	schedule 4s {
+		say Fail first async test
+		while 10t execute if score #test v matches 1.. run {
+			scoreboard players remove #test v 1
+			tellraw @a {score:{name:'#test',objective:'v'}}
+		} finally {
+			say This should not be printed
+		}
+	}
+}
+
+function test_until {
+	say Sync test
+	scoreboard players set #test v 5
+	until execute if score #test v matches ..0 run {
+		scoreboard players remove #test v 1
+		tellraw @a {score:{name:'#test',objective:'v'}}
+	}
+
+	say Fail first sync test
+	until execute if score #test v matches ..0 run {
+		scoreboard players remove #test v 1
+		tellraw @a {score:{name:'#test',objective:'v'}}
+	}
+
+	say Async test
+	scoreboard players set #test v 5
+	until 10t execute if score #test v matches ..0 run {
+		scoreboard players remove #test v 1
+		tellraw @a {score:{name:'#test',objective:'v'}}
+	}
+
+	schedule 4s {
+		say Fail first async test
+		until 10t execute if score #test v matches ..0 run {
+			scoreboard players remove #test v 1
+			tellraw @a {score:{name:'#test',objective:'v'}}
+		}
+	}
+}
+
+function test_do {
+	say Sync test
+
+	scoreboard players set #test v 5
+	do {
+		scoreboard players remove #test v 1
+		tellraw @a {score:{name:'#test',objective:'v'}}
+	} until execute if score #test v matches ..0
+
+	say Don't check condition at the beginning
+
+	scoreboard players set #test v 0
+	do {
+		scoreboard players remove #test v 1
+		tellraw @a {score:{name:'#test',objective:'v'}}
+	} until execute if score #test v matches ..0
+}
+
+function test_tag {
+	until 1s execute if entity @a[tag=test] run {
+		say waiting for tag...
+	} finally {
+		say tag added!
+	}
+}

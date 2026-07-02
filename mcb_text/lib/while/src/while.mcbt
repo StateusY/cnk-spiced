@@ -1,0 +1,205 @@
+template while {
+	with execute:literal execute_condition:raw content:block {
+		# while execute <%execute_condition%> {
+		execute <%execute_condition.replace(/ run$/, '')%> run {
+			# while execute <%execute_condition%> {
+			<%%
+				content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# }
+			execute <%execute_condition%> function <%context.functions.at(-1)%>
+		}
+		# }
+	}
+
+	with execute:literal execute_condition:raw content:block finally:literal finally_content:block {
+		# while execute <%execute_condition%> {
+		execute <%execute_condition.replace(/ run$/, '')%> run {
+			# while execute <%execute_condition%> {
+			<%%
+				content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# }
+			execute <%execute_condition%> return run function <%context.functions.at(-1)%>
+			# finally {
+			<%%
+				finally_content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# }
+		}
+		# }
+	}
+
+	with interval:word execute:literal execute_condition:raw content:block {
+		# while <%interval%> execute <%execute_condition%> {
+		scoreboard players set #check <%config.internalScoreboardName%> 0
+		execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+		execute if score #check <%config.internalScoreboardName%> matches 1 run {
+			# while <%interval%> execute <%execute_condition%> {
+			<%%
+				content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# }
+			scoreboard players set #check <%config.internalScoreboardName%> 0
+			execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+			execute if score #check <%config.internalScoreboardName%> matches 1 run schedule function <%context.functions.at(-1)%> <%interval%>
+		}
+		# }
+	}
+
+	with interval:word execute:literal execute_condition:raw content:block finally:literal finally_content:block {
+		# while <%interval%> execute <%execute_condition%> {
+		scoreboard players set #check <%config.internalScoreboardName%> 0
+		execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+		execute if score #check <%config.internalScoreboardName%> matches 1 run {
+			# while <%interval%> execute <%execute_condition%> {
+			<%%
+				content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# }
+			scoreboard players set #check <%config.internalScoreboardName%> 0
+			execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+			execute if score #check <%config.internalScoreboardName%> matches 1 run return run schedule function <%context.functions.at(-1)%> <%interval%>
+			# finally {
+			<%%
+				finally_content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# }
+		}
+		# }
+	}
+}
+
+template until {
+	with execute:literal execute_condition:raw content:block {
+		# until execute <%execute_condition%> {
+		scoreboard players set #check <%config.internalScoreboardName%> 0
+		execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+		execute if score #check <%config.internalScoreboardName%> matches 0 run {
+			# until execute <%execute_condition%> {
+			<%%
+				content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# }
+			scoreboard players set #check <%config.internalScoreboardName%> 0
+			execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+			execute if score #check <%config.internalScoreboardName%> matches 0 run function <%context.functions.at(-1)%>
+		}
+		# }
+	}
+
+	with execute:literal execute_condition:raw content:block finally:literal finally_content:block {
+		# until execute <%execute_condition%> {
+		scoreboard players set #check <%config.internalScoreboardName%> 0
+		execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+		execute if score #check <%config.internalScoreboardName%> matches 0 run {
+			# until execute <%execute_condition%> {
+			<%%
+				content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# }
+			scoreboard players set #check <%config.internalScoreboardName%> 0
+			execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+			execute if score #check <%config.internalScoreboardName%> matches 0 run return run function <%context.functions.at(-1)%>
+			# finally {
+			<%%
+				finally_content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# }
+		}
+	}
+
+	with interval:word execute:literal execute_condition:raw content:block {
+		# until <%interval%> execute <%execute_condition%> {
+		scoreboard players set #check <%config.internalScoreboardName%> 0
+		execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+		execute if score #check <%config.internalScoreboardName%> matches 0 run {
+			# until <%interval%> execute <%execute_condition%> {
+			<%%
+				content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# }
+			scoreboard players set #check <%config.internalScoreboardName%> 0
+			execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+			execute if score #check <%config.internalScoreboardName%> matches 0 run return run schedule function <%context.functions.at(-1)%> <%interval%>
+		}
+		# }
+	}
+
+	with interval:word execute:literal execute_condition:raw content:block finally:literal finally_content:block {
+		# until <%interval%> execute <%execute_condition%> {
+		scoreboard players set #check <%config.internalScoreboardName%> 0
+		execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+		execute if score #check <%config.internalScoreboardName%> matches 0 run {
+			# until <%interval%> execute <%execute_condition%> {
+			<%%
+				content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# }
+			scoreboard players set #check <%config.internalScoreboardName%> 0
+			execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+			execute if score #check <%config.internalScoreboardName%> matches 0 run return run schedule function <%context.functions.at(-1)%> <%interval%>
+			# finally {
+			<%%
+				finally_content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# }
+		}
+		# }
+	}
+}
+
+template do {
+	with content:block while:literal execute:literal execute_condition:raw {
+		{
+			# do {
+			<%%
+				content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# } while execute <%execute_condition%> {
+			execute <%execute_condition%> function <%context.functions.at(-1)%>
+			# }
+		}
+	}
+
+	with content:block while:literal interval:word execute:literal execute_condition:raw {
+		{
+			# do {
+			<%%
+				content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# } while <%interval%> execute <%execute_condition%> {
+			execute <%execute_condition%> schedule function <%context.functions.at(-1)%> <%interval%>
+			# }
+		}
+	}
+
+	with content:block until:literal execute:literal execute_condition:raw {
+		{
+			# do {
+			<%%
+				content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# } until execute <%execute_condition%> {
+			scoreboard players set #check <%config.internalScoreboardName%> 0
+			execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+			execute if score #check <%config.internalScoreboardName%> matches 0 run function <%context.functions.at(-1)%>
+			# }
+		}
+	}
+
+	with content:block until:literal interval:word execute:literal execute_condition:raw {
+		{
+			# do {
+			<%%
+				content.node.body.forEach(node => emit.mcb(node))
+			%%>
+			# } until <%interval%> execute <%execute_condition%> {
+			scoreboard players set #check <%config.internalScoreboardName%> 0
+			execute store result score #check <%config.internalScoreboardName%> <%execute_condition.replace(/ run$/, '')%>
+			execute if score #check <%config.internalScoreboardName%> matches 0 run schedule function <%context.functions.at(-1)%> <%interval%>
+			# }
+		}
+	}
+}
+

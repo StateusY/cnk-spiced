@@ -1,0 +1,1 @@
+advancement grant @s only summit.sticker_book:spiced/huntsman_pie

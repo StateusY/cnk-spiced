@@ -1,0 +1,13 @@
+{
+    "providers": [
+        {"type":"bitmap","file":"spiced:tooltip/en_grimwart.png","ascent":7,"height":7,"chars":["\ud001"]},
+        {"type":"bitmap","file":"spiced:tooltip/en_tool.png","ascent":7,"height":7,"chars":["\ud002"]},
+        {
+        "type": "space",
+        "advances": {
+                " ": 3,
+                "\ub001": 2
+            }
+        }
+    ]
+}

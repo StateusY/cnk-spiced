@@ -1,0 +1,23 @@
+function load minecraft:load {
+	kill @e[type=interaction]
+
+	summon minecraft:interaction -1 -63 0 { \
+		width:1f, height:1f, response:true, \
+		Tags: ['snavesutit.interactions.interactable'], \
+		data:{snavesutit:{ \
+			on_right_click:'say right', \
+			on_left_click:'say left' \
+		}}, \
+		CustomName: {text: 'Valid Commands', color: 'green'} \
+	}
+
+	summon minecraft:interaction 1 -63 0 { \
+		width:1f, height:1f, response:true, \
+		Tags: ['snavesutit.interactions.interactable'], \
+		data:{snavesutit:{ \
+			on_right_click:'invalid command', \
+			on_left_click:'invalid command' \
+		}}, \
+		CustomName: {text: 'Invalid Commands', color: 'red'} \
+	}
+}

@@ -1,5 +1,13 @@
 # this function places all ingredient sources (places to get various ingredients like the bottle crate and milk bucket)
 
+# sugar bag by cabin
+execute align xyz run summon item_display 227 71.5 183 {item_display:"ground",Tags:["smithed.block","smithed.entity","smithed.strict","smithed.static","summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.7071068f, 0.0f, 0.7071068f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:sugar_bag"}},Passengers:\
+[ \
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/sugar_bag"}},height:0.6,width:1.2,response:true},\
+    {id:"minecraft:interaction",Tags:["summit.interactable", "summit.static", "summit.booth_entity.spiced"],data: {summit_interactable: {on_right_click: "execute on target run function spiced:summit_booth/ingredients/sugar_bag"}},height:-0.6,width:1.2,response:true},\
+] \
+}
+
 
 # - CRATES -
 

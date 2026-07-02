@@ -1,46 +1,120 @@
 {
-    "namespace": "spiced",
-    "booth_name": "CNK: Spiced",
-    "bounding_boxes": {
-        "main": {
-            "position": {
-                "x": {"min": -135, "max": -102},
-                "y": {"min": 70, "max": 95},
-                "z": {"min": -39, "max": -20}
-            },
-            "on_player_enter": "summit_booth/bounds/entered",
-            "on_player_exit": "summit_booth/bounds/exited"
-        }
+  "namespace": "spiced",
+  "booth_name": "C&K: Spiced",
+  "bounding_boxes": {
+    "cabin": {
+      "position": {
+        "x": { "min": 213, "max": 228 },
+        "y": { "min": 65, "max": 89 },
+        "z": { "min": 178, "max": 198 }
+      },
+      "on_player_enter":"spiced:summit_booth/bounds/cabin/enter"
     },
-    "ticking_functions": {
-        "spiced:summit_booth/master_tick": "1t"
+    "cellar_enter": {
+      "position": {
+        "x": { "min": 222, "max": 223 },
+        "y": { "min": 55, "max": 58 },
+        "z": { "min": 179, "max": 181 }
+      },
+      "on_player_enter":"spiced:summit_booth/bounds/cellar/enter"
     },
-    "sticker_book": {
-        "background_color": "#f17515",
-        "region": "welded_woodlands",
-        "stickers": [
-            {
-                "sticker_id": "spiced_booth",
-                "sticker_texture": "spiced:sticker/spiced_booth",
-                "sticker_name": "Spiced Booth",
-                "unobtained_text": "Enter the C&K: Spiced Booth in the Welded Woodlands.",
-                "obtained_text": "Welcome to the Spiced Booth!"
-            },
-            {
-                "sticker_id": "huntsman_pie",
-                "sticker_texture": "spiced:sticker/huntsman_pie",
-                "sticker_name": "Huntsman Pie",
-                "unobtained_text": "Cook up the Huntsman Pie!",
-                "obtained_text": "Rewarded for cooking up the Huntsman Pie!"
-            },
-            {
-                "sticker_id": "lettuce_line",
-                "sticker_texture": "spiced:sticker/lettuce_line",
-                "sticker_name": "Lettuce Compress",
-                "unobtained_text": "Follow the hint at the back of the book...",
-                "obtained_text": "Obtained a Reasonable Amount of Lettuce"
-            }
-        ]
+    "cellar_exit": {
+      "position": {
+        "x": { "min": 200, "max": 202 },
+        "y": { "min": 53, "max": 54 },
+        "z": { "min": 176, "max": 177 }
+      },
+      "on_player_enter":"spiced:summit_booth/bounds/cellar/exit"
+    },
+    "fountain_enter": {
+      "position": {
+        "x": { "min": 178, "max": 179 },
+        "y": { "min": 53, "max": 54 },
+        "z": { "min": 188, "max": 188 }
+      },
+      "on_player_enter":"spiced:summit_booth/bounds/cellar/fountain/enter1"
+    },
+    "fountain_return": {
+      "position": {
+        "x": { "min": 176, "max": 177 },
+        "y": { "min": 53, "max": 54 },
+        "z": { "min": 185, "max": 185 }
+      },
+      "on_player_enter":"spiced:summit_booth/bounds/cellar/fountain/exit1"
+    },
+    "fountain_exit": {
+      "position": {
+        "x": { "min": 192, "max": 193 },
+        "y": { "min": 53, "max": 54 },
+        "z": { "min": 174, "max": 174 }
+      },
+      "on_player_enter":"spiced:summit_booth/bounds/cellar/fountain/exit2"
+    },
+    "cellar": {
+      "position": {
+        "x": { "min": 175, "max": 222 },
+        "y": { "min": 52, "max": 59 },
+        "z": { "min": 171, "max": 199 }
+      }
+    },
+    "boat": {
+      "position": {
+        "x": { "min": 188, "max": 230 },
+        "y": { "min": 61, "max": 69 },
+        "z": { "min": 200, "max": 208 }
+      }
+    },
+    "booth": {
+      "position": {
+        "x": { "min": 178, "max": 234 },
+        "y": { "min": 52, "max": 89 },
+        "z": { "min": 167, "max": 211 }
+      }
+    },
+    "hull": {
+      "position": {
+        "x": { "min": 183, "max": 198 },
+        "y": { "min": 53, "max": 56 },
+        "z": { "min": 199, "max": 207 }
+      }
     }
+  },
+  "ticking_functions": {
+    "spiced:tick": "1t",
+    "spiced:tick_2": "2t"
+  },
+  "sticker_book": {
+    "background_color": "#f17515",
+    "region": "welded_woodlands",
+    "stickers": [
+      {
+        "sticker_id": "spiced_booth",
+        "sticker_texture": "spiced:sticker/spiced_booth",
+        "sticker_name": "Spiced Booth",
+        "unobtained_text": "Enter the C&K: Spiced Booth in the Welded Woodlands.",
+        "obtained_text": "Welcome to the Spiced Booth!"
+      },
+      {
+        "sticker_id": "huntsman_pie",
+        "sticker_texture": "spiced:sticker/huntsman_pie",
+        "sticker_name": "Huntsman Pie",
+        "unobtained_text": "Cook up the Huntsman Pie!",
+        "obtained_text": "Rewarded for cooking up the Huntsman Pie!"
+      },
+      {
+        "sticker_id": "lettuce_line",
+        "sticker_texture": "spiced:sticker/lettuce_line",
+        "sticker_name": "Lettuce Compress",
+        "unobtained_text": "Follow the hint at the back of the book...",
+        "obtained_text": "Obtained a Reasonable Amount of Lettuce"
+      },
+      {
+        "sticker_id": "lettuce_line",
+        "sticker_texture": "spiced:sticker/lettuce_line",
+        "sticker_name": "Lettuce Compress",
+        "unobtained_text": "Speak to the c4t on the roof, until none is left to say.",
+        "obtained_text": "You saw all ## c4t lines!"
+      }
+    ]
+  }
 }
-

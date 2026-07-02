@@ -1,0 +1,1 @@
+$data modify storage spiced:temp cookbook.data.ingredients set value "$(1)$(2)"
