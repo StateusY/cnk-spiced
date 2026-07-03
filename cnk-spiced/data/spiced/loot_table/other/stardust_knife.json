@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": [{"color":"#8c00ff","text":"B"},{"color":"#9300ff","text":"o"},{"color":"#9b00ff","text":"o"},{"color":"#a300ff","text":"m"},{"color":"#aa00ff","text":"e"},{"color":"#b200ff","text":"r"},{"color":"#ba00ff","text":"a"},{"color":"#c100ff","text":"n"},{"color":"#c900ff","text":"g "},{"color":"#d800ff","text":"B"},{"color":"#e000ff","text":"l"},{"color":"#e800ff","text":"a"},{"color":"#ef00ff","text":"d"},{"color":"#f700ff","text":"e"}],
+                "minecraft:item_model": "spiced:stardust_knife",
+                "!minecraft:consumable":{},
+                "minecraft:custom_data": {"spiced":{"knife":true, "stardust": true},"smithed":{"ignore":{"functionality":true,"crafting":true}}, "summit": {"persist": {}}},
+                "minecraft:lore": [{"text":"Check out the Stardust Showdown Booth!","color":"gray"},{"text":"Stardust Showdown","font":"spiced:stardust_tooltip","color":"white","italic":false}]
+            }
+          }
+          ]
+        }
+      ]
+    }
+  ]
+}

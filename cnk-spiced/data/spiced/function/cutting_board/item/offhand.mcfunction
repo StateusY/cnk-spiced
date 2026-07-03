@@ -4,6 +4,6 @@
 # We do NOT claim any legal right or creative license to this file.
 #------------------------------------------------------------------------------------
 
-tag @p[tag=spiced.interact_cutting_board] add spiced.cutting_board_offhand
+tag @p[tag=spiced.interact_cutting_board,distance=..20] add spiced.cutting_board_offhand
 function spiced:cutting_board/item/main
-tag @p[tag=spiced.interact_cutting_board] remove spiced.cutting_board_offhand
+tag @p[tag=spiced.interact_cutting_board,distance=..20] remove spiced.cutting_board_offhand

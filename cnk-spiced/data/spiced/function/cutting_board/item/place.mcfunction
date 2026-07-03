@@ -4,15 +4,15 @@
 # We do NOT claim any legal right or creative license to this file.
 #------------------------------------------------------------------------------------
 
-data merge entity @s {transformation:{left_rotation:[0f,0.5f,0f,1f],right_rotation:[-1f,0f,0f,1f],scale:[0.55f,0.55f,0.55f],translation:[0.0f,-0.42f,-0.05f]},Tags:["spiced.cutting_board_item"]}
-execute if entity @p[tag=spiced.interact_cutting_board,tag=spiced.cutting_board_offhand] run item replace entity @s contents from entity @p[tag=spiced.interact_cutting_board] weapon.offhand
-execute if entity @p[tag=spiced.interact_cutting_board,tag=!spiced.cutting_board_offhand] run item replace entity @s contents from entity @p[tag=spiced.interact_cutting_board] weapon.mainhand
+data merge entity @s {transformation:{left_rotation:[0f,0.5f,0f,1f],right_rotation:[-1f,0f,0f,1f],scale:[0.55f,0.55f,0.55f],translation:[0.0f,0.12f,-0.05f]},Tags:["spiced.cutting_board_item"]}
+execute if entity @p[tag=spiced.interact_cutting_board,distance=..20,tag=spiced.cutting_board_offhand] run item replace entity @s contents from entity @p[tag=spiced.interact_cutting_board,distance=..20] weapon.offhand
+execute if entity @p[tag=spiced.interact_cutting_board,distance=..20,tag=!spiced.cutting_board_offhand] run item replace entity @s contents from entity @p[tag=spiced.interact_cutting_board,distance=..20] weapon.mainhand
 execute at @s rotated as @n[type=minecraft:item_display,tag=spiced.cutting_board] run rotate @s ~ ~
 ride @s mount @n[type=minecraft:item_display,tag=spiced.cutting_board]
 playsound minecraft:block.bamboo_wood.step block @a ~ ~ ~ 1 2
 
-swing @p[tag=spiced.interact_cutting_board,tag=!spiced.cutting_board_offhand] mainhand
-swing @p[tag=spiced.interact_cutting_board,tag=spiced.cutting_board_offhand] offhand
+swing @p[tag=spiced.interact_cutting_board,distance=..20,tag=!spiced.cutting_board_offhand] mainhand
+swing @p[tag=spiced.interact_cutting_board,distance=..20,tag=spiced.cutting_board_offhand] offhand
 
-execute if entity @p[tag=spiced.interact_cutting_board,tag=spiced.cutting_board_offhand] run item modify entity @p[tag=spiced.interact_cutting_board] weapon.offhand {"function":"minecraft:set_count","count":-1,"add":true}
-execute if entity @p[tag=spiced.interact_cutting_board,tag=!spiced.cutting_board_offhand] run item modify entity @p[tag=spiced.interact_cutting_board] weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
+execute if entity @p[tag=spiced.interact_cutting_board,distance=..20,tag=spiced.cutting_board_offhand] run item modify entity @p[tag=spiced.interact_cutting_board,distance=..20] weapon.offhand {"function":"minecraft:set_count","count":-1,"add":true}
+execute if entity @p[tag=spiced.interact_cutting_board,distance=..20,tag=!spiced.cutting_board_offhand] run item modify entity @p[tag=spiced.interact_cutting_board,distance=..20] weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}

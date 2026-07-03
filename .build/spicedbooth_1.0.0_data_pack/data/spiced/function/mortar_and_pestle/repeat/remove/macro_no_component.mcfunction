@@ -1,1 +1,0 @@
-$clear @p[tag=spiced.interact_mortar_and_pestle,distance=..20] $(id) $(count)

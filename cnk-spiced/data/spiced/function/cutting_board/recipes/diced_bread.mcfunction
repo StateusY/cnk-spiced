@@ -1,5 +1,4 @@
-# this function is called once the player uses the knife on the cutting board! nice and simple, just spawns the output item, and handles tidy up
-loot spawn ~ ~-0.3 ~ loot spiced:food/diced_bread
+data modify storage spiced:temp cutting_board.loot_table set value "spiced:food/diced_bread"
+execute as @p[tag=spiced.interact_cutting_board,distance=..20] at @s run function spiced:cutting_board/recipes/give_result with storage spiced:temp cutting_board
 
-# this function MUST be called, tidies up the item and triggers sound and durability changes
 function spiced:cutting_board/cut/finish

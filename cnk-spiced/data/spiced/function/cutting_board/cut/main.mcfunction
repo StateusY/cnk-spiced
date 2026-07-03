@@ -7,9 +7,9 @@
 scoreboard players set $cut_check spiced.dummy 0
 data modify storage spiced:temp cutting_board.item set from entity @s item
 
-execute if data storage spiced:temp cutting_board.item.components."minecraft:custom_data" run data remove storage spiced:temp cutting_board.item.id
+function spiced:cutting_board/cut/recipes
 
-function #spiced:recipes/cutting_board
-
-execute if score $cut_check spiced.dummy matches 0 run function spiced:cutting_board/item/remove
-execute if score $cut_check spiced.dummy matches 1 run swing @p[tag=spiced.interact_cutting_board,distance=..20] mainhand
+scoreboard players set $item_count spiced.dummy 0
+execute on vehicle run scoreboard players operation $item_count spiced.dummy = @s spiced.item_count
+execute if score $item_count spiced.dummy matches 1.. run return run function spiced:cutting_board/item/remove
+swing @p[tag=spiced.interact_cutting_board,distance=..20] mainhand

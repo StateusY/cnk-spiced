@@ -38,7 +38,7 @@
         {"type":"bitmap","file":"spiced:icon/item/huntsman_pie_incomplete.png","ascent":15,"height":16,"chars":["\ud117"]},
         {"type":"bitmap","file":"spiced:icon/item/huntsman_pie_incomplete_1.png","ascent":15,"height":16,"chars":["\ud118"]},
         {"type":"bitmap","file":"spiced:icon/item/huntsman_pie_incomplete_2.png","ascent":15,"height":16,"chars":["\ud119"]},
-        {"type":"bitmap","file":"spiced:icon/item/huntsman_pie.png","ascent":15,"height":16,"chars":["\ud119"]},
+        {"type":"bitmap","file":"spiced:icon/item/huntsman_pie.png","ascent":15,"height":16,"chars":["\ud120"]},
 
 
         {"type":"bitmap","file":"spiced:icon/misc/spiced_indicator.png","ascent":6,"height":8,"chars":["\ue001"]},
@@ -46,7 +46,7 @@
         {"type":"bitmap","file":"spiced:icon/misc/cookbook_page.png","ascent":4,"height":180,"chars":["\ue003"]},
         {"type":"bitmap","file":"spiced:icon/misc/cookbook_background.png","ascent":11,"height":215,"chars":["\ue004"]},
         {"type":"bitmap","file":"spiced:icon/misc/cookbook_demo_front_page.png","ascent":130,"height":140,"chars":["\ue005"]},
-        {"type":"bitmap","file":"spiced:icon/misc/tab_filler.png","ascent":15,"height":16,"chars":["\ue006"]},
+        {"type":"bitmap","file":"spiced:icon/misc/tab_filler.png","ascent":17,"height":18,"chars":["\ue006"]},
         {"type":"bitmap","file":"spiced:icon/misc/front_tab_active.png","ascent":17,"height":18,"chars":["\ue007"]},
         {"type":"bitmap","file":"spiced:icon/misc/front_tab_idle.png","ascent":17,"height":18,"chars":["\ue008"]},
         {"type":"bitmap","file":"spiced:icon/misc/next_page.png","ascent":10,"height":16,"chars":["\ue009"]},

@@ -1,1 +1,0 @@
-execute if score @s spiced.cookbook_current_page >= $front_page spiced.dummy if score @s spiced.cookbook_current_page < $staple_page spiced.dummy run return run data modify storage spiced:temp cookbook.data.front_state set value "active"

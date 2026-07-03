@@ -33,7 +33,6 @@ data/spiced/function/cookbook/open
 data/spiced/function/cookbook/register_pages
 data/spiced/function/cookbook/reset
 data/spiced/function/cookbook/resolve_ingredients
-data/spiced/function/cookbook/set_section_states
 data/spiced/function/cookbook/unlock
 data/spiced/function/cookbook/builder/build_page
 data/spiced/function/cookbook/builder/resolve_ingredient

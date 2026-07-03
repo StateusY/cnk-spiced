@@ -14,4 +14,4 @@ playsound entity.item.pickup block @a ~ ~ ~ 0.6 1
 execute on passengers if entity @s[type=minecraft:item_display,tag=spiced.mixing_bowl_item] run kill @s
 scoreboard players set @s spiced.item_count 0
 
-execute if data entity @s data.spiced.last_interact_uuid run function spiced:mixing_bowl/post_mix/find with entity @s data.spiced
+# execute if data entity @s data.spiced.last_interact_uuid run function spiced:mixing_bowl/post_mix/find with entity @s data.spiced

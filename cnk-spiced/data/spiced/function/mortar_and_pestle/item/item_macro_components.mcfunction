@@ -1,4 +1,4 @@
-$loot spawn ~ ~-0.3 ~ loot {\
+$loot give @p[tag=spiced.interact_mortar_and_pestle,distance=..20] loot {\
   "pools": [\
     {\
       "rolls": 1, \

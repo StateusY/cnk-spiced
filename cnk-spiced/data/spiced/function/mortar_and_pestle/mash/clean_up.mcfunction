@@ -7,3 +7,5 @@ particle minecraft:poof ~ ~-0.3 ~ 0.1 0.1 0.1 0 4
 playsound entity.item.pickup block @a ~ ~ ~ 0.6 1
 execute on passengers if entity @s[type=minecraft:item_display,tag=spiced.mortar_and_pestle_item] run kill @s
 scoreboard players set @s spiced.item_count 0
+
+# execute if data entity @s data.spiced.last_interact_uuid run function spiced:mortar_and_pestle/post_mash/find with entity @s data.spiced

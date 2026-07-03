@@ -1,2 +1,0 @@
-execute if entity @s[tag=spiced.stove] run return run playsound minecraft:block.campfire.crackle block @a[distance=..6] ~ ~ ~ 0.2 1
-playsound spiced:block.cooking_pot.idling block @a[distance=..6] ~ ~ ~ 0.2 1

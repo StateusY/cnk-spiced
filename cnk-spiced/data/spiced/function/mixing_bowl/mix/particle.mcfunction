@@ -4,4 +4,4 @@
 # We do NOT claim any legal right or creative license to this file.
 #------------------------------------------------------------------------------------
 
-$particle minecraft:item{item:{id:"$(id)"}} ~ ~-0.3 ~ 0.12 0.1 0.12 0.02 1 force
+$particle minecraft:item{item:{id:"$(id)","components":$(components)}} ~ ~-0.3 ~ 0.12 0.1 0.12 0.02 1 force

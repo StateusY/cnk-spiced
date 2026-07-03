@@ -1,1 +1,0 @@
-$function $(dialog_function) with storage spiced:temp cookbook.data

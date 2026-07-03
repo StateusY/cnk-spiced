@@ -4,9 +4,12 @@
 # We do NOT claim any legal right or creative license to this file.
 #------------------------------------------------------------------------------------
 
+execute on vehicle run scoreboard players reset @s spiced.item_count
+
 scoreboard players set $cut_check spiced.dummy 1
 playsound spiced:block.cutting_board.chop block @a ~ ~ ~ 0.8 0.8
 playsound minecraft:block.bamboo_wood.hit block @a ~ ~ ~ 0.8 2
 kill @s
 
-execute as @p[tag=spiced.interact_cutting_board,distance=..20] at @s run function spiced:cutting_board/cut/on_chef
+execute unless data storage spiced:temp cutting_board.item.components run data modify storage spiced:temp cutting_board.item.components set value {}
+function spiced:cutting_board/cut/particle with storage spiced:temp cutting_board.item

@@ -4,7 +4,7 @@
 # We do NOT claim any legal right or creative license to this file.
 #------------------------------------------------------------------------------------
 
-$loot spawn ~ ~-0.3 ~ loot {\
+$loot give @p[tag=spiced.interact_mixing_bowl,distance=..20] loot {\
   "pools": [\
     {\
       "rolls": 1, \

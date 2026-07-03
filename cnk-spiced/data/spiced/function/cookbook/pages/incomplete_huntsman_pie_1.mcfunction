@@ -5,10 +5,10 @@ data modify storage spiced:temp register.page_name set value "item.spiced.huntsm
 data modify storage spiced:temp register.recipe_icon_font set value "spiced:icons"
 
 data modify storage spiced:temp register.ingredients set value [ \
-    {key:"item.spiced.sliced_celery", font:"spiced:icons"}, \
+    {key:"item.spiced.diced_celery", font:"spiced:icons"}, \
     {key:"item.spiced.stock", font:"spiced:icons"}, \
     {key:"item.spiced.cooking_oil", font:"spiced:icons"}, \
-    {key:"item.spiced.sliced_onion", font:"spiced:icons"}, \
+    {key:"item.spiced.diced_onion", font:"spiced:icons"}, \
     {key:"item.spiced.ground_cinnamon", font:"spiced:icons"}, \
 ]
 

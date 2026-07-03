@@ -4,7 +4,9 @@
 # We do NOT claim any legal right or creative license to this file.
 #------------------------------------------------------------------------------------
 
-swing @p[tag=spiced.interact_cutting_board] mainhand
+swing @p[tag=spiced.interact_cutting_board,distance=..20] mainhand
+
+execute on vehicle run scoreboard players reset @s spiced.item_count
 
 playsound minecraft:block.bamboo_wood.step block @a ~ ~ ~ 1 2
 execute if data entity @s item.components run function spiced:cutting_board/item/item_macro_components with entity @s item
