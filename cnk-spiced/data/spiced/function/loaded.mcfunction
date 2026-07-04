@@ -40,5 +40,5 @@ setblock 220 66 189 air
 setblock 220 66 190 air
 
 # functions
-function spiced:summit_booth/placements/main
+function spiced:placements/main
 function spiced:cookbook/register_pages

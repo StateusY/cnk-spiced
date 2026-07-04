@@ -1,3 +1,4 @@
 # Generated with MC-Build
 
-function spiced:chatter/loop/zzz/0 with storage spiced:chatter args
+say loop
+function spiced:chatter/loop/macro with storage spiced:chatter "$(id)".args

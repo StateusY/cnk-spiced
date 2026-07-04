@@ -1,0 +1,2 @@
+# 
+tellraw @s {player:stateus}

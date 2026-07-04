@@ -1,28 +1,46 @@
+function load minecraft:load {
+	scoreboard objectives add chatter.id dummy
+}
 
-function chatter {
+function say {
 	#ARGS: {message: TextComponent[], delayRange: intRange, soundFunction: ResourceLocation, selector: String}
 
-	data modify storage spiced:chatter text set value []
+	$tag $(selector) add chatter.text_display
 
-	$data modify storage spiced:chatter args set value {message:$(message),delayRange:'$(delayRange)',soundFunction:'$(soundFunction)',selector:'$(selector)'}
-	$data modify entity $(selector) text set value [[],'']
+	$execute \
+		store result storage chatter:data args.id int 1 \
+		store result score $(selector) chatter.id \
+		run scoreboard players add #chatter.last_id chatter.id 1
+
+	{ {message:$(message), delayRange:'$(delayRange)', soundFunction:'$(soundFunction)', selector:'$(selector)'}
+		$data modify storage chatter:data $(id).args set value { \
+			message:$(message), \
+			delayRange:'$(delayRange)', \
+			soundFunction:'$(soundFunction)', \
+			selector:'$(selector)' \
+		}
+	}
 
 	block loop {
-		{ with storage spiced:chatter args
-			$execute as $(selector) at @s run { with storage spiced:chatter args
+		say loop
+		block macro { with storage spiced:chatter "$(id)".args
+			say macro
+			# This can probably be done without an extra function, since we have the selector macro.
+			$execute as $(selector) at @s run block set_text { with storage spiced:chatter "$(id)".args
+				say set_text
 				$function $(soundFunction)
-				data modify storage spiced:chatter text append from storage spiced:chatter args.message[0]
-				data remove storage spiced:chatter args.message[0]
+				data modify storage spiced:chatter "$(id)".text append from storage spiced:chatter "$(id)".args.message[0]
+				data remove storage spiced:chatter "$(id)".args.message[0]
 
-				data modify entity @s text set from storage spiced:chatter text
+				data modify entity @s text set from storage spiced:chatter "$(id)".text
 			}
 
-			execute store result score #length v run data get storage spiced:chatter args.message
+			execute store result score #length v run data get storage spiced:chatter "$(id)".args.message
 			execute if score #length v matches 0 run return 1
 
 			# Get a random delay for the next message from the delay range
-			$execute store result storage spiced:chatter args.delay int 1 run random value $(delayRange)
-			{ with storage spiced:chatter args
+			$execute store result storage spiced:chatter "$(id)".args.delay int 1 run random value $(delayRange)
+			{ with storage spiced:chatter "$(id)".args
 				$schedule function ^2 $(delay)
 			}
 		}

@@ -132,7 +132,7 @@
       {
         "name": "spiced:guitar",
         "attenuation_distance": 6,
-        "volume": 0.8
+        "volume": 1
       }
     ],
     "subtitle": "subtitles.spiced.block.mixing_bowl.stir"

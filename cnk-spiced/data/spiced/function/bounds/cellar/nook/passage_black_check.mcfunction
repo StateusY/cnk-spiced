@@ -1,0 +1,2 @@
+execute positioned 186 53 170 as @a[tag=spiced.nook_passage, distance=..1] run function spiced:bounds/cellar/nook/enter_passage_from_black
+execute positioned 186 53 170 as @a[tag=spiced.nook_passage_exit, distance=..1] run function spiced:bounds/cellar/nook/exit_passage_from_black

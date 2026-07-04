@@ -1,1 +1,0 @@
-$function $(mash_callback)

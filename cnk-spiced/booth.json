@@ -8,7 +8,7 @@
         "y": { "min": 65, "max": 89 },
         "z": { "min": 178, "max": 198 }
       },
-      "on_player_enter":"spiced:summit_booth/bounds/cabin/enter"
+      "on_player_enter":"spiced:bounds/cabin/enter"
     },
     "cellar_enter": {
       "position": {
@@ -16,7 +16,7 @@
         "y": { "min": 55, "max": 58 },
         "z": { "min": 179, "max": 181 }
       },
-      "on_player_enter":"spiced:summit_booth/bounds/cellar/enter"
+      "on_player_enter":"spiced:bounds/cellar/enter"
     },
     "cellar_exit": {
       "position": {
@@ -24,7 +24,7 @@
         "y": { "min": 53, "max": 54 },
         "z": { "min": 176, "max": 177 }
       },
-      "on_player_enter":"spiced:summit_booth/bounds/cellar/exit"
+      "on_player_enter":"spiced:bounds/cellar/exit"
     },
     "fountain_enter": {
       "position": {
@@ -32,7 +32,7 @@
         "y": { "min": 53, "max": 54 },
         "z": { "min": 188, "max": 188 }
       },
-      "on_player_enter":"spiced:summit_booth/bounds/cellar/fountain/enter1"
+      "on_player_enter":"spiced:bounds/cellar/fountain/enter1"
     },
     "fountain_return": {
       "position": {
@@ -40,7 +40,7 @@
         "y": { "min": 53, "max": 54 },
         "z": { "min": 185, "max": 185 }
       },
-      "on_player_enter":"spiced:summit_booth/bounds/cellar/fountain/exit1"
+      "on_player_enter":"spiced:bounds/cellar/fountain/exit1"
     },
     "fountain_exit": {
       "position": {
@@ -48,7 +48,7 @@
         "y": { "min": 53, "max": 54 },
         "z": { "min": 174, "max": 174 }
       },
-      "on_player_enter":"spiced:summit_booth/bounds/cellar/fountain/exit2"
+      "on_player_enter":"spiced:bounds/cellar/fountain/exit2"
     },
     "cellar": {
       "position": {

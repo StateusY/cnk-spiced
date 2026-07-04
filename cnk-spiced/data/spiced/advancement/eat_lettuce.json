@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "spiced:summit_booth/extras/grant_lettuce_sticker"
+    "function": "spiced:extras/grant_lettuce_sticker"
   }
 }

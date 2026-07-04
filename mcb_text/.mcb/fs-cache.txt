@@ -1,8 +1,10 @@
-data/spiced/function/chatter/loop/zzz/1.mcfunction:ac7e51f9e0cde9a0774cc2d2b06e95101683418f
-data/spiced/function/chatter/loop/zzz/2.mcfunction:b87f7fb27e1b1bfd9a39ccba947df1ea56bbca4c
-data/spiced/function/chatter/loop/zzz/0.mcfunction:c039bc672d541e9b8de7204a38fc995457dd4145
-data/spiced/function/chatter/loop.mcfunction:6d39d3e338171feadc2ecd4bf4966486c476881d
-data/spiced/function/chatter/chatter.mcfunction:d7885e5870337283052ab85f9aa8df1f5c64578b
+data/spiced/function/chatter/load.mcfunction:7abbf38427044dc21f9dace89e2fb5c35477f771
+data/spiced/function/chatter/zzz/0.mcfunction:479a0ea701c5f8c3399a5408a2867a4adb2909d4
+data/spiced/function/chatter/loop/macro/set_text.mcfunction:984ec2ee7a1c0b73ef69390798dd9035b4fe3b33
+data/spiced/function/chatter/loop/macro/zzz/1.mcfunction:b87f7fb27e1b1bfd9a39ccba947df1ea56bbca4c
+data/spiced/function/chatter/loop/macro.mcfunction:29a9eb21b757f775412fef1a9fc2af39e6904a04
+data/spiced/function/chatter/loop.mcfunction:c02f9b65f292e9663ccbe2769f2a12e83f2d3a7e
+data/spiced/function/chatter/say.mcfunction:43a41e1c31cdd0a4b3dd5abf9f6d8aa7e2cdb940
 data/spiced/function/crypto_bro/summon.mcfunction:c25c7c69de49e76d1a68f4d7dc214347046b101a
 data/spiced/function/crypto_bro/zzz/1.mcfunction:b09dae3e6e2a6961032c75a1616caf03a99bae89
 data/spiced/function/crypto_bro/zzz/0.mcfunction:47746c8d10eb6e9c01c861b0f2d69440cbf08acc
@@ -76,5 +78,4 @@ data/spiced/function/crypto_bro/zzz/106.mcfunction:f4f8c614babd09b47de569ecfb3bb
 data/spiced/function/crypto_bro/zzz/107.mcfunction:f7ceecfb1e270000a8486cb1a21a7dce1e5829c4
 data/spiced/function/crypto_bro/zzz/108.mcfunction:34bf18b73959091a1f722922cc0d4974d1230f33
 data/spiced/function/crypto_bro/conversation8.mcfunction:854d82fda04b7759e249c1499150763e6d4781ce
-data/spiced/function/on_load.mcfunction:cad409d433254b4cd013978d586c748af4a2cbd6
-data/minecraft/tags/function/load.json:dd6eaccb34744adddb8a2aae4483f26902de211b
+data/minecraft/tags/function/load.json:1e9716638810bb3da63fb3420ca4f96bd03f3651

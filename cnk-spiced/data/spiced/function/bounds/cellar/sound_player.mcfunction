@@ -1,0 +1,1 @@
+execute positioned 203 53 189 as @a[tag=spiced.cellar_dwellar,distance=..100] at @s run function spiced:bounds/cellar/sound_sfx
