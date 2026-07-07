@@ -11,7 +11,7 @@ scoreboard players enable @s spiced.cookbook_buttons
 tag @s[tag=spiced.on_incomplete_page] remove spiced.on_incomplete_page
 
 #do dcf
-function dcf:open
+# function dcf:open
 
 #setup clean storage
 data remove storage spiced:temp cookbook

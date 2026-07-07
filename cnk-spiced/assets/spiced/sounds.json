@@ -136,5 +136,22 @@
       }
     ],
     "subtitle": "subtitles.spiced.block.mixing_bowl.stir"
-  }
+  },
+  "booth.sr_mantis.speech": {
+        "sounds": [
+            {
+              "name": "mob/villager/idle1",
+              "pitch":2
+            },
+            {
+              "name": "mob/villager/idle2",
+              "pitch":2
+            },
+            {
+              "name": "mob/villager/idle3",
+              "pitch":2
+            }
+        ],
+        "subtitle": "John Mantis Sr speaks"
+    }
 }

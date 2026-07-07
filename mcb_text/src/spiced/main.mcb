@@ -1,0 +1,10 @@
+function main_load minecraft:load {
+    scoreboard objectives add v dummy
+    kill @e[type=mannequin]
+    kill @e[type=interaction]
+    say load
+    function ../greg/summon
+}
+function main_tick minecraft:tick {
+    function ../greg/tick
+}

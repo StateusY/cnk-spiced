@@ -7,8 +7,8 @@ execute align xyz run summon item_display 218.99 77.5 189 {Tags:["summit.booth_e
 execute align xyz run summon item_display 190 56 195 {item_display:"ground",Tags:["summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 1f, 0.0f, 0f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:pearl_jam_plush_block"}}}
 
 # c4t plush on roof
-execute align xyz run summon item_display 215.5 86.5 189.5 {item_display:"ground",Tags:["summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, -0.6156615f, 0.0f, 0.78801084f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:c4t"}}}
-summon minecraft:interaction 215.5 86 189.5 {Tags:["summit.interactable","summit.booth_entity.spiced"], data: {summit_interactable: {on_right_click: "execute on target run function spiced:extras/c4t/main"}},height:0.8,width:1.01,response:true}
+# execute align xyz run summon item_display 215.5 86.5 189.5 {item_display:"ground",Tags:["summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, -0.6156615f, 0.0f, 0.78801084f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:c4t"}}}
+# summon minecraft:interaction 215.5 86 189.5 {Tags:["summit.interactable","summit.booth_entity.spiced"], data: {summit_interactable: {on_right_click: "execute on target run function spiced:extras/c4t/main"}},height:0.8,width:1.01,response:true}
 
 # cnk pail in exterior
 execute align xyz run summon item_display 205 69.5 195 {item_display:"ground",Tags:["summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0f, 0.0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:pail"}}}
@@ -47,6 +47,9 @@ execute align xyz run summon block_display 202.5 67 205 {Tags:["summit.booth_ent
 # crops in exterior
 execute align xyz run summon item_display 197 66 170 {item_display:"ground",Tags:["summit.booth_entity.spiced"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:bell_pepper_crop_7"}}}
 execute align xyz run summon item_display 198 66 170 {item_display:"ground",Tags:["summit.booth_entity.spiced"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:mustard_crop_3"}}}
+
+# sunflower
+execute align xyz run summon block_display 224 75 185 {Tags:["summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.0f, 0.0f, 1.0f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.5f,-0.5f],scale:[1.0f,1.0f,1.0f]},block_state: {Name: "minecraft:sunflower", Properties: {half:"lower"}}}
 
 # cargo legs on boat
 execute align xyz run summon block_display 209 64.5 203 {Tags:["summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.0f, 0.0f, 1.0f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.5f,-0.5f],scale:[1.0f,1.0f,1.0f]},block_state: {Name: "minecraft:polished_deepslate_slab", Properties: {type:"bottom"}},Passengers: \

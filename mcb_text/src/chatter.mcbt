@@ -1,0 +1,42 @@
+# Must be called within a macro function with the argument "message":
+# { {message: ['Hello', 'world!']}
+#  chatter 123e4567-e89b-12d3-a456-426614174000 4..8 aj_booth:crypto_bro/sounds
+# }
+template chatter {
+	with uuid:word delayRange:word soundFunction:word {
+		$data modify storage chatter:data <%uuid%> set value {text: [], message:$(message)}
+
+		summon text_display ~ ~ ~ { \
+			Tags:['summit.booth_entity','chatter.text_display'], \
+			UUID:uuid('<%uuid%>'), \
+			line_width: 120, \
+			transformation: {left_rotation:[0.0f,0.0f,0.0f,1.0f], right_rotation:[0.0f,0.0f,0.0f,1.0f], scale:[0.5f,0.5f,0.5f], translation:[0f,0f,0f]}, \
+			billboard: vertical, \
+			shadow: false, \
+			background: -2147483648, \
+		}
+
+		{
+			# Play sound function
+			execute at <%uuid%> run function <%soundFunction%>
+
+			# Append the next message to the text display and remove it from the message list
+			data modify storage chatter:data <%uuid%>.text append from storage chatter:data <%uuid%>.message[0]
+			data remove storage chatter:data <%uuid%>.message[0]
+			# Set text display text
+			data modify entity <%uuid%> text set from storage chatter:data <%uuid%>.text
+
+			# If there are no more messages, break the loop
+			execute store result score #length <%config.internalScoreboardName%> run \
+				data get storage chatter:data <%uuid%>.message
+			execute if score #length <%config.internalScoreboardName%> matches 0 run return 1
+
+			# Wait a random amount of time before displaying the next message
+			execute store result storage chatter:data <%uuid%>.delay int 1 run \
+				random value <%delayRange%>
+			{ with storage chatter:data <%uuid%>
+				$schedule function ^1 $(delay)
+			}
+		}
+	}
+}

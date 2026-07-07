@@ -27,6 +27,7 @@ scoreboard objectives add spiced.next_incomplete_recipe dummy
 
 # general use constants
 scoreboard objectives add spiced.dummy dummy
+scoreboard objectives add mcb.internal dummy
 scoreboard objectives add spiced.constant dummy
 scoreboard players set $1 spiced.constant 1
 scoreboard players set $16 spiced.constant 16

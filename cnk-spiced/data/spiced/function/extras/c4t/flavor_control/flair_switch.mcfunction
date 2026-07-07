@@ -22,7 +22,7 @@ execute if items entity @s weapon.mainhand minecraft:poisonous_potato[minecraft:
 
 execute if items entity @s weapon.mainhand minecraft:poisonous_potato[minecraft:custom_data~{"spiced":{"ingredient":{"type":chicken}}}] run return run function spiced:extras/c4t/style_flair/chicken
 
-execute if items entity @s weapon.mainhand minecraft:poisonous_potato[minecraft:custom_data~{"spiced":{"ingredient":{"type":pork}}}] run return run function spiced:extras/c4t/style_flair/pork
+execute if items entity @s weapon.mainhand minecraft:poisonous_potato[minecraft:custom_data~{"spiced":{"ingredient":{"type":porkchop}}}] run return run function spiced:extras/c4t/style_flair/pork
 
 execute if items entity @s weapon.mainhand minecraft:poisonous_potato[minecraft:custom_data~{"spiced":{"ingredient":{"type":egg}}}] run return run function spiced:extras/c4t/style_flair/eggs
 

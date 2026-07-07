@@ -1,0 +1,31 @@
+function shuffle {
+	#ARGS: {source: String, target: String}
+	$data modify storage shuffle:data list set from $(source)
+	data modify storage shuffle:data shuffled set value []
+
+	block loop {
+		execute \
+			store result storage shuffle:data args.max int 1 \
+			store result score #max v \
+		run data get storage shuffle:data list
+
+		execute if score #max v matches ..1 run return run \
+			data modify storage shuffle:data shuffled append from storage shuffle:data list[0]
+
+		block pick_random_index { with storage shuffle:data args
+			$execute \
+				store result storage shuffle:data args.index int 1 \
+				store result score #index v \
+			run random value 0..$(max)
+		}
+
+		block append_index { with storage shuffle:data args
+			$data modify storage shuffle:data shuffled append from storage shuffle:data list[$(index)]
+			$data remove storage shuffle:data list[$(index)]
+		}
+
+		execute if score #max v matches 1.. run function ^0
+	}
+
+	$data modify $(target) set from storage shuffle:data shuffled
+}

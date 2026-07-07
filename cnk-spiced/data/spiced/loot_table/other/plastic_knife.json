@@ -14,7 +14,7 @@
                 "minecraft:item_model": "spiced:plastic_knife",
                 "!minecraft:consumable":{},
                 "minecraft:custom_data": {"spiced":{"knife":true, "plastic": true},"smithed":{"ignore":{"functionality":true,"crafting":true}}, "summit": {"persist": {}}},
-                "minecraft:lore": [{"text":"Surprisingly Ineffective","color":"gray"},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
+                "minecraft:lore": [{"text":"Surprisingly Ineffective","color":"gray"},{"text":"persist","font":"spiced:small_text","color":"white"},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
             }
           }
           ]

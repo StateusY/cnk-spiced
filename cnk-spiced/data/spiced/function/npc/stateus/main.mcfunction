@@ -1,11 +1,3 @@
-execute store result score $random_response spiced.dummy run random value 1..4
-
-execute if score $random_response spiced.dummy matches 1 run loot give @s loot spiced:other/plastic_knife
-execute if score $random_response spiced.dummy matches 2 run loot give @s loot spiced:other/grimwart_knife
-execute if score $random_response spiced.dummy matches 3 run loot give @s loot spiced:other/butcher_knife
-execute if score $random_response spiced.dummy matches 4 run loot give @s loot spiced:other/stardust_knife
-
-
 # Actually the 'e' in 'Stateus' is silent
 # so its really pronounced 'status'
 # but everyone doesn't say it like that

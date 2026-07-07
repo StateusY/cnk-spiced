@@ -6,6 +6,12 @@ execute as @e[tag=spiced.cooking_pot,type=minecraft:item_display] at @s run func
 execute as @e[tag=spiced.mixing_bowl,type=minecraft:item_display] at @s run function spiced:mixing_bowl/tick
 execute as @e[tag=spiced.cutting_board,type=minecraft:item_display] at @s run function spiced:cutting_board/tick
 
+# npcs
+function spiced:stateus_npc/tick
+function spiced:pan_womsacz_npc/tick
+function spiced:c4t_npc/tick
+function spiced:mantis_npc/tick
+
 # remove before integration
 
 execute positioned 199 53 176 as @a[distance=..1,gamemode=!creative,gamemode=!spectator] at @s run function spiced:bounds/cellar/exit

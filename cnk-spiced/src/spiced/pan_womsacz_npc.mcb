@@ -1,0 +1,142 @@
+import ../sequence.mcbt
+import ../score.mcbt
+import ../chatter.mcbt
+
+function summon {
+	data modify storage spiced:pan_womsacz_npc conversation_order set value []
+	data modify storage spiced:pan_womsacz_npc conversations set value [1,2,3]
+
+	set #spiced.pan_womsacz_npc.chatting spiced.dummy 0
+	set #spiced.pan_womsacz_npc.mining_timer spiced.dummy 0
+	summon mannequin 200 64 207 {Rotation:[0f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.pan_womsacz_npc'],Invulnerable:1b,immovable:true,equipment:{mainhand:{id:'minecraft:fishing_rod'}},profile:{name:'pan_womsacz'},hide_description:true}
+
+	summon interaction 200 64 207 { \
+		Tags:['summit.booth_entity.spiced', 'summit.static', 'spiced.pan_womsacz_npc.interaction', 'summit.interactable'], \
+		width:1f, height:2f, response:true, \
+		data: { \
+			summit_interactable: { \
+				on_right_click: 'function spiced:pan_womsacz_npc/start_conversation', \
+				on_left_click: 'function spiced:pan_womsacz_npc/start_conversation', \
+			} \
+		} \
+	}
+	function ./reset
+}
+
+function tick {
+	execute \
+		if score #spiced.pan_womsacz_npc.chatting spiced.dummy matches 1 \
+		as @e[type=mannequin,tag=spiced.pan_womsacz_npc,limit=1] \
+		at @s \
+	run return run rotate @s facing entity @p
+}
+
+function says {
+	# ARGS: {message: TextComponent}
+	$execute \
+		as @e[type=mannequin,tag=spiced.pan_womsacz_npc,limit=1] \
+		at @s \
+		positioned ~ ~2.125 ~ \
+	run { {message: $(message)}
+		chatter e0fcef5a-63bd-45ce-bba5-4283f1fc432b 4..8 spiced:pan_womsacz_npc/sounds
+	}
+}
+
+function sounds {
+	execute store result storage spiced:pan_womsacz_npc args.note float 0.01 run random value 100..150
+	{ with storage spiced:pan_womsacz_npc args
+		$playsound minecraft:entity.villager.ambient player @a[distance=..20] ~ ~ ~ 0.5 $(note)
+	}
+}
+
+function reset {
+	execute as @e[type=mannequin,tag=spiced.pan_womsacz_npc,limit=1] at @s run rotate @s 0 0
+	scoreboard players set #spiced.pan_womsacz_npc.chatting spiced.dummy 0
+	kill e0fcef5a-63bd-45ce-bba5-4283f1fc432b
+
+	REPEAT (0, 110) as i {
+		schedule clear spiced:pan_womsacz_npc/zzz/<%i%>
+	}
+}
+
+function start_conversation {
+	execute if score #spiced.pan_womsacz_npc.chatting spiced.dummy matches 1 run return 0
+
+	execute store result score #length spiced.dummy run data get storage spiced:pan_womsacz_npc conversation_order
+	execute if score #length spiced.dummy matches 0 run {
+		function shuffle:shuffle {source: 'storage spiced:pan_womsacz_npc conversations', target: 'storage spiced:pan_womsacz_npc conversation_order'}
+	}
+
+	set #spiced.pan_womsacz_npc.chatting spiced.dummy 1
+
+	data modify storage spiced:temp args.conversation set from storage spiced:pan_womsacz_npc conversation_order[0]
+	data remove storage spiced:pan_womsacz_npc conversation_order[0]
+	{ with storage spiced:temp args
+		$function spiced:pan_womsacz_npc/conversation$(conversation)
+	}
+}
+
+function conversation1 {
+	sequence {
+		function ./says {message:[{text:'I', color: '#e4741d'}, ' really', ' love', ' grilled', ' cheese.']}
+
+		sleep 80t
+		function ./says {message:[{text:'Let', color: '#e4741d'}, ' me', ' tell', ' you,', ' a', ' little', ' spice', ' goes', ' a', ' long', ' way.']}
+
+		sleep 80t
+		function ./says {message:[{text:'Try', color: '#e4741d'}, ' adding', ' basil,', ' paprika,', ' and', ' a', ' touch', ' of', ' meat', ' to', ' a', ' grilled', ' cheese.']}
+
+		sleep 100t
+		function ./says {message:[{text:'It', color: '#e4741d'}, ' will', ' be', ' superb,', ' I', ' promise.']}
+
+		sleep 80t
+		function ./says {message:[{text:'In', color: '#e4741d'}, ' fact,', ' my', ' grilled', ' cheese', ' recipe', ' will', ' be', ' in', ' Spiced!']}
+
+		sleep 80t
+		function ./says {message:[{text:'Try,', color: '#e4741d'}, ' it', ' out', ' then.']}
+
+		sleep 60t
+		function ./reset
+	}
+}
+
+function conversation2 {
+	sequence {
+		function ./says {message:[{text:'Did', color: '#e4741d'}, ' you', ' know', ' there', ' are', ' two', ' things', ' you', ' can', ' wear', ' in', ' the', ' booth?']}
+
+		sleep 100t
+		function ./says {message:[{text:'Sunflower', color: '#e4741d'}, ' Snippets', ' and', ' Rammy!']}
+
+		sleep 60t
+		function ./says {message:[{text:'\"Who', color: '#e4741d'}, ' is', ' Rammy?\"', ' you', ' ask.']}
+
+		sleep 60t
+		function ./says {message:[{text:'Well,', color: '#e4741d'}, ' Rammy', ' is', ' a', ' special', ' piece', ' of', ' RAM.']}
+
+		sleep 60t
+		function ./says {message:[{text:'Here!', color: '#e4741d'}, ' Take', ' him!']}
+
+		sleep 40t
+		loot give @p loot spiced:other/rammy
+		execute as @p at @s run playsound minecraft:entity.item.pickup player @s ~ ~ ~ 0.5 1
+
+		sleep 80t
+		function ./reset
+	}
+}
+
+function give_rammy {
+	
+}
+
+function conversation3 {
+	sequence {
+		function ./says {message:[{text:'Remember,', color: '#e4741d'}, ' some', ' ingredients', ' vanish', ' when', ' you', ' leave', ' the', ' booth.']}
+
+		sleep 80t
+		function ./says {message:[{text:'However,', color: '#e4741d'}, ' items', ' with ', {text:'persist',font: "spiced:small_text",color:'white'}, {text:' in',color:'#e4741d'}, ' the', ' description', ' don\'t.']}
+
+		sleep 80t
+		function ./reset
+	}
+}

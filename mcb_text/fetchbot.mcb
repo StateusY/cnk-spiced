@@ -1,0 +1,134 @@
+import ../sequence.mcbt
+import ../score.mcbt
+import ../chatter.mcbt
+
+function summon {
+	data modify storage spiced:fetchbot conversation_order set value []
+	data modify storage spiced:fetchbot conversations set value [1, 2, 3, 4, 5, 6]
+
+	set #spiced.fetchbot.chatting v 0
+	set #spiced.fetchbot.mining_timer v 0
+	summon mannequin -64.25 76 232.25 {Rotation:[160f, 0f], Tags:['<%config.booth_entity_tag%>', 'summit.static', 'spiced.fetchbot'],Invulnerable:1b,immovable:true,equipment:{head:{id:"minecraft:pufferfish",count:1,components:{"minecraft:item_model":"aj_booth:hard_hat"}}},profile:{name:"FetchBot"},hide_description:true}
+
+	summon interaction -64.25 76 232.25 { \
+		Tags:['<%config.booth_entity_tag%>', 'summit.static', 'spiced.fetchbot.interaction', 'summit.interactable'], \
+		width:1f, height:2f, response:true, \
+		data: { \
+			summit_interactable: { \
+				on_right_click: 'function spiced:fetchbot/start_conversation', \
+				on_left_click: 'function spiced:fetchbot/start_conversation', \
+			} \
+		} \
+	}
+	function ./reset
+}
+
+function tick {
+	execute \
+		if score #spiced.fetchbot.chatting v matches 1 \
+		as @e[type=mannequin,tag=spiced.fetchbot,limit=1] \
+		at @s \
+	run return run rotate @s facing entity @p
+}
+
+function says {
+	# ARGS: {message: TextComponent}
+	$execute \
+		as @e[type=mannequin,tag=spiced.fetchbot,limit=1] \
+		at @s \
+		positioned ~ ~2.125 ~ \
+	run { {message: $(message)}
+		chatter dfdc58cb-5a14-4c6a-8297-eb69383b79c8 4..8 spiced:fetchbot/sounds
+	}
+}
+
+function sounds {
+	execute store result storage spiced:fetchbot args.note float 0.01 run random value 100..150
+	{ with storage spiced:fetchbot args
+		$playsound minecraft:entity.vindicator.ambient player @a[distance=..20] ~ ~ ~ 0.5 $(note)
+	}
+}
+
+function reset {
+	execute as @e[type=mannequin,tag=spiced.fetchbot,limit=1] at @s run rotate @s 160 0
+	scoreboard players set #spiced.fetchbot.chatting v 0
+	kill dfdc58cb-5a14-4c6a-8297-eb69383b79c8
+
+	REPEAT (0, 110) as i {
+		schedule clear spiced:fetchbot/zzz/<%i%>
+	}
+}
+
+function start_conversation {
+	execute if score #spiced.fetchbot.chatting v matches 1 run return 0
+
+	execute store result score #length v run data get storage spiced:fetchbot conversation_order
+	execute if score #length v matches 0 run {
+		function shuffle:shuffle {source: 'storage spiced:fetchbot conversations', target: 'storage spiced:fetchbot conversation_order'}
+	}
+
+	set #spiced.fetchbot.chatting v 1
+
+	data modify storage spiced:temp args.conversation set from storage spiced:fetchbot conversation_order[0]
+	data remove storage spiced:fetchbot conversation_order[0]
+	{ with storage spiced:temp args
+		$function spiced:fetchbot/conversation$(conversation)
+	}
+}
+
+function conversation1 {
+	sequence {
+		function ./says {message:[{text:"Press", color: aqua},' the', ' button', ' to', ' get', ' a', ' hardhat.']}
+
+		sleep 80t
+		function ./reset
+	}
+}
+
+function conversation2 {
+	sequence {
+		function ./says {message:[{text:"Press", color: aqua}, ' it.']}
+
+		sleep 60t
+		function ./reset
+	}
+}
+
+function conversation3 {
+	sequence {
+		function ./says {message:[{text:"You", color: aqua}, ' will', ' not', ' regret', ' pressing', ' the', ' button.']}
+
+		sleep 80t
+		function ./reset
+	}
+}
+
+function conversation4 {
+	sequence {
+		function ./says {message:[{text:"It's", color: aqua},' practically', ' free', ' money.']}
+
+		sleep 80t
+		function ./reset
+	}
+}
+
+function conversation5 {
+	sequence {
+		function ./says {message:[{text:"You", color: aqua}, ' know', ' what', ' to', ' do.']}
+
+		sleep 80t
+		function ./reset
+	}
+}
+
+function conversation6 {
+	sequence {
+		function ./says {message:[{text:"The", color: aqua}, ' job', ' market', ' is', ' tough.']}
+
+		sleep 60t
+		function ./says {message:[{text:"We're", color: aqua}, ' giving', ' you', ' a', ' leg', ' up.']}
+
+		sleep 80t
+		function ./reset
+	}
+}

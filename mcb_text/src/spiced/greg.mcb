@@ -1,0 +1,147 @@
+import ../sequence.mcbt
+import ../score.mcbt
+import ../chatter.mcbt
+
+function summon {
+	data modify storage spiced:greg conversation_order set value []
+	data modify storage spiced:greg conversations set value [5]
+
+	set #spiced.greg.chatting v 0
+	set #spiced.greg.mining_timer v 0
+	summon mannequin -64.25 76 232.25 {Rotation:[160f, 0f], Tags:['<%config.booth_entity_tag%>', 'summit.static', 'spiced.greg'],Invulnerable:1b,immovable:true,equipment:{head:{id:"minecraft:pufferfish",count:1,components:{"minecraft:item_model":"aj_booth:hard_hat"}}},profile:{name:"greg"},hide_description:true}
+
+	summon interaction -64.25 76 232.25 { \
+		Tags:['<%config.booth_entity_tag%>', 'summit.static', 'spiced.greg.interaction', 'summit.interactable'], \
+		width:1f, height:2f, response:true, \
+		data: { \
+			summit_interactable: { \
+				on_right_click: 'function spiced:greg/start_conversation', \
+				on_left_click: 'function spiced:greg/start_conversation', \
+			} \
+		} \
+	}
+	function ./reset
+}
+
+function tick {
+	execute \
+		if score #spiced.greg.chatting v matches 1 \
+		as @e[type=mannequin,tag=spiced.greg,limit=1] \
+		at @s \
+	run return run rotate @s facing entity @p
+}
+
+function says {
+	# ARGS: {message: TextComponent}
+	$execute \
+		as @e[type=mannequin,tag=spiced.greg,limit=1] \
+		at @s \
+		positioned ~ ~2.125 ~ \
+	run { {message: $(message)}
+		chatter dfdc58cb-5a14-4c6a-8297-eb69383b79c8 4..8 spiced:greg/sounds
+	}
+}
+
+function sounds {
+	execute store result storage spiced:greg args.note float 0.01 run random value 100..150
+	{ with storage spiced:greg args
+		$playsound minecraft:entity.vindicator.ambient player @a[distance=..20] ~ ~ ~ 0.5 $(note)
+	}
+}
+
+function reset {
+	execute as @e[type=mannequin,tag=spiced.greg,limit=1] at @s run rotate @s 160 0
+	scoreboard players set #spiced.greg.chatting v 0
+	kill dfdc58cb-5a14-4c6a-8297-eb69383b79c8
+
+	REPEAT (0, 110) as i {
+		schedule clear spiced:greg/zzz/<%i%>
+	}
+}
+
+function start_conversation {
+	execute if score #spiced.greg.chatting v matches 1 run return 0
+
+	execute store result score #length v run data get storage spiced:greg conversation_order
+	execute if score #length v matches 0 run {
+		function shuffle:shuffle {source: 'storage spiced:greg conversations', target: 'storage spiced:greg conversation_order'}
+	}
+
+	set #spiced.greg.chatting v 1
+
+	data modify storage spiced:temp args.conversation set from storage spiced:greg conversation_order[0]
+	data remove storage spiced:greg conversation_order[0]
+	{ with storage spiced:temp args
+		$function spiced:greg/conversation$(conversation)
+	}
+}
+
+function conversation1 {
+	sequence {
+		function ./says {message:[{text:"Press", color: aqua},' the', ' button', ' to', ' get', ' a', ' hardhat.']}
+
+		sleep 80t
+		function ./reset
+	}
+}
+
+function conversation2 {
+	sequence {
+		function ./says {message:[{text:"Press", color: aqua}, ' it.']}
+
+		sleep 60t
+		function ./reset
+	}
+}
+
+function conversation3 {
+	sequence {
+		function ./says {message:[{text:"You", color: aqua}, ' will', ' not', ' regret', ' pressing', ' the', ' button.']}
+
+		sleep 80t
+		function ./reset
+	}
+}
+
+function conversation4 {
+	sequence {
+		function ./says {message:[{text:"It's", color: aqua},' practically', ' free', ' money.']}
+
+		sleep 80t
+		function ./reset
+	}
+}
+
+function conversation5 {
+	sequence {
+		function ./says {message:[{text:"You", color: aqua}, ' know', ' what', ' to', ' do.']}
+
+		sleep 60t
+		execute unless entity @a[tag=test] run return run function ./reset
+		sleep 8t until execute if function spiced:greg/test
+
+		function ./says {message:[{text:"Good", color: aqua}, ' job', ' valued', ' employee.']}
+
+		sleep 80t
+		function ./reset
+	}
+}
+
+
+function test {
+	execute if entity @a[tag=test] run return 1
+	return 0
+}
+
+
+function conversation6 {
+	sequence {
+		function ./says {message:[{text:"The", color: aqua}, ' job', ' market', ' is', ' tough.']}
+
+		sleep 60t
+		function ./says {message:[{text:"We're", color: aqua}, ' giving', ' you', ' a', ' leg', ' up.']}
+
+		sleep 80t
+		function ./reset
+	}
+}

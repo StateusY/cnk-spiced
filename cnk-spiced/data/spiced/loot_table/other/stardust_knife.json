@@ -14,7 +14,7 @@
                 "minecraft:item_model": "spiced:stardust_knife",
                 "!minecraft:consumable":{},
                 "minecraft:custom_data": {"spiced":{"knife":true, "stardust": true},"smithed":{"ignore":{"functionality":true,"crafting":true}}, "summit": {"persist": {}}},
-                "minecraft:lore": [{"text":"Check out the Stardust Showdown Booth!","color":"gray"},{"text":"Stardust Showdown","font":"spiced:stardust_tooltip","color":"white","italic":false}]
+                "minecraft:lore": [{"text":"Check out the Stardust Showdown Booth!","color":"gray"},{"text":"persist","font":"spiced:small_text","color":"white"},{"text":"Stardust Showdown","font":"spiced:stardust_tooltip","color":"white","italic":false}]
             }
           }
           ]
