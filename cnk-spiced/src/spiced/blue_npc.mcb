@@ -93,13 +93,13 @@ function conversation2 {
 		function ./says {message:[{text:'Now', color: '#0021d9'}, ' I', ' can', ' live', ' down', ' here.']}
 
 		sleep 60t
-		function ./says {message:[{text:'Isn\'t', color: '#0021d9'}, ' that', ' great!']}
+		function ./says {message:[{text:'Isn\'t', color: '#0021d9'}, ' that', ' great.']}
 
 		sleep 60t
-		function ./says {message:[{text:'Fresh', color: '#0021d9'}, ' lily', ' is', ' a', ' delacacy', ' in', ' some', ' places,', ' y\'know.']}
+		function ./says {message:[{text:'Fresh', color: '#0021d9'}, ' lily', ' is', ' a', ' delicacy', ' in', ' some', ' places,', ' y\'know.']}
 
 		sleep 80t
-		function ./says {message:[{text:'Would', color: '#0021d9'}, ' you', ' like', ' to', ' try', ' some?']}
+		function ./says {message:[{text:'You', color: '#0021d9'}, ' shoud', ' try', ' some.']}
 
 		sleep 60t
 		function ./reset
@@ -111,7 +111,7 @@ function conversation3 {
 		function ./says {message:[{text:'Just', color: '#0021d9'}, ' keeping', ' an', ' eye', ' on', ' these', ' AJ', ' shipments']}
 
 		sleep 80t
-		function ./says {message:[{text:'Can\'t,', color: '#0021d9'}, ' have', ' any', ' getting', ' lost,', ' don\'t', ' we?']}
+		function ./says {message:[{text:'Can\'t', color: '#0021d9'}, ' have', ' any', ' getting', ' lost,', ' don\'t', ' we?']}
 
 		sleep 80t
 		function ./says {message:[{text:'Snave', color: '#0021d9'}, ' would', ' disapprove.']}
