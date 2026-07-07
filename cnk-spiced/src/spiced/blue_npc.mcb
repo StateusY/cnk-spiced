@@ -1,0 +1,131 @@
+import ../sequence.mcbt
+import ../score.mcbt
+import ../chatter.mcbt
+
+function summon {
+	data modify storage spiced:blue_npc conversation_order set value []
+	data modify storage spiced:blue_npc conversations set value [1,2,3,4]
+
+	set #spiced.blue_npc.chatting spiced.dummy 0
+	set #spiced.blue_npc.mining_timer spiced.dummy 0
+	summon mannequin 218 62 186 {Rotation:[0f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.blue_npc'],Invulnerable:1b,immovable:true,profile:{name:'actuallyblue'},hide_description:true}
+
+	summon interaction 218 62 186 { \
+		Tags:['summit.booth_entity.spiced', 'summit.static', 'spiced.blue_npc.interaction', 'summit.interactable'], \
+		width:1f, height:2f, response:true, \
+		data: { \
+			summit_interactable: { \
+				on_right_click: 'function spiced:blue_npc/start_conversation', \
+				on_left_click: 'function spiced:blue_npc/start_conversation', \
+			} \
+		} \
+	}
+	function ./reset
+}
+
+function tick {
+	execute \
+		if score #spiced.blue_npc.chatting spiced.dummy matches 1 \
+		as @e[type=mannequin,tag=spiced.blue_npc,limit=1] \
+		at @s \
+	run return run rotate @s facing entity @p
+}
+
+function says {
+	# ARGS: {message: TextComponent}
+	$execute \
+		as @e[type=mannequin,tag=spiced.blue_npc,limit=1] \
+		at @s \
+		positioned ~ ~2.125 ~ \
+	run { {message: $(message)}
+		chatter e0fcef5a-63bd-45ce-bba5-4283f1fc432b 4..8 spiced:blue_npc/sounds
+	}
+}
+
+function sounds {
+	execute store result storage spiced:blue_npc args.note float 0.01 run random value 100..150
+	{ with storage spiced:blue_npc args
+		$playsound minecraft:entity.villager.ambient player @a[distance=..20] ~ ~ ~ 0.5 $(note)
+	}
+}
+
+function reset {
+	execute as @e[type=mannequin,tag=spiced.blue_npc,limit=1] at @s run rotate @s 0 0
+	scoreboard players set #spiced.blue_npc.chatting spiced.dummy 0
+	kill e0fcef5a-63bd-45ce-bba5-4283f1fc432b
+
+	REPEAT (0, 110) as i {
+		schedule clear spiced:blue_npc/zzz/<%i%>
+	}
+}
+
+function start_conversation {
+	execute if score #spiced.blue_npc.chatting spiced.dummy matches 1 run return 0
+
+	execute store result score #length spiced.dummy run data get storage spiced:blue_npc conversation_order
+	execute if score #length spiced.dummy matches 0 run {
+		function shuffle:shuffle {source: 'storage spiced:blue_npc conversations', target: 'storage spiced:blue_npc conversation_order'}
+	}
+
+	set #spiced.blue_npc.chatting spiced.dummy 1
+
+	data modify storage spiced:temp args.conversation set from storage spiced:blue_npc conversation_order[0]
+	data remove storage spiced:blue_npc conversation_order[0]
+	{ with storage spiced:temp args
+		$function spiced:blue_npc/conversation$(conversation)
+	}
+}
+
+function conversation1 {
+	sequence {
+		function ./says {message:[{text:'Glub', color: '#0021d9'}, ' glub...']}
+
+		sleep 60t
+		function ./reset
+	}
+}
+
+function conversation2 {
+	sequence {
+		function ./says {message:[{text:'I', color: '#0021d9'}, ' sure', ' am', ' glad', ' I', ' found', ' this', ' lilypad.']}
+
+		sleep 80t
+		function ./says {message:[{text:'Now', color: '#0021d9'}, ' I', ' can', ' live', ' down', ' here.']}
+
+		sleep 60t
+		function ./says {message:[{text:'Isn\'t', color: '#0021d9'}, ' that', ' great!']}
+
+		sleep 60t
+		function ./says {message:[{text:'Fresh', color: '#0021d9'}, ' lily', ' is', ' a', ' delacacy', ' in', ' some', ' places,', ' y\'know.']}
+
+		sleep 80t
+		function ./says {message:[{text:'Would', color: '#0021d9'}, ' you', ' like', ' to', ' try', ' some?']}
+
+		sleep 60t
+		function ./reset
+	}
+}
+
+function conversation3 {
+	sequence {
+		function ./says {message:[{text:'Just', color: '#0021d9'}, ' keeping', ' an', ' eye', ' on', ' these', ' AJ', ' shipments']}
+
+		sleep 80t
+		function ./says {message:[{text:'Can\'t,', color: '#0021d9'}, ' have', ' any', ' getting', ' lost,', ' don\'t', ' we?']}
+
+		sleep 80t
+		function ./says {message:[{text:'Snave', color: '#0021d9'}, ' would', ' disapprove.']}
+
+		sleep 60t
+		function ./reset
+	}
+}
+
+function conversation4 {
+	sequence {
+		function ./says {message:[{text:'My', color: '#0021d9'}, ' name', ' is', ' Blue,', ' just', ' like', ' this', ' water.']}
+
+		sleep 80t
+		function ./reset
+	}
+}

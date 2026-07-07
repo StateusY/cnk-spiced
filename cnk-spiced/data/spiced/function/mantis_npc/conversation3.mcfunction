@@ -1,4 +1,4 @@
 # Generated with MC-Build
 
-function spiced:mantis_npc/says {message:[{text:'If', color: '#f0d8c8'}, ' only', ' I', ' could', ' move...']}
-schedule function spiced:mantis_npc/zzz/33 80t replace
+function spiced:mantis_npc/says {message:[{text:'So', color: '#f0d8c8'}, ' many', ' people', ' coming', ' together', ' to', ' show', ' their', ' creations...', ' it\'s', ' pretty', ' inspiring', ' honestly.']}
+schedule function spiced:mantis_npc/zzz/23 120t replace

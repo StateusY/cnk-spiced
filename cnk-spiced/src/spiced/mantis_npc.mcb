@@ -79,43 +79,55 @@ function start_conversation {
 
 function conversation1 {
 	sequence {
-		function ./says {message:[{text:'Have', color: '#f0d8c8'}, ' you', ' seen', ' my', ' son?']}
-
-		sleep 60t
-		function ./says {message:[{text:'But', color: '#f0d8c8'}, ' I', ' also', ' am', ' a', ' robot.']}
+		function ./says {message:[{text:'Hey', color: '#f0d8c8'}, ' there!', ' Seems', ' like', ' I', ' went', ' to', ' the', ' wrong', ' booth,', ' huh?']}
 
 		sleep 80t
-		function ./says {message:[{text:'I\'m', color: '#f0d8c8'}, ' C4T', ' the', ' Computer', ' Controlled', ' Cat-like', ' Creature', ' Technology!']}
+		function ./says {message:[{text:'I', color: '#f0d8c8'}, ' don\'t', ' mind', ' though,', ' it\'s', ' pretty', ' rad', ' here!']}
 
 		sleep 80t
-		function ./says {message:[{text:'Genius', color: '#f0d8c8'}, ' acronym', ' right?']}
+		function ./says {message:[{text:'There\'s', color: '#f0d8c8'}, ' so', ' much', ' food', ' and', ' no', ' pesky', ' crows', ' trying', ' to', ' eat', ' me!']}
 
-		sleep 40t
-		function ./says {message:[{text:'My', color: '#f0d8c8'}, ' creators', ' thought', ' so.']}
-
-		sleep 40t
+		sleep 100t
 		function ./reset
 	}
 }
 
+# Fourth Message
+# “I used to crave perfection. I would tear up my work if it was insufficient, I’d compare myself to others…”
+
+# “But at the same time, I’d envy those who unabashedly shared their work, especially those I deemed less skilled than I…”
+
+# “But now, I’m glad to be able to share my creations and share the spotlight with so many people.”
+
+# Fifth Message
+# “A shame we only have two weeks left together… maybe only a few hours depending on when you’ve found me…”
+
+# “And when it’s all over, you’ll probably forget this happened at all.”
+
+# “This server will close, your memory will slowly fade, and all these little moments will disappear…”
+
+# “Yet how you felt, how you were inspired… those little sparks will persist.”
+
+# “And somehow, that will be enough, and you’ll move on along with the world.”
+
+# “Maybe you’ll make something too? If you haven’t already.”
+
+# Sixth Message
+# “Thanks for listening to my ramblings, I hope you enjoy the rest of the Summit, however much time that is.”
+
+# “Take a little token of my appreciation.”
+
+# (Give a single egg)
+
 function conversation2 {
 	sequence {
-		function ./says {message:[{text:'I', color: '#f0d8c8'}, ' am', ' planned', ' for', ' Spiced.']}
+		function ./says {message:[{text:'My', color: '#f0d8c8'}, ' siblings', ' are', ' probably', ' wondering', ' where', ' I', ' am,', ' I', ' was', ' supposed', ' to', ' be', ' helping...']}
 
-		sleep 80t
-		function ./says {message:[{text:'But', color: '#f0d8c8'}, ' not', ' 1.0']}
+		sleep 120t
+		function ./says {message:[{text:'But', color: '#f0d8c8'}, ' let', ' them', ' wonder!', ' Let', ' them', ' struggle', ' and', ' adapt!', ' Isn\'t', ' that', ' what', ' makes', ' life', ' worth', ' living?!?']}
 
-		sleep 40t
-		function ./says {message:[{text:'Stateus', color: '#f0d8c8'}, ' and', ' Pan', ' have', ' way', ' too', ' much', ' to', ' do.']}
-
-		sleep 80t
-		function ./says {message:[{text:'I', color: '#f0d8c8'}, ' hope', ' I', ' can', ' be', ' implemented', ' in', ' Spiced\'s', ' first', ' update', ' after', ' release.']}
-
-		sleep 100t
-		function ./says {message:[{text:'I', color: '#f0d8c8'}, ' know', ' there', ' isn\'t', ' space', ' for', ' me', ' in', ' release.']}
-
-		sleep 80t
-		function ./says {message:[{text:'But', color: '#f0d8c8'}, ' I', ' know', ' I', ' will', ' see', ' you', ' soon!']}
+		sleep 120t
+		function ./says {message:[{text:'Sorry,', color: '#f0d8c8'}, ' I', ' got', ' a', ' little', ' carried', ' away', ' there...']}
 
 		sleep 80t
 		function ./reset
@@ -124,15 +136,15 @@ function conversation2 {
 
 function conversation3 {
 	sequence {
-		function ./says {message:[{text:'If', color: '#f0d8c8'}, ' only', ' I', ' could', ' move...']}
+		function ./says {message:[{text:'So', color: '#f0d8c8'}, ' many', ' people', ' coming', ' together', ' to', ' show', ' their', ' creations...', ' it\'s', ' pretty', ' inspiring', ' honestly.']}
 
-		sleep 80t
-		function ./says {message:[{text:'But', color: '#f0d8c8'}, ' I', ' lack', ' animations', ' at', ' the', ' moment.']}
+		sleep 120t
+		function ./says {message:[{text:'I', color: '#f0d8c8'}, ' think', ' John', ' was', ' worried', ' about', ' being', ' here,', ' being', ' inferior.', ' But', ' it\'s', ' not', ' about', ' that.']}
 
-		sleep 80t
-		function ./says {message:[{text:'Someday...', color: '#f0d8c8'}]}
+		sleep 120t
+		function ./says {message:[{text:'It\'s', color: '#f0d8c8'}, ' about', ' your', ' heart.', ' Your', ' creations,', ' whatever', ' went', ' into', ' them,', ' are', ' invaluable.', ' YOU', ' are', ' invaluable.']}
 
-		sleep 30t
+		sleep 120t
 		function ./reset
 	}
 }

@@ -11,6 +11,7 @@ function spiced:stateus_npc/tick
 function spiced:pan_womsacz_npc/tick
 function spiced:c4t_npc/tick
 function spiced:mantis_npc/tick
+function spiced:blue_npc/tick
 
 # remove before integration
 

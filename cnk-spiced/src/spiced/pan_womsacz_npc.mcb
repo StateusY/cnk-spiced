@@ -125,10 +125,6 @@ function conversation2 {
 	}
 }
 
-function give_rammy {
-	
-}
-
 function conversation3 {
 	sequence {
 		function ./says {message:[{text:'Remember,', color: '#e4741d'}, ' some', ' ingredients', ' vanish', ' when', ' you', ' leave', ' the', ' booth.']}
