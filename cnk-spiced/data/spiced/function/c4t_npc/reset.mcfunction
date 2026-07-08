@@ -2,7 +2,7 @@
 
 execute as @e[type=mannequin,tag=spiced.c4t_npc,limit=1] at @s run rotate @s 180 0
 scoreboard players set #spiced.c4t_npc.chatting spiced.dummy 0
-kill b57a3c1f-68da-441b-9361-f092d6630b55
+kill f4e11725-a467-4e37-bf5d-d13a1645214d
 schedule clear spiced:c4t_npc/zzz/0
 schedule clear spiced:c4t_npc/zzz/1
 schedule clear spiced:c4t_npc/zzz/2

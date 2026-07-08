@@ -4,7 +4,7 @@ import ../chatter.mcbt
 
 function summon {
 	data modify storage spiced:c4t_npc conversation_order set value []
-	data modify storage spiced:c4t_npc conversations set value [1,2,3]
+	data modify storage spiced:c4t_npc conversations set value [1,2,3,4]
 
 	set #spiced.c4t_npc.chatting spiced.dummy 0
 	set #spiced.c4t_npc.mining_timer spiced.dummy 0
@@ -40,23 +40,23 @@ function says {
 		at @s \
 		positioned ~ ~2.125 ~ \
 	run { {message: $(message)}
-		chatter b57a3c1f-68da-441b-9361-f092d6630b55 4..8 spiced:c4t_npc/sounds
+		chatter f4e11725-a467-4e37-bf5d-d13a1645214d 4..8 spiced:c4t_npc/sounds
 	}
 }
 
 function sounds {
 	execute store result storage spiced:c4t_npc args.note float 0.01 run random value 100..150
 	{ with storage spiced:c4t_npc args
-		$playsound minecraft:entity.cat.ambient player @a[distance=..20] ~ ~ ~ 0.5 $(note)
-		$playsound minecraft:block.note_block.bit player @a[distance=..20] ~ ~ ~ 0.5 $(note)
-		$playsound minecraft:item.lodestone_compass.lock player @a[distance=..20] ~ ~ ~ 0.5 $(note)
+		$playsound minecraft:entity.cat.ambient player @a[tag=summit.in_booth.spiced,distance=..20] ~ ~ ~ 0.5 $(note)
+		$playsound minecraft:block.note_block.bit player @a[tag=summit.in_booth.spiced,distance=..20] ~ ~ ~ 0.5 $(note)
+		$playsound minecraft:item.lodestone_compass.lock player @a[tag=summit.in_booth.spiced,distance=..20] ~ ~ ~ 0.5 $(note)
 	}
 }
 
 function reset {
 	execute as @e[type=mannequin,tag=spiced.c4t_npc,limit=1] at @s run rotate @s 180 0
 	scoreboard players set #spiced.c4t_npc.chatting spiced.dummy 0
-	kill b57a3c1f-68da-441b-9361-f092d6630b55
+	kill f4e11725-a467-4e37-bf5d-d13a1645214d
 
 	REPEAT (0, 110) as i {
 		schedule clear spiced:c4t_npc/zzz/<%i%>
@@ -136,6 +136,27 @@ function conversation3 {
 		function ./says {message:[{text:'Someday...', color: 'gold'}]}
 
 		sleep 30t
+		function ./reset
+	}
+}
+
+function conversation4 {
+	sequence {
+		function ./says {message:[{text:'Have', color: 'gold'}, ' you', ' found', ' Cinnamon', ' yet?']}
+
+		sleep 60t
+		function ./says {message:[{text:'I', color: 'gold'}, ' loves', ' cinnamon!']}
+
+		sleep 40t
+		function ./says {message:[{text:'I', color: 'gold'}, ' mix', ' it', ' with', ' eggnog,', ' it\'s', ' sooooo', ' yums!!']}
+
+		sleep 80t
+		function ./says {message:[{text:'Try', color: 'gold'}, ' mixin\'', ' up', ' eggnog', ' in', ' a', ' bowl!']}
+
+		sleep 80t
+		function ./says {message:[{text:'It\'s', color: 'gold'}, ' supa', ' easy!', ' Just', ' use', ' an', ' egg,', ' milk,', ' and', ' some', ' sugar!']}
+
+		sleep 100t
 		function ./reset
 	}
 }

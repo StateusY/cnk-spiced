@@ -4,7 +4,7 @@ import ../chatter.mcbt
 
 function summon {
 	data modify storage spiced:mantis_npc conversation_order set value []
-	data modify storage spiced:mantis_npc conversations set value [1,2,3]
+	data modify storage spiced:mantis_npc conversations set value [1,2,3,4,5,6]
 
 	set #spiced.mantis_npc.chatting spiced.dummy 0
 	set #spiced.mantis_npc.mining_timer spiced.dummy 0
@@ -39,21 +39,21 @@ function says {
 		at @s \
 		positioned ~ ~2.125 ~ \
 	run { {message: $(message)}
-		chatter b57a3c1f-68da-441b-9361-f092d6630b55 4..8 spiced:mantis_npc/sounds
+		chatter e73fcae3-5c03-41c8-aab8-496fe1719fe2 4..8 spiced:mantis_npc/sounds
 	}
 }
 
 function sounds {
 	execute store result storage spiced:mantis_npc args.note float 0.01 run random value 100..150
 	{ with storage spiced:mantis_npc args
-		$playsound spiced:booth.sr_mantis.speech player @a[distance=..20] ~ ~ ~ 0.5 $(note)
+		$playsound spiced:booth.sr_mantis.speech player @a[tag=summit.in_booth.spiced,distance=..20] ~ ~ ~ 0.5 $(note)
 	}
 }
 
 function reset {
 	execute as @e[type=mannequin,tag=spiced.mantis_npc,limit=1] at @s run rotate @s 90 0
 	scoreboard players set #spiced.mantis_npc.chatting spiced.dummy 0
-	kill b57a3c1f-68da-441b-9361-f092d6630b55
+	kill e73fcae3-5c03-41c8-aab8-496fe1719fe2
 
 	REPEAT (0, 110) as i {
 		schedule clear spiced:mantis_npc/zzz/<%i%>
@@ -65,7 +65,8 @@ function start_conversation {
 
 	execute store result score #length spiced.dummy run data get storage spiced:mantis_npc conversation_order
 	execute if score #length spiced.dummy matches 0 run {
-		function shuffle:shuffle {source: 'storage spiced:mantis_npc conversations', target: 'storage spiced:mantis_npc conversation_order'}
+		data modify storage spiced:mantis_npc conversation_order set from storage spiced:mantis_npc conversations
+		# function shuffle:shuffle {source: 'storage spiced:mantis_npc conversations', target: 'storage spiced:mantis_npc conversation_order'}
 	}
 
 	set #spiced.mantis_npc.chatting spiced.dummy 1
@@ -92,33 +93,6 @@ function conversation1 {
 	}
 }
 
-# Fourth Message
-# “I used to crave perfection. I would tear up my work if it was insufficient, I’d compare myself to others…”
-
-# “But at the same time, I’d envy those who unabashedly shared their work, especially those I deemed less skilled than I…”
-
-# “But now, I’m glad to be able to share my creations and share the spotlight with so many people.”
-
-# Fifth Message
-# “A shame we only have two weeks left together… maybe only a few hours depending on when you’ve found me…”
-
-# “And when it’s all over, you’ll probably forget this happened at all.”
-
-# “This server will close, your memory will slowly fade, and all these little moments will disappear…”
-
-# “Yet how you felt, how you were inspired… those little sparks will persist.”
-
-# “And somehow, that will be enough, and you’ll move on along with the world.”
-
-# “Maybe you’ll make something too? If you haven’t already.”
-
-# Sixth Message
-# “Thanks for listening to my ramblings, I hope you enjoy the rest of the Summit, however much time that is.”
-
-# “Take a little token of my appreciation.”
-
-# (Give a single egg)
-
 function conversation2 {
 	sequence {
 		function ./says {message:[{text:'My', color: '#f0d8c8'}, ' siblings', ' are', ' probably', ' wondering', ' where', ' I', ' am,', ' I', ' was', ' supposed', ' to', ' be', ' helping...']}
@@ -138,13 +112,69 @@ function conversation3 {
 	sequence {
 		function ./says {message:[{text:'So', color: '#f0d8c8'}, ' many', ' people', ' coming', ' together', ' to', ' show', ' their', ' creations...', ' it\'s', ' pretty', ' inspiring', ' honestly.']}
 
-		sleep 120t
+		sleep 110t
 		function ./says {message:[{text:'I', color: '#f0d8c8'}, ' think', ' John', ' was', ' worried', ' about', ' being', ' here,', ' being', ' inferior.', ' But', ' it\'s', ' not', ' about', ' that.']}
 
 		sleep 120t
 		function ./says {message:[{text:'It\'s', color: '#f0d8c8'}, ' about', ' your', ' heart.', ' Your', ' creations,', ' whatever', ' went', ' into', ' them,', ' are', ' invaluable.', ' YOU', ' are', ' invaluable.']}
 
 		sleep 120t
+		function ./reset
+	}
+}
+
+function conversation4 {
+	sequence {
+		function ./says {message:[{text:'I', color: '#f0d8c8'}, ' used', ' to', ' crave', ' perfection.', ' I', ' would', ' tear', ' up', ' my', ' work', ' if', ' it', ' was', ' insufficient,', ' I\'d', ' compare', ' myself', ' to', ' others...']}
+
+		sleep 140t
+		function ./says {message:[{text:'But', color: '#f0d8c8'}, ' at', ' the', ' same', ' time,', ' I\'d', ' envy', ' those', ' who', ' unabashedly', ' share', ' their', ' work,', ' especially', ' those', ' I', ' deemed', ' less', ' skilled', ' than', ' I...']}
+
+		sleep 160t
+		function ./says {message:[{text:'But', color: '#f0d8c8'}, ' now,', ' I\'m', ' glad', ' to', ' be', ' able', ' to', ' share', ' my', ' creations', ' and', ' share', ' the', ' spotlight', ' with', ' so', ' many', ' people.']}
+
+		sleep 140t
+		function ./reset
+	}
+}
+
+function conversation5 {
+	sequence {
+		function ./says {message:[{text:'A', color: '#f0d8c8'}, ' shame', ' we', ' only', ' have', ' two', ' weeks', ' left', ' together...', ' maybe', ' only', ' a', ' few', ' hours', ' depending', ' on', ' when', ' you\'ve', ' found', ' me...']}
+
+		sleep 140t
+		function ./says {message:[{text:'And', color: '#f0d8c8'}, ' when', ' it\'s', ' all', ' over,', ' you\'ll', ' probably', ' forget', ' this', ' happened', ' at', ' all.']}
+
+		sleep 120t
+		function ./says {message:[{text:'This', color: '#f0d8c8'}, ' server', ' will', ' close,', ' your', ' memory', ' will', ' slowly', ' fade,', ' and', ' all', ' these', ' little', ' moments', ' will', ' disappear...']}
+
+		sleep 155t
+		function ./says {message:[{text:'Yet', color: '#f0d8c8'}, ' how', ' you', ' felt,', ' how', ' you', ' were', ' inspired...', ' those,', ' little', ' sparks', ' will', ' persist.']}
+
+		sleep 100t
+		function ./says {message:[{text:'Maybe', color: '#f0d8c8'}, ' you\'ll', ' make', ' something,', ' too?', ' If', ' you', ' haven\'t', ' already.']}
+
+		sleep 80t
+		function ./reset
+	}
+}
+
+function conversation6 {
+	sequence {
+		
+		function ./says {message:[{text:'Thanks', color: '#f0d8c8'}, ' for', ' listening', ' to', ' my', ' ramblings,', ' I', ' hope', ' you', ' enjoy', ' the', ' rest', ' of', ' the', ' Summit,', ' however', ' much', ' time', ' that', ' is.']}
+
+		sleep 140t
+		function ./says {message:[{text:'Hey,', color: '#f0d8c8'}, ' could', ' you', ' do', ' me', ' a', ' little', ' favor', ' and', ' take', ' this', ' photo', ' to', ' my', ' brother,', ' John?']}
+
+		sleep 120t
+		function ./says {message:[{text:'He\'s', color: '#f0d8c8'}, ' at', ' the', ' Thorax', ' booth.', ' I\'m', ' sure', ' he\'s', ' worried', ' about', ' me', ' by', ' now.']}
+
+		sleep 100t
+		loot give @s loot thorax:items/mantis_memento
+		execute as @p at @s run playsound minecraft:entity.item.pickup player @s ~ ~ ~ 0.5 1
+
+		sleep 25t
 		function ./reset
 	}
 }

@@ -1,4 +1,4 @@
-tellraw @a [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false},{text:" ","font":"minecraft:default"},{"translate":spiced.loaded,"font":"minecraft:default"}]
+# tellraw @a[tag=summit.in_booth.spiced] [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false},{text:" ","font":"minecraft:default"},{"translate":spiced.loaded,"font":"minecraft:default"}]
 
 # blocks
 scoreboard objectives add spiced.timer dummy

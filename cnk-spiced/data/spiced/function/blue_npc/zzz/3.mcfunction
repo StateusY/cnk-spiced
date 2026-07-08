@@ -1,3 +1,3 @@
 # Generated with MC-Build
 
-$playsound minecraft:entity.villager.ambient player @a[distance=..20] ~ ~ ~ 0.5 $(note)
+$playsound minecraft:entity.player.splash player @a[tag=summit.in_booth.spiced,tag=summit.in_booth.spiced,distance=..20] ~ ~ ~ 0.5 $(note)

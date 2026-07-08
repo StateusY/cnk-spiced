@@ -1,0 +1,193 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/ball_of_lettuce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/black_pepper"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/bread"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/butter"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/celery"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/chicken"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/chunk_of_lettuce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/cinna_shake"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/cinnamon"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/cooking_oil"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/diced_bread"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/diced_celery"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/diced_onion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/dough"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/egg"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/eggnog"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/flour"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/ground_cinnamon"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/huntsman_pie"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/huntsman_pie_incomplete_1"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/huntsman_pie_incomplete_2"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/lettuce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/mass_of_lettuce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/milk_bottle"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/mustard"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/onion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/pan_of_lettuce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/pastry_dough"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/porkchop"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/portion_of_lettuce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/salt"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/sliced_bread"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/sliced_celery"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/sliced_onion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/stock"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/tomato"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/water_bottle"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/wheat"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:other/butcher_knife"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:other/demo_cookbook"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:other/glass_bottle"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:other/grimwart_knife"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:other/plastic_knife"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:other/rammy"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:other/stardust_knife"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:other/sunflower"
+        }
+      ]
+    }
+  ]
+}

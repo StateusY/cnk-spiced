@@ -9,6 +9,6 @@ execute if score $hand_place spiced.dummy matches 0 run data modify entity @s it
 
 execute at @s rotated as @n[type=minecraft:item_display,tag=spiced.mortar_and_pestle] run rotate @s ~ ~
 ride @s mount @n[type=minecraft:item_display,tag=spiced.mortar_and_pestle]
-playsound minecraft:block.bamboo_wood.step block @a ~ ~ ~ 1 2
+playsound minecraft:block.bamboo_wood.step block @a[tag=summit.in_booth.spiced] ~ ~ ~ 1 2
 
 execute if score $hand_place spiced.dummy matches 1 run item modify entity @p[tag=spiced.interact_mortar_and_pestle,distance=..20] weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}

@@ -2,7 +2,7 @@
 
 execute as @e[type=mannequin,tag=spiced.mantis_npc,limit=1] at @s run rotate @s 90 0
 scoreboard players set #spiced.mantis_npc.chatting spiced.dummy 0
-kill b57a3c1f-68da-441b-9361-f092d6630b55
+kill e73fcae3-5c03-41c8-aab8-496fe1719fe2
 schedule clear spiced:mantis_npc/zzz/0
 schedule clear spiced:mantis_npc/zzz/1
 schedule clear spiced:mantis_npc/zzz/2

@@ -19,7 +19,7 @@
                 },
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"portion_of_lettuce"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}, "summit": {"persist": {}}},
-                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
+                "minecraft:lore": [{"text":"persist","font":"spiced:small_text","color":"white"},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
               }
             }
           ]

@@ -1,7 +1,7 @@
 # Generated with MC-Build
 
 data modify storage spiced:c4t_npc conversation_order set value []
-data modify storage spiced:c4t_npc conversations set value [1,2,3]
+data modify storage spiced:c4t_npc conversations set value [1,2,3,4]
 scoreboard players set #spiced.c4t_npc.chatting spiced.dummy 0
 scoreboard players set #spiced.c4t_npc.mining_timer spiced.dummy 0
 summon item_display 215 86.5 189 {item_display:"ground",Tags:["summit.booth_entity.spiced", 'spiced.c4t_npc'],transformation:{left_rotation: [0.0f, -0.6156615f, 0.0f, 0.78801084f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:c4t"}}}

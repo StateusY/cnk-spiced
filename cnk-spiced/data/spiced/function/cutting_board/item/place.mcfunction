@@ -9,7 +9,7 @@ execute if entity @p[tag=spiced.interact_cutting_board,distance=..20,tag=spiced.
 execute if entity @p[tag=spiced.interact_cutting_board,distance=..20,tag=!spiced.cutting_board_offhand] run item replace entity @s contents from entity @p[tag=spiced.interact_cutting_board,distance=..20] weapon.mainhand
 execute at @s rotated as @n[type=minecraft:item_display,tag=spiced.cutting_board] run rotate @s ~ ~
 ride @s mount @n[type=minecraft:item_display,tag=spiced.cutting_board]
-playsound minecraft:block.bamboo_wood.step block @a ~ ~ ~ 1 2
+playsound minecraft:block.bamboo_wood.step block @a[tag=summit.in_booth.spiced] ~ ~ ~ 1 2
 
 swing @p[tag=spiced.interact_cutting_board,distance=..20,tag=!spiced.cutting_board_offhand] mainhand
 swing @p[tag=spiced.interact_cutting_board,distance=..20,tag=spiced.cutting_board_offhand] offhand

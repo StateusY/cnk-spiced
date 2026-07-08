@@ -1,7 +1,7 @@
 # Generated with MC-Build
 
 data modify storage spiced:pan_womsacz_npc conversation_order set value []
-data modify storage spiced:pan_womsacz_npc conversations set value [1,2,3]
+data modify storage spiced:pan_womsacz_npc conversations set value [1,2,3,4,5,6]
 scoreboard players set #spiced.pan_womsacz_npc.chatting spiced.dummy 0
 scoreboard players set #spiced.pan_womsacz_npc.mining_timer spiced.dummy 0
 summon mannequin 200 64 207 {Rotation:[0f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.pan_womsacz_npc'],Invulnerable:1b,immovable:true,equipment:{mainhand:{id:'minecraft:fishing_rod'}},profile:{name:'pan_womsacz'},hide_description:true}

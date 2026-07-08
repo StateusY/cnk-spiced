@@ -10,7 +10,7 @@ execute on passengers if entity @s[type=minecraft:item_display,tag=spiced.mixing
 tag @s remove spiced.finished_mixing_bowl
 
 particle minecraft:poof ~ ~-0.3 ~ 0.1 0.1 0.1 0 4
-playsound entity.item.pickup block @a ~ ~ ~ 0.6 1
+playsound entity.item.pickup block @a[tag=summit.in_booth.spiced] ~ ~ ~ 0.6 1
 execute on passengers if entity @s[type=minecraft:item_display,tag=spiced.mixing_bowl_item] run kill @s
 scoreboard players set @s spiced.item_count 0
 

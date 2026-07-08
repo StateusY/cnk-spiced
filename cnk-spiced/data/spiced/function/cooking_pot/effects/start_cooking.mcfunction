@@ -5,5 +5,5 @@
 #------------------------------------------------------------------------------------
 
 item modify entity @s contents {"function":"minecraft:set_custom_model_data","flags":{"mode":"replace_section","size":1,"offset":0,"values":[true]}}
-playsound spiced:block.cooking_pot.cooking block @a[distance=..6] ~ ~ ~ 0.6 1
+playsound spiced:block.cooking_pot.cooking block @a[tag=summit.in_booth.spiced,distance=..6] ~ ~ ~ 0.6 1
 scoreboard players reset @s spiced.idle_time

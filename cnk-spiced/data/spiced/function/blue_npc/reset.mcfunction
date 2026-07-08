@@ -2,7 +2,7 @@
 
 execute as @e[type=mannequin,tag=spiced.blue_npc,limit=1] at @s run rotate @s 0 0
 scoreboard players set #spiced.blue_npc.chatting spiced.dummy 0
-kill e0fcef5a-63bd-45ce-bba5-4283f1fc432b
+kill 1c312a49-0377-41eb-967e-b29a8311f5c0
 schedule clear spiced:blue_npc/zzz/0
 schedule clear spiced:blue_npc/zzz/1
 schedule clear spiced:blue_npc/zzz/2

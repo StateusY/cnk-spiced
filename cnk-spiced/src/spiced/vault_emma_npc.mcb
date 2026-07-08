@@ -1,0 +1,148 @@
+import ../sequence.mcbt
+import ../score.mcbt
+import ../chatter.mcbt
+
+function summon {
+	data modify storage spiced:vault_emma_npc conversation_order set value []
+	data modify storage spiced:vault_emma_npc conversations set value [1]
+
+	set #spiced.vault_emma_npc.chatting spiced.dummy 0
+	set #spiced.vault_emma_npc.emma_turn spiced.dummy 0
+
+	summon mannequin 183 53 193 {Rotation:[180f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.vault_emma_npc', 'spiced.vault_npc'],Invulnerable:1b,immovable:true,equipment:{offhand:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:portion_of_lettuce"}}},profile:{name:'vawlt'},hide_description:true}
+
+	summon mannequin 183 53 194 {Rotation:[80f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.vault_emma_npc', 'spiced.emma_npc'],Invulnerable:1b,immovable:true,profile:{name:'emmasmithe'},hide_description:true}
+
+	summon interaction 183 53 193 { \
+		Tags:['summit.booth_entity.spiced', 'summit.static', 'spiced.vault_emma_npc.interaction', 'summit.interactable'], \
+		width:1f, height:2f, response:true, \
+		data: { \
+			summit_interactable: { \
+				on_right_click: 'function spiced:vault_emma_npc/start_conversation', \
+				on_left_click: 'function spiced:vault_emma_npc/start_conversation', \
+			} \
+		} \
+	}
+	function ./reset
+}
+
+function tick {
+	execute \
+		if score #spiced.vault_emma_npc.chatting spiced.dummy matches 1 \
+		as @e[type=mannequin,tag=spiced.vault_npc,limit=1] \
+		at @s \
+	run rotate @s facing entity @p
+	execute \
+		if score #spiced.vault_emma_npc.chatting spiced.dummy matches 1 \
+		if score #spiced.vault_emma_npc.emma_turn spiced.dummy matches 1 \
+		as @e[type=mannequin,tag=spiced.emma_npc,limit=1] \
+		at @s \
+	run return run rotate @s facing entity @e[type=mannequin,tag=spiced.vault_npc,limit=1,distance=..5]
+	execute \
+		if score #spiced.vault_emma_npc.chatting spiced.dummy matches 1 \
+		as @e[type=mannequin,tag=spiced.emma_npc,limit=1] \
+		at @s \
+	run return run rotate @s facing entity @p
+}
+
+function reset {
+	execute as @e[type=mannequin,tag=spiced.emma_npc,limit=1] at @s run rotate @s 80 0
+	execute as @e[type=mannequin,tag=spiced.emma_npc,limit=1] run data modify entity @s Rotation set value [80f, 0f]
+	execute as @e[type=mannequin,tag=spiced.vault_npc,limit=1] at @s run rotate @s 90 0
+	execute as @e[type=mannequin,tag=spiced.vault_npc,limit=1] run data modify entity @s Rotation set value [90f, 0f]
+	scoreboard players set #spiced.vault_emma_npc.chatting spiced.dummy 0
+	scoreboard players set #spiced.vault_emma_npc.emma_turn spiced.dummy 0
+	kill e2e84d58-29e9-48e3-8998-f6edb7f44062
+
+	REPEAT (0, 110) as i {
+		schedule clear spiced:vault_emma_npc/zzz/<%i%>
+	}
+}
+
+function start_conversation {
+	execute if score #spiced.vault_emma_npc.chatting spiced.dummy matches 1 run return 0
+
+	execute store result score #length spiced.dummy run data get storage spiced:vault_emma_npc conversation_order
+	execute if score #length spiced.dummy matches 0 run {
+		function shuffle:shuffle {source: 'storage spiced:vault_emma_npc conversations', target: 'storage spiced:vault_emma_npc conversation_order'}
+	}
+
+	set #spiced.vault_emma_npc.chatting spiced.dummy 1
+
+	data modify storage spiced:temp args.conversation set from storage spiced:vault_emma_npc conversation_order[0]
+	data remove storage spiced:vault_emma_npc conversation_order[0]
+	{ with storage spiced:temp args
+		$function spiced:vault_emma_npc/conversation$(conversation)
+	}
+}
+
+dir vault {
+	function says {
+		kill e2e84d58-29e9-48e3-8998-f6edb7f44062
+		# ARGS: {message: TextComponent}
+		$execute \
+			as @e[type=mannequin,tag=spiced.vault_emma_npc,limit=1] \
+			at @s \
+			positioned ~ ~2.125 ~ \
+		run { {message: $(message)}
+			chatter e2e84d58-29e9-48e3-8998-f6edb7f44062 4..8 spiced:vault_emma_npc/vault/sounds
+		}
+	}
+
+	function sounds {
+		execute store result storage spiced:vault_emma_npc args.note float 0.01 run random value 100..150
+		{ with storage spiced:vault_emma_npc args
+			$playsound minecraft:entity.armadillo.hurt player @a[tag=summit.in_booth.spiced,distance=..10] ~ ~ ~ 0.5 $(note)
+		}
+	}
+}
+
+dir emma {
+	function says {
+		kill e2e84d58-29e9-48e3-8998-f6edb7f44062
+		# ARGS: {message: TextComponent}
+		$execute \
+			as @e[type=mannequin,tag=spiced.vault_emma_npc,limit=1] \
+			at @s \
+			positioned ~ ~2.125 ~1 \
+		run { {message: $(message)}
+			chatter e2e84d58-29e9-48e3-8998-f6edb7f44062 4..8 spiced:vault_emma_npc/emma/sounds
+		}
+	}
+
+	function sounds {
+		execute store result storage spiced:vault_emma_npc args.note float 0.01 run random value 100..150
+		{ with storage spiced:vault_emma_npc args
+			$playsound minecraft:entity.witch.ambient player @a[tag=summit.in_booth.spiced,distance=..10] ~ ~ ~ 0.5 $(note)
+		}
+	}
+	
+	function turn {
+		set #spiced.vault_emma_npc.emma_turn spiced.dummy 1
+	}
+}
+
+function conversation1 {
+	sequence {
+		function ./vault/says {message:[{text:'I', color: '#9171ba'}, ' just', ' figured', ' out', ' out', ' a', ' way', ' more', ' efficent', ' way', ' to', ' use', ' the', ' mortar', ' and', ' pestle!']}
+
+		sleep 120t
+		function ./vault/says {message:[{text:'Apparently', color: '#9171ba'}, ' if', ' you', ' make', ' something,', ' then', ' shift', ' while', ' interacting', ' with', ' the', ' empty', ' pestle,', ' it', ' automatically', ' inserts', ' the', ' items', ' and', ' mashes', ' them', ' again!']}
+
+		sleep 160t
+		function ./vault/says {message:[{text:'I', color: '#9171ba'}, ' bet', ' Emma', ' hasn\'t', ' figured', ' this', ' out', ' yet...']}
+
+		sleep 80t
+		function ./emma/turn
+		function ./emma/says {message:[{text:'Vault!', color: 'dark_red'}, ' I', ' told', ' you', ' how', ' to', ' do', ' this', ' TWO', ' hours', ' ago!!']}
+
+		sleep 80t
+		function ./vault/says {message:[{text:'Did', color: '#9171ba'}, ' you', ' just', ' hear', ' something?', ' No?', ' Yeah', ' I', ' thought', ' so.']}
+
+		sleep 80t
+		function ./emma/says {message:[{text:'Ughh,', color: 'dark_red'}, ' VAULT!!!']}
+
+		sleep 60t
+		function ./reset
+	}
+}

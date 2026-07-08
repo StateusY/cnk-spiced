@@ -14,7 +14,7 @@
 # tellraw @s [{text:"These are the workstations that you can use to make the Huntsman Pie! Hopefully you enjoy this little sample of "},{text:"Spiced","font":"spiced:tooltip"},{text:"'s cooking structure!\n\nRead the first page of your cookbook to begin!"}]
 
 # discord server info
-# tellraw @a [{text:"Now now, I know you all are eager to download "},{text:"C&K:Spiced",font:"spiced:tooltip"},{text:" right now and expand your culinary horizons, but good data packs take a good amount of time. While "},{text:"Spiced",font:"spiced:tooltip"},{text:" is still in development, you can stay up to date by joining our discord server where you can find teasers and dev posts along with our other packs!"}]
+# tellraw @a[tag=summit.in_booth.spiced] [{text:"Now now, I know you all are eager to download "},{text:"C&K:Spiced",font:"spiced:tooltip"},{text:" right now and expand your culinary horizons, but good data packs take a good amount of time. While "},{text:"Spiced",font:"spiced:tooltip"},{text:" is still in development, you can stay up to date by joining our discord server where you can find teasers and dev posts along with our other packs!"}]
 
 # playsound minecraft:block.creaking_heart.idle master @s ~ ~ ~ 0.47 0.6
 # schedule function
