@@ -1,2 +1,0 @@
-# 
-tellraw @s {player:stateus}

@@ -69,7 +69,8 @@
         "x": { "min": 178, "max": 234 },
         "y": { "min": 52, "max": 89 },
         "z": { "min": 167, "max": 211 }
-      }
+      },
+      "on_player_enter":"spiced:bounds/entered"
     },
     "hull": {
       "position": {
@@ -90,30 +91,30 @@
       {
         "sticker_id": "spiced_booth",
         "sticker_texture": "spiced:sticker/spiced_booth",
-        "sticker_name": "Spiced Booth",
-        "unobtained_text": "Enter the C&K: Spiced Booth in the Welded Woodlands.",
-        "obtained_text": "Welcome to the Spiced Booth!"
+        "sticker_name": "the sticker that takes 0 effort and is totally original",
+        "unobtained_text": "Visit the best booth at the Summit.",
+        "obtained_text": "Yayyy, you entered the booth! What a difficult task you have defeated!"
       },
       {
         "sticker_id": "huntsman_pie",
         "sticker_texture": "spiced:sticker/huntsman_pie",
-        "sticker_name": "Huntsman Pie",
-        "unobtained_text": "Cook up the Huntsman Pie!",
-        "obtained_text": "Rewarded for cooking up the Huntsman Pie!"
+        "sticker_name": "Eat the most delicious meal of all time",
+        "unobtained_text": "Cook and eat the Huntsman Pie",
+        "obtained_text": "You did it! You complete the main quest, now onto the secret stuff..."
       },
       {
         "sticker_id": "lettuce_line",
         "sticker_texture": "spiced:sticker/lettuce_line",
-        "sticker_name": "Lettuce Compress",
+        "sticker_name": "Lettuce Compress, COMPRESS, COMPRESS!!!",
         "unobtained_text": "Follow the hint at the back of the book...",
-        "obtained_text": "Obtained a Reasonable Amount of Lettuce"
+        "obtained_text": "Wow, what determination. You compressed 729 pieces of lettuce into one centeralized mass!"
       },
       {
-        "sticker_id": "lettuce_line",
-        "sticker_texture": "spiced:sticker/lettuce_line",
-        "sticker_name": "Lettuce Compress",
-        "unobtained_text": "Speak to the c4t on the roof, until none is left to say.",
-        "obtained_text": "You saw all ## c4t lines!"
+        "sticker_id": "c4t_talking",
+        "sticker_texture": "spiced:sticker/c4t_talking",
+        "sticker_name": "Sociable Fellow",
+        "unobtained_text": "Talk to EVERY npc, and listen to ALL of their responses.",
+        "obtained_text": "You did it, you found all 7 NPCs and listened to all 32 conversations!!!"
       }
     ]
   }

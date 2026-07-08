@@ -1,3 +1,4 @@
+execute if entity @s[tag=spiced.entered_booth] run return 0
 tag @s add spiced.entered_booth
 
 title @s title [{text: "WELCOME TO ", "font":"spiced:tooltip", color:  "gold", italic: true},{"text":"C&K: Spiced\ub001\ua001","font":"spiced:tooltip","color":"white","italic":false}]

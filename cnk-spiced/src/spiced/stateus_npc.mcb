@@ -130,21 +130,6 @@ function conversation2 {
 	}
 }
 
-function conversation8 {
-	sequence {
-		function ./says {message:[{text:'Someday', color: '#3a552c'}, ' we', ' will', ' have', ' some', ' tech', ' in', ' Spiced.']}
-
-		sleep 80t
-		function ./says {message:[{text:'I\'ve', color: '#3a552c'}, ' thought', ' about', ' using', ' corn', ' to', ' make', ' ethanol.']}
-
-		sleep 80t
-		function ./says {message:[{text:'That', color: '#3a552c'}, ' stuff', ' powers', ' little', ' robots', ' like', ' C4T', ' to', ' do', ' stuff']}
-
-		sleep 100t
-		function ./reset
-	}
-}
-
 function conversation3 {
 	sequence {
 		function ./says {message:[{text:'Welcome', color: '#3a552c'}, ' to', ' the', ' Spiced', ' booth!']}
@@ -154,33 +139,6 @@ function conversation3 {
 
 		sleep 120t
 		function ./says {message:[{text:'We', color: '#3a552c'}, ' hope', ' you', ' enjoy', ' your', ' stay!']}
-
-		sleep 80t
-		function ./reset
-	}
-}
-
-function conversation9 {
-	sequence {
-		function ./says {message:[{text:'Great', color: '#3a552c'}, ' job', ' finding', ' me!']}
-
-		sleep 80t
-		function ./says {message:[{text:'I', color: '#3a552c'}, ' welcome', ' you', ' to', ' my', ' hidey', ' hole.']}
-
-		sleep 80t
-		function ./says {message:[{text:'Now', color: '#3a552c'}, ' that', ' you', ' are', ' here,', ' I', ' can', ' let', ' you', ' in', ' on', ' a', ' little', ' secret']}
-
-		sleep 140t
-		function ./says {message:[{text:'If', color: '#3a552c'}, ' you', ' go', ' to', ' the', ' cellar,']}
-
-		sleep 80t
-		function ./says {message:[{text:'there', color: '#3a552c'}, ' is', ' a', ' secret', ' room', ' that', ' can', ' be', ' accessed', ' by', ' a', ' passage', ' near', ' the', ' exit', ' door']}
-
-		sleep 120t
-		function ./says {message:[{text:'You', color: '#3a552c'}, ' might', ' know', ' that', ' already,']}
-
-		sleep 80t
-		function ./says {message:[{text:'But', color: '#3a552c'}, ' if', ' not,', ' good', ' luck!']}
 
 		sleep 80t
 		function ./reset
@@ -241,30 +199,6 @@ function conversation5 {
 	}
 }
 
-function conversation10 {
-	sequence {
-		function ./says {message:[{text:'I\'ve', color: '#3a552c'}, ' been', ' playing', ' the', ' guitar', ' for', ' ~2', ' years']}
-
-		sleep 80t
-		function ./says {message:[{text:'in', color: '#3a552c'}, ' fact,', ' you', ' can', ' hear', ' it', ' in', ' the', ' booth!']}
-
-		sleep 80t
-		function ./says {message:[{text:'The', color: '#3a552c'}, ' location', ' is', ' a', ' secret...']}
-
-		sleep 80t
-		function ./says {message:[{text:'Also', color: '#3a552c'}, ' the', ' playing', ' is', ' kinda', ' scuffed,']}
-
-		sleep 80t
-		function ./says {message:[{text:'but', color: '#3a552c'}, ' the', ' booth', ' has', ' work', ' that\'s', ' needs', ' to', ' be', ' done.']}
-
-		sleep 100t
-		function ./says {message:[{text:'So', color: '#3a552c'}, ' no', ' time', ' to', ' polish.']}
-
-		sleep 80t
-		function ./reset
-	}
-}
-
 function conversation6 {
 	sequence {
 		function ./says {message:[{text:'This', color: '#3a552c'}, ' is', ' my', ' first', ' time', ' being', ' a', ' Summit', ' vendor.']}
@@ -276,21 +210,6 @@ function conversation6 {
 		function ./says {message:[{text:'so', color: '#3a552c'}, ' you', ' can', ' understand', ' my', ' excitement', ' to', ' have', ' an', ' oppurtunity', ' to', ' make', ' a', ' booth.']}
 
 		sleep 100t
-		function ./reset
-	}
-}
-
-function conversation11 {
-	sequence {
-		function ./says {message:[{text:'I', color: '#3a552c'}, ' thought', ' about', ' making', ' a', ' panel,']}
-
-		sleep 80t
-		function ./says {message:[{text:'but', color: '#3a552c'}, ' I', ' don\'t', ' know', ' what', ' I', ' could', ' even', ' share.']}
-
-		sleep 80t
-		function ./says {message:[{text:'Maybe', color: '#3a552c'}, ' next', ' Summit...']}
-
-		sleep 80t
 		function ./reset
 	}
 }
@@ -324,3 +243,85 @@ function conversation7 {
 		function ./reset
 	}
 }
+
+function conversation8 {
+	sequence {
+		function ./says {message:[{text:'Someday', color: '#3a552c'}, ' we', ' will', ' have', ' some', ' tech', ' in', ' Spiced.']}
+
+		sleep 80t
+		function ./says {message:[{text:'I\'ve', color: '#3a552c'}, ' thought', ' about', ' using', ' corn', ' to', ' make', ' ethanol.']}
+
+		sleep 80t
+		function ./says {message:[{text:'That', color: '#3a552c'}, ' stuff', ' powers', ' little', ' robots', ' like', ' C4T', ' to', ' do', ' stuff']}
+
+		sleep 100t
+		function ./reset
+	}
+}
+
+function conversation9 {
+	sequence {
+		function ./says {message:[{text:'Great', color: '#3a552c'}, ' job', ' finding', ' me!']}
+
+		sleep 80t
+		function ./says {message:[{text:'I', color: '#3a552c'}, ' welcome', ' you', ' to', ' my', ' hidey', ' hole.']}
+
+		sleep 80t
+		function ./says {message:[{text:'Now', color: '#3a552c'}, ' that', ' you', ' are', ' here,', ' I', ' can', ' let', ' you', ' in', ' on', ' a', ' little', ' secret']}
+
+		sleep 140t
+		function ./says {message:[{text:'If', color: '#3a552c'}, ' you', ' go', ' to', ' the', ' cellar,']}
+
+		sleep 80t
+		function ./says {message:[{text:'there', color: '#3a552c'}, ' is', ' a', ' secret', ' room', ' that', ' can', ' be', ' accessed', ' by', ' a', ' passage', ' near', ' the', ' exit', ' door']}
+
+		sleep 120t
+		function ./says {message:[{text:'You', color: '#3a552c'}, ' might', ' know', ' that', ' already,']}
+
+		sleep 80t
+		function ./says {message:[{text:'But', color: '#3a552c'}, ' if', ' not,', ' good', ' luck!']}
+
+		sleep 80t
+		function ./reset
+	}
+}
+
+function conversation10 {
+	sequence {
+		function ./says {message:[{text:'I\'ve', color: '#3a552c'}, ' been', ' playing', ' the', ' guitar', ' for', ' ~2', ' years']}
+
+		sleep 80t
+		function ./says {message:[{text:'in', color: '#3a552c'}, ' fact,', ' you', ' can', ' hear', ' it', ' in', ' the', ' booth!']}
+
+		sleep 80t
+		function ./says {message:[{text:'The', color: '#3a552c'}, ' location', ' is', ' a', ' secret...']}
+
+		sleep 80t
+		function ./says {message:[{text:'Also', color: '#3a552c'}, ' the', ' playing', ' is', ' kinda', ' scuffed,']}
+
+		sleep 80t
+		function ./says {message:[{text:'but', color: '#3a552c'}, ' the', ' booth', ' has', ' work', ' that\'s', ' needs', ' to', ' be', ' done.']}
+
+		sleep 100t
+		function ./says {message:[{text:'So', color: '#3a552c'}, ' no', ' time', ' to', ' polish.']}
+
+		sleep 80t
+		function ./reset
+	}
+}
+
+function conversation11 {
+	sequence {
+		function ./says {message:[{text:'I', color: '#3a552c'}, ' thought', ' about', ' making', ' a', ' panel,']}
+
+		sleep 80t
+		function ./says {message:[{text:'but', color: '#3a552c'}, ' I', ' don\'t', ' know', ' what', ' I', ' could', ' even', ' share.']}
+
+		sleep 80t
+		function ./says {message:[{text:'Maybe', color: '#3a552c'}, ' next', ' Summit...']}
+
+		sleep 80t
+		function ./reset
+	}
+}
+
