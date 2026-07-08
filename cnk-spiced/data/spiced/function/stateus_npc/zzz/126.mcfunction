@@ -1,4 +1,4 @@
 # Generated with MC-Build
 
-function spiced:stateus_npc/says {message:[{text:'It', color: '#3a552c'}, ' reminds', ' me', ' on', ' how', ' some', ' stories', ' are', ' character', '-centric,']}
+function spiced:stateus_npc/says {message:[{text:'Maybe', color: '#3a552c'}, ' next', ' Summit...']}
 schedule function spiced:stateus_npc/zzz/125 80t replace

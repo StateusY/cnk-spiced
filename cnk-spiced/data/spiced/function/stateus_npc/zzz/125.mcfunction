@@ -1,4 +1,4 @@
 # Generated with MC-Build
 
-function spiced:stateus_npc/says {message:[{text:'and', color: '#3a552c'}, ' on', ' how', ' others', ' are', ' plot', '-centric.']}
-schedule function spiced:stateus_npc/zzz/124 80t replace
+advancement grant @s only spiced:npcs/stateus/11
+function spiced:stateus_npc/reset

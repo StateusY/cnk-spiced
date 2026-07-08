@@ -89,6 +89,7 @@ function conversation1 {
 		function ./says {message:[{text:'There\'s', color: '#f0d8c8'}, ' so', ' much', ' food', ' and', ' no', ' pesky', ' crows', ' trying', ' to', ' eat', ' me!']}
 
 		sleep 100t
+		advancement grant @p only spiced:npcs/mantis/1
 		function ./reset
 	}
 }
@@ -104,6 +105,7 @@ function conversation2 {
 		function ./says {message:[{text:'Sorry,', color: '#f0d8c8'}, ' I', ' got', ' a', ' little', ' carried', ' away', ' there...']}
 
 		sleep 80t
+		advancement grant @p only spiced:npcs/mantis/2
 		function ./reset
 	}
 }
@@ -119,6 +121,7 @@ function conversation3 {
 		function ./says {message:[{text:'It\'s', color: '#f0d8c8'}, ' about', ' your', ' heart.', ' Your', ' creations,', ' whatever', ' went', ' into', ' them,', ' are', ' invaluable.', ' YOU', ' are', ' invaluable.']}
 
 		sleep 120t
+		advancement grant @p only spiced:npcs/mantis/3
 		function ./reset
 	}
 }
@@ -134,6 +137,7 @@ function conversation4 {
 		function ./says {message:[{text:'But', color: '#f0d8c8'}, ' now,', ' I\'m', ' glad', ' to', ' be', ' able', ' to', ' share', ' my', ' creations', ' and', ' share', ' the', ' spotlight', ' with', ' so', ' many', ' people.']}
 
 		sleep 140t
+		advancement grant @p only spiced:npcs/mantis/4
 		function ./reset
 	}
 }
@@ -155,6 +159,7 @@ function conversation5 {
 		function ./says {message:[{text:'Maybe', color: '#f0d8c8'}, ' you\'ll', ' make', ' something,', ' too?', ' If', ' you', ' haven\'t', ' already.']}
 
 		sleep 80t
+		advancement grant @p only spiced:npcs/mantis/5
 		function ./reset
 	}
 }
@@ -175,6 +180,7 @@ function conversation6 {
 		execute as @p at @s run playsound minecraft:entity.item.pickup player @s ~ ~ ~ 0.5 1
 
 		sleep 25t
+		advancement grant @p only spiced:npcs/mantis/6
 		function ./reset
 	}
 }

@@ -1,9 +1,10 @@
 {
+  "id": "cnk_spiced",
   "pack": {
     "description": [
       [
         {
-          "text": "Spiced, an addon for Crop and Kettle!"
+          "text": "Spiced Booth Data Pack"
         }
       ]
     ],
@@ -16,21 +17,5 @@
       107,
       1
     ]
-  },
-  "overlays": {
-    "entries": [
-      {
-        "directory": "overlay_101_1",
-        "min_format": [
-          94,
-          1
-        ],
-        "max_format": [
-          101,
-          1
-        ]
-      }
-    ]
-  },
-  "id": "cnk_spiced"
+  }
 }

@@ -36,8 +36,8 @@
                 },
                 "minecraft:lore": [
                   {
-                    "translate": "spiced.cnk_tooltip",
-                    "font": "spiced:cnk_tooltip",
+                    "translate": "spiced.tooltip",
+                    "font": "spiced:tooltip",
                     "color": "white",
                     "italic": false
                   }

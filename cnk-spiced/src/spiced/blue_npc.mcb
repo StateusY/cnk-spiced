@@ -81,6 +81,7 @@ function conversation1 {
 		function ./says {message:[{text:'Glub', color: '#0021d9'}, ' glub...']}
 
 		sleep 60t
+		advancement grant @p only spiced:npcs/blue/1
 		function ./reset
 	}
 }
@@ -102,6 +103,7 @@ function conversation2 {
 		function ./says {message:[{text:'You', color: '#0021d9'}, ' shoud', ' try', ' some.']}
 
 		sleep 60t
+		advancement grant @p only spiced:npcs/blue/2
 		function ./reset
 	}
 }
@@ -117,6 +119,7 @@ function conversation3 {
 		function ./says {message:[{text:'Snave', color: '#0021d9'}, ' would', ' disapprove.']}
 
 		sleep 60t
+		advancement grant @p only spiced:npcs/blue/3
 		function ./reset
 	}
 }
@@ -126,6 +129,7 @@ function conversation4 {
 		function ./says {message:[{text:'My', color: '#0021d9'}, ' name', ' is', ' Blue,', ' just', ' like', ' this', ' water.']}
 
 		sleep 80t
+		advancement grant @p only spiced:npcs/blue/4
 		function ./reset
 	}
 }

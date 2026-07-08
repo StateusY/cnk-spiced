@@ -1,0 +1,120 @@
+{
+  "namespace": "spiced",
+  "booth_name": "C&K: Spiced",
+  "bounding_boxes": {
+    "cabin": {
+      "position": {
+        "x": { "min": 213, "max": 228 },
+        "y": { "min": 65, "max": 89 },
+        "z": { "min": 178, "max": 198 }
+      },
+      "on_player_enter":"spiced:bounds/cabin/enter"
+    },
+    "cellar_enter": {
+      "position": {
+        "x": { "min": 221, "max": 224 },
+        "y": { "min": 56, "max": 60 },
+        "z": { "min": 178, "max": 182 }
+      },
+      "on_player_enter":"spiced:bounds/cellar/enter"
+    },
+    "cellar_exit": {
+      "position": {
+        "x": { "min": 199, "max": 203 },
+        "y": { "min": 52, "max": 55 },
+        "z": { "min": 175, "max": 178 }
+      },
+      "on_player_enter":"spiced:bounds/cellar/exit"
+    },
+    "fountain_enter": {
+      "position": {
+        "x": { "min": 177, "max": 180 },
+        "y": { "min": 52, "max": 55 },
+        "z": { "min": 187, "max": 189 }
+      },
+      "on_player_enter":"spiced:bounds/cellar/fountain/enter1"
+    },
+    "fountain_return": {
+      "position": {
+        "x": { "min": 174, "max": 178 },
+        "y": { "min": 52, "max": 55 },
+        "z": { "min": 184, "max": 186 }
+      },
+      "on_player_enter":"spiced:bounds/cellar/fountain/exit1"
+    },
+    "fountain_exit": {
+      "position": {
+        "x": { "min": 191, "max": 194 },
+        "y": { "min": 52, "max": 55 },
+        "z": { "min": 173, "max": 175 }
+      },
+      "on_player_enter":"spiced:bounds/cellar/fountain/exit2"
+    },
+    "cellar": {
+      "position": {
+        "x": { "min": 174, "max": 223 },
+        "y": { "min": 51, "max": 60 },
+        "z": { "min": 170, "max": 200 }
+      }
+    },
+    "boat": {
+      "position": {
+        "x": { "min": 187, "max": 231 },
+        "y": { "min": 60, "max": 70 },
+        "z": { "min": 199, "max": 209 }
+      }
+    },
+    "booth": {
+      "position": {
+        "x": { "min": 177, "max": 235 },
+        "y": { "min": 51, "max": 90 },
+        "z": { "min": 166, "max": 212 }
+      },
+      "on_player_enter":"spiced:bounds/entered"
+    },
+    "hull": {
+      "position": {
+        "x": { "min": 182, "max": 199 },
+        "y": { "min": 52, "max": 57 },
+        "z": { "min": 198, "max": 209 }
+      }
+    }
+  },
+  "ticking_functions": {
+    "spiced:tick": "1t"
+  },
+  "sticker_book": {
+    "background_color": "#f17515",
+    "region": "welded_woodlands",
+    "stickers": [
+      {
+        "sticker_id": "spiced_booth",
+        "sticker_texture": "spiced:sticker/spiced_booth",
+        "sticker_name": "the sticker that takes 0 effort and is totally original",
+        "unobtained_text": "Visit the best booth at the Summit.",
+        "obtained_text": "Yayyy, you entered the booth! What a difficult task you have defeated!"
+      },
+      {
+        "sticker_id": "huntsman_pie",
+        "sticker_texture": "spiced:sticker/huntsman_pie",
+        "sticker_name": "Eat the most delicious meal of all time",
+        "unobtained_text": "Cook and eat the Huntsman Pie",
+        "obtained_text": "You did it! You complete the main quest, now onto the secret stuff..."
+      },
+      {
+        "sticker_id": "lettuce_line",
+        "sticker_texture": "spiced:sticker/lettuce_line",
+        "sticker_name": "Lettuce Compress, COMPRESS, COMPRESS!!!",
+        "unobtained_text": "Follow the hint at the back of the book...",
+        "obtained_text": "Wow, what determination. You compressed 729 pieces of lettuce into one centeralized mass!"
+      },
+      {
+        "sticker_id": "c4t_talking",
+        "sticker_texture": "spiced:sticker/c4t_talking",
+        "sticker_name": "Sociable Fellow",
+        "unobtained_text": "Talk to EVERY npc, and listen to ALL of their responses.",
+        "obtained_text": "You did it, you found all 7 NPCs and listened to all 32 conversations!!!"
+      }
+    ]
+  }
+}

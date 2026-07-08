@@ -7,6 +7,14 @@ This is the smithed booth spiced pack. It is shaved far down for demonstration p
 Created By:
 Stateus and Pan_Womsacz
 
+Fix:
+stock cooking pot
+all tooltips
+advancment for all npc
+
+
+
+
 Some files and code have been taken from base Crop & Kettle. Where applicable, the following has been pasted at the header of files (mcfunction)
 ```
 #------------------------------------------------------------------------------------

@@ -1,4 +1,4 @@
 # Generated with MC-Build
 
-function spiced:stateus_npc/says {message:[{text:'and', color: '#3a552c'}, ' Pan', ' made', ' a', ' salt', ' texture', ' for', ' me.']}
-schedule function spiced:stateus_npc/zzz/72 80t replace
+function spiced:stateus_npc/says {message:[{text:'I', color: '#3a552c'}, ' really', ' loved', ' the', ' last', ' one,']}
+schedule function spiced:stateus_npc/zzz/72 60t replace

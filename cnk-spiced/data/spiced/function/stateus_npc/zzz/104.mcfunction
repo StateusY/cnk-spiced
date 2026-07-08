@@ -1,4 +1,4 @@
 # Generated with MC-Build
 
-function spiced:stateus_npc/says {message:[{text:'so', color: '#3a552c'}, ' you', ' can', ' understand', ' my', ' excitement', ' to', ' have', ' an', ' oppurtunity', ' to', ' make', ' a', ' booth.']}
-schedule function spiced:stateus_npc/zzz/103 100t replace
+function spiced:stateus_npc/says {message:[{text:'But', color: '#3a552c'}, ' if', ' not,', ' good', ' luck!']}
+schedule function spiced:stateus_npc/zzz/103 80t replace

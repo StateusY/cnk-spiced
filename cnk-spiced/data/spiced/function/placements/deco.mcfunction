@@ -44,10 +44,6 @@ execute align xyz run summon item_display 185.5 58.75 178.5 {Tags:["summit.booth
 # light above hull door on boat
 execute align xyz run summon block_display 202.5 67 205 {Tags:["summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.0f, 0.0f, 1.0f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.5f,-0.5f],scale:[1.0f,1.0f,1.0f]},block_state: {Name: "minecraft:lantern", Properties: {hanging:"true"}}}
 
-# crops in exterior
-execute align xyz run summon item_display 197 66 170 {item_display:"ground",Tags:["summit.booth_entity.spiced"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:bell_pepper_crop_7"}}}
-execute align xyz run summon item_display 198 66 170 {item_display:"ground",Tags:["summit.booth_entity.spiced"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.01f,1.01f,1.01f]},item:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:mustard_crop_3"}}}
-
 # sunflower
 execute align xyz run summon block_display 224 75 185 {Tags:["summit.booth_entity.spiced"],transformation:{left_rotation: [0.0f, 0.0f, 0.0f, 1.0f],right_rotation:[0f,0f,0f,1f],translation:[-0.5f,-0.5f,-0.5f],scale:[1.0f,1.0f,1.0f]},block_state: {Name: "minecraft:sunflower", Properties: {half:"lower"}}}
 

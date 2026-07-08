@@ -1,6 +1,9 @@
 function spiced:cookbook/reset
 tag @s remove spiced.entered_booth
 
+advancement revoke @s only spiced:eat_lettuce
+advancement revoke @s only spiced:eat_pie
+
 advancement revoke @s only spiced:npcs/blue/1
 advancement revoke @s only spiced:npcs/blue/2
 advancement revoke @s only spiced:npcs/blue/3

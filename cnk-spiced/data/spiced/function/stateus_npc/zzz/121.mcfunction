@@ -1,4 +1,4 @@
 # Generated with MC-Build
 
-function spiced:stateus_npc/says {message:[{text:'\'Caligula\'', color: '#3a552c'}, ' by', ' Camus', ' is', ' much', ' better', ' in', ' my', ' opinion.']}
-schedule function spiced:stateus_npc/zzz/120 100t replace
+function spiced:stateus_npc/says {message:[{text:'in', color: '#3a552c'}, ' fact,', ' you', ' can', ' hear', ' it', ' in', ' the', ' booth!']}
+schedule function spiced:stateus_npc/zzz/120 80t replace
