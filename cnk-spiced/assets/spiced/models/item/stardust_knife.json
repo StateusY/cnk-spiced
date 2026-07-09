@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-      "layer0": "spiced:item/boomerang_knife_small"
+      "layer0": "spiced:item/boomerang_knife"
     },
     "display": {
       "thirdperson_righthand":{"rotation": [ 0,-90,55 ],"translation":[ 0,4.0,-1 ],"scale":[ 1,1,1 ]},

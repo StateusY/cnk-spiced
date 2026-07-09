@@ -143,7 +143,7 @@ function conversation1 {
 		function ./emma/says {message:[{text:'Ughh,', color: 'dark_red'}, ' VAULT!!!']}
 
 		sleep 60t
-		advancement grant @p only spiced:npcs/vault_emma/1
+		advancement grant @p only spiced:npcs/vault_emma
 		function ./reset
 	}
 }

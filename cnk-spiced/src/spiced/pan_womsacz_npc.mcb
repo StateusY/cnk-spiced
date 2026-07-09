@@ -45,7 +45,7 @@ function says {
 function sounds {
 	execute store result storage spiced:pan_womsacz_npc args.note float 0.01 run random value 100..150
 	{ with storage spiced:pan_womsacz_npc args
-		$playsound minecraft:entity.villager.ambient player @a[tag=summit.in_booth.spiced,distance=..20] ~ ~ ~ 0.5 $(note)
+		$playsound minecraft:entity.illusioner.ambient player @a[tag=summit.in_booth.spiced,distance=..20] ~ ~ ~ 0.5 $(note)
 	}
 }
 
@@ -96,7 +96,7 @@ function conversation1 {
 		function ./says {message:[{text:'Try', color: '#e4741d'}, ' it', ' out', ' then.']}
 
 		sleep 60t
-		advancement grant @p only spiced:npcs/pan/1
+		advancement grant @p only spiced:npcs/pan
 		function ./reset
 	}
 }
@@ -122,7 +122,7 @@ function conversation2 {
 		execute as @p at @s run playsound minecraft:entity.item.pickup player @s ~ ~ ~ 0.5 1
 
 		sleep 80t
-		advancement grant @p only spiced:npcs/pan/2
+		advancement grant @p only spiced:npcs/pan
 		function ./reset
 	}
 }
@@ -135,7 +135,7 @@ function conversation3 {
 		function ./says {message:[{text:'However,', color: '#e4741d'}, ' items', ' with ', {text:'persist',font: "spiced:small_text",color:'white'}, {text:' in',color:'#e4741d'}, ' the', ' description', ' don\'t.']}
 
 		sleep 80t
-		advancement grant @p only spiced:npcs/pan/3
+		advancement grant @p only spiced:npcs/pan
 		function ./reset
 	}
 }
@@ -160,7 +160,7 @@ function conversation4 {
 		function ./says {message:[{text:'You', color: '#e4741d'}, ' might', ' know', ' that', ' already.']}
 
 		sleep 80t
-		advancement grant @p only spiced:npcs/pan/4
+		advancement grant @p only spiced:npcs/pan
 		function ./reset
 	}
 }
@@ -173,7 +173,7 @@ function conversation5 {
 		function ./says {message:[{text:'We', color: '#e4741d'}, ' have', ' a', ' lot', ' of', ' stuff', ' planned!']}
 
 		sleep 80t
-		advancement grant @p only spiced:npcs/pan/5
+		advancement grant @p only spiced:npcs/pan
 		function ./reset
 	}
 }
@@ -195,7 +195,52 @@ function conversation6 {
 		function ./says {message:[{text:'And', color: '#e4741d'}, ' only', ' sometimes', ' do', ' I', ' steal', ' color', ' palettes', ' from' , ' Minecraft.']}
 
 		sleep 100t
-		advancement grant @p only spiced:npcs/pan/6
+		advancement grant @p only spiced:npcs/pan
+		function ./reset
+	}
+}
+
+#This is my first time ever on the summit 
+#and I'am already a vendor
+#I would say that is a pretty big jump
+#from a random Pole to a vendor
+
+function conversation7 {
+	sequence {
+		function ./says {message:[{text:'This', color: '#e4741d'}, ' is', ' my', ' first', ' time', ' ever', ' on', ' the', ' Summit,']}
+
+		sleep 80t
+		function ./says {message:[{text:'and', color: '#e4741d'}, ' I\'m', ' already', ' a', ' vendor.']}
+
+		sleep 40t
+		function ./says {message:[{text:'I', color: '#e4741d'}, ' would', ' say', ' that', ' is', ' a', ' pretty', ' big', ' jump', ' from', ' a', ' random', ' Pole', ' to', ' a', ' vendor.']}
+
+		sleep 100t
+		advancement grant @p only spiced:npcs/pan
+		function ./reset
+	}
+}
+
+#There are some spices under the deck
+#To access them just click the door on the ship
+#But you probably know it already
+#Unless you don't lol
+
+function conversation7 {
+	sequence {
+		function ./says {message:[{text:'There', color: '#e4741d'}, ' are', ' some', ' spices', ' under', ' deck.']}
+
+		sleep 80t
+		function ./says {message:[{text:'To', color: '#e4741d'}, ' access', ' them', ' just', ' click', ' the', ' door', ' on', ' the', ' ship.']}
+
+		sleep 80t
+		function ./says {message:[{text:'But', color: '#e4741d'}, ' you', ' probably', ' know', ' that', ' already.']}
+
+		sleep 80t
+		function ./says {message:[{text:'Unless', color: '#e4741d'}, ' you', ' don\'t', ' lol.']}
+
+		sleep 60t
+		advancement grant @p only spiced:npcs/pan
 		function ./reset
 	}
 }

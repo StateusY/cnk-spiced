@@ -51,8 +51,8 @@
         "sticker_id": "c4t_talking",
         "sticker_texture": "spiced:sticker/c4t_talking",
         "sticker_name": "Sociable Fellow",
-        "unobtained_text": "Talk to EVERY npc, and listen to ALL of their responses.",
-        "obtained_text": "You did it, you found all 7 NPCs and listened to all 32 conversations!!!"
+        "unobtained_text": "Find and talk to every npc in the booth!",
+        "obtained_text": "Yay talking! But did you find the secret typo?"
       }
     ]
   }
