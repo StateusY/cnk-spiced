@@ -10,60 +10,6 @@
       },
       "on_player_enter":"spiced:bounds/cabin/enter"
     },
-    "cellar_enter": {
-      "position": {
-        "x": { "min": 221, "max": 224 },
-        "y": { "min": 56, "max": 60 },
-        "z": { "min": 178, "max": 182 }
-      },
-      "on_player_enter":"spiced:bounds/cellar/enter"
-    },
-    "cellar_exit": {
-      "position": {
-        "x": { "min": 199, "max": 203 },
-        "y": { "min": 52, "max": 55 },
-        "z": { "min": 175, "max": 178 }
-      },
-      "on_player_enter":"spiced:bounds/cellar/exit"
-    },
-    "fountain_enter": {
-      "position": {
-        "x": { "min": 177, "max": 180 },
-        "y": { "min": 52, "max": 55 },
-        "z": { "min": 187, "max": 189 }
-      },
-      "on_player_enter":"spiced:bounds/cellar/fountain/enter1"
-    },
-    "fountain_return": {
-      "position": {
-        "x": { "min": 174, "max": 178 },
-        "y": { "min": 52, "max": 55 },
-        "z": { "min": 184, "max": 186 }
-      },
-      "on_player_enter":"spiced:bounds/cellar/fountain/exit1"
-    },
-    "fountain_exit": {
-      "position": {
-        "x": { "min": 191, "max": 194 },
-        "y": { "min": 52, "max": 55 },
-        "z": { "min": 173, "max": 175 }
-      },
-      "on_player_enter":"spiced:bounds/cellar/fountain/exit2"
-    },
-    "cellar": {
-      "position": {
-        "x": { "min": 174, "max": 223 },
-        "y": { "min": 51, "max": 60 },
-        "z": { "min": 170, "max": 200 }
-      }
-    },
-    "boat": {
-      "position": {
-        "x": { "min": 187, "max": 231 },
-        "y": { "min": 60, "max": 70 },
-        "z": { "min": 199, "max": 209 }
-      }
-    },
     "booth": {
       "position": {
         "x": { "min": 177, "max": 235 },
@@ -71,13 +17,6 @@
         "z": { "min": 166, "max": 212 }
       },
       "on_player_enter":"spiced:bounds/entered"
-    },
-    "hull": {
-      "position": {
-        "x": { "min": 182, "max": 199 },
-        "y": { "min": 52, "max": 57 },
-        "z": { "min": 198, "max": 209 }
-      }
     }
   },
   "ticking_functions": {
@@ -92,14 +31,14 @@
         "sticker_texture": "spiced:sticker/spiced_booth",
         "sticker_name": "the sticker that takes 0 effort and is totally original",
         "unobtained_text": "Visit the best booth at the Summit.",
-        "obtained_text": "Yayyy, you entered the booth! What a difficult task you have defeated!"
+        "obtained_text": "Yayyy, you entered the booth! What a difficult task you have surmounted!"
       },
       {
         "sticker_id": "huntsman_pie",
         "sticker_texture": "spiced:sticker/huntsman_pie",
-        "sticker_name": "Eat the most delicious meal of all time",
+        "sticker_name": "Eat the MOST DELICIOUS meal of all time!!!",
         "unobtained_text": "Cook and eat the Huntsman Pie",
-        "obtained_text": "You did it! You complete the main quest, now onto the secret stuff..."
+        "obtained_text": "You did it! You completed the main quest, now onto the secret stuff..."
       },
       {
         "sticker_id": "lettuce_line",

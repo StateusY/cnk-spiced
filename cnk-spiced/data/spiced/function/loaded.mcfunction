@@ -23,8 +23,6 @@ scoreboard objectives add spiced.cookbook_previous_page dummy
 scoreboard objectives add spiced.previous_incomplete_recipe dummy
 scoreboard objectives add spiced.next_incomplete_recipe dummy
 
-# scoreboard objectives add spiced.use_lectern minecraft.custom:minecraft.interact_with_lectern
-
 # general use constants
 scoreboard objectives add spiced.dummy dummy
 scoreboard objectives add mcb.internal dummy
@@ -34,12 +32,5 @@ scoreboard players set $16 spiced.constant 16
 scoreboard players set $64 spiced.constant 64
 scoreboard players set $729 spiced.constant 729
 
-# clear old entities
-execute as @e[tag=summit.booth_entity.spiced] on passengers run kill @s
-kill @e[tag=summit.booth_entity.spiced]
-setblock 220 66 189 air
-setblock 220 66 190 air
-
-# functions
-function spiced:placements/main
-function spiced:cookbook/register_pages
+function spiced:teardown
+function spiced:setup

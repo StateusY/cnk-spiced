@@ -1,4 +1,4 @@
 # Generated with MC-Build
 
-advancement grant @s only spiced:npcs/stateus/2
+advancement grant @p only spiced:npcs/stateus/2
 function spiced:stateus_npc/reset
