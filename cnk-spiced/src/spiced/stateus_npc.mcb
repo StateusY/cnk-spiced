@@ -162,7 +162,7 @@ function conversation4 {
 		function ./says {message:[{text:'and', color: '#3a552c'}, ' Pan', ' made', ' a', ' salt', ' texture', ' for', ' me.']}
 
 		sleep 80t
-		function ./says {message:[{text:'So', color: '#3a552c'}, ' I', ' was', ' like,', ' \"wanna', ' work', ' together?\"']}
+		function ./says {message:[{text:'So', color: '#3a552c'}, ' I', ' was', ' like,', ' "wanna', ' work', ' together?"']}
 
 		sleep 80t
 		function ./says {message:[{text:'Presto,', color: '#3a552c'}, ' here', ' we', ' are!']}

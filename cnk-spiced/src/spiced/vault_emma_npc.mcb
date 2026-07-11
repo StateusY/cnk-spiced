@@ -23,6 +23,16 @@ function summon {
 			} \
 		} \
 	}
+	summon interaction 183 53 194 { \
+		Tags:['summit.booth_entity.spiced', 'summit.static', 'spiced.vault_emma_npc.interaction', 'summit.interactable'], \
+		width:1f, height:2f, response:true, \
+		data: { \
+			summit_interactable: { \
+				on_right_click: 'function spiced:vault_emma_npc/start_conversation', \
+				on_left_click: 'function spiced:vault_emma_npc/start_conversation', \
+			} \
+		} \
+	}
 	function ./reset
 }
 

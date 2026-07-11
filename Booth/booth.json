@@ -55,5 +55,12 @@
         "obtained_text": "Yay talking! But did you find the secret typo?"
       }
     ]
-  }
+  },
+    "balloons": [
+        {
+            "balloon_id": "mortar_balloon",
+            "balloon_name": "Mortar and Pestle Balloon",
+            "balloon_model": "spiced:item/spiced_balloon"
+        }
+    ]
 }

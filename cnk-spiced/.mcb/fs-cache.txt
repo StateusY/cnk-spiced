@@ -239,7 +239,7 @@ data/spiced/function/stateus_npc/zzz/125.mcfunction:5f2411be85013a1d650ff78fa695
 data/spiced/function/stateus_npc/zzz/126.mcfunction:6f78a5512ec1b98fff9605a558260b91678a038f
 data/spiced/function/stateus_npc/zzz/127.mcfunction:cdcfedbed0c7ce96ae99b80e76889f527d51b621
 data/spiced/function/stateus_npc/conversation11.mcfunction:0bf065df4a6a2df45ceb8274fc50eb644349afa0
-data/spiced/function/vault_emma_npc/summon.mcfunction:50adacbdf8dd150e024b991c9045decdcdfcce1f
+data/spiced/function/vault_emma_npc/summon.mcfunction:3c8a1099b20dcf453cff189ef6c153f4f58d1d2b
 data/spiced/function/vault_emma_npc/tick.mcfunction:ad5e27e39e743c9e6765acf35b411f609d8b9001
 data/spiced/function/vault_emma_npc/reset.mcfunction:2320dda93937a2c297ea192b7b0e6e26ebf2fb6c
 data/spiced/function/vault_emma_npc/zzz/0.mcfunction:64d54400c1d3a93ede07144354b1c72a04cc527a
