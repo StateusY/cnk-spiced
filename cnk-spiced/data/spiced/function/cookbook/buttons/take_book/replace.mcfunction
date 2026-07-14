@@ -5,7 +5,7 @@
 #------------------------------------------------------------------------------------
 
 # kill book entity
-execute align xyz positioned ~0.5 ~0.5 ~0.5 run kill @n[tag=spiced.lectern_book, distance=..0.1]
+# execute align xyz positioned ~0.5 ~0.5 ~0.5 run kill @n[tag=spiced.lectern_book, distance=..0.1]
 
 data remove block ~ ~ ~ Book
 execute if block ~ ~ ~ minecraft:lectern[facing=north] run return run setblock ~ ~ ~ minecraft:lectern[facing=north,has_book=false]

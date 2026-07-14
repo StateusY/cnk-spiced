@@ -16,3 +16,4 @@ swing @p[tag=spiced.interact_cutting_board,distance=..20,tag=spiced.cutting_boar
 
 execute if entity @p[tag=spiced.interact_cutting_board,distance=..20,tag=spiced.cutting_board_offhand] run item modify entity @p[tag=spiced.interact_cutting_board,distance=..20] weapon.offhand {"function":"minecraft:set_count","count":-1,"add":true}
 execute if entity @p[tag=spiced.interact_cutting_board,distance=..20,tag=!spiced.cutting_board_offhand] run item modify entity @p[tag=spiced.interact_cutting_board,distance=..20] weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
+execute as @p[tag=spiced.interact_cutting_board,distance=..20] if entity @s run function spiced:cutting_board/item/modify

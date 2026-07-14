@@ -1,3 +1,4 @@
 # Generated with MC-Build
 
-$function spiced:vault_emma_npc/conversation$(conversation)
+rotate @s 90 0
+data modify entity @s Rotation set value [90f, 0f]

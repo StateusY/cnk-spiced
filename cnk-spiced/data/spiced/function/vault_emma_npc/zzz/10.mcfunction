@@ -1,4 +1,4 @@
 # Generated with MC-Build
 
-function spiced:vault_emma_npc/vault/says {message:[{text:'Did', color: '#9171ba'}, ' you', ' just', ' hear', ' something?', ' No?', ' Yeah', ' I', ' thought', ' so.']}
-schedule function spiced:vault_emma_npc/zzz/9 80t replace
+execute positioned 183 53 193 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/vault_emma
+function spiced:vault_emma_npc/reset

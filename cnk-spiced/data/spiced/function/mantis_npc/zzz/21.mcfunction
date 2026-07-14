@@ -1,4 +1,4 @@
 # Generated with MC-Build
 
-advancement grant @p only spiced:npcs/mantis
+execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/mantis
 function spiced:mantis_npc/reset

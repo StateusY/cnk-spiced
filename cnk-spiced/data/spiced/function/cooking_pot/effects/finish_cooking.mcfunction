@@ -10,4 +10,4 @@ item modify entity @s contents {"function":"minecraft:set_custom_model_data","fl
 scoreboard players reset @s spiced.cook_time
 scoreboard players set @s spiced.cook_cooldown 30
 
-particle minecraft:poof ~ ~0.3 ~ 0.1 0.1 0.1 0 10
+particle minecraft:poof ~ ~0.3 ~ 0.1 0.1 0.1 0 10 normal @a[tag=summit.in_booth.spiced,distance=..20]

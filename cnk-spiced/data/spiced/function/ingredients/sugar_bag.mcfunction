@@ -3,7 +3,5 @@ execute if score $count spiced.dummy > $64 spiced.constant run return run title 
 execute if score $count spiced.dummy > $16 spiced.constant run return run title @s actionbar {text: "stop being such a greedy goober, you don't even need 16", color:  "red"}
 execute if score $count spiced.dummy = $16 spiced.constant run return run title @s actionbar {text: "Cannot Carry More", color:  "red"}
 
-playsound minecraft:item.bundle.remove_one block @a[tag=summit.in_booth.spiced,distance=..15] ~ ~ ~ 2 0.7
-playsound minecraft:block.sand.place block @a[tag=summit.in_booth.spiced,distance=..15] ~ ~ ~ 2 1.75
-playsound minecraft:entity.item.pickup block @a[tag=summit.in_booth.spiced,distance=..15] ~ ~ ~ 0.5
+execute as @a[tag=summit.in_booth.spiced,distance=..15] run function spiced:ingredients/sfx/powder
 loot give @s loot spiced:food/sugar

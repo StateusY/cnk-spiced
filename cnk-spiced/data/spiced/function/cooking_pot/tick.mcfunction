@@ -4,7 +4,7 @@
 # We do NOT claim any legal right or creative license to this file.
 #------------------------------------------------------------------------------------
 
-particle minecraft:flame ~ ~-0.35 ~ 0.18 0.05 0.18 0 1
+particle minecraft:flame ~ ~-0.35 ~ 0.18 0.05 0.18 0 1 normal @a[tag=summit.in_booth.spiced,distance=..20]
 execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{periodic_tick:100}} run playsound spiced:block.cooking_pot.idling block @a[tag=summit.in_booth.spiced,distance=..6] ~ ~ ~ 0.4 1
 
 execute if score @s spiced.cook_cooldown matches 1.. run return run scoreboard players remove @s spiced.cook_cooldown 1

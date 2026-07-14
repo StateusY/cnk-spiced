@@ -4,4 +4,4 @@
 # We do NOT claim any legal right or creative license to this file.
 #------------------------------------------------------------------------------------
 
-$particle minecraft:item{item:{id:"$(id)",components:$(components)}} ~ ~0.2 ~ 0.1 0.1 0.1 0.05 5 normal
+$particle minecraft:item{item:{id:"$(id)",components:$(components)}} ~ ~0.2 ~ 0.1 0.1 0.1 0.05 5 normal @a[tag=summit.in_booth.spiced,distance=..20]

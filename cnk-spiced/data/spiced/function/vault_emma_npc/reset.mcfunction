@@ -1,9 +1,7 @@
 # Generated with MC-Build
 
-execute as @e[type=mannequin,tag=spiced.emma_npc,limit=1] at @s run rotate @s 80 0
-execute as @e[type=mannequin,tag=spiced.emma_npc,limit=1] run data modify entity @s Rotation set value [80f, 0f]
-execute as @e[type=mannequin,tag=spiced.vault_npc,limit=1] at @s run rotate @s 90 0
-execute as @e[type=mannequin,tag=spiced.vault_npc,limit=1] run data modify entity @s Rotation set value [90f, 0f]
+execute as @e[type=mannequin,tag=spiced.emma_npc,limit=1] at @s run function spiced:vault_emma_npc/zzz/0
+execute as @e[type=mannequin,tag=spiced.vault_npc,limit=1] at @s run function spiced:vault_emma_npc/zzz/1
 scoreboard players set #spiced.vault_emma_npc.chatting spiced.dummy 0
 scoreboard players set #spiced.vault_emma_npc.emma_turn spiced.dummy 0
 kill e2e84d58-29e9-48e3-8998-f6edb7f44062

@@ -97,7 +97,7 @@ function conversation1 {
 		function ./says {message:[{text:'My', color: 'gold'}, ' creators', ' thought', ' so.']}
 
 		sleep 40t
-		advancement grant @p only spiced:npcs/c4t
+		execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/c4t
 		function ./reset
 	}
 }
@@ -122,7 +122,7 @@ function conversation2 {
 		function ./says {message:[{text:'But', color: 'gold'}, ' I', ' know', ' I', ' will', ' see', ' you', ' soon!']}
 
 		sleep 80t
-		advancement grant @p only spiced:npcs/c4t
+		execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/c4t
 		function ./reset
 	}
 }
@@ -138,7 +138,7 @@ function conversation3 {
 		function ./says {message:[{text:'Someday...', color: 'gold'}]}
 
 		sleep 30t
-		advancement grant @p only spiced:npcs/c4t
+		execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/c4t
 		function ./reset
 	}
 }
@@ -160,7 +160,7 @@ function conversation4 {
 		function ./says {message:[{text:'It\'s', color: 'gold'}, ' supa', ' easy!', ' Just', ' use', ' an', ' egg,', ' milk,', ' and', ' some', ' sugar!']}
 
 		sleep 100t
-		advancement grant @p only spiced:npcs/c4t
+		execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/c4t
 		function ./reset
 	}
 }

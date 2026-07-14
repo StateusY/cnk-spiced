@@ -9,7 +9,7 @@ tag @s add spiced.finished_mixing_bowl
 execute on passengers if entity @s[type=minecraft:item_display,tag=spiced.mixing_bowl_item] run data modify entity @n[tag=spiced.finished_mixing_bowl] item.components."minecraft:custom_data".spiced.last_recipe append from entity @s item
 tag @s remove spiced.finished_mixing_bowl
 
-particle minecraft:poof ~ ~-0.3 ~ 0.1 0.1 0.1 0 4
+particle minecraft:poof ~ ~-0.3 ~ 0.1 0.1 0.1 0 4 normal @a[tag=summit.in_booth.spiced,distance=..20]
 playsound entity.item.pickup block @a[tag=summit.in_booth.spiced] ~ ~ ~ 0.6 1
 execute on passengers if entity @s[type=minecraft:item_display,tag=spiced.mixing_bowl_item] run kill @s
 scoreboard players set @s spiced.item_count 0

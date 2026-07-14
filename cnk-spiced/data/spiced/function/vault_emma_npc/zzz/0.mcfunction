@@ -1,3 +1,4 @@
 # Generated with MC-Build
 
-function shuffle:shuffle {source: 'storage spiced:vault_emma_npc conversations', target: 'storage spiced:vault_emma_npc conversation_order'}
+rotate @s 80 0
+data modify entity @s Rotation set value [80f, 0f]
