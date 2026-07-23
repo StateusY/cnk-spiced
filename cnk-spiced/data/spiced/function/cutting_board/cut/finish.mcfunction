@@ -4,11 +4,9 @@
 # We do NOT claim any legal right or creative license to this file.
 #------------------------------------------------------------------------------------
 
-execute on vehicle run scoreboard players reset @s spiced.item_count
-
 scoreboard players set $cut_check spiced.dummy 1
-playsound spiced:block.cutting_board.chop block @a[tag=summit.in_booth.spiced] ~ ~ ~ 0.8 0.8
-playsound minecraft:block.bamboo_wood.hit block @a[tag=summit.in_booth.spiced] ~ ~ ~ 0.8 2
+playsound spiced:block.cutting_board.chop block @a[tag=summit.in_booth.spiced,distance=..7] ~ ~ ~ 0.8 0.8
+playsound minecraft:block.bamboo_wood.hit block @a[tag=summit.in_booth.spiced,distance=..7] ~ ~ ~ 0.8 2
 kill @s
 
 execute unless data storage spiced:temp cutting_board.item.components run data modify storage spiced:temp cutting_board.item.components set value {}

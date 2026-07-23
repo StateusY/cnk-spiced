@@ -109,7 +109,7 @@ function conversation2 {
 		function ./says {message:[{text:'Sunflower', color: '#e4741d'}, ' Snippets', ' and', ' Rammy!']}
 
 		sleep 60t
-		function ./says {message:[{text:'\"Who', color: '#e4741d'}, ' is', ' Rammy?\"', ' you', ' ask.']}
+		function ./says {message:[{text:'"Who', color: '#e4741d'}, ' is', ' Rammy?"', ' you', ' ask.']}
 
 		sleep 60t
 		function ./says {message:[{text:'Well,', color: '#e4741d'}, ' Rammy', ' is', ' a', ' special', ' piece', ' of', ' RAM.']}

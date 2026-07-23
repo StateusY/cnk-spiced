@@ -5,5 +5,4 @@
 #------------------------------------------------------------------------------------
 
 scoreboard players reset @s spiced.idle_time
-scoreboard players reset @s spiced.item_count
 execute on passengers run kill @s[type=minecraft:item_display,tag=spiced.cutting_board_item]

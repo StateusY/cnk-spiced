@@ -5,5 +5,5 @@
 #------------------------------------------------------------------------------------
 
 # increase idle time, clear cutting board if idle for 2400 ticks (2 minutes)
-execute if score @s spiced.item_count matches 1.. run scoreboard players add @s spiced.idle_time 1
+execute on passengers if entity @s[type=minecraft:item_display,tag=spiced.cutting_board_item] on vehicle run scoreboard players add @s spiced.idle_time 1
 execute if score @s spiced.idle_time matches 2400.. run function spiced:cutting_board/clear

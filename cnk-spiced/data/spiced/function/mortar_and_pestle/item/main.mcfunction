@@ -1,5 +1,5 @@
 execute if score @s spiced.item_count matches 3.. run return run function spiced:mortar_and_pestle/mash/main
-swing @p[tag=spiced.interact_mortar_and_pestle,distance=..20] mainhand
+swing @p[tag=spiced.interact_mortar_and_pestle,distance=..20,limit=1] mainhand
 
 scoreboard players set $hand_place spiced.dummy 1
 
