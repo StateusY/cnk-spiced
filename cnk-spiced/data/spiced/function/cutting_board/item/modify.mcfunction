@@ -1,2 +1,0 @@
-execute if entity @s[tag=spiced.cutting_board_offhand] run return run item modify entity @s weapon.offhand {"function":"minecraft:set_count","count":-1,"add":true}
-execute if entity @s[tag=!spiced.cutting_board_offhand] run item modify entity @s weapon.offhand {"function":"minecraft:set_count","count":-1,"add":true}

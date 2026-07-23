@@ -1,2 +1,7 @@
 scoreboard players reset @s spiced.idle_time
-execute unless entity @s[tag=spiced.mashing] on passengers if entity @s[type=minecraft:item_display,tag=spiced.mortar_and_pestle_item] on vehicle run return run function spiced:mortar_and_pestle/hit/remove_last
+execute if entity @s[tag=spiced.msahing] run return fail
+
+# recount items in case of desync shenanigans
+function spiced:mortar_and_pestle/recount_items
+
+execute if score @s spiced.item_count matches 1.. run return run function spiced:mortar_and_pestle/hit/remove_last

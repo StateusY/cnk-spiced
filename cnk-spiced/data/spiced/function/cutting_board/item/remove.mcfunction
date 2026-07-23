@@ -6,8 +6,6 @@
 
 swing @p[tag=spiced.interact_cutting_board,distance=..20] mainhand
 
-execute on vehicle run scoreboard players reset @s spiced.item_count
-
 playsound minecraft:block.bamboo_wood.step block @a[tag=summit.in_booth.spiced] ~ ~ ~ 1 2
 execute if data entity @s item.components run function spiced:cutting_board/item/item_macro_components with entity @s item
 execute unless data entity @s item.components run function spiced:cutting_board/item/item_macro with entity @s item

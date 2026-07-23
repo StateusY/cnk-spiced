@@ -5,4 +5,9 @@
 #------------------------------------------------------------------------------------
 
 scoreboard players reset @s spiced.idle_time
-execute unless entity @s[tag=spiced.mixing] on passengers if entity @s[type=minecraft:item_display,tag=spiced.mixing_bowl_item] on vehicle run return run function spiced:mixing_bowl/hit/remove_last
+execute if entity @s[tag=spiced.mixing] run return fail
+
+# recount items in case of desync shenanigans
+function spiced:mixing_bowl/recount_items
+
+execute if score @s spiced.item_count matches 1.. run return run function spiced:mixing_bowl/hit/remove_last
