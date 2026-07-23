@@ -1,5 +1,6 @@
 data modify entity @s item.components."minecraft:custom_data".spiced set value {}
 tag @s add spiced.finished_mortar_and_pestle
+say hoi
 execute on passengers if entity @s[type=minecraft:item_display,tag=spiced.mortar_and_pestle_item] run data modify entity @n[tag=spiced.finished_mortar_and_pestle] item.components."minecraft:custom_data".spiced.last_recipe append from entity @s item
 tag @s remove spiced.finished_mortar_and_pestle
 
