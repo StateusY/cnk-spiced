@@ -9,7 +9,7 @@ function summon {
 	set #spiced.mantis_npc.chatting spiced.dummy 0
 	set #spiced.mantis_npc.mining_timer spiced.dummy 0
 
-	summon mannequin 227 73.9 183 {Rotation:[90f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.mantis_npc'],Invulnerable:1b,immovable:true,profile:{name:'stateus'},hide_description:true,active_effects:[{id:invisibility,show_particles:false,duration:-1}],equipment:{head:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"thorax:entity/bug/praying_mantis"}}}}
+	summon mannequin 227 73.9 183 {Rotation:[90f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.mantis_npc'],Invulnerable:1b,immovable:true,profile:{name:'stateus'},hide_description:true,active_effects:[{id:invisibility,show_particles:false,duration:-1}],equipment:{head:{id:"minecraft:barrier",components:{"minecraft:item_model":"thorax:entity/bug/praying_mantis"}}}}
 
 	summon interaction 227 75 183 { \
 		Tags:['summit.booth_entity.spiced', 'summit.static', 'spiced.mantis_npc.interaction', 'summit.interactable'], \

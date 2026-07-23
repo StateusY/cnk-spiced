@@ -20,7 +20,7 @@
     }
   },
   "ticking_functions": {
-    "spiced:tick": "1t"
+    "spiced:tick": "2t"
   },
   "sticker_book": {
     "background_color": "#f17515",

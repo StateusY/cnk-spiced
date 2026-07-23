@@ -6,6 +6,6 @@ execute if score $random_sound spiced.dummy matches 3 run playsound minecraft:am
 execute if score $random_sound spiced.dummy matches 4 run playsound minecraft:ambient.nether_wastes.mood block @s ~ ~ ~ 0.5 0.5
 
 
-execute store result storage spiced:temp random.cellar_sound int 1 run random value 20..35
+execute store result storage spiced:temp random.cellar_sound int 1 run random value 40..75
 
 function spiced:bounds/cellar/sound_schedule with storage spiced:temp random

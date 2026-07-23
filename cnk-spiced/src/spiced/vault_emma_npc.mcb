@@ -9,7 +9,7 @@ function summon {
 	set #spiced.vault_emma_npc.chatting spiced.dummy 0
 	set #spiced.vault_emma_npc.emma_turn spiced.dummy 0
 
-	summon mannequin 183 53 193 {Rotation:[180f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.vault_emma_npc', 'spiced.vault_npc'],Invulnerable:1b,immovable:true,equipment:{offhand:{id:"minecraft:barrier",count:1,components:{"minecraft:item_model":"spiced:portion_of_lettuce"}}},profile:{name:'vawlt'},hide_description:true}
+	summon mannequin 183 53 193 {Rotation:[180f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.vault_emma_npc', 'spiced.vault_npc'],Invulnerable:1b,immovable:true,equipment:{offhand:{id:"minecraft:barrier",components:{"minecraft:item_model":"spiced:portion_of_lettuce"}}},profile:{name:'vawlt'},hide_description:true}
 
 	summon mannequin 183 53 194 {Rotation:[80f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.vault_emma_npc', 'spiced.emma_npc'],Invulnerable:1b,immovable:true,profile:{name:'emmasmithe'},hide_description:true}
 

@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "spiced:item/cellar_face"
+  },
+  "display": {
+    "ground": {
+      "rotation": [180,0,180]
+    }
+  }
+}

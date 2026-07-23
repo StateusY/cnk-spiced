@@ -6,7 +6,7 @@ playsound minecraft:item.wolf_armor.crack ambient @s ~ ~ ~ 0.5 0.1 1
 playsound minecraft:entity.turtle.egg_crack ambient @s ~ ~ ~ 1 0.1 1
 playsound minecraft:entity.lightning_bolt.thunder ambient @s ~ ~ ~ 0.2 2 1
 
-execute store result storage spiced:temp random.cellar_sound int 1 run random value 20..35
+execute store result storage spiced:temp random.cellar_sound int 1 run random value 40..75
 
 function spiced:bounds/cellar/sound_schedule with storage spiced:temp random
 
