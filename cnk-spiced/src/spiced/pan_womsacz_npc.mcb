@@ -96,7 +96,7 @@ function conversation1 {
 		function ./says {message:[{text:'Try', color: '#e4741d'}, ' it', ' out', ' then.']}
 
 		sleep 60t
-		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
 		function ./reset
 	}
 }
@@ -122,7 +122,7 @@ function conversation2 {
 		execute positioned 200 64 207 run playsound minecraft:entity.item.pickup player @p[tag=summit.in_booth.spiced,distance=..12] ~ ~ ~ 0.5 1
 
 		sleep 80t
-		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
 		function ./reset
 	}
 }
@@ -135,7 +135,7 @@ function conversation3 {
 		function ./says {message:[{text:'However,', color: '#e4741d'}, ' items', ' with ', {text:'persist',font: "spiced:small_text",color:'white'}, {text:' in',color:'#e4741d'}, ' the', ' description', ' don\'t.']}
 
 		sleep 80t
-		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
 		function ./reset
 	}
 }
@@ -160,7 +160,7 @@ function conversation4 {
 		function ./says {message:[{text:'You', color: '#e4741d'}, ' might', ' know', ' that', ' already.']}
 
 		sleep 80t
-		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
 		function ./reset
 	}
 }
@@ -173,7 +173,7 @@ function conversation5 {
 		function ./says {message:[{text:'We', color: '#e4741d'}, ' have', ' a', ' lot', ' of', ' stuff', ' planned!']}
 
 		sleep 80t
-		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
 		function ./reset
 	}
 }
@@ -195,7 +195,7 @@ function conversation6 {
 		function ./says {message:[{text:'And', color: '#e4741d'}, ' only', ' sometimes', ' do', ' I', ' steal', ' color', ' palettes', ' from' , ' Minecraft.']}
 
 		sleep 100t
-		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
 		function ./reset
 	}
 }
@@ -211,7 +211,7 @@ function conversation7 {
 		function ./says {message:[{text:'I', color: '#e4741d'}, ' would', ' say', ' that', ' is', ' a', ' pretty', ' big', ' jump', ' from', ' a', ' random', ' Pole', ' to', ' a', ' vendor.']}
 
 		sleep 100t
-		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
 		function ./reset
 	}
 }
@@ -230,7 +230,7 @@ function conversation7 {
 		function ./says {message:[{text:'Unless', color: '#e4741d'}, ' you', ' don\'t', ' lol.']}
 
 		sleep 60t
-		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
 		function ./reset
 	}
 }

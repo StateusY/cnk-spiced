@@ -96,7 +96,7 @@ Notes:
   - Function: spiced:blue_npc/zzz/0
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 218 62 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/blue
+     3 |  execute positioned 218 62 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/blue
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:blue_npc/reset
 Notes:
@@ -104,7 +104,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 218 62 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/blue
+     3 |  execute positioned 218 62 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/blue
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:blue_npc/reset
 Notes:
@@ -112,7 +112,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 218 62 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/blue
+     3 |  execute positioned 218 62 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/blue
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:blue_npc/reset
 Notes:
@@ -120,7 +120,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 218 62 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/blue
+     3 |  execute positioned 218 62 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/blue
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:blue_npc/reset
 Notes:
@@ -142,7 +142,7 @@ Notes:
   - Function: spiced:c4t_npc/zzz/0
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/c4t
+     3 |  execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/c4t
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:c4t_npc/reset
 Notes:
@@ -150,7 +150,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/c4t
+     3 |  execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/c4t
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:c4t_npc/reset
 Notes:
@@ -158,7 +158,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/c4t
+     3 |  execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/c4t
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:c4t_npc/reset
 Notes:
@@ -166,7 +166,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/c4t
+     3 |  execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/c4t
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:c4t_npc/reset
 Notes:
@@ -422,7 +422,7 @@ Notes:
   - Function: spiced:mantis_npc/zzz/0
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/mantis
+     3 |  execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/mantis
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:mantis_npc/reset
 Notes:
@@ -430,7 +430,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/mantis
+     3 |  execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/mantis
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:mantis_npc/reset
 Notes:
@@ -438,7 +438,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/mantis
+     3 |  execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/mantis
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:mantis_npc/reset
 Notes:
@@ -446,7 +446,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/mantis
+     3 |  execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/mantis
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:mantis_npc/reset
 Notes:
@@ -454,7 +454,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/mantis
+     3 |  execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/mantis
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:mantis_npc/reset
 Notes:
@@ -478,7 +478,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/mantis
+     3 |  execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/mantis
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:mantis_npc/reset
 Notes:
@@ -753,7 +753,7 @@ Notes:
   - Function: spiced:pan_womsacz_npc/zzz/0
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:pan_womsacz_npc/reset
 Notes:
@@ -761,7 +761,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:pan_womsacz_npc/reset
 Notes:
@@ -792,7 +792,7 @@ Notes:
   - Function: spiced:pan_womsacz_npc/zzz/28
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:pan_womsacz_npc/reset
 Notes:
@@ -800,7 +800,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:pan_womsacz_npc/reset
 Notes:
@@ -808,7 +808,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:pan_womsacz_npc/reset
 Notes:
@@ -816,7 +816,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:pan_womsacz_npc/reset
 Notes:
@@ -824,7 +824,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:pan_womsacz_npc/reset
 Notes:
@@ -832,7 +832,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/pan
+     3 |  execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:pan_womsacz_npc/reset
 Notes:
@@ -854,7 +854,7 @@ Notes:
   - Function: spiced:stateus_npc/zzz/0
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/stateus
+     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:stateus_npc/reset
 Notes:
@@ -862,7 +862,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/stateus
+     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:stateus_npc/reset
 Notes:
@@ -870,7 +870,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/stateus
+     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:stateus_npc/reset
 Notes:
@@ -878,7 +878,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/stateus
+     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:stateus_npc/reset
 Notes:
@@ -886,7 +886,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/stateus
+     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:stateus_npc/reset
 Notes:
@@ -894,7 +894,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/stateus
+     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:stateus_npc/reset
 Notes:
@@ -902,7 +902,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/stateus
+     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:stateus_npc/reset
 Notes:
@@ -910,7 +910,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/stateus
+     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:stateus_npc/reset
 Notes:
@@ -918,7 +918,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/stateus
+     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:stateus_npc/reset
 Notes:
@@ -926,7 +926,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/stateus
+     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:stateus_npc/reset
 Notes:
@@ -934,7 +934,7 @@ Notes:
   - If ordering doesn't matter, add `sort=arbitrary` or use `@a[limit=1]` / `@e[type=...,tag=...,limit=1]` as appropriate.
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/stateus
+     3 |  execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:stateus_npc/reset
 Notes:
@@ -987,7 +987,7 @@ Notes:
   - Function: spiced:vault_emma_npc/vault/zzz/0
 WARNING  `@p` sorts candidates by distance. Confirm the nearest target is actually required. (selector_distance_sort)
      2 |  
-     3 |  execute positioned 183 53 193 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/vault_emma
+     3 |  execute positioned 183 53 193 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/vault_emma
        :                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
      4 |  function spiced:vault_emma_npc/reset
 Notes:

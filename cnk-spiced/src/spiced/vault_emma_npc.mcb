@@ -97,7 +97,7 @@ dir vault {
 		$execute \
 			as @e[type=mannequin,tag=spiced.vault_emma_npc,limit=1] \
 			at @s \
-			positioned ~ ~2.125 ~ \
+			positioned ~ ~2.125 ~-1 \
 		run { {message: $(message)}
 			chatter e2e84d58-29e9-48e3-8998-f6edb7f44062 4..8 spiced:vault_emma_npc/vault/sounds
 		}
@@ -118,7 +118,7 @@ dir emma {
 		$execute \
 			as @e[type=mannequin,tag=spiced.vault_emma_npc,limit=1] \
 			at @s \
-			positioned ~ ~2.125 ~1 \
+			positioned ~ ~2.125 ~ \
 		run { {message: $(message)}
 			chatter e2e84d58-29e9-48e3-8998-f6edb7f44062 4..8 spiced:vault_emma_npc/emma/sounds
 		}
@@ -157,7 +157,7 @@ function conversation1 {
 		function ./emma/says {message:[{text:'Ughh,', color: 'dark_red'}, ' VAULT!!!']}
 
 		sleep 60t
-		execute positioned 183 53 193 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12] only spiced:npcs/vault_emma
+		execute positioned 183 53 193 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/vault_emma
 		function ./reset
 	}
 }
