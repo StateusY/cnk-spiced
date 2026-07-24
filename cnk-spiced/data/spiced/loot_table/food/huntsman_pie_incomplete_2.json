@@ -19,7 +19,7 @@
                 },
                 "minecraft:consumable": {},
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"huntsman_pie_incomplete_2"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}, "summit": {"persist": {}}},
-                "minecraft:lore": [{"text":"persist","font":"spiced:small_text","color":"white"},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}]
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false},{"text":"persist","font":"spiced:small_text","color":"white"}]
               }
             }
           ]

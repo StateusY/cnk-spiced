@@ -14,7 +14,7 @@
                 "minecraft:item_model": "spiced:rammy",
                 "!minecraft:consumable": {},
                 "minecraft:custom_data": {"spiced":{"ingredient":{"type":"rammy"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}, "summit": {"persist": {}}},
-                "minecraft:lore": [{"text":"Do you love rammy the ram?","color":"gray","italic": true},{"text":"persist","font":"spiced:small_text","color":"white"},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}],
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false},{"text":"Do you love rammy the ram?","color":"gray","italic": true},{"text":"persist","font":"spiced:small_text","color":"white"}],
                 "minecraft:equippable": {
                   "slot": "head",
                   "dispensable": false,

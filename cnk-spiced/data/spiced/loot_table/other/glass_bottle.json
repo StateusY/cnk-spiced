@@ -5,7 +5,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:glass_bottle"
+          "name": "minecraft:glass_bottle",
+          "functions": [
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"glass_bottle"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}}
+              }
+            }
+          ]
         }
       ]
     }

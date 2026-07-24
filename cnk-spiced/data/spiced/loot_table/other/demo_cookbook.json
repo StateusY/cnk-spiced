@@ -20,7 +20,7 @@
                     "minecraft:written_book_content"
                   ]
                 },
-                "minecraft:lore": [{"text":"Small Batch Demo Edition!","color":"gray"},{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false}],
+                "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false},{"text":"Small Batch Demo Edition!","color":"gray"}],
                 "minecraft:max_stack_size": 1
               }
             }

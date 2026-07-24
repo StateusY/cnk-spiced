@@ -5,7 +5,7 @@
 #------------------------------------------------------------------------------------
 
 scoreboard players set $cut_check spiced.dummy 1
-playsound spiced:block.cutting_board.chop block @a[tag=summit.in_booth.spiced,distance=..7] ~ ~ ~ 0.8 0.8
+playsound cnk:block.cutting_board.chop block @a[tag=summit.in_booth.spiced,distance=..7] ~ ~ ~ 0.8 0.8
 playsound minecraft:block.bamboo_wood.hit block @a[tag=summit.in_booth.spiced,distance=..7] ~ ~ ~ 0.8 2
 kill @s
 

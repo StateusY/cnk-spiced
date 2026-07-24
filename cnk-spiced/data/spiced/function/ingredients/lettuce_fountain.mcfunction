@@ -1,5 +1,5 @@
-execute store result score $count spiced.dummy if items entity @s container.* poisonous_potato[minecraft:custom_data~{"spiced": {"ingredient":{"type":"lettuce"}}}]
-execute if score $count spiced.dummy >= $729 spiced.constant run return run title @s actionbar {text: "you have enough", color:  "gray"}
+function summit.items:api/count_items {custom_data:"{spiced: {ingredient:{type:'black_pepper'}}", max:729}
 
+execute if score $below_max summit.temp matches 0 run return fail
 execute as @a[tag=summit.in_booth.spiced,distance=..15] run function spiced:ingredients/sfx/crop
 loot give @s loot spiced:food/lettuce
