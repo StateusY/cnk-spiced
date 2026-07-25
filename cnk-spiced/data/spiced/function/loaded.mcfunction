@@ -1,4 +1,4 @@
-# tellraw @a[tag=summit.in_booth.spiced] [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false},{text:" ","font":"minecraft:default"},{"translate":spiced.loaded,"font":"minecraft:default"}]
+tellraw @a[tag=summit.in_booth.spiced] [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false},{text:" ","font":"minecraft:default"},{"translate":spiced.loaded,"font":"minecraft:default"}]
 
 # blocks
 scoreboard objectives add spiced.timer dummy
@@ -15,22 +15,68 @@ scoreboard objectives add spiced.mash_time dummy
 scoreboard objectives add spiced.get_water minecraft.used:minecraft.glass_bottle
 
 # book
-scoreboard objectives add spiced.uid dummy
-scoreboard objectives add spiced.use_book minecraft.used:minecraft.written_book
+scoreboard objectives add spiced.use_book trigger
+# minecraft.used:minecraft.written_book
 scoreboard objectives add spiced.cookbook_buttons trigger
 scoreboard objectives add spiced.cookbook_current_page dummy
 scoreboard objectives add spiced.cookbook_previous_page dummy
-scoreboard objectives add spiced.previous_incomplete_recipe dummy
-scoreboard objectives add spiced.next_incomplete_recipe dummy
+scoreboard objectives add spiced.cookbook_references trigger
+
 
 # general use constants
 scoreboard objectives add spiced.dummy dummy
 scoreboard objectives add mcb.internal dummy
-scoreboard objectives add spiced.constant dummy
-scoreboard players set $1 spiced.constant 1
-scoreboard players set $16 spiced.constant 16
-scoreboard players set $64 spiced.constant 64
-scoreboard players set $729 spiced.constant 729
+
+data modify storage spiced:cookbook pages set value { \
+    1: "spiced:cookbook/pages/front", \
+    2: "spiced:cookbook/pages/info", \
+    3: "spiced:cookbook/pages/butter", \
+    4: "spiced:cookbook/pages/cooking_oil", \
+    5: "spiced:cookbook/pages/ground_cinnamon", \
+    6: "spiced:cookbook/pages/flour", \
+    7: "spiced:cookbook/pages/dough", \
+    8: "spiced:cookbook/pages/bread", \
+    9: "spiced:cookbook/pages/sliced_bread", \
+    10: "spiced:cookbook/pages/diced_bread", \
+    11: "spiced:cookbook/pages/sliced_celery", \
+    12: "spiced:cookbook/pages/diced_celery", \
+    13: "spiced:cookbook/pages/sliced_onion", \
+    14: "spiced:cookbook/pages/diced_onion", \
+    15: "spiced:cookbook/pages/stock", \
+    16: "spiced:cookbook/pages/pastry_dough", \
+    17: "spiced:cookbook/pages/incomplete_huntsman_pie_1", \
+    18: "spiced:cookbook/pages/incomplete_huntsman_pie_2", \
+    19: "spiced:cookbook/pages/huntsman_pie", \
+    20: "spiced:cookbook/pages/back" \
+}
+
+# {
+#   "values": [
+#     "spiced:cookbook/pages/butter",
+#     "spiced:cookbook/pages/cooking_oil",
+#     "spiced:cookbook/pages/flour",
+#     "spiced:cookbook/pages/dough",
+#     "spiced:cookbook/pages/bread",
+#     "spiced:cookbook/pages/sliced_bread",
+#     "spiced:cookbook/pages/diced_bread",
+#     "spiced:cookbook/pages/ground_cinnamon",
+#     "spiced:cookbook/pages/sliced_celery",
+#     "spiced:cookbook/pages/diced_celery",
+#     "spiced:cookbook/pages/sliced_onion",
+#     "spiced:cookbook/pages/diced_onion",
+#     "spiced:cookbook/pages/stock",
+#     "spiced:cookbook/pages/pastry_dough",
+#     "spiced:cookbook/pages/incomplete_huntsman_pie_1",
+#     "spiced:cookbook/pages/incomplete_huntsman_pie_2",
+#     "spiced:cookbook/pages/huntsman_pie"
+#    ] 
+# }
+
+# {
+#   "values": [
+#     "spiced:cookbook/pages/info/register"
+#    ] 
+# }
 
 function spiced:teardown
 function spiced:setup

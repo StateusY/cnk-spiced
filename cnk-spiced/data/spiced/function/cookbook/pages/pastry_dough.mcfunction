@@ -6,11 +6,14 @@ $dialog show @s { \
       "type": "minecraft:plain_message", \
       "width": 211, \
       "contents": [{ \
-            "translate":"book.spiced.1_recipe","font":"spiced:icons","shadow_color":0,"color":"white","with":[ \
-                {"translate":item.spiced.bread,"color":"#7b613a","font":"minecraft:default"}, \
-                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.dough,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.dough}}}, \
-                {"translate":"book.spiced.cooking_pot"}, \
-                {"translate":"book.item.spiced.bread","font":"spiced:icons"}, \
+            "translate":"book.spiced.4_recipe","font":"spiced:icons","shadow_color":0,"color":"white","with":[ \
+                {"translate":item.spiced.pastry_dough,"color":"#7b613a","font":"minecraft:default"}, \
+                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.flour,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.flour}}}, \
+                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.egg,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.egg}}}, \
+                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.butter,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.butter}}}, \
+                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.salt,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.salt}}}, \
+                {"translate":"book.spiced.mixing_bowl"}, \
+                {"translate":"book.item.spiced.pastry_dough","font":"spiced:icons"}, \
                 {"translate":book.tab.spiced.front.idle,"hover_event":{"action":"show_text","value":{"text":"Front Page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9921"}}, \
                 {"translate":book.tab.spiced.filler}, \
                 {"translate":book.tab.spiced.filler}, \

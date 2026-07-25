@@ -148,6 +148,9 @@
   "book.spiced.return.inactive.icon": "\ue025",
   "book.spiced.stamp.none": "\ue026",
   "book.spiced.cookbook_back_navigation": "%1$s%2$s\ub070",
+  "book.spiced.next_page.hover": "Next Page",
+  "book.spiced.previous_page.hover": "Previous Page",
+  "spiced.section.front": "Front Page",
   
   "book.spiced.cookbook_navigation": "%1$s%2$s\ub069%3$s\ub069%4$s%5$s\ub046",
 

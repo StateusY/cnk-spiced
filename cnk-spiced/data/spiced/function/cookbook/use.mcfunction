@@ -1,3 +1,4 @@
-scoreboard players reset @s cnk.use_book
-function cnk:cookbook/open
+scoreboard players reset @s spiced.use_book
+
+function spiced:cookbook/open
 

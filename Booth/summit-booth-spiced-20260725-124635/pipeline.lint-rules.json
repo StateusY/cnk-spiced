@@ -1,0 +1,10 @@
+{
+  "arbitrary_command_macro": 9,
+  "clear_item_component_check": 1,
+  "load_tellraw": 1,
+  "repeated_selector": 1,
+  "selector_data_mutation": 1,
+  "selector_distance_sort": 93,
+  "selector_function_fanout": 33,
+  "selector_missing_type": 2
+}

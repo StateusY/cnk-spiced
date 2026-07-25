@@ -9,30 +9,24 @@
 # 9914 = reference 4
 # 9915 = reference 5
 # 9921 = front bookmark
-# 9922 = staple bookmark
-# 9923 = snack bookmark
-# 9924 = light bookmark
-# 9925 = hearty bookmark
-# 9926 = feast bookmark
-# 9927 = dessert bookmark
+# 9922 = staple bookmark [CUT]
+# 9923 = snack bookmark [CUT]
+# 9924 = light bookmark [CUT]
+# 9925 = hearty bookmark [CUT]
+# 9926 = feast bookmark [CUT]
+# 9927 = dessert bookmark [CUT]
 # 9931 = return
 # 9991 = close dialog
 # 9992 = take book
 
-execute if score @s cnk.cookbook_buttons matches 9901 run function cnk:cookbook/buttons/previous_page
-execute if score @s cnk.cookbook_buttons matches 9902 run function cnk:cookbook/buttons/next_page
+execute if score @s spiced.cookbook_buttons matches 9901 run function spiced:cookbook/buttons/previous_page
+execute if score @s spiced.cookbook_buttons matches 9902 run function spiced:cookbook/buttons/next_page
 
-execute if score @s cnk.cookbook_buttons matches 9921 run function cnk:cookbook/buttons/front_bookmark
-execute if score @s cnk.cookbook_buttons matches 9922 run function cnk:cookbook/buttons/staple_bookmark
-execute if score @s cnk.cookbook_buttons matches 9923 run function cnk:cookbook/buttons/snack_bookmark
-execute if score @s cnk.cookbook_buttons matches 9924 run function cnk:cookbook/buttons/light_bookmark
-execute if score @s cnk.cookbook_buttons matches 9925 run function cnk:cookbook/buttons/hearty_bookmark
-execute if score @s cnk.cookbook_buttons matches 9926 run function cnk:cookbook/buttons/feast_bookmark
-execute if score @s cnk.cookbook_buttons matches 9927 run function cnk:cookbook/buttons/dessert_bookmark
+execute if score @s spiced.cookbook_buttons matches 9921 run function spiced:cookbook/buttons/front_bookmark
 
-execute if score @s cnk.cookbook_buttons matches 9931 run function cnk:cookbook/buttons/return
+execute if score @s spiced.cookbook_buttons matches 9931 run function spiced:cookbook/buttons/return
 
-execute if score @s cnk.cookbook_buttons matches 9991 run function cnk:cookbook/buttons/close
+execute if score @s spiced.cookbook_buttons matches 9991 run function spiced:cookbook/buttons/close
 
-scoreboard players reset @s cnk.cookbook_buttons
-scoreboard players enable @s cnk.cookbook_buttons
+scoreboard players reset @s spiced.cookbook_buttons
+scoreboard players enable @s spiced.cookbook_buttons

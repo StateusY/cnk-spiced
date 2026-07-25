@@ -1,2 +1,2 @@
 dialog clear @s
-scoreboard players reset @s cnk.cookbook_buttons
+scoreboard players reset @s spiced.cookbook_buttons

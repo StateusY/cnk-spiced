@@ -1,5 +1,0 @@
-- fix vault emma offset X
-- fix m&p item clip X
-- fix lettuce grant X
-- no limit on sugar X
-- cooking pot not interactable X

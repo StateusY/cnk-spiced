@@ -1,1 +1,1 @@
-$data modify storage cnk:temp cookbook.page set from storage cnk:cookbook pages.$(current_page)
+$data modify storage spiced:temp cookbook.page set from storage spiced:cookbook pages.$(current_page)

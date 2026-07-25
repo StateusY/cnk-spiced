@@ -1,3 +1,1 @@
-# say entered spiced's booth
-execute unless score @s spiced.uid matches 0.. run function spiced:player_setup
-function spiced:cookbook/unlock
+# say entered the spiced booth

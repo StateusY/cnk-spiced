@@ -1,2 +1,1 @@
 function spiced:placements/main
-function spiced:cookbook/register_pages

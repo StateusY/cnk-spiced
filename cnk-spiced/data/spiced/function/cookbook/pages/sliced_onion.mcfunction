@@ -7,10 +7,10 @@ $dialog show @s { \
       "width": 211, \
       "contents": [{ \
             "translate":"book.spiced.1_recipe","font":"spiced:icons","shadow_color":0,"color":"white","with":[ \
-                {"translate":item.spiced.bread,"color":"#7b613a","font":"minecraft:default"}, \
-                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.dough,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.dough}}}, \
-                {"translate":"book.spiced.cooking_pot"}, \
-                {"translate":"book.item.spiced.bread","font":"spiced:icons"}, \
+                {"translate":item.spiced.sliced_onion,"color":"#7b613a","font":"minecraft:default"}, \
+                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.onion,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.onion}}}, \
+                {"translate":"book.spiced.cutting_board"}, \
+                {"translate":"book.item.spiced.sliced_onion","font":"spiced:icons"}, \
                 {"translate":book.tab.spiced.front.idle,"hover_event":{"action":"show_text","value":{"text":"Front Page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9921"}}, \
                 {"translate":book.tab.spiced.filler}, \
                 {"translate":book.tab.spiced.filler}, \

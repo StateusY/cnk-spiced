@@ -1,1 +1,1 @@
-$function $(page) with storage cnk:temp cookbook
+$function $(page) with storage spiced:temp cookbook
