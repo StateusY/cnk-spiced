@@ -1,4 +1,4 @@
-function summit.items:api/count_items {custom_data:"{spiced: {ingredient:{type:'milk_bottle'}}", max:5}
+function summit.items:api/count_items {custom_data:"{spiced: {ingredient:{type:'milk_bottle'}}}", max:5}
 
 execute if score $below_max summit.temp matches 0 run return fail
 

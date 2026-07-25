@@ -250,13 +250,13 @@ data/spiced/function/vault_emma_npc/start_conversation.mcfunction:47af19721d9f44
 data/spiced/function/vault_emma_npc/vault/zzz/2.mcfunction:ccd879f9b83d72dd7feef8100043529de85b2499
 data/spiced/function/vault_emma_npc/vault/zzz/1.mcfunction:66beb6ff032493faf1de218f367d30c82e649318
 data/spiced/function/vault_emma_npc/vault/zzz/0.mcfunction:e33e2480d0fb94221a0a41b510cfe3e82daac48a
-data/spiced/function/vault_emma_npc/vault/says.mcfunction:f6929467f7f3dab868ea7eb866252ecb17bb51b4
+data/spiced/function/vault_emma_npc/vault/says.mcfunction:67558f23aef69023f4cec791d669542f37c7b82b
 data/spiced/function/vault_emma_npc/vault/zzz/3.mcfunction:bd179b2b40a59bdf8fc2d445e6e5f65f4912e2f4
 data/spiced/function/vault_emma_npc/vault/sounds.mcfunction:c11aa462e4c9999962af5fcc504590f6c0e0b533
 data/spiced/function/vault_emma_npc/emma/zzz/2.mcfunction:31f60f64ebdb8557c268ce5e7f9c700a03e1346c
 data/spiced/function/vault_emma_npc/emma/zzz/1.mcfunction:79d48fb67ac3ce46857451cd25642281366f5e85
 data/spiced/function/vault_emma_npc/emma/zzz/0.mcfunction:d9bac5a84ed939f00e5a0e5f60d3f789bf856301
-data/spiced/function/vault_emma_npc/emma/says.mcfunction:fce7f503ae4adc51ddf5644c9c38407ad7768477
+data/spiced/function/vault_emma_npc/emma/says.mcfunction:5b7a2cd603d9931e63d2e0749960c00dad12c295
 data/spiced/function/vault_emma_npc/emma/zzz/3.mcfunction:8830996a0ebc54ef1c9630625628354396ebd404
 data/spiced/function/vault_emma_npc/emma/sounds.mcfunction:7bc9f27957484d94fadd3a89f54724c695aa0c8b
 data/spiced/function/vault_emma_npc/emma/turn.mcfunction:fa07950431339fbd48d5d94d53f84c82d5375444

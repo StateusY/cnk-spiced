@@ -97,7 +97,7 @@ dir vault {
 		$execute \
 			as @e[type=mannequin,tag=spiced.vault_emma_npc,limit=1] \
 			at @s \
-			positioned ~ ~2.125 ~-1 \
+			positioned ~ ~2.125 ~ \
 		run { {message: $(message)}
 			chatter e2e84d58-29e9-48e3-8998-f6edb7f44062 4..8 spiced:vault_emma_npc/vault/sounds
 		}
@@ -118,7 +118,7 @@ dir emma {
 		$execute \
 			as @e[type=mannequin,tag=spiced.vault_emma_npc,limit=1] \
 			at @s \
-			positioned ~ ~2.125 ~ \
+			positioned ~ ~2.125 ~1 \
 		run { {message: $(message)}
 			chatter e2e84d58-29e9-48e3-8998-f6edb7f44062 4..8 spiced:vault_emma_npc/emma/sounds
 		}

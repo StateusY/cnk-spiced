@@ -39,7 +39,7 @@ execute if score $mixing_bowl_item_count spiced.dummy matches 1 \
         run return run data modify entity @s item.components.'minecraft:custom_data'.spiced.mix_callback set value 'spiced:mixing_bowl/recipes/butter'
 
 execute if score $mixing_bowl_item_count spiced.dummy matches 2 \
-        if data storage spiced:temp mixing_bowl.Items[{id:'minecraft:glass_bottle'}] \
+        if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"glass_bottle"}}}}}] \
         if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"sunflower"}}}}}] \
         if function spiced:mixing_bowl/mix/lock \
         run return run data modify entity @s item.components.'minecraft:custom_data'.spiced.mix_callback set value 'spiced:mixing_bowl/recipes/cooking_oil'
