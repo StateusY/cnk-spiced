@@ -2,5 +2,14 @@
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "spiced:item/booth_ad_1"
+  },
+  "display": {
+    "ground": {
+      "scale": [
+        0.75,
+        1,
+        1
+      ]
+    }
   }
 }

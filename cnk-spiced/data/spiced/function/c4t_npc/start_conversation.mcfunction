@@ -1,5 +1,6 @@
 # Generated with MC-Build
 
+execute on target if items entity @s weapon.mainhand poisonous_potato[minecraft:custom_data~{"spiced": {"ingredient":{"type":"cinna_shake"}}}] run return run function spiced:c4t_npc/cinna_shake
 execute if score #spiced.c4t_npc.chatting spiced.dummy matches 1 run return 0
 execute store result score #length spiced.dummy run data get storage spiced:c4t_npc conversation_order
 execute if score #length spiced.dummy matches 0 run function spiced:c4t_npc/zzz/4

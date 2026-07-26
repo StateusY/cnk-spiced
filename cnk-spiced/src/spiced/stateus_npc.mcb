@@ -78,6 +78,7 @@ function start_conversation {
 
 function conversation1 {
 	sequence {
+		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./says {message:[{text:'Actually', color: '#3a552c'}, ' the', ' \'e\'', ' in', ' \'Stateus\'', ' is', ' silent,']}
 
 		sleep 80t
@@ -108,13 +109,13 @@ function conversation1 {
 		function ./says {message:[{text:'And', color: '#3a552c'}, ' so', ' here', ' we', ' are.']}
 
 		sleep 80t
-		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./reset
 	}
 }
 
 function conversation2 {
 	sequence {
+		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./says {message:[{text:'Go', color: '#3a552c'}, ' join', ' the', ' Spiced', ' Discord', ' server!']}
 
 		sleep 80t
@@ -127,13 +128,13 @@ function conversation2 {
 		function ./says {message:[{text:'Click', color: '#3a552c'}, ' the', ' Discord', ' icon', ' in', ' the', ' cabin!']}
 
 		sleep 80t
-		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./reset
 	}
 }
 
 function conversation3 {
 	sequence {
+		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./says {message:[{text:'Welcome', color: '#3a552c'}, ' to', ' the', ' Spiced', ' booth!']}
 
 		sleep 80t
@@ -143,13 +144,13 @@ function conversation3 {
 		function ./says {message:[{text:'We', color: '#3a552c'}, ' hope', ' you', ' enjoy', ' your', ' stay!']}
 
 		sleep 80t
-		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./reset
 	}
 }
 
 function conversation4 {
 	sequence {
+		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./says {message:[{text:'I', color: '#3a552c'}, ' met', ' Pan', ' about', ' half', ' a', ' year', ' ago.']}
 
 		sleep 80t
@@ -174,13 +175,13 @@ function conversation4 {
 		function ./says {message:[{text:'Hi', color: '#3a552c'}, ' Pan', ' if', ' you\'re', ' reading', ' this!']}
 
 		sleep 80t
-		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./reset
 	}
 }
 
 function conversation5 {
 	sequence {
+		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./says {message:[{text:'A', color: '#3a552c'}, ' little', ' over', ' half', ' a', ' year', ' ago,', ' I', ' discovered', ' the', ' cantareel.']}
 
 		sleep 100t
@@ -199,13 +200,13 @@ function conversation5 {
 		function ./says {message:[{text:'Very', color: '#3a552c'}, ' cool', ' indeed -', ' you', ' should', ' check', ' it', ' out!']}
 
 		sleep 80t
-		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./reset
 	}
 }
 
 function conversation6 {
 	sequence {
+		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./says {message:[{text:'This', color: '#3a552c'}, ' is', ' my', ' first', ' time', ' being', ' a', ' Summit', ' vendor.']}
 
 		sleep 80t
@@ -215,13 +216,13 @@ function conversation6 {
 		function ./says {message:[{text:'so', color: '#3a552c'}, ' you', ' can', ' understand', ' my', ' excitement', ' to', ' have', ' an', ' oppurtunity', ' to', ' make', ' a', ' booth.']}
 
 		sleep 100t
-		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./reset
 	}
 }
 
 function conversation7 {
 	sequence {
+		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./says {message:[{text:'I', color: '#3a552c'}, ' read', ' \'The', ' Stranger\'', ' by', ' Camus', ' a', ' while', ' ago.']}
 
 		sleep 80t
@@ -246,13 +247,13 @@ function conversation7 {
 		function ./says {message:[{text:'\'Caligula\'', color: '#3a552c'}, ' by', ' Camus', ' is', ' much', ' better', ' in', ' my', ' opinion.']}
 
 		sleep 100t
-		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./reset
 	}
 }
 
 function conversation8 {
 	sequence {
+		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./says {message:[{text:'Someday', color: '#3a552c'}, ' we', ' will', ' have', ' some', ' tech', ' in', ' Spiced.']}
 
 		sleep 80t
@@ -262,13 +263,13 @@ function conversation8 {
 		function ./says {message:[{text:'That', color: '#3a552c'}, ' stuff', ' powers', ' little', ' robots', ' like', ' C4T', ' to', ' do', ' stuff']}
 
 		sleep 100t
-		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./reset
 	}
 }
 
 function conversation9 {
 	sequence {
+		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./says {message:[{text:'Great', color: '#3a552c'}, ' job', ' finding', ' me!']}
 
 		sleep 80t
@@ -290,13 +291,13 @@ function conversation9 {
 		function ./says {message:[{text:'But', color: '#3a552c'}, ' if', ' not,', ' good', ' luck!']}
 
 		sleep 80t
-		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./reset
 	}
 }
 
 function conversation10 {
 	sequence {
+		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./says {message:[{text:'I\'ve', color: '#3a552c'}, ' been', ' playing', ' the', ' guitar', ' for', ' ~2', ' years']}
 
 		sleep 80t
@@ -315,13 +316,13 @@ function conversation10 {
 		function ./says {message:[{text:'So', color: '#3a552c'}, ' no', ' time', ' to', ' polish.']}
 
 		sleep 80t
-		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./reset
 	}
 }
 
 function conversation11 {
 	sequence {
+		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./says {message:[{text:'I', color: '#3a552c'}, ' thought', ' about', ' making', ' a', ' panel,']}
 
 		sleep 80t
@@ -331,7 +332,6 @@ function conversation11 {
 		function ./says {message:[{text:'Maybe', color: '#3a552c'}, ' next', ' Summit...']}
 
 		sleep 80t
-		execute positioned 225 52 197 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/stateus
 		function ./reset
 	}
 }

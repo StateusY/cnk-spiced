@@ -22,7 +22,7 @@
                   "saturation": 0,
                   "can_always_eat": true
                 },
-                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"water_bottle"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}}
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"water_bottle"}},"smithed":{"ignore":{"functionality":true,"crafting":true}},"summit": {"droppable": {"kill": true}}}
               }
             }
           ]

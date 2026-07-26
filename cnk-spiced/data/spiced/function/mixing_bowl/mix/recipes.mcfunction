@@ -13,7 +13,7 @@ execute if score $mixing_bowl_item_count spiced.dummy matches 2 \
 execute if score $mixing_bowl_item_count spiced.dummy matches 3 \
         if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"egg"}}}}}] \
         if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"milk_bottle"}}}}}] \
-        if data storage spiced:temp mixing_bowl.Items[{id:"minecraft:sugar"}] \
+        if data storage spiced:temp mixing_bowl.Items[{components:{"minecraft:custom_data":{"spiced":{"ingredient":{"type":"sugar"}}}}}] \
         if function spiced:mixing_bowl/mix/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mix_callback set value "spiced:mixing_bowl/recipes/eggnog"
 

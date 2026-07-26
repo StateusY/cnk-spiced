@@ -4,8 +4,8 @@
   "bounding_boxes": {
     "cabin": {
       "position": {
-        "x": { "min": 213, "max": 228 },
-        "y": { "min": 65, "max": 89 },
+        "x": { "min": 207, "max": 228 },
+        "y": { "min": 65, "max": 90 },
         "z": { "min": 178, "max": 198 }
       },
       "on_player_enter":"spiced:bounds/cabin/enter"
@@ -13,7 +13,7 @@
     "booth": {
       "position": {
         "x": { "min": 177, "max": 235 },
-        "y": { "min": 51, "max": 90 },
+        "y": { "min": 51, "max": 80 },
         "z": { "min": 166, "max": 212 }
       },
       "on_player_enter":"spiced:bounds/entered"
@@ -31,7 +31,7 @@
         "sticker_texture": "spiced:sticker/spiced_booth",
         "sticker_name": "the sticker that takes 0 effort and is totally original",
         "unobtained_text": "Visit the best booth at the Summit.",
-        "obtained_text": "Yayyy, you entered the booth! What a difficult task you have surmounted!"
+        "obtained_text": "Yayyy, you entered the booth! What a extremely difficult task you have surmounted!"
       },
       {
         "sticker_id": "huntsman_pie",
@@ -53,6 +53,13 @@
         "sticker_name": "Sociable Fellow",
         "unobtained_text": "Find and talk to every npc in the booth!",
         "obtained_text": "Yay talking! But did you find the secret typo?"
+      },
+      {
+        "sticker_id": "cinna_shake",
+        "sticker_texture": "spiced:sticker/cinna_shake",
+        "sticker_name": "A Delicious Gift",
+        "unobtained_text": "Give C4T her favorite drink.",
+        "obtained_text": "How kind of you!! C4T is supa happy!"
       }
     ]
   },

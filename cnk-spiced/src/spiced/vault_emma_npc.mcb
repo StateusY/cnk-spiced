@@ -138,6 +138,7 @@ dir emma {
 
 function conversation1 {
 	sequence {
+		execute positioned 183 53 193 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/vault_emma
 		function ./vault/says {message:[{text:'I', color: '#9171ba'}, ' just', ' figured', ' out', ' out', ' a', ' way', ' more', ' efficent', ' way', ' to', ' use', ' the', ' mortar', ' and', ' pestle!']}
 
 		sleep 120t
@@ -157,7 +158,6 @@ function conversation1 {
 		function ./emma/says {message:[{text:'Ughh,', color: 'dark_red'}, ' VAULT!!!']}
 
 		sleep 60t
-		execute positioned 183 53 193 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/vault_emma
 		function ./reset
 	}
 }

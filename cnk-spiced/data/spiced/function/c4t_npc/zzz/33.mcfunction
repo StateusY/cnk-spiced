@@ -1,4 +1,4 @@
 # Generated with MC-Build
 
-function spiced:c4t_npc/says {message:[{text:'But', color: 'gold'}, ' I', ' lack', ' animations', ' at', ' the', ' moment.']}
-schedule function spiced:c4t_npc/zzz/32 80t replace
+function spiced:c4t_npc/says {message:[{text:'I', color: 'gold'}, ' hope', ' I', ' can', ' be', ' implemented', ' in', ' Spiced\'s', ' first', ' update', ' after', ' release.']}
+schedule function spiced:c4t_npc/zzz/32 100t replace

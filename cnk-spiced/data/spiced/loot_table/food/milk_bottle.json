@@ -22,7 +22,7 @@
                   "sound":"minecraft:entity.generic.drink",
                   "has_consume_particles":false
                 },
-                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"milk_bottle"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}},
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"milk_bottle"}},"smithed":{"ignore":{"functionality":true,"crafting":true}},"summit": {"droppable": {"kill": true}}},
                 "minecraft:lore": [{"translate":"spiced.cnk_tooltip","font":"spiced:cnk_tooltip","color":"white","italic":false}],
                 "minecraft:use_remainder": {"id":"minecraft:glass_bottle","count":1}
               }

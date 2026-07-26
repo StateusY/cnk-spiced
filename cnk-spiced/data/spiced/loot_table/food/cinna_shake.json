@@ -32,7 +32,7 @@
                       "functionality": true,
                       "crafting": true
                     }
-                  }
+                  }, "summit": {"persist": {}}
                 },
                 "minecraft:lore": [
                   {

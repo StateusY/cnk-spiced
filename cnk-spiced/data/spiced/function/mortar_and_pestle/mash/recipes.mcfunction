@@ -37,3 +37,8 @@ execute if score $mortar_and_pestle_item_count spiced.dummy matches 3 \
         if function spiced:mortar_and_pestle/mash/duplicate/portion_of_lettuce if score $portion_of_lettuce_count spiced.dummy matches 3 \
         if function spiced:mortar_and_pestle/mash/lock \
         run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:mortar_and_pestle/recipes/reasonable_amount_of_lettuce"
+
+execute if score $mortar_and_pestle_item_count spiced.dummy matches 3 \
+        if function spiced:mortar_and_pestle/mash/duplicate/reasonable_amount_of_lettuce if score $reasonable_amount_of_lettuce_count spiced.dummy matches 3 \
+        if function spiced:mortar_and_pestle/mash/lock \
+        run return run data modify entity @s item.components."minecraft:custom_data".spiced.mash_callback set value "spiced:mortar_and_pestle/recipes/unreasonable_lettuce"
