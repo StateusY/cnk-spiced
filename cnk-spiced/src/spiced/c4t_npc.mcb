@@ -90,14 +90,14 @@ function cinna_shake {
 		sleep 40t
 		function ./says {message:[{text:'4', color: 'gold'}, ' me??']}
 
-		sleep 40t
+		sleep 20t
 		function ./says {message:[{text:'ty', color: 'gold'}, ' ty', ' ty', ' ty', ' ty', ' ty', ' ty!!!']}
 
 		sleep 80t
 		function ./says {message:[{text:'I', color: 'gold'}, ' loves', ' loves', ' u', ' much', ' much!!!']}
 
 		sleep 80t
-		advancement grant @s only summit.sticker_book:spiced/cinna_shake
+		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only summit.sticker_book:spiced/cinna_shake
 		function ./reset
 	}
 }

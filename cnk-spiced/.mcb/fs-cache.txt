@@ -40,10 +40,10 @@ data/spiced/function/c4t_npc/reset.mcfunction:a6b6b8e518d7b8396cbd79e1585844580c
 data/spiced/function/c4t_npc/zzz/4.mcfunction:eb02a12c0973c32b0fb5a092827ae3ceedde1739
 data/spiced/function/c4t_npc/zzz/5.mcfunction:188778406a6b5298af09854e79847cd8b44488a3
 data/spiced/function/c4t_npc/start_conversation.mcfunction:808260fbb4fcc7000878743600c7548f95c6148a
-data/spiced/function/c4t_npc/zzz/10.mcfunction:005c70f57571bdba85e680643369634f5a296554
-data/spiced/function/c4t_npc/zzz/11.mcfunction:f4a6de4f9756aeff38a68b2600baf027ee6720ab
+data/spiced/function/c4t_npc/zzz/10.mcfunction:e6f7209d345eed25d249ce0b3e7bf829781e3376
+data/spiced/function/c4t_npc/zzz/11.mcfunction:a1de6a68a06e66ce0d4cf2ff8046a62299c7b624
 data/spiced/function/c4t_npc/zzz/12.mcfunction:cb1c68c3ddd51e071a459e3baf9ec9060c1149bb
-data/spiced/function/c4t_npc/zzz/13.mcfunction:1235530ad9935d3d2fd44d8e50a1340f6daf2e7b
+data/spiced/function/c4t_npc/zzz/13.mcfunction:1fbf641f91dba81abddf6bcd62586072f4763226
 data/spiced/function/c4t_npc/cinna_shake.mcfunction:11b5bfd28f1e28e747a2a7082a33d6ef8b2ebc4b
 data/spiced/function/c4t_npc/zzz/19.mcfunction:005c70f57571bdba85e680643369634f5a296554
 data/spiced/function/c4t_npc/zzz/20.mcfunction:7b2809c7edfba548fc863a2c81b09fe329947f46
