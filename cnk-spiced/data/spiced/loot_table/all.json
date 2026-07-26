@@ -145,10 +145,6 @@
         },
         {
           "type": "minecraft:loot_table",
-          "value": "spiced:food/tomato"
-        },
-        {
-          "type": "minecraft:loot_table",
           "value": "spiced:food/water_bottle"
         },
         {

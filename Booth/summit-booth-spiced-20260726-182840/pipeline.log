@@ -1,0 +1,185 @@
+BUILD  Loading third-party pack reef_1.0.0_summit_data_pack...
+BUILD  Loading third-party pack player_motion...
+BUILD  Loading third-party pack PixelTwemojiMC-9...
+BUILD  Loading third-party pack reef_1.0.0_summit_resource_pack...
+BUILD  Loading third-party pack gu1.0...
+WARNING  Code generation due to ast update "summit.dev:leaderboard".
+WARNING  Code generation due to ast update "summit.dev:queue".
+WARNING  Code generation due to ast update "summit.dev:vehicle".
+WARNING  Code generation due to ast update "summit.dev:vehicle/seats".
+WARNING  Code generation due to ast update "summit.dev:vehicle/gondola".
+BUILD  Loading booth files...
+BUILD    Loading booth spiced...
+BUILD      Loading datapack...
+BUILD      Loading resource pack...
+BUILD      Loading schematic...
+WARN   Booth defines the minecraft:tick function tag
+       Functions: [spiced:tick]
+       Action: minecraft:tick should generally contain only Animated 
+Java-related functions; anything else is probably wrong. Use definition.json 
+ticking_functions for booth ticking.
+INFO   Booth command review summary
+       Functions: 525
+       Command Lines: 3805
+       Selectors: {@a: 83, @e: 36, @n: 9}
+       Data Mutations: 264
+INFO   Highest @a/@e source usage
+       Functions: [spiced:cutting_board/item/place: @a=11, @e=0, 
+spiced:positioned_tick: @a=3, @e=4, spiced:vault_emma_npc/tick: @a=0, @e=4, 
+spiced:extras/cargo_shuffle/shuffle: @a=1, @e=3, 
+spiced:mortar_and_pestle/interact/on_display: @a=3, @e=0]
+ERROR  Expected curly '}' but got literal "('1c312a49-0377-41eb-967e-b29a...".
+     3 |  $data modify storage chatter:data 1c312a49-0377-41eb-967e-b29a8311f5c0 set value {text: [], message:$(message)}
+     4 |  summon text_display ~ ~ ~ { Tags:['summit.booth_entity','chatter.text_display'], UUID:uuid('1c312a49-0377-41eb-967e-b29a8311f5c0'), line_width: 120, transformation: {left_rotation:[0.0f,0.0f,0.0f,1.0f], right_rotation:[0.0f,0.0f,0.0f,1.0f], scale:[0.5f,0.5f,0.5f], translation:[0f,0f,0f]}, billboard: vertical, shadow: false, background: -2147483648, }
+       :                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     5 |  function spiced:blue_npc/zzz/1
+Notes:
+  - Function: spiced:blue_npc/zzz/0
+WARNING  Arbitrary macro execution: $(conversation) can select the function that runs. (arbitrary_command_macro)
+     1 |  # Generated with MC-Build
+     2 |  
+     3 |  $function spiced:blue_npc/conversation$(conversation)
+       :  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Notes:
+  - Function: spiced:blue_npc/zzz/5
+  - Review every call site and confirm these values come only from trusted, server-controlled data.
+ERROR  Expected curly '}' but got literal "('f4e11725-a467-4e37-bf5d-d13a...".
+     3 |  $data modify storage chatter:data f4e11725-a467-4e37-bf5d-d13a1645214d set value {text: [], message:$(message)}
+     4 |  summon text_display ~ ~ ~ { Tags:['summit.booth_entity','chatter.text_display'], UUID:uuid('f4e11725-a467-4e37-bf5d-d13a1645214d'), line_width: 120, transformation: {left_rotation:[0.0f,0.0f,0.0f,1.0f], right_rotation:[0.0f,0.0f,0.0f,1.0f], scale:[0.5f,0.5f,0.5f], translation:[0f,0f,0f]}, billboard: vertical, shadow: false, background: -2147483648, }
+       :                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     5 |  function spiced:c4t_npc/zzz/1
+Notes:
+  - Function: spiced:c4t_npc/zzz/0
+WARNING  Arbitrary macro execution: $(conversation) can select the function that runs. (arbitrary_command_macro)
+     1 |  # Generated with MC-Build
+     2 |  
+     3 |  $function spiced:c4t_npc/conversation$(conversation)
+       :  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Notes:
+  - Function: spiced:c4t_npc/zzz/5
+  - Review every call site and confirm these values come only from trusted, server-controlled data.
+WARNING  Arbitrary macro execution: $(page) can select the function that runs. (arbitrary_command_macro)
+     1 |  $function $(page) with storage spiced:temp cookbook
+       :  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Notes:
+  - Function: spiced:cookbook/open_page
+  - Review every call site and confirm these values come only from trusted, server-controlled data.
+WARNING  The same @e[type,distance,tag,tag,tag,limit,sort] scan appears 3 times in this function. (repeated_selector)
+     4 |  function spiced:placements/shuffling_bags
+     5 |  execute as @e[type=item_display, distance=..12, tag=summit.booth_entity.spiced, tag=spiced.cs_valid_bag, tag=!spiced.cs_filled_bag, limit=1, sort=random] run function spiced:extras/cargo_shuffle/salt
+       :             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     6 |  execute as @e[type=item_display, distance=..12, tag=summit.booth_entity.spiced, tag=spiced.cs_valid_bag, tag=!spiced.cs_filled_bag, limit=1, sort=random] run function spiced:extras/cargo_shuffle/cinnamon
+Notes:
+  - Function: spiced:extras/cargo_shuffle/shuffle
+  - If intervening commands do not change the result, select once and run a helper in @s context.
+WARNING  `clear` with an item component check is expensive. If this removes items, never run it every tick; gate it behind a condition. (clear_item_component_check)
+     1 |  loot give @s loot spiced:food/water_bottle
+     2 |  clear @s minecraft:potion[minecraft:potion_contents={"potion":"minecraft:water"}] 1
+       :           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     3 |  scoreboard players set @s spiced.get_water 0
+Notes:
+  - Function: spiced:ingredients/water_fix
+ERROR  Expected curly '}' but got literal "('e73fcae3-5c03-41c8-aab8-496f...".
+     3 |  $data modify storage chatter:data e73fcae3-5c03-41c8-aab8-496fe1719fe2 set value {text: [], message:$(message)}
+     4 |  summon text_display ~ ~ ~ { Tags:['summit.booth_entity','chatter.text_display'], UUID:uuid('e73fcae3-5c03-41c8-aab8-496fe1719fe2'), line_width: 120, transformation: {left_rotation:[0.0f,0.0f,0.0f,1.0f], right_rotation:[0.0f,0.0f,0.0f,1.0f], scale:[0.5f,0.5f,0.5f], translation:[0f,0f,0f]}, billboard: vertical, shadow: false, background: -2147483648, }
+       :                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     5 |  function spiced:mantis_npc/zzz/1
+Notes:
+  - Function: spiced:mantis_npc/zzz/0
+WARNING  Arbitrary macro execution: $(conversation) can select the function that runs. (arbitrary_command_macro)
+     1 |  # Generated with MC-Build
+     2 |  
+     3 |  $function spiced:mantis_npc/conversation$(conversation)
+       :  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Notes:
+  - Function: spiced:mantis_npc/zzz/5
+  - Review every call site and confirm these values come only from trusted, server-controlled data.
+WARNING  Arbitrary macro execution: $(mix_callback) can select the function that runs. (arbitrary_command_macro)
+     5 |  #------------------------------------------------------------------------------------
+     6 |  
+     7 |  $function $(mix_callback)
+       :  ^^^^^^^^^^^^^^^^^^^^^^^^^
+Notes:
+  - Function: spiced:mixing_bowl/mix/finish
+  - Review every call site and confirm these values come only from trusted, server-controlled data.
+WARNING  Arbitrary macro execution: $(mash_callback) can select the function that runs. (arbitrary_command_macro)
+     1 |  $function $(mash_callback)
+       :  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Notes:
+  - Function: spiced:mortar_and_pestle/mash/finish
+  - Review every call site and confirm these values come only from trusted, server-controlled data.
+ERROR  Expected curly '}' but got literal "('e0fcef5a-63bd-45ce-bba5-4283...".
+     3 |  $data modify storage chatter:data e0fcef5a-63bd-45ce-bba5-4283f1fc432b set value {text: [], message:$(message)}
+     4 |  summon text_display ~ ~ ~ { Tags:['summit.booth_entity','chatter.text_display'], UUID:uuid('e0fcef5a-63bd-45ce-bba5-4283f1fc432b'), line_width: 120, transformation: {left_rotation:[0.0f,0.0f,0.0f,1.0f], right_rotation:[0.0f,0.0f,0.0f,1.0f], scale:[0.5f,0.5f,0.5f], translation:[0f,0f,0f]}, billboard: vertical, shadow: false, background: -2147483648, }
+       :                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     5 |  function spiced:pan_womsacz_npc/zzz/1
+Notes:
+  - Function: spiced:pan_womsacz_npc/zzz/0
+WARNING  Arbitrary macro execution: $(conversation) can select the function that runs. (arbitrary_command_macro)
+     1 |  # Generated with MC-Build
+     2 |  
+     3 |  $function spiced:pan_womsacz_npc/conversation$(conversation)
+       :  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Notes:
+  - Function: spiced:pan_womsacz_npc/zzz/5
+  - Review every call site and confirm these values come only from trusted, server-controlled data.
+ERROR  Expected curly '}' but got literal "('b57a3c1f-68da-441b-9361-f092...".
+     3 |  $data modify storage chatter:data b57a3c1f-68da-441b-9361-f092d6630b55 set value {text: [], message:$(message)}
+     4 |  summon text_display ~ ~ ~ { Tags:['summit.booth_entity','chatter.text_display'], UUID:uuid('b57a3c1f-68da-441b-9361-f092d6630b55'), line_width: 120, transformation: {left_rotation:[0.0f,0.0f,0.0f,1.0f], right_rotation:[0.0f,0.0f,0.0f,1.0f], scale:[0.5f,0.5f,0.5f], translation:[0f,0f,0f]}, billboard: vertical, shadow: false, background: -2147483648, }
+       :                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     5 |  function spiced:stateus_npc/zzz/1
+Notes:
+  - Function: spiced:stateus_npc/zzz/0
+WARNING  Arbitrary macro execution: $(conversation) can select the function that runs. (arbitrary_command_macro)
+     1 |  # Generated with MC-Build
+     2 |  
+     3 |  $function spiced:stateus_npc/conversation$(conversation)
+       :  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Notes:
+  - Function: spiced:stateus_npc/zzz/5
+  - Review every call site and confirm these values come only from trusted, server-controlled data.
+ERROR  `@e` has no positive `type=` filter. Entity scans must name the entity type. (selector_missing_type)
+     1 |  execute as @e[tag=summit.booth_entity.spiced] on passengers run kill @s
+       :             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     2 |  kill @e[tag=summit.booth_entity.spiced]
+Notes:
+  - Function: spiced:teardown
+  - Tags, distance, and limit can narrow a scan, but they don't replace the type index.
+ERROR  `@e` has no positive `type=` filter. Entity scans must name the entity type. (selector_missing_type)
+     1 |  execute as @e[tag=summit.booth_entity.spiced] on passengers run kill @s
+     2 |  kill @e[tag=summit.booth_entity.spiced]
+       :       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Notes:
+  - Function: spiced:teardown
+  - Tags, distance, and limit can narrow a scan, but they don't replace the type index.
+ERROR  Expected curly '}' but got literal "('e2e84d58-29e9-48e3-8998-f6ed...".
+     3 |  $data modify storage chatter:data e2e84d58-29e9-48e3-8998-f6edb7f44062 set value {text: [], message:$(message)}
+     4 |  summon text_display ~ ~ ~ { Tags:['summit.booth_entity','chatter.text_display'], UUID:uuid('e2e84d58-29e9-48e3-8998-f6edb7f44062'), line_width: 120, transformation: {left_rotation:[0.0f,0.0f,0.0f,1.0f], right_rotation:[0.0f,0.0f,0.0f,1.0f], scale:[0.5f,0.5f,0.5f], translation:[0f,0f,0f]}, billboard: vertical, shadow: false, background: -2147483648, }
+       :                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     5 |  function spiced:vault_emma_npc/emma/zzz/1
+Notes:
+  - Function: spiced:vault_emma_npc/emma/zzz/0
+ERROR  Expected curly '}' but got literal "('e2e84d58-29e9-48e3-8998-f6ed...".
+     3 |  $data modify storage chatter:data e2e84d58-29e9-48e3-8998-f6edb7f44062 set value {text: [], message:$(message)}
+     4 |  summon text_display ~ ~ ~ { Tags:['summit.booth_entity','chatter.text_display'], UUID:uuid('e2e84d58-29e9-48e3-8998-f6edb7f44062'), line_width: 120, transformation: {left_rotation:[0.0f,0.0f,0.0f,1.0f], right_rotation:[0.0f,0.0f,0.0f,1.0f], scale:[0.5f,0.5f,0.5f], translation:[0f,0f,0f]}, billboard: vertical, shadow: false, background: -2147483648, }
+       :                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     5 |  function spiced:vault_emma_npc/vault/zzz/1
+Notes:
+  - Function: spiced:vault_emma_npc/vault/zzz/0
+WARNING  Arbitrary macro execution: $(conversation) can select the function that runs. (arbitrary_command_macro)
+     1 |  # Generated with MC-Build
+     2 |  
+     3 |  $function spiced:vault_emma_npc/conversation$(conversation)
+       :  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Notes:
+  - Function: spiced:vault_emma_npc/zzz/3
+  - Review every call site and confirm these values come only from trusted, server-controlled data.
+BUILD  Loading booth files...
+BUILD    Loading booth spiced...
+BUILD      Loading datapack...
+BUILD      Loading resource pack...
+BUILD      Loading schematic...
+WARN   Booth spiced has booth-managed functions in minecraft:tick
+       Functions: [spiced:tick]
+       Action: Removed these entries from minecraft:tick; use definition.json 
+ticking_functions or persistent_tick instead.

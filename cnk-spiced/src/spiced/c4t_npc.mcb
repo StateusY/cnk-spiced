@@ -84,7 +84,9 @@ function start_conversation {
 function cinna_shake {
 	item modify entity @s weapon.mainhand spiced:remove_one
 	sequence {
-		execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/c4t
+		advancement grant @s only spiced:npcs/c4t
+		function spiced:extras/npc_sticker_check
+		advancement grant @s only summit.sticker_book:spiced/cinna_shake
 		function ./says {message:[{text:'A', color: 'gold'}, ' cinna', ' shake!!!']}
 
 		sleep 40t
@@ -97,7 +99,6 @@ function cinna_shake {
 		function ./says {message:[{text:'I', color: 'gold'}, ' loves', ' loves', ' u', ' much', ' much!!!']}
 
 		sleep 80t
-		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only summit.sticker_book:spiced/cinna_shake
 		function ./reset
 	}
 }
@@ -105,6 +106,7 @@ function cinna_shake {
 function conversation1 {
 	sequence {
 		execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/c4t
+		function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Yes,', color: 'gold'}, ' I\'m', ' a', ' cat.']}
 
 		sleep 40t
@@ -127,6 +129,7 @@ function conversation1 {
 function conversation2 {
 	sequence {
 		execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/c4t
+		function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'I', color: 'gold'}, ' am', ' planned', ' for', ' Spiced.']}
 
 		sleep 80t
@@ -152,6 +155,7 @@ function conversation2 {
 function conversation3 {
 	sequence {
 		execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/c4t
+		function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'If', color: 'gold'}, ' only', ' I', ' could', ' move...']}
 
 		sleep 80t
@@ -168,6 +172,7 @@ function conversation3 {
 function conversation4 {
 	sequence {
 		execute positioned 215 85 189 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/c4t
+		function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Have', color: 'gold'}, ' you', ' found', ' Cinnamon', ' yet?']}
 
 		sleep 60t

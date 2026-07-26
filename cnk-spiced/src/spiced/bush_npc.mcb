@@ -1,0 +1,387 @@
+import ../sequence.mcbt
+import ../score.mcbt
+import ../chatter.mcbt
+
+function summon {
+	data modify storage spiced:bush_npc conversation_order set value []
+	data modify storage spiced:bush_npc conversations set value [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+	set #spiced.bush_npc.chatting spiced.dummy 0
+	set #spiced.bush_npc.mining_timer spiced.dummy 0
+	summon mannequin 213 53 186 {Rotation:[0f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.bush_npc'],Invulnerable:1b,immovable:true,profile:{name:'bush_lord'},hide_description:true}
+	execute positioned 213 53 186 run swing @e[type=mannequin,tag=spiced.bush_npc, limit=1,distance=..1]
+
+	summon interaction 213 53 186 { \
+		Tags:['summit.booth_entity.spiced', 'summit.static', 'spiced.bush_npc.interaction', 'summit.interactable'], \
+		width:1f, height:2f, response:true, \
+		data: { \
+			summit_interactable: { \
+				on_right_click: 'function spiced:bush_npc/start_conversation', \
+				on_left_click: 'function spiced:bush_npc/start_conversation', \
+			} \
+		} \
+	}
+	function ./reset
+}
+
+function tick {
+	execute \
+		if score #spiced.bush_npc.chatting spiced.dummy matches 1 \
+		as @e[type=mannequin,tag=spiced.bush_npc,limit=1] \
+		at @s \
+	run return run rotate @s facing entity @p
+}
+
+function says {
+	# ARGS: {message: TextComponent}
+	$execute \
+		as @e[type=mannequin,tag=spiced.bush_npc,limit=1] \
+		at @s \
+		positioned ~ ~2.125 ~ \
+	run { {message: $(message)}
+		chatter cae4cdad-9900-43d6-a82a-e77291fad084 9..12 spiced:bush_npc/sounds
+	}
+}
+
+function sounds {
+	execute store result storage spiced:bush_npc args.note float 0.01 run random value 80..120
+	{ with storage spiced:bush_npc args
+		$playsound minecraft:block.sweet_berry_bush.break player @a[tag=summit.in_booth.spiced,distance=..20] ~ ~ ~ 0.5 $(note)
+	}
+}
+
+function reset {
+	execute as @e[type=mannequin,tag=spiced.bush_npc,limit=1] at @s run rotate @s 0 0
+	scoreboard players set #spiced.bush_npc.chatting spiced.dummy 0
+	kill cae4cdad-9900-43d6-a82a-e77291fad084
+
+	REPEAT (0, 110) as i {
+		schedule clear spiced:bush_npc/zzz/<%i%>
+	}
+}
+
+function start_conversation {
+	execute if score #spiced.bush_npc.chatting spiced.dummy matches 1 run return 0
+
+	execute store result score #length spiced.dummy run data get storage spiced:bush_npc conversation_order
+	execute if score #length spiced.dummy matches 0 run {
+		function shuffle:shuffle {source: 'storage spiced:bush_npc conversations', target: 'storage spiced:bush_npc conversation_order'}
+	}
+
+	set #spiced.bush_npc.chatting spiced.dummy 1
+
+	data modify storage spiced:temp args.conversation set from storage spiced:bush_npc conversation_order[0]
+	data remove storage spiced:bush_npc conversation_order[0]
+	{ with storage spiced:temp args
+		$function spiced:bush_npc/conversation$(conversation)
+	}
+}
+
+function conversation1 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'I', color: '#2a5f0a'}]}
+
+		sleep 60t
+		function ./says {message:[{text:'Am', color: '#2a5f0a'}, ' Bush']}
+
+		sleep 60t
+		function ./reset
+	}
+}
+
+function conversation2 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'She', color: '#2a5f0a'}, ' glanced', ' up', ' into', ' the', ' sky', ' to', ' watch', ' the', ' clouds', ' taking', ' shape.']}
+
+		sleep 140t
+		function ./says {message:[{text:'First,', color: '#2a5f0a'}, ' she', ' saw', ' a', ' dog.']}
+
+		sleep 70t
+		function ./says {message:[{text:'Next,', color: '#2a5f0a'}, ' it', ' was', ' an', ' elephant.']}
+
+		sleep 70t
+		function ./says {message:[{text:'Finally,', color: '#2a5f0a'}, ' she', ' saw', ' a', ' giant', ' umbrella', ' and', ' at', ' that', ' moment', ' the', ' rain', ' began', ' to', ' pour.']}
+
+		sleep 160t
+		function ./reset
+	}
+}
+
+function conversation3 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'It', color: '#2a5f0a'}, ' wasn\'t', ' that', ' he', ' hated', ' her.']}
+
+		sleep 80t
+		function ./says {message:[{text:'It', color: '#2a5f0a'}, ' was', ' simply', ' that', ' he', ' didn\'t', ' like', ' her', ' much.']}
+
+		sleep 100t
+		function ./says {message:[{text:'It', color: '#2a5f0a'}, ' was', ' difficult', ' for', ' him', ' to', ' explain', ' this', ' to', ' her,', ' and', ' even', ' more', ' difficult', ' for', ' her', ' to', ' truly', ' understand.']}
+
+		sleep 220t
+		function ./says {message:[{text:'She', color: '#2a5f0a'}, ' was', ' in', ' love', ' and', ' wanted', ' him', ' to', ' feel', ' the', ' same', ' way.']}
+
+		sleep 160t
+		function ./says {message:[{text:'He', color: '#2a5f0a'}, ' didn\'t,', ' and', ' no', ' matter', ' how', ' he', ' tried', ' to', ' explain', ' to', ' her', ' she', ' refused', ' to', ' listen', ' or', ' to', ' understand.']}
+
+		sleep 240t
+		function ./reset
+	}
+}
+
+function conversation4 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'It', color: '#2a5f0a'}, ' was', ' a', ' simple', ' tip', ' of', ' the', ' hat.']}
+
+		sleep 115t
+		function ./says {message:[{text:'Grace', color: '#2a5f0a'}, ' didn\'t', ' think', ' that', ' anyone', ' else', ' besides', ' her', ' had', ' even', ' noticed', ' it.']}
+
+		sleep 155t
+		function ./says {message:[{text:'It', color: '#2a5f0a'}, ' wasn\'t', ' anything', ' that', ' the', ' average', ' person', ' would', ' notice,', ' let', ' alone', ' remember', ' at', ' the', ' end', ' of', ' the', ' day.']}
+
+		sleep 212t
+		function ./says {message:[{text:'That\'s', color: '#2a5f0a'}, ' why', ' it', ' seemed', ' so', ' unbelievable', ' that', ' this', ' little', ' gesture', ' would', ' ultimately', ' change', ' the', ' course', ' of', ' the', ' world.']}
+
+		sleep 217t
+		function ./reset
+	}
+}
+
+function conversation5 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'How', color: '#2a5f0a'}, ' had', ' she', ' been', ' so', ' wrong?']}
+
+		sleep 94t
+		function ./says {message:[{text:'All', color: '#2a5f0a'}, ' her', ' instincts', ' and', ' intuition', ' completely', ' failed', ' her', ' for', ' the', ' first', ' time', ' in', ' her', ' life.']}
+
+		sleep 188t
+		function ./says {message:[{text:'She', color: '#2a5f0a'}, ' had', ' so', ' heavily', ' relied', ' on', ' both', ' when', ' making', ' decisions', ' up', ' until', ' this', ' moment', ' and', ' she', ' felt', ' a', ' seismic', ' shift', ' take', ' place', ' in', ' her', ' self', '-confidence.']}
+
+		sleep 294t
+		function ./says {message:[{text:'If', color: '#2a5f0a'}, ' she', ' could', ' be', ' so', ' completely', ' wrong', ' about', ' something', ' so', ' simple', ' as', ' this,', ' how', ' could', ' she', ' make', ' decisions', ' about', ' really', ' important', ' things', ' taking', ' place', ' in', ' her', ' life?']}
+
+		sleep 310t
+		function ./says {message:[{text:'She', color: '#2a5f0a'}, ' wasn\'t', ' sure', ' what', ' she', ' should', ' do', ' next.']}
+
+		sleep 117t
+		function ./reset
+	}
+}
+
+function conversation6 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'Bryan', color: '#2a5f0a'}, ' had', ' made', ' peace', ' with', ' himself', ' and', ' felt', ' comfortable', ' with', ' the', ' choices', ' he', ' made.']}
+
+		sleep 179t
+		function ./says {message:[{text:'This', color: '#2a5f0a'}, ' had', ' made', ' all', ' the', ' difference', ' in', ' the', ' world.']}
+
+		sleep 123t
+		function ./says {message:[{text:'Being', color: '#2a5f0a'}, ' alone', ' no', ' longer', ' bothered', ' him', ' and', ' this', ' was', ' essential', ' since', ' there', ' was', ' a', ' good', ' chance', ' he', ' might', ' spend', ' the', ' rest', ' of', ' his', ' life', ' alone', ' in', ' a', ' cell.']}
+
+		sleep 313t
+		function ./reset
+	}
+}
+
+function conversation7 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' choice', ' was', ' red,', ' green,', ' or', ' blue.']}
+
+		sleep 104t
+		function ./says {message:[{text:'It', color: '#2a5f0a'}, ' didn\'t', ' seem', ' like', ' an', ' important', ' choice', ' when', ' he', ' was', ' making', ' it,', ' but', ' it', ' was', ' a', ' choice', ' nonetheless.']}
+
+		sleep 217t
+		function ./says {message:[{text:'Had', color: '#2a5f0a'}, ' he', ' known', ' the', ' consequences', ' at', ' that', ' time,', ' he', ' would', ' likely', ' have', ' considered', ' the', ' choice', ' a', ' bit', ' longer.']}
+
+		sleep 212t
+		function ./says {message:[{text:'In', color: '#2a5f0a'}, ' the', ' end,', ' he', ' didn\'t', ' and', ' ended', ' up', ' choosing', ' blue.']}
+
+		sleep 134t
+		function ./reset
+	}
+}
+
+function conversation8 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'Don\'t', color: '#2a5f0a'}, ' be', ' scared.']}
+
+		sleep 61t
+		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' things', ' out', ' there', ' that', ' are', ' unknown', ' aren\'t', ' scary', ' in', ' themselves.']}
+
+		sleep 143t
+		function ./says {message:[{text:'They', color: '#2a5f0a'}, ' are', ' just', ' unknown', ' at', ' the', ' moment.']}
+
+		sleep 102t
+		function ./says {message:[{text:'Take', color: '#2a5f0a'}, ' the', ' time', ' to', ' know', ' them', ' before', ' you', ' list', ' them', ' as', ' scary.']}
+
+		sleep 156t
+		function ./says {message:[{text:'Then', color: '#2a5f0a'}, ' the', ' world', ' will', ' be', ' a', ' much', ' less', ' scary', ' place', ' for', ' you.']}
+
+		sleep 156t
+		function ./reset
+	}
+}
+
+function conversation9 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'Here\'s', color: '#2a5f0a'}, ' the', ' thing.']}
+
+		sleep 61t
+		function ./says {message:[{text:'She', color: '#2a5f0a'}, ' doesn\'t', ' have', ' anything', ' to', ' prove,', ' but', ' she', ' is', ' going', ' to', ' anyway.']}
+
+		sleep 154t
+		function ./says {message:[{text:'That\'s', color: '#2a5f0a'}, ' just', ' her', ' character.']}
+
+		sleep 68t
+		function ./says {message:[{text:'She', color: '#2a5f0a'}, ' knows', ' she', ' doesn\'t', ' have', ' to,', ' but', ' she', ' still', ' will', ' just', ' to', ' show', ' you', ' that', ' she', ' can.']}
+
+		sleep 209t
+		function ./says {message:[{text:'Doubt', color: '#2a5f0a'}, ' her', ' more', ' and', ' she\'ll', ' prove', ' she', ' can', ' again.']}
+
+		sleep 126t
+		function ./says {message:[{text:'We', color: '#2a5f0a'}, ' all', ' already', ' know', ' this', ' and', ' you', ' will', ' too.']}
+
+		sleep 119t
+		function ./reset
+	}
+}
+
+function conversation10 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'His', color: '#2a5f0a'}, ' parents', ' continued', ' to', ' question', ' him.']}
+
+		sleep 91t
+		function ./says {message:[{text:'He', color: '#2a5f0a'}, ' didn\'t', ' know', ' what', ' to', ' say', ' to', ' them', ' since', ' they', ' refused', ' to', ' believe', ' the', ' truth.']}
+
+		sleep 185t
+		function ./says {message:[{text:'He', color: '#2a5f0a'}, ' explained', ' again', ' and', ' again,', ' and', ' they', ' dismissed', ' his', ' explanation', ' as', ' a', ' figment', ' of', ' his', ' imagination.']}
+
+		sleep 197t
+		function ./says {message:[{text:'There', color: '#2a5f0a'}, ' was', ' no', ' way', ' that', ' grandpa,', ' who', ' had', ' been', ' dead', ' for', ' five', ' years,', ' could', ' have', ' told', ' him', ' where', ' the', ' treasure', ' had', ' been', ' hidden.']}
+
+		sleep 267t
+		function ./says {message:[{text:'Of', color: '#2a5f0a'}, ' course,', ' it', ' didn\'t', ' help', ' that', ' grandpa', ' was', ' roaring', ' with', ' laughter', ' in', ' the', ' chair', ' next', ' to', ' him', ' as', ' he', ' tried', ' to', ' explain', ' once', ' again', ' how', ' he\'d', ' found', ' it.']}
+
+		sleep 335t
+		function ./reset
+	}
+}
+
+function conversation11 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' bridge', ' spanning', ' a', ' 100-foot', ' gully', ' stood', ' in', ' front', ' of', ' him', ' as', ' the', ' last', ' obstacle', ' blocking', ' him', ' from', ' reaching', ' his', ' destination.']}
+
+		sleep 246t
+		function ./says {message:[{text:'While', color: '#2a5f0a'}, ' people', ' may', ' have', ' called', ' it', ' a', ' "bridge",', ' the', ' reality', ' was', ' it', ' was', ' nothing', ' more', ' than', ' splintered', ' wooden', ' planks', ' held', ' together', ' by', ' rotting', ' ropes.']}
+
+		sleep 282t
+		function ./says {message:[{text:'It', color: '#2a5f0a'}, ' was', ' questionable', ' whether', ' it', ' would', ' hold', ' the', ' weight', ' of', ' a', ' child,', ' let', ' alone', ' the', ' weight', ' of', ' a', ' grown', ' man.']}
+
+		sleep 231t
+		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' problem', ' was', ' there', ' was', ' no', ' other', ' way', ' across', ' the', ' gully,', ' and', ' this', ' played', ' into', ' his', ' calculations', ' of', ' whether', ' or', ' not', ' it', ' was', ' worth', ' the', ' risk', ' of', ' trying', ' to', ' cross', ' it.']}
+
+		sleep 369t
+		function ./reset
+	}
+}
+
+function conversation12 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'Pink', color: '#2a5f0a'}, ' ponies', ' and', ' purple', ' giraffes', ' roamed', ' the', ' field.']}
+
+		sleep 112t
+		function ./says {message:[{text:'Cotton', color: '#2a5f0a'}, ' candy', ' grew', ' from', ' the', ' ground', ' as', ' a', ' chocolate', ' river', ' meandered', ' off', ' to', ' the', ' side.']}
+
+		sleep 184t
+		function ./says {message:[{text:'What', color: '#2a5f0a'}, ' looked', ' like', ' stones', ' in', ' the', ' pasture', ' were', ' actually', ' rock', ' candy.']}
+
+		sleep 147t
+		function ./says {message:[{text:'Everything', color: '#2a5f0a'}, ' in', ' her', ' dream', ' seemed', ' to', ' be', ' perfect', ' except', ' for', ' the', ' fact', ' that', ' she', ' had', ' no', ' mouth.']}
+
+		sleep 204t
+		function ./reset
+	}
+}
+
+function conversation13 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' bush', ' began', ' to', ' shake.']}
+
+		sleep 81t
+		function ./says {message:[{text:'Brad', color: '#2a5f0a'}, ' couldn\'t', ' see', ' what', ' was', ' causing', ' it', ' to', ' shake,', ' but', ' he', ' didn\'t', ' care.']}
+
+		sleep 163t
+		function ./says {message:[{text:'he', color: '#2a5f0a'}, ' had', ' a', ' pretty', ' good', ' idea', ' about', ' what', ' was', ' going', ' on', ' and', ' what', ' was', ' happening.']}
+
+		sleep 188t
+		function ./says {message:[{text:'He', color: '#2a5f0a'}, ' was', ' so', ' confident', ' that', ' he', ' approached', ' the', ' bush', ' carefree', ' and', ' with', ' a', ' smile', ' on', ' his', ' face.']}
+
+		sleep 204t
+		function ./says {message:[{text:'That', color: '#2a5f0a'}, ' all', ' changed', ' the', ' instant', ' he', ' realized', ' what', ' was', ' actually', ' behind', ' the', ' bush.']}
+
+		sleep 163t
+		function ./reset
+	}
+}
+
+function conversation14 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' leather', ' jacked', ' showed', ' the', ' scars', ' of', ' being', ' his', ' favorite', ' for', ' years.']}
+
+		sleep 152t
+		function ./says {message:[{text:'It', color: '#2a5f0a'}, ' wore', ' those', ' scars', ' with', ' pride,', ' feeling', ' that', ' they', ' enhanced', ' his', ' presence', ' rather', ' than', ' diminishing', ' it.']}
+
+		sleep 197t
+		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' scars', ' gave', ' it', ' character', ' and', ' had', ' not', ' overwhelmed', ' to', ' the', ' point', ' that', ' it', ' had', ' become', ' ratty.']}
+
+		sleep 209t
+		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' jacket', ' was', ' in', ' its', ' prime', ' and', ' it', ' knew', ' it.']}
+
+		sleep 128t
+		function ./reset
+	}
+}
+
+function conversation15 {
+	sequence {
+		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
+		function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'He', color: '#2a5f0a'}, ' had', ' done', ' everything', ' right.']}
+
+		sleep 81t
+		function ./says {message:[{text:'There', color: '#2a5f0a'}, ' had', ' been', ' no', ' mistakes', ' throughout', ' the', ' entire', ' process.']}
+
+		sleep 123t
+		function ./says {message:[{text:'It', color: '#2a5f0a'}, ' had', ' been', ' perfection', ' and', ' he', ' knew', ' it', ' without', ' a', ' doubt,', ' but', ' the', ' results', ' still', ' stared', ' back', ' at', ' him', ' with', ' the', ' fact', ' that', ' he', ' had', ' lost.']}
+
+		sleep 301t
+		function ./reset
+	}
+}

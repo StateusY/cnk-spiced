@@ -81,6 +81,7 @@ function start_conversation {
 function conversation1 {
 	sequence {
 		execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/mantis
+		function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Hey', color: '#f0d8c8'}, ' there!', ' Seems', ' like', ' I', ' went', ' to', ' the', ' wrong', ' booth,', ' huh?']}
 
 		sleep 80t
@@ -97,6 +98,7 @@ function conversation1 {
 function conversation2 {
 	sequence {
 		execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/mantis
+		function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'My', color: '#f0d8c8'}, ' siblings', ' are', ' probably', ' wondering', ' where', ' I', ' am,', ' I', ' was', ' supposed', ' to', ' be', ' helping...']}
 
 		sleep 120t
@@ -113,6 +115,7 @@ function conversation2 {
 function conversation3 {
 	sequence {
 		execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/mantis
+		function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'So', color: '#f0d8c8'}, ' many', ' people', ' coming', ' together', ' to', ' show', ' their', ' creations...', ' it\'s', ' pretty', ' inspiring', ' honestly.']}
 
 		sleep 110t
@@ -129,6 +132,7 @@ function conversation3 {
 function conversation4 {
 	sequence {
 		execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/mantis
+		function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'I', color: '#f0d8c8'}, ' used', ' to', ' crave', ' perfection.', ' I', ' would', ' tear', ' up', ' my', ' work', ' if', ' it', ' was', ' insufficient,', ' I\'d', ' compare', ' myself', ' to', ' others...']}
 
 		sleep 140t
@@ -145,6 +149,7 @@ function conversation4 {
 function conversation5 {
 	sequence {
 		execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/mantis
+		function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'A', color: '#f0d8c8'}, ' shame', ' we', ' only', ' have', ' two', ' weeks', ' left', ' together...', ' maybe', ' only', ' a', ' few', ' hours', ' depending', ' on', ' when', ' you\'ve', ' found', ' me...']}
 
 		sleep 140t
@@ -166,7 +171,8 @@ function conversation5 {
 
 function conversation6 {
 	sequence {
-		
+		execute positioned 227 75 183 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/mantis
+		function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Thanks', color: '#f0d8c8'}, ' for', ' listening', ' to', ' my', ' ramblings,', ' I', ' hope', ' you', ' enjoy', ' the', ' rest', ' of', ' the', ' Summit,', ' however', ' much', ' time', ' that', ' is.']}
 
 		sleep 140t

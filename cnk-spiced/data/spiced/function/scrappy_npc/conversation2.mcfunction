@@ -1,0 +1,6 @@
+# Generated with MC-Build
+
+execute positioned 228 80 176 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/scrappy
+function spiced:extras/npc_sticker_check
+function spiced:scrappy_npc/says {message:[{text:'Here,', color: '#ebe296'}, ' I', ' can', ' do', ' the', ' impossible.']}
+schedule function spiced:scrappy_npc/zzz/25 84t replace

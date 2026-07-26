@@ -7,3 +7,5 @@ function spiced:c4t_npc/tick
 function spiced:mantis_npc/tick
 function spiced:blue_npc/tick
 function spiced:vault_emma_npc/tick
+function spiced:scrappy_npc/tick
+function spiced:bush_npc/tick
