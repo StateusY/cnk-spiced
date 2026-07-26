@@ -1,4 +1,4 @@
-tellraw @a[tag=summit.in_booth.spiced] [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false},{text:" ","font":"minecraft:default"},{"translate":spiced.loaded,"font":"minecraft:default"}]
+# tellraw @a[tag=summit.in_booth.spiced] [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false},{text:" ","font":"minecraft:default"},{"translate":spiced.loaded,"font":"minecraft:default"}]
 
 # blocks
 scoreboard objectives add spiced.timer dummy
@@ -15,8 +15,8 @@ scoreboard objectives add spiced.mash_time dummy
 scoreboard objectives add spiced.get_water minecraft.used:minecraft.glass_bottle
 
 # book
-scoreboard objectives add spiced.use_book trigger
-# minecraft.used:minecraft.written_book
+scoreboard objectives remove spiced.use_book
+scoreboard objectives add spiced.use_book minecraft.used:minecraft.written_book
 scoreboard objectives add spiced.cookbook_buttons trigger
 scoreboard objectives add spiced.cookbook_current_page dummy
 scoreboard objectives add spiced.cookbook_previous_page dummy
@@ -49,34 +49,6 @@ data modify storage spiced:cookbook pages set value { \
     19: "spiced:cookbook/pages/huntsman_pie", \
     20: "spiced:cookbook/pages/back" \
 }
-
-# {
-#   "values": [
-#     "spiced:cookbook/pages/butter",
-#     "spiced:cookbook/pages/cooking_oil",
-#     "spiced:cookbook/pages/flour",
-#     "spiced:cookbook/pages/dough",
-#     "spiced:cookbook/pages/bread",
-#     "spiced:cookbook/pages/sliced_bread",
-#     "spiced:cookbook/pages/diced_bread",
-#     "spiced:cookbook/pages/ground_cinnamon",
-#     "spiced:cookbook/pages/sliced_celery",
-#     "spiced:cookbook/pages/diced_celery",
-#     "spiced:cookbook/pages/sliced_onion",
-#     "spiced:cookbook/pages/diced_onion",
-#     "spiced:cookbook/pages/stock",
-#     "spiced:cookbook/pages/pastry_dough",
-#     "spiced:cookbook/pages/incomplete_huntsman_pie_1",
-#     "spiced:cookbook/pages/incomplete_huntsman_pie_2",
-#     "spiced:cookbook/pages/huntsman_pie"
-#    ] 
-# }
-
-# {
-#   "values": [
-#     "spiced:cookbook/pages/info/register"
-#    ] 
-# }
 
 function spiced:teardown
 function spiced:setup
