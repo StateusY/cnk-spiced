@@ -7,7 +7,17 @@
         "volume": 1
       }
     ],
-    "subtitle": "subtitles.spiced.block.mixing_bowl.stir"
+    "subtitle": "subtitles.spiced.ambient.fountain.guitar"
+  },
+  "item.lettuce.unreasonable": {
+    "sounds": [
+      {
+        "name": "spiced:unreasonable",
+        "attenuation_distance": 6,
+        "volume": 0.5
+      }
+    ],
+    "subtitle": "subtitles.spiced.item.unreasonable.play"
   },
   "booth.sr_mantis.speech": {
         "sounds": [

@@ -1,0 +1,8 @@
+{
+  "description": "UNREASONABLE",
+  "range": 30,
+  "sound_event": {
+    "sound_id": "spiced:item.lettuce.unreasonable"
+  },
+  "use_duration": 7
+}

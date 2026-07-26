@@ -103,13 +103,8 @@
   "item.spiced.translation_key": "Translation Key",
   "item.spiced.rammy": "Rammy the Ram",
 
-  "subtitles.spiced.block.mortar_and_pestle.stir": "Pestle mashes in a Mortar",
-
-  "subtitles.spiced.block.cooking_pot.idling": "Cooking pot bubbles",
-  "subtitles.spiced.block.cooking_pot.cooking": "Cooking pot boils",
-  "subtitles.spiced.block.cooking_pot.finished": "Cooking pot finishes cooking",
-  "subtitles.spiced.block.cutting_board.chop": "Knife hits a cutting board",
-  "subtitles.spiced.block.mixing_bowl.stir": "Spoon stirs in a bowl",
+  "subtitles.spiced.ambient.fountain.guitar": "Guitar Strums",
+  "subtitles.spiced.item.unreasonable.play": "THIS IS UNREASONABLE",
   
   "item.spiced.incomplete_one-third": " [1/3]",
   "item.spiced.incomplete_two-thirds": " [2/3]",
