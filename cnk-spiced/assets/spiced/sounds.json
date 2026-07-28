@@ -14,7 +14,7 @@
       {
         "name": "spiced:unreasonable",
         "attenuation_distance": 6,
-        "volume": 0.5
+        "volume": 0.8
       }
     ],
     "subtitle": "subtitles.spiced.item.unreasonable.play"

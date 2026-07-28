@@ -142,7 +142,7 @@ function conversation1 {
 	sequence {
 		execute positioned 183 53 193 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/vault_emma
 		execute positioned 183 53 193 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
-		function ./vault/says {message:[{text:'I', color: '#9171ba'}, ' just', ' figured', ' out', ' out', ' a', ' way', ' more', ' efficent', ' way', ' to', ' use', ' the', ' mortar', ' and', ' pestle!']}
+		function ./vault/says {message:[{text:'I', color: '#9171ba'}, ' just', ' figured', ' out', ' a', ' way', ' more', ' efficent', ' way', ' to', ' use', ' the', ' mortar', ' and', ' pestle!']}
 
 		sleep 120t
 		function ./vault/says {message:[{text:'Apparently', color: '#9171ba'}, ' if', ' you', ' make', ' something,', ' then', ' shift', ' while', ' interacting', ' with', ' the', ' empty', ' pestle,', ' it', ' automatically', ' inserts', ' the', ' items', ' and', ' mashes', ' them', ' again!']}

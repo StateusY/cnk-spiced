@@ -460,7 +460,7 @@ data/spiced/function/vault_emma_npc/zzz/12.mcfunction:d1f99a56155c277b4019e3216d
 data/spiced/function/vault_emma_npc/zzz/13.mcfunction:e912bd8125fdc028cb85a4e7853fbec493618375
 data/spiced/function/vault_emma_npc/zzz/14.mcfunction:0ba99d50682bc96f8d26d8b62efaf944d6470862
 data/spiced/function/vault_emma_npc/zzz/15.mcfunction:c75710c1cbc9394c22c077ecba3b2b9eb0eeb409
-data/spiced/function/vault_emma_npc/conversation1.mcfunction:3acd9b7783b4761edcd6a794d76b7a5ce2c8c082
+data/spiced/function/vault_emma_npc/conversation1.mcfunction:f56b8966d927f90346460a37339e5e53e7741460
 data/spiced/function/xela_npc/summon.mcfunction:7a9f2af33e70941a7d5da295d6f37583fb4f3b06
 data/spiced/function/xela_npc/tick.mcfunction:e290a3314e2553dd7a0baabc2e4d3da499d65b87
 data/spiced/function/xela_npc/zzz/2.mcfunction:a2127f991e66eae8c3086a8a9dc2e601ef0dc3f7

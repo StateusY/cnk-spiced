@@ -1,0 +1,21 @@
+{
+  "id": "cnk_spiced",
+  "pack": {
+    "description": [
+      [
+        {
+          "text": "Spiced Booth Data Pack"
+        }
+      ]
+    ],
+    "pack_format": 107,
+    "min_format": [
+      94,
+      1
+    ],
+    "max_format": [
+      107,
+      1
+    ]
+  }
+}

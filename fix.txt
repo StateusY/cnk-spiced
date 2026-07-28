@@ -18,3 +18,7 @@
 - xela npc X
 
 ? scrappy dialog repetition
+
+
+- inset mortar and pestle items
+- fix vault typo

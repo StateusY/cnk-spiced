@@ -1,1 +1,2 @@
+execute if entity @s[advancements={summit.sticker_book:spiced/lettuce_line=true}] run title @s actionbar {text:"Whoa! You already got this sticker!"}
 advancement grant @s only summit.sticker_book:spiced/lettuce_line
