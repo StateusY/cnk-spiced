@@ -1,0 +1,102 @@
+import ../sequence.mcbt
+import ../score.mcbt
+import ../chatter.mcbt
+
+function summon {
+	data modify storage spiced:xela_npc conversation_order set value []
+	data modify storage spiced:xela_npc conversations set value [1]
+
+	set #spiced.xela_npc.chatting spiced.dummy 0
+	set #spiced.xela_npc.mining_timer spiced.dummy 0
+	summon mannequin 195 65 173 {Rotation:[-125f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.xela_npc'],Invulnerable:1b,immovable:true,profile:{name:'xelafella'},hide_description:true,equipment:{mainhand:{id:"minecraft:barrier",components:{"minecraft:item_model":"cnk:mac_and_cheese"}},offhand:{id:"minecraft:barrier",components:{"minecraft:item_model":"cnk:grilled_cheese"}}}}
+	# execute positioned 189 53 181 run swing @e[type=mannequin,distance=..1,limit=1]
+
+	summon interaction 195 65 173 { \
+		Tags:['summit.booth_entity.spiced', 'summit.static', 'spiced.xela_npc.interaction', 'summit.interactable'], \
+		width:1f, height:2f, response:true, \
+		data: { \
+			summit_interactable: { \
+				on_right_click: 'function spiced:xela_npc/start_conversation', \
+				on_left_click: 'function spiced:xela_npc/start_conversation', \
+			} \
+		} \
+	}
+	function ./reset
+}
+
+function tick {
+	execute \
+		if score #spiced.xela_npc.chatting spiced.dummy matches 1 \
+		as @e[type=mannequin,tag=spiced.xela_npc,limit=1] \
+		at @s \
+	run return run rotate @s facing entity @p
+}
+
+function says {
+	# ARGS: {message: TextComponent}
+	$execute \
+		as @e[type=mannequin,tag=spiced.xela_npc,limit=1] \
+		at @s \
+		positioned ~ ~2.125 ~ \
+	run { {message: $(message)}
+		playsound minecraft:entity.husk.ambient player @a[tag=summit.in_booth.spiced,distance=..10] ~ ~ ~ 0.3 0.8
+		chatter ce123ae4-002f-41e0-921f-4b03d501eece 4..8 spiced:xela_npc/sounds
+	}
+}
+
+function sounds {
+	execute store result storage spiced:xela_npc args.note float 0.01 run random value 100..150
+	{ with storage spiced:xela_npc args
+		$playsound minecraft:block.note_block.bit player @a[tag=summit.in_booth.spiced,distance=..10] ~ ~ ~ 0.5 $(note)
+	}
+}
+
+function reset {
+	execute as @e[type=mannequin,tag=spiced.xela_npc,limit=1] at @s run rotate @s -125 0
+	scoreboard players set #spiced.xela_npc.chatting spiced.dummy 0
+	kill ce123ae4-002f-41e0-921f-4b03d501eece
+
+	REPEAT (0, 110) as i {
+		schedule clear spiced:xela_npc/zzz/<%i%>
+	}
+}
+
+function start_conversation {
+	execute if score #spiced.xela_npc.chatting spiced.dummy matches 1 run return 0
+
+	execute store result score #length spiced.dummy run data get storage spiced:xela_npc conversation_order
+	execute if score #length spiced.dummy matches 0 run {
+		function shuffle:shuffle {source: 'storage spiced:xela_npc conversations', target: 'storage spiced:xela_npc conversation_order'}
+	}
+
+	set #spiced.xela_npc.chatting spiced.dummy 1
+
+	data modify storage spiced:temp args.conversation set from storage spiced:xela_npc conversation_order[0]
+	data remove storage spiced:xela_npc conversation_order[0]
+	{ with storage spiced:temp args
+		$function spiced:xela_npc/conversation$(conversation)
+	}
+}
+
+function conversation1 {
+	sequence {
+		execute positioned 195 65 173 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/xela
+		execute positioned 195 65 173 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'Spare', color: '#2a5f0a'}, ' any', ' change?']}
+
+		sleep 41t
+		function ./says {message:[{text:'Jake', color: '#2a5f0a'}, ' just', ' sent', ' me', ' a', ' massive', ' bill', ' from', ' C&K.']}
+
+		sleep 76t
+		function ./says {message:[{text:'Apparently', color: '#2a5f0a'}, ' those', ' "free', ' samples"', ' weren\'t', ' actually', ' free.']}
+
+		sleep 60t
+		function ./says {message:[{text:'I', color: '#2a5f0a'}, ' would', ' pay', ' off', ' the', ' tab', ' using', ' AJ\'s', ' revenue,']}
+
+		sleep 68t
+		function ./says {message:[{text:'but', color: '#2a5f0a'}, ' Snave', ' is', ' currently', ' funneling', ' that', ' profit', ' to', ' pay', ' off', ' the', ' installation', ' of', ' Standtris.']}
+
+		sleep 99t
+		function ./reset
+	}
+}

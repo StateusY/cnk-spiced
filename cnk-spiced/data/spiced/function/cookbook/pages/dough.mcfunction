@@ -9,7 +9,7 @@ $dialog show @s { \
             "translate":"book.spiced.2_recipe","font":"spiced:icons","shadow_color":0,"color":"white","with":[ \
                 {"translate":item.spiced.dough,"color":"#7b613a","font":"minecraft:default"}, \
                 {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.water,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.water}}}, \
-                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.flour,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.flour}}}, \
+                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.flour,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":[{"translate":item.spiced.flour},{'translate':book.spiced.hyperlink,'font':'spiced:icons'}]},'click_event':{'action':'run_command','command':'trigger spiced.cookbook_references set 6'}}, \
                 {"translate":"book.spiced.mixing_bowl"}, \
                 {"translate":"book.item.spiced.dough","font":"spiced:icons"}, \
                 {"translate":book.tab.spiced.front.idle,"hover_event":{"action":"show_text","value":{"text":"Front Page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9921"}}, \

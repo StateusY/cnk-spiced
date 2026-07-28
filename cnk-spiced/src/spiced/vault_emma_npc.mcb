@@ -9,11 +9,12 @@ function summon {
 	set #spiced.vault_emma_npc.chatting spiced.dummy 0
 	set #spiced.vault_emma_npc.emma_turn spiced.dummy 0
 
-	summon mannequin 183 53 193 {Rotation:[180f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.vault_emma_npc', 'spiced.vault_npc'],Invulnerable:1b,immovable:true,equipment:{offhand:{id:"minecraft:barrier",components:{"minecraft:item_model":"spiced:portion_of_lettuce"}}},profile:{name:'vawlt'},hide_description:true}
+	summon mannequin 178 53 195 {Rotation:[270f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.vault_emma_npc', 'spiced.vault_npc'],Invulnerable:1b,immovable:true,equipment:{offhand:{id:"minecraft:barrier",components:{"minecraft:item_model":"spiced:portion_of_lettuce"}}},profile:{name:'vawlt'},hide_description:true}
+	setblock 178 55 195 air
 
-	summon mannequin 183 53 194 {Rotation:[80f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.vault_emma_npc', 'spiced.emma_npc'],Invulnerable:1b,immovable:true,profile:{name:'emmasmithe'},hide_description:true}
+	summon mannequin 178 53 194 {Rotation:[260f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.vault_emma_npc', 'spiced.emma_npc'],Invulnerable:1b,immovable:true,profile:{name:'emmasmithe'},hide_description:true}
 
-	summon interaction 183 53 193 { \
+	summon interaction 178 53 195 { \
 		Tags:['summit.booth_entity.spiced', 'summit.static', 'spiced.vault_emma_npc.interaction', 'summit.interactable'], \
 		width:1f, height:2f, response:true, \
 		data: { \
@@ -23,7 +24,7 @@ function summon {
 			} \
 		} \
 	}
-	summon interaction 183 53 194 { \
+	summon interaction 178 53 194 { \
 		Tags:['summit.booth_entity.spiced', 'summit.static', 'spiced.vault_emma_npc.interaction', 'summit.interactable'], \
 		width:1f, height:2f, response:true, \
 		data: { \
@@ -58,15 +59,16 @@ function tick {
 function reset {
 	execute as @e[type=mannequin,tag=spiced.emma_npc,limit=1] at @s run {
 		rotate @s 80 0
-		data modify entity @s Rotation set value [80f, 0f]
+		data modify entity @s Rotation set value [260f, 0f]
 	} 
 	execute as @e[type=mannequin,tag=spiced.vault_npc,limit=1] at @s run {
 		rotate @s 90 0
-		data modify entity @s Rotation set value [90f, 0f]
+		data modify entity @s Rotation set value [270f, 0f]
 	}
 	scoreboard players set #spiced.vault_emma_npc.chatting spiced.dummy 0
 	scoreboard players set #spiced.vault_emma_npc.emma_turn spiced.dummy 0
-	kill e2e84d58-29e9-48e3-8998-f6edb7f44062
+	kill 86fab548-89df-4db2-aec8-121390523311
+	kill 5154d289-1915-46d0-8e62-3b3eb1551d32
 
 	REPEAT (0, 110) as i {
 		schedule clear spiced:vault_emma_npc/zzz/<%i%>
@@ -92,14 +94,14 @@ function start_conversation {
 
 dir vault {
 	function says {
-		kill e2e84d58-29e9-48e3-8998-f6edb7f44062
+		kill 86fab548-89df-4db2-aec8-121390523311
 		# ARGS: {message: TextComponent}
 		$execute \
 			as @e[type=mannequin,tag=spiced.vault_emma_npc,limit=1] \
 			at @s \
 			positioned ~ ~2.125 ~ \
 		run { {message: $(message)}
-			chatter e2e84d58-29e9-48e3-8998-f6edb7f44062 4..8 spiced:vault_emma_npc/vault/sounds
+			chatter 86fab548-89df-4db2-aec8-121390523311 4..8 spiced:vault_emma_npc/vault/sounds
 		}
 	}
 
@@ -113,14 +115,14 @@ dir vault {
 
 dir emma {
 	function says {
-		kill e2e84d58-29e9-48e3-8998-f6edb7f44062
+		kill 5154d289-1915-46d0-8e62-3b3eb1551d32
 		# ARGS: {message: TextComponent}
 		$execute \
 			as @e[type=mannequin,tag=spiced.vault_emma_npc,limit=1] \
 			at @s \
-			positioned ~ ~2.125 ~1 \
+			positioned ~ ~2.125 ~-1 \
 		run { {message: $(message)}
-			chatter e2e84d58-29e9-48e3-8998-f6edb7f44062 4..8 spiced:vault_emma_npc/emma/sounds
+			chatter 5154d289-1915-46d0-8e62-3b3eb1551d32 4..8 spiced:vault_emma_npc/emma/sounds
 		}
 	}
 
@@ -139,7 +141,7 @@ dir emma {
 function conversation1 {
 	sequence {
 		execute positioned 183 53 193 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/vault_emma
-		function spiced:extras/npc_sticker_check
+		execute positioned 183 53 193 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./vault/says {message:[{text:'I', color: '#9171ba'}, ' just', ' figured', ' out', ' out', ' a', ' way', ' more', ' efficent', ' way', ' to', ' use', ' the', ' mortar', ' and', ' pestle!']}
 
 		sleep 120t
@@ -149,13 +151,16 @@ function conversation1 {
 		function ./vault/says {message:[{text:'I', color: '#9171ba'}, ' bet', ' Emma', ' hasn\'t', ' figured', ' this', ' out', ' yet...']}
 
 		sleep 80t
+		kill 86fab548-89df-4db2-aec8-121390523311
 		function ./emma/turn
 		function ./emma/says {message:[{text:'Vault!', color: 'dark_red'}, ' I', ' told', ' you', ' how', ' to', ' do', ' this', ' TWO', ' hours', ' ago!!']}
 
 		sleep 80t
+		kill 5154d289-1915-46d0-8e62-3b3eb1551d32
 		function ./vault/says {message:[{text:'Did', color: '#9171ba'}, ' you', ' just', ' hear', ' something?', ' No?', ' Yeah', ' I', ' thought', ' so.']}
 
 		sleep 80t
+		kill 86fab548-89df-4db2-aec8-121390523311
 		function ./emma/says {message:[{text:'Ughh,', color: 'dark_red'}, ' VAULT!!!']}
 
 		sleep 60t

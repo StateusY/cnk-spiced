@@ -36,7 +36,8 @@
                       "functionality": true,
                       "crafting": true
                     }
-                  }, "summit": {"persist": {}}
+                  }, "summit": {"persist": {}},
+                  "beet": {"beetrice": {"dialogue": {"text":"I've heard there is a certain robot cat that really enjoys this - it's not for me though.","padding":13,"width":100}}}
                 },
                 "minecraft:lore": [
                   {

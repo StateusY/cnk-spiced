@@ -14,7 +14,7 @@
                 "minecraft:item_model": "spiced:unreasonable_lettuce",
                 "minecraft:max_stack_size": 67,
                 "minecraft:instrument": "spiced:unreasonable",
-                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"unreasonable_lettuce"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}, "summit": {"persist": {},"untrashable": true}},
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"unreasonable_lettuce"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}, "summit": {"persist": {},"untrashable": true},"beet": {"beetrice": {"dialogue": {"text":"Mercy me! Is that... No... Not the UNREASONABLE amount of lettuce!! *terror intensifies*","padding":13,"width":100}}}},
                 "minecraft:lore": [{"translate":"spiced.tooltip","font":"spiced:tooltip","color":"white","italic":false},{"text":"NO THATS TOO MUCH LETTUCE!!", "color":"red", "italic": false},{"text":"THIS IS FRANKLY UNREASONABLE!!!", "color":"red", "italic": false},{"text":"729 WAS ENOUGH, NO MORE!!", "color":"red", "italic": false},{"text":"", "color":"red", "italic": false},{"text":"The angry lettuce stares at you,", "color":"gray", "italic": false},{"text":"determined to never let you forget", "color":"gray", "italic": false},{"text":"your horrible mistake.", "color":"gray", "italic": false},{"text":"forever","font":"spiced:small_text","color":"dark_red"}],
                 "minecraft:tooltip_display": {
                   "hidden_components": [

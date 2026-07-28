@@ -8,7 +8,7 @@ $dialog show @s { \
       "contents": [{ \
             "translate":"book.spiced.1_recipe","font":"spiced:icons","shadow_color":0,"color":"white","with":[ \
                 {"translate":item.spiced.diced_bread,"color":"#7b613a","font":"minecraft:default"}, \
-                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.sliced_bread,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.sliced_bread}}}, \
+                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.sliced_bread,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":[{"translate":item.spiced.sliced_bread},{'translate':book.spiced.hyperlink,'font':'spiced:icons'}]},'click_event':{'action':'run_command','command':'trigger spiced.cookbook_references set 9'}}, \
                 {"translate":"book.spiced.cutting_board"}, \
                 {"translate":"book.item.spiced.diced_bread","font":"spiced:icons"}, \
                 {"translate":book.tab.spiced.front.idle,"hover_event":{"action":"show_text","value":{"text":"Front Page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9921"}}, \

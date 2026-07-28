@@ -10,7 +10,7 @@
             {
               "function": "set_components",
               "components": {
-                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"glass_bottle"}},"smithed":{"ignore":{"functionality":true,"crafting":true}}}
+                "minecraft:custom_data": {"spiced":{"ingredient":{"type":"glass_bottle"}},"smithed":{"ignore":{"functionality":true,"crafting":true}},"summit": {"droppable": {"kill": true}}}
               }
             }
           ]

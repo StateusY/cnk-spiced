@@ -15,7 +15,7 @@ $dialog show @s { \
                 {"translate":book.tab.spiced.filler}, \
                 {"translate":book.tab.spiced.filler}, \
                 {"translate":book.spiced.bottom_line,"with":[{"translate":book.spiced.page_number.$(page_number_width),"font":"spiced:small_text","with":[{"text":"$(current_page)","color":"#927359"}]}]}, \
-                {"translate":book.spiced.cookbook_front_navigation,"with":[{"translate":book.spiced.empty_incomplete_recipe},{"translate":book.spiced.next_page,"hover_event":{"action":"show_text","value":{"translate":book.cnk.next_page.hover}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9902"}}]} \
+                {"translate":book.spiced.cookbook_front_navigation,"with":[{"translate":book.spiced.empty_incomplete_recipe},{"translate":book.spiced.next_page,"hover_event":{"action":"show_text","value":{"translate":book.spiced.next_page.hover}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9902"}}]} \
             ] \
         }] \
     }, \

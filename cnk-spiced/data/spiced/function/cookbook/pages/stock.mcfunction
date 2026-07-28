@@ -10,7 +10,7 @@ $dialog show @s { \
                 {"translate":item.spiced.stock,"color":"#7b613a","font":"minecraft:default"}, \
                 {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.any_meat,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.any_meat}}}, \
                 {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.water,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.water}}}, \
-                {"translate":"book.spiced.mixing_bowl"}, \
+                {"translate":"book.spiced.cooking_pot"}, \
                 {"translate":"book.item.spiced.stock","font":"spiced:icons"}, \
                 {"translate":book.tab.spiced.front.idle,"hover_event":{"action":"show_text","value":{"text":"Front Page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9921"}}, \
                 {"translate":book.tab.spiced.filler}, \

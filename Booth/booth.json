@@ -5,18 +5,32 @@
     "cabin": {
       "position": {
         "x": { "min": 207, "max": 228 },
-        "y": { "min": 65, "max": 90 },
+        "y": { "min": 65, "max": 73 },
         "z": { "min": 178, "max": 198 }
       },
-      "on_player_enter":"spiced:bounds/cabin/enter"
+      "on_player_enter": "spiced:bounds/cabin/enter"
     },
     "booth": {
       "position": {
-        "x": { "min": 177, "max": 235 },
+        "x": { "min": 173, "max": 235 },
         "y": { "min": 51, "max": 80 },
         "z": { "min": 166, "max": 212 }
       },
-      "on_player_enter":"spiced:bounds/entered"
+      "on_player_enter": "spiced:bounds/entered"
+    },
+    "crane": {
+      "position": {
+        "x": { "min": 204, "max": 232 },
+        "y": { "min": 58, "max": 83 },
+        "z": { "min": 169, "max": 179 }
+      }
+    },
+    "roof": {
+      "position": {
+        "x": { "min": 213, "max": 233 },
+        "y": { "min": 70, "max": 89 },
+        "z": { "min": 182, "max": 206 }
+      }
     }
   },
   "ticking_functions": {
@@ -51,7 +65,7 @@
         "sticker_id": "c4t_talking",
         "sticker_texture": "spiced:sticker/c4t_talking",
         "sticker_name": "Sociable Fellow",
-        "unobtained_text": "Find and talk to all 8 npcs in the booth!",
+        "unobtained_text": "Find and talk to all 12 npcs in the booth!",
         "obtained_text": "Yay talking! But did you find the secret typo?"
       },
       {
@@ -63,11 +77,11 @@
       }
     ]
   },
-    "balloons": [
-        {
-            "balloon_id": "mortar_balloon",
-            "balloon_name": "Mortar and Pestle Balloon",
-            "balloon_model": "spiced:item/spiced_balloon"
-        }
-    ]
+  "balloons": [
+    {
+      "balloon_id": "mortar_balloon",
+      "balloon_name": "Mortar and Pestle Balloon",
+      "balloon_model": "spiced:item/spiced_balloon"
+    }
+  ]
 }

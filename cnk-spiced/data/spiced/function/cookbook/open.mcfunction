@@ -23,7 +23,7 @@ execute if score @s spiced.cookbook_current_page matches 10..99 run data modify 
 execute if score @s spiced.cookbook_current_page matches 100.. run data modify storage spiced:temp cookbook.page_number_width set value "triple"
 
 #handle jump back
-execute if score @s spiced.cookbook_previous_page matches 1.. run data modify storage spiced:temp cookbook.return set value "book.cnk.return.active.icon,'hover_event':{'action':'show_text','value':{'translate':book.cnk.return.active.text}},'click_event':{'action':'run_command','command':'trigger spiced.cookbook_buttons set 9931'}"
+execute if score @s spiced.cookbook_previous_page matches 1.. run data modify storage spiced:temp cookbook.return set value "book.spiced.return.active.icon,'hover_event':{'action':'show_text','value':{'translate':book.spiced.return.active.text}},'click_event':{'action':'run_command','command':'trigger spiced.cookbook_buttons set 9931'}"
 
 #open page
 execute store result storage spiced:temp cookbook.current_page int 1 run scoreboard players get @s spiced.cookbook_current_page

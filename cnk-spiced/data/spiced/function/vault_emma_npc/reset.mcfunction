@@ -4,7 +4,8 @@ execute as @e[type=mannequin,tag=spiced.emma_npc,limit=1] at @s run function spi
 execute as @e[type=mannequin,tag=spiced.vault_npc,limit=1] at @s run function spiced:vault_emma_npc/zzz/1
 scoreboard players set #spiced.vault_emma_npc.chatting spiced.dummy 0
 scoreboard players set #spiced.vault_emma_npc.emma_turn spiced.dummy 0
-kill e2e84d58-29e9-48e3-8998-f6edb7f44062
+kill 86fab548-89df-4db2-aec8-121390523311
+kill 5154d289-1915-46d0-8e62-3b3eb1551d32
 schedule clear spiced:vault_emma_npc/zzz/0
 schedule clear spiced:vault_emma_npc/zzz/1
 schedule clear spiced:vault_emma_npc/zzz/2

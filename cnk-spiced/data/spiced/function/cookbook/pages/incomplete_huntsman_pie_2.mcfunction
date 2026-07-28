@@ -8,10 +8,10 @@ $dialog show @s { \
       "contents": [{ \
             "translate":"book.spiced.4_recipe","font":"spiced:icons","shadow_color":0,"color":"white","with":[ \
                 {"translate":item.spiced.huntsman_pie_incomplete_2,"color":"#7b613a","font":"minecraft:default"}, \
-                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.huntsman_pie_incomplete_1,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.huntsman_pie_incomplete_1}}}, \
+                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.huntsman_pie_incomplete_1,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":[{"translate":item.spiced.huntsman_pie_incomplete_1},{'translate':book.spiced.hyperlink,'font':'spiced:icons'}]},'click_event':{'action':'run_command','command':'trigger spiced.cookbook_references set 17'}}, \
                 {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.chicken,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.chicken}}}, \
                 {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.porkchop,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.porkchop}}}, \
-                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.diced_bread,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.diced_bread}}}, \
+                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.diced_bread,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":[{"translate":item.spiced.diced_bread},{'translate':book.spiced.hyperlink,'font':'spiced:icons'}]},'click_event':{'action':'run_command','command':'trigger spiced.cookbook_references set 10'}}, \
                 {"translate":"book.spiced.mixing_bowl"}, \
                 {"translate":"book.item.spiced.huntsman_pie_incomplete_2","font":"spiced:icons"}, \
                 {"translate":book.tab.spiced.front.idle,"hover_event":{"action":"show_text","value":{"text":"Front Page"}},"click_event":{"action":"run_command","command":"trigger spiced.cookbook_buttons set 9921"}}, \

@@ -1,7 +1,7 @@
 # Generated with MC-Build
 
 data modify storage spiced:scrappy_npc conversation_order set value []
-data modify storage spiced:scrappy_npc conversations set value [1,2,3,4]
+data modify storage spiced:scrappy_npc conversations set value [5]
 scoreboard players set #spiced.scrappy_npc.chatting spiced.dummy 0
 scoreboard players set #spiced.scrappy_npc.mining_timer spiced.dummy 0
 summon mannequin 228 80.5 176 {Rotation:[-125f, 0f], Tags:['summit.booth_entity.spiced', 'spiced.scrappy_npc'],Invulnerable:1b,immovable:true,profile:{name:'itzscraqpy'},hide_description:true}

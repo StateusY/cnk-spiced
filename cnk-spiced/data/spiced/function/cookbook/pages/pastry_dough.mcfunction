@@ -8,9 +8,9 @@ $dialog show @s { \
       "contents": [{ \
             "translate":"book.spiced.4_recipe","font":"spiced:icons","shadow_color":0,"color":"white","with":[ \
                 {"translate":item.spiced.pastry_dough,"color":"#7b613a","font":"minecraft:default"}, \
-                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.flour,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.flour}}}, \
+                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.flour,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":[{"translate":item.spiced.flour},{'translate':book.spiced.hyperlink,'font':'spiced:icons'}]},'click_event':{'action':'run_command','command':'trigger spiced.cookbook_references set 6'}}, \
                 {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.egg,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.egg}}}, \
-                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.butter,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.butter}}}, \
+                {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.butter,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":[{"translate":item.spiced.butter},{'translate':book.spiced.hyperlink,'font':'spiced:icons'}]},'click_event':{'action':'run_command','command':'trigger spiced.cookbook_references set 3'}}, \
                 {"translate":book.spiced.ingredient_template,with:[{"translate":book.item.spiced.salt,"font":"spiced:icons"}],"hover_event":{"action":"show_text","value":{"translate":item.spiced.salt}}}, \
                 {"translate":"book.spiced.mixing_bowl"}, \
                 {"translate":"book.item.spiced.pastry_dough","font":"spiced:icons"}, \

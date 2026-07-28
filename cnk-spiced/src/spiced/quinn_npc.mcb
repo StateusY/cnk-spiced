@@ -1,0 +1,192 @@
+import ../sequence.mcbt
+import ../score.mcbt
+import ../chatter.mcbt
+
+function summon {
+	data modify storage spiced:quinn_npc conversation_order set value []
+	data modify storage spiced:quinn_npc conversations set value [1,2,3,4]
+
+	set #spiced.quinn_npc.chatting spiced.dummy 0
+	summon mannequin 189 53 181 {Rotation:[145f, 45f], Tags:['summit.booth_entity.spiced', 'spiced.quinn_npc'],Invulnerable:1b,immovable:true,profile:{name:'ghubby'},hide_description:true,pose:crouching,equipment:{mainhand:{id:"minecraft:barrier",components:{"minecraft:item_model":"spiced:lettuce"}}}}
+
+	summon interaction 189 53 181 { \
+		Tags:['summit.booth_entity.spiced', 'summit.static', 'spiced.quinn_npc.interaction', 'summit.interactable'], \
+		width:1f, height:2f, response:true, \
+		data: { \
+			summit_interactable: { \
+				on_right_click: 'function spiced:quinn_npc/start_conversation', \
+				on_left_click: 'function spiced:quinn_npc/start_conversation', \
+			} \
+		} \
+	}
+	function ./reset
+}
+
+function tick {
+	execute \
+		if score #spiced.quinn_npc.chatting spiced.dummy matches 1 \
+		as @e[type=mannequin,tag=spiced.quinn_npc,limit=1] \
+		at @s \
+	run return run rotate @s facing entity @p
+
+	execute store result score #random spiced.dummy run random value 0..50
+	execute unless score #spiced.whos_talking spiced.dummy matches 1 if score #random spiced.dummy matches 0 run function spiced:quinn_npc/eats
+}
+
+function eats {
+		execute store result score #spiced.picnic_eat_random.quinn spiced.dummy run random value 3..7
+		{
+			execute positioned 189 53 181 run function spiced:quinn_npc/eats_as_locator
+
+			sub #spiced.picnic_eat_random.quinn spiced.dummy 1
+			execute if score #spiced.picnic_eat_random.quinn spiced.dummy matches 1.. run schedule function ^0 4t
+		}
+	}
+
+function eats_as_locator {
+	execute positioned 189.3 53.75 181.3 run playsound minecraft:entity.generic.eat player @a[distance=..10] ~ ~ ~ 0.5 1
+	execute positioned 189.3 53.75 181.3 run particle item{item:{id:'stone',components:{'minecraft:item_model':'spiced:lettuce'}}} ~ ~ ~ 0.1 0.1 0.1 0.025 4
+}
+
+function says {
+	# ARGS: {message: TextComponent}
+	$execute \
+		as @e[type=mannequin,tag=spiced.quinn_npc,limit=1] \
+		at @s \
+		positioned ~ ~1.625 ~ \
+	run { {message: $(message)}
+		chatter 1c312a49-0377-41eb-967e-b29a8311f5c0 4..8 spiced:quinn_npc/sounds
+	}
+}
+
+function sounds {
+	execute store result storage spiced:quinn_npc args.note float 0.01 run random value 100..150
+	{ with storage spiced:quinn_npc args
+		$playsound minecraft:entity.allay.item_thrown player @a[tag=summit.in_booth.spiced,distance=..20] ~ ~ ~ 0.5 $(note)
+	}
+}
+
+function reset {
+	execute as @e[type=mannequin,tag=spiced.quinn_npc,limit=1] at @s run rotate @s 145 45
+	scoreboard players set #spiced.quinn_npc.chatting spiced.dummy 0
+	kill 1c312a49-0377-41eb-967e-b29a8311f5c0
+
+	REPEAT (0, 110) as i {
+		schedule clear spiced:quinn_npc/zzz/<%i%>
+	}
+}
+
+function start_conversation {
+	execute if score #spiced.quinn_npc.chatting spiced.dummy matches 1 run return 0
+
+	execute store result score #length spiced.dummy run data get storage spiced:quinn_npc conversation_order
+	execute if score #length spiced.dummy matches 0 run {
+		function shuffle:shuffle {source: 'storage spiced:quinn_npc conversations', target: 'storage spiced:quinn_npc conversation_order'}
+	}
+
+	set #spiced.quinn_npc.chatting spiced.dummy 1
+
+	data modify storage spiced:temp args.conversation set from storage spiced:quinn_npc conversation_order[0]
+	data remove storage spiced:quinn_npc conversation_order[0]
+	{ with storage spiced:temp args
+		$function spiced:quinn_npc/conversation$(conversation)
+	}
+}
+
+function conversation1 {
+	sequence {
+		execute positioned 189 53 181 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/quinn
+		execute positioned 189 53 181 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'huh??', color: '#60a561'}]}
+
+		sleep 26t
+		function ./says {message:[{text:'what', color: '#60a561'}, ' about', ' taco', ' bell???']}
+
+		sleep 51t
+		function ./says {message:[{text:'STOMACH', color: '#60a561'}, ' BUG???']}
+
+		sleep 34t
+		function ./says {message:[{text:'IN', color: '#60a561'}, ' THE', ' LETTUCE????']}
+
+		sleep 37t
+		function ./says {message:[{text:'DUDE', color: '#60a561'}, ' I', ' ATE', ' SO', ' MUCH', ' I', ' probably', ' have', ' so', ' many', ' stomach', ' bugs!!!']}
+
+		sleep 81t
+		function ./says {message:[{text:'Am', color: '#60a561'}, ' I...']}
+
+		sleep 32t
+		function ./says {message:[{text:'Am', color: '#60a561'}, ' I', ' gonna', ' die?']}
+
+		sleep 40t
+		function ./reset
+	}
+}
+
+function conversation2 {
+	sequence {
+		execute positioned 189 53 181 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/quinn
+		execute positioned 189 53 181 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'There', color: '#60a561'}, ' is', ' a', ' method', ' to', ' this', ' lettuce.']}
+		sleep 61t
+
+		function ./says {message:[{text:'I', color: '#60a561'}, ' mean', ' madness.']}
+
+		sleep 37t
+		function ./reset
+	}
+}
+
+function conversation3 {
+	sequence {
+		execute positioned 189 53 181 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/quinn
+		execute positioned 189 53 181 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'urmf...', color: '#60a561'}]}
+
+		sleep 13t
+		execute positioned 189 53 181 run playsound minecraft:entity.player.burp player @p[tag=summit.in_booth.spiced,distance=..12] ~ ~ ~ 0.5 0.75
+
+		sleep 13t
+		function ./says {message:[{text:'uff..', color: '#60a561'}]}
+
+		sleep 14t
+		execute positioned 189 53 181 run playsound minecraft:entity.player.burp player @p[tag=summit.in_booth.spiced,distance=..12] ~ ~ ~ 0.5 0.95
+
+		sleep 14t
+		function ./says {message:[{text:'ohh....', color: '#60a561'}, ' im...', ' so..']}
+
+		sleep 34t
+		execute positioned 189 53 181 run playsound minecraft:entity.player.burp player @p[tag=summit.in_booth.spiced,distance=..12] ~ ~ ~ 0.5 0.85
+
+		sleep 14t
+		function ./says {message:[{text:'so', color: '#60a561'}, ' full...']}
+
+		sleep 34t
+		function ./says {message:[{text:'someone', color: '#60a561'}, ' has', ' to', ' eat', ' this', ' lettuce...']}
+
+		sleep 53t
+		function ./says {message:[{text:'its', color: '#60a561'}, ' gonna', ' go', ' bad', ' just', ' sitting', ' there...']}
+
+		sleep 60t
+		function ./reset
+	}
+}
+
+function conversation4 {
+	sequence {
+		execute positioned 189 53 181 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/quinn
+		execute positioned 189 53 181 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'You', color: '#60a561'}, ' know', ' what', ' people', ' say...']}
+
+		sleep 57t
+		function ./says {message:[{text:'The', color: '#60a561'}, ' stuff', ' about', ' 70%', ' of', ' our', ' bodies', ' being', ' made', ' of', ' water?']}
+
+		sleep 80t
+		function ./says {message:[{text:'Baloney.', color: '#60a561'}]}
+
+		sleep 24t
+		function ./says {message:[{text:'70%', color: '#60a561'}, ' of', ' MY', ' body', ' is', ' made', ' of', ' lettuce!']}
+
+		sleep 64t
+		function ./reset
+	}
+}

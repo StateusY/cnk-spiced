@@ -6,3 +6,6 @@ function spiced:blue_npc/summon
 function spiced:vault_emma_npc/summon
 function spiced:scrappy_npc/summon
 function spiced:bush_npc/summon
+function spiced:quinn_npc/summon
+function spiced:toast_npc/summon
+function spiced:xela_npc/summon

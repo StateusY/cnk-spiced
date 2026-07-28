@@ -80,7 +80,7 @@ function start_conversation {
 function conversation1 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'I', color: '#2a5f0a'}]}
 
 		sleep 60t
@@ -94,7 +94,7 @@ function conversation1 {
 function conversation2 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'She', color: '#2a5f0a'}, ' glanced', ' up', ' into', ' the', ' sky', ' to', ' watch', ' the', ' clouds', ' taking', ' shape.']}
 
 		sleep 140t
@@ -114,7 +114,7 @@ function conversation2 {
 function conversation3 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'It', color: '#2a5f0a'}, ' wasn\'t', ' that', ' he', ' hated', ' her.']}
 
 		sleep 80t
@@ -137,7 +137,7 @@ function conversation3 {
 function conversation4 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'It', color: '#2a5f0a'}, ' was', ' a', ' simple', ' tip', ' of', ' the', ' hat.']}
 
 		sleep 115t
@@ -157,7 +157,7 @@ function conversation4 {
 function conversation5 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'How', color: '#2a5f0a'}, ' had', ' she', ' been', ' so', ' wrong?']}
 
 		sleep 94t
@@ -180,7 +180,7 @@ function conversation5 {
 function conversation6 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Bryan', color: '#2a5f0a'}, ' had', ' made', ' peace', ' with', ' himself', ' and', ' felt', ' comfortable', ' with', ' the', ' choices', ' he', ' made.']}
 
 		sleep 179t
@@ -197,7 +197,7 @@ function conversation6 {
 function conversation7 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' choice', ' was', ' red,', ' green,', ' or', ' blue.']}
 
 		sleep 104t
@@ -217,7 +217,7 @@ function conversation7 {
 function conversation8 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Don\'t', color: '#2a5f0a'}, ' be', ' scared.']}
 
 		sleep 61t
@@ -240,7 +240,7 @@ function conversation8 {
 function conversation9 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Here\'s', color: '#2a5f0a'}, ' the', ' thing.']}
 
 		sleep 61t
@@ -266,7 +266,7 @@ function conversation9 {
 function conversation10 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'His', color: '#2a5f0a'}, ' parents', ' continued', ' to', ' question', ' him.']}
 
 		sleep 91t
@@ -289,7 +289,7 @@ function conversation10 {
 function conversation11 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' bridge', ' spanning', ' a', ' 100-foot', ' gully', ' stood', ' in', ' front', ' of', ' him', ' as', ' the', ' last', ' obstacle', ' blocking', ' him', ' from', ' reaching', ' his', ' destination.']}
 
 		sleep 246t
@@ -309,7 +309,7 @@ function conversation11 {
 function conversation12 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Pink', color: '#2a5f0a'}, ' ponies', ' and', ' purple', ' giraffes', ' roamed', ' the', ' field.']}
 
 		sleep 112t
@@ -329,7 +329,7 @@ function conversation12 {
 function conversation13 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' bush', ' began', ' to', ' shake.']}
 
 		sleep 81t
@@ -352,8 +352,8 @@ function conversation13 {
 function conversation14 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
-		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' leather', ' jacked', ' showed', ' the', ' scars', ' of', ' being', ' his', ' favorite', ' for', ' years.']}
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'The', color: '#2a5f0a'}, ' leather', ' jacket', ' showed', ' the', ' scars', ' of', ' being', ' his', ' favorite', ' for', ' years.']}
 
 		sleep 152t
 		function ./says {message:[{text:'It', color: '#2a5f0a'}, ' wore', ' those', ' scars', ' with', ' pride,', ' feeling', ' that', ' they', ' enhanced', ' his', ' presence', ' rather', ' than', ' diminishing', ' it.']}
@@ -372,7 +372,7 @@ function conversation14 {
 function conversation15 {
 	sequence {
 		execute positioned 213 53 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/bush
-		function spiced:extras/npc_sticker_check
+		execute positioned 213 53 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'He', color: '#2a5f0a'}, ' had', ' done', ' everything', ' right.']}
 
 		sleep 81t

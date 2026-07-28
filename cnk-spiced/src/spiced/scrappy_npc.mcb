@@ -4,7 +4,7 @@ import ../chatter.mcbt
 
 function summon {
 	data modify storage spiced:scrappy_npc conversation_order set value []
-	data modify storage spiced:scrappy_npc conversations set value [1,2,3,4]
+	data modify storage spiced:scrappy_npc conversations set value [5]
 
 	set #spiced.scrappy_npc.chatting spiced.dummy 0
 	set #spiced.scrappy_npc.mining_timer spiced.dummy 0
@@ -80,7 +80,7 @@ function start_conversation {
 function conversation1 {
 	sequence {
 		execute positioned 228 80 176 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/scrappy
-		function spiced:extras/npc_sticker_check
+		execute positioned 228 80 176 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'The', color: '#ebe296'}, ' sea', ' washes', ' upon', ' these', ' digital', ' shores', ' over', ' and', ' over.']}
 
 		sleep 127t
@@ -106,7 +106,7 @@ function conversation1 {
 function conversation2 {
 	sequence {
 		execute positioned 228 80 176 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/scrappy
-		function spiced:extras/npc_sticker_check
+		execute positioned 228 80 176 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Here,', color: '#ebe296'}, ' I', ' can', ' do', ' the', ' impossible.']}
 
 		sleep 84t
@@ -126,7 +126,7 @@ function conversation2 {
 function conversation3 {
 	sequence {
 		execute positioned 228 80 176 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/scrappy
-		function spiced:extras/npc_sticker_check
+		execute positioned 228 80 176 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Lettuce', color: '#ebe296'}, ' lettuce', ' lettuce', ' lettuce']}
 
 		sleep 64t
@@ -137,10 +137,45 @@ function conversation3 {
 function conversation4 {
 	sequence {
 		execute positioned 228 80 176 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/scrappy
-		function spiced:extras/npc_sticker_check
-		function ./says {message:[{text:'Yum', color: '#ebe296'}, ' yum', ' yum', ' yum', ' UNREASONABLE', ' yum', ' yum', ' yum', ' yum', ' yum...']}
+		execute positioned 228 80 176 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'Yum', color: '#ebe296'}, ' yum', ' yum', ' yum', ' UNREASONmABLE', ' yum', ' yum', ' yum', ' yum', ' yum...']}
 
 		sleep 127t
+		function ./reset
+	}
+}
+
+function conversation5 {
+	sequence {
+		execute positioned 228 80 176 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/scrappy
+		execute positioned 228 80 176 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
+		function ./says {message:[{text:'Three', color: '#ebe296'}, ' lettuce!']}
+
+		sleep 51t
+		function ./says {message:[{text:'Three', color: '#ebe296'}, ' lettuce', ' balls!!']}
+
+		sleep 62t
+		function ./says {message:[{text:'Three', color: '#ebe296'}, ' lettuce', ' chunks!!!']}
+
+		sleep 62t
+		function ./says {message:[{text:'Three', color: '#ebe296'}, ' lettuce', ' masses!!!!']}
+
+		sleep 61t
+		function ./says {message:[{text:'Three', color: '#ebe296'}, ' lettuce', ' pans!!!!!']}
+
+		sleep 63t
+		function ./says {message:[{text:'Three', color: '#ebe296'}, ' lettuce', ' portions!!!!!!']}
+
+		sleep 61t
+		function ./says {message:[{text:'Three', color: '#ebe296'}, ' lettuce', ' reasonables!!!!!!!']}
+
+		sleep 60t
+		function ./says {message:[{text:'Grrrrr', color: '#ebe296'}, ' no', ' lettuce', ' unreasonables!!!!!!!!']}
+
+		sleep 71t
+		function ./says {message:[{text:'Lettuce', color: '#ebe296'}, ' SINGULARITY?!!??!']}
+
+		sleep 71t
 		function ./reset
 	}
 }

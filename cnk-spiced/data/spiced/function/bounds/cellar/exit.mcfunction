@@ -1,5 +1,7 @@
 tag @s remove spiced.cellar_dwellar
+tag @s remove spiced.cellar_feller
 effect clear @s minecraft:blindness
+effect clear @s minecraft:darkness
 tp @s 218 66 188 ~180 ~
 
 playsound minecraft:block.wooden_door.open block @s ~ ~ ~ 1 0.3 1

@@ -1,6 +1,6 @@
 function summit.items:api/count_items {custom_data:"{spiced: {ingredient:{type:'water_bottle'}}}", max:5}
 
-execute if score $below_max summit.temp matches 0 run return fail
+execute if score $below_max summit.temp matches 0 run return run title @s actionbar {text: "You can't carry anymore of these!", color:  "red"}
 execute unless items entity @s weapon.mainhand glass_bottle run playsound minecraft:block.wood.step block @a[tag=summit.in_booth.spiced,distance=..15]
 execute unless items entity @s weapon.mainhand glass_bottle run return run title @s actionbar {text: "Interact with Glass Bottle", color:  "red"}
 

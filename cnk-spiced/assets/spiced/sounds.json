@@ -19,6 +19,16 @@
     ],
     "subtitle": "subtitles.spiced.item.unreasonable.play"
   },
+  "ambient.cellar.laugh": {
+    "sounds": [
+      {
+        "name": "spiced:laugh",
+        "attenuation_distance": 6,
+        "volume": 1
+      }
+    ],
+    "subtitle": "subtitles.spiced.item.unreasonable.play"
+  },
   "booth.sr_mantis.speech": {
         "sounds": [
             {

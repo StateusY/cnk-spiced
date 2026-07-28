@@ -12,6 +12,9 @@ execute positioned 180 54 191 run function spiced:mortar_and_pestle/place
 execute positioned 181 54 191 run function spiced:mortar_and_pestle/place
 execute positioned 182 54 192 run function spiced:mortar_and_pestle/place
 execute positioned 179 54 192 run function spiced:mortar_and_pestle/place
+execute positioned 184 54 194 run function spiced:mortar_and_pestle/place
+execute positioned 184 54 195 run function spiced:mortar_and_pestle/place
+execute positioned 183 54 192 run function spiced:mortar_and_pestle/place
 
 # floor 2 window
 execute positioned 227 70 189 run function spiced:cooking_pot/place

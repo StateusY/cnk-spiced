@@ -79,7 +79,7 @@ function start_conversation {
 function conversation1 {
 	sequence {
 		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
-		function spiced:extras/npc_sticker_check
+		execute positioned 200 64 207 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'I', color: '#e4741d'}, ' really', ' love', ' grilled', ' cheese.']}
 
 		sleep 80t
@@ -105,7 +105,7 @@ function conversation1 {
 function conversation2 {
 	sequence {
 		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
-		function spiced:extras/npc_sticker_check
+		execute positioned 200 64 207 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Did', color: '#e4741d'}, ' you', ' know', ' there', ' are', ' two', ' things', ' you', ' can', ' wear', ' in', ' the', ' booth?']}
 
 		sleep 100t
@@ -132,7 +132,7 @@ function conversation2 {
 function conversation3 {
 	sequence {
 		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
-		function spiced:extras/npc_sticker_check
+		execute positioned 200 64 207 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Remember,', color: '#e4741d'}, ' some', ' ingredients', ' vanish', ' when', ' you', ' leave', ' the', ' booth.']}
 
 		sleep 80t
@@ -146,7 +146,7 @@ function conversation3 {
 function conversation4 {
 	sequence {
 		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
-		function spiced:extras/npc_sticker_check
+		execute positioned 200 64 207 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Welcome', color: '#e4741d'}, ' to', ' my', ' and', ' Stateus\'', ' booth!']}
 
 		sleep 60t
@@ -172,7 +172,7 @@ function conversation4 {
 function conversation5 {
 	sequence {
 		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
-		function spiced:extras/npc_sticker_check
+		execute positioned 200 64 207 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'You', color: '#e4741d'}, ' can', ' join', ' our', ' Discord', ' server', ' to', ' stay', ' updated', ' about', ' Spiced', ' and', ' our', ' other', ' packs!']}
 
 		sleep 100t
@@ -186,7 +186,7 @@ function conversation5 {
 function conversation6 {
 	sequence {
 		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
-		function spiced:extras/npc_sticker_check
+		execute positioned 200 64 207 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'My', color: '#e4741d'}, ' passion', ' for', ' making', ' pixel-art', ' started', ' a', ' few', ' years', ' ago']}
 
 		sleep 80t
@@ -209,7 +209,7 @@ function conversation6 {
 function conversation7 {
 	sequence {
 		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
-		function spiced:extras/npc_sticker_check
+		execute positioned 200 64 207 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'This', color: '#e4741d'}, ' is', ' my', ' first', ' time', ' ever', ' on', ' the', ' Summit,']}
 
 		sleep 80t
@@ -226,7 +226,7 @@ function conversation7 {
 function conversation7 {
 	sequence {
 		execute positioned 200 64 207 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/pan
-		function spiced:extras/npc_sticker_check
+		execute positioned 200 64 207 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'There', color: '#e4741d'}, ' are', ' some', ' spices', ' under', ' deck.']}
 
 		sleep 80t

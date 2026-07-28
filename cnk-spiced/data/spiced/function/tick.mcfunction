@@ -9,3 +9,6 @@ function spiced:blue_npc/tick
 function spiced:vault_emma_npc/tick
 function spiced:scrappy_npc/tick
 function spiced:bush_npc/tick
+function spiced:quinn_npc/tick
+function spiced:toast_npc/tick
+function spiced:xela_npc/tick

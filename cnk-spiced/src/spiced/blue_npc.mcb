@@ -79,7 +79,7 @@ function start_conversation {
 function conversation1 {
 	sequence {
 		execute positioned 218 62 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/blue
-		function spiced:extras/npc_sticker_check
+		execute positioned 218 62 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Glub', color: '#0021d9'}, ' glub...']}
 
 		sleep 60t
@@ -90,7 +90,7 @@ function conversation1 {
 function conversation2 {
 	sequence {
 		execute positioned 218 62 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/blue
-		function spiced:extras/npc_sticker_check
+		execute positioned 218 62 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'I', color: '#0021d9'}, ' sure', ' am', ' glad', ' I', ' found', ' this', ' lilypad.']}
 
 		sleep 80t
@@ -113,7 +113,7 @@ function conversation2 {
 function conversation3 {
 	sequence {
 		execute positioned 218 62 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/blue
-		function spiced:extras/npc_sticker_check
+		execute positioned 218 62 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'Just', color: '#0021d9'}, ' keeping', ' an', ' eye', ' on', ' these', ' AJ', ' shipments']}
 
 		sleep 80t
@@ -130,7 +130,7 @@ function conversation3 {
 function conversation4 {
 	sequence {
 		execute positioned 218 62 186 run advancement grant @p[tag=summit.in_booth.spiced,distance=..12,limit=4] only spiced:npcs/blue
-		function spiced:extras/npc_sticker_check
+		execute positioned 218 62 186 as @p[tag=summit.in_booth.spiced,distance=..12,limit=4] run function spiced:extras/npc_sticker_check
 		function ./says {message:[{text:'My', color: '#0021d9'}, ' name', ' is', ' Blue,', ' just', ' like', ' this', ' water.']}
 
 		sleep 80t

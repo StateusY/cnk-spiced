@@ -1,5 +1,5 @@
 # Generated with MC-Build
 
-kill e2e84d58-29e9-48e3-8998-f6edb7f44062
+kill 86fab548-89df-4db2-aec8-121390523311
 # ARGS: {message: TextComponent}
 $execute as @e[type=mannequin,tag=spiced.vault_emma_npc,limit=1] at @s positioned ~ ~2.125 ~ run function spiced:vault_emma_npc/vault/zzz/0 {message: $(message)}
