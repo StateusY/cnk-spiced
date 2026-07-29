@@ -1,24 +1,4 @@
-- scrappy voice wierd far X
-- unreasonable sprite transparency X
-- spiced ad 1 wierd X
-- npc sticker XX
-- toast X
-- emma vault text bad X
-- more mortars and move emma and vault X
-- sticker item lore X
-- bottle is not deleted when thrown X
-- error text for too many items X
-? change bounding boxes X
-- chang ing count on info cookbook page X
-- stock page broken X
-- quinn npc ghubby - lettuce room eating lettuce S
-- cookbook references X
-- unreasonable lettuce in mortar effect  X
-- recieve reasonable amount of lettuce X
-- xela npc X
-
-? scrappy dialog repetition
-
-
-- inset mortar and pestle items
-- fix vault typo
+fix front sign
+replace booth_entered adv
+cnk compat added
+fixed POL remash bug
