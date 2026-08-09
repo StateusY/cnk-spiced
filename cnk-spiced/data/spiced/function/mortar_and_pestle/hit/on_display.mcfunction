@@ -1,5 +1,5 @@
 scoreboard players reset @s spiced.idle_time
-execute if entity @s[tag=spiced.msahing] run return fail
+execute if entity @s[tag=spiced.mashing] run return fail
 
 # recount items in case of desync shenanigans
 function spiced:mortar_and_pestle/recount_items
