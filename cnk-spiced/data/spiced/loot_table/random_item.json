@@ -1,0 +1,317 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/crushed_ice"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/diced_onion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/tomato_paste"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/nuke"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/onion_powder"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/soy_sauce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/heavy_cream"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/bagged_sugar"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/ethanol"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/diced_bell_pepper"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/sliced_potato"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/salt"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/worchester_spice_mix"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/basil"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/okra_skillet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/tomato_sauce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/oregano"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/apple_cider_vinegar"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/okra_skillet_incomplete"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/italian_seasoning"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/milk_bun"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/endroot"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/mashed_potatoes"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/chunk_of_lettuce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/diced_celery"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/cajun_chicken"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/reasonable_amount_of_lettuce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/sliced_okra"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/cajun_seasoning"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/bell_pepper"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/jambalaya_seasoning"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/diced_potato"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/ice_cubes"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/sliced_bell_pepper"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/marjoram"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/diced_tomato"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/sliced_celery"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/mass_of_lettuce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/pepper_sauce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/ground_cinnamon"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/flaming_cocktail"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/cajun_veggies"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/soybeans"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/onion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/pan_of_lettuce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/sliced_seared_sausage"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/v2"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/minced_garlic"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/ground_beef"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/paprika"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/parsley"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/cajun_meats"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/celery"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/worchester_sauce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/garlic_powder"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/cajun_rice"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/portion_of_lettuce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/jambalaya"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/ground_pork"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/powdered_sugar"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/mashed_potatoes_side"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/black_pepper"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/seared_sausage"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/sour_cream"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/thyme"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/rosemary"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/adaptagrape"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/corn_milk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/vinegar"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/okra"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/ball_of_lettuce"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/ender_feast"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/sliced_tomato"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/boatload_of_soup"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/sliced_onion"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/garlic"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "spiced:food/mustard_powder"
+        }
+      ]
+    }
+  ]
+}
