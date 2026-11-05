@@ -6,9 +6,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:poisonous_potato",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {"translate":"item.spiced.sliced_bell_pepper","fallback":"Sliced Bell Pepper"},
                 "minecraft:item_model": "spiced:sliced_bell_pepper",

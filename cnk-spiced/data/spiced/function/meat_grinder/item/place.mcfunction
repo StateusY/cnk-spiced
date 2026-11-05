@@ -11,4 +11,4 @@ execute at @s rotated as @n[type=minecraft:item_display,tag=spiced.meat_grinder]
 ride @s mount @n[type=minecraft:item_display,tag=spiced.meat_grinder]
 playsound minecraft:block.iron.step block @a ~ ~ ~ 1 2
 
-execute if score $hand_place cnk.dummy matches 1 run item modify entity @p[tag=spiced.interact_meat_grinder] weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
+execute if score $hand_place cnk.dummy matches 1 run item modify entity @p[tag=spiced.interact_meat_grinder] weapon.mainhand {"type":"minecraft:set_count","count":-1,"add":true}

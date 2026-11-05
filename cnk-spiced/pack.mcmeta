@@ -1,12 +1,8 @@
 {
    "pack":{
-    "pack_format":69,
-    "max_format": 75,
-    "min_format": 63,
-    "description":"Spiced, an addon for Crop and Kettle!",
-    "supported_formats": {
-      "max_inclusive": 75,
-      "min_inclusive": 63
-    }
+    "pack_format":121,
+    "max_format": 121,
+    "min_format": 97,
+    "description":"Spiced, an addon for Crop and Kettle!"
   }
 }

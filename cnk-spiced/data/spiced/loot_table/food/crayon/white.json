@@ -12,7 +12,7 @@
               "tag": {"spiced":{"crayon":{"color":"white","generic":true}}}
             },
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "spiced:crayon/white"
               }

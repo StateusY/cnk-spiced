@@ -3,15 +3,14 @@
     "requirement": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "nbt": "{Tags:[\"spiced.mecha_scarecrow_enemy\"]}"
-            }
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_type": "minecraft:interaction",
+            "entity_tags": {"any_of":["spiced.mecha_scarecrow_enemy"]}
           }
-        ]
+        }
       }
     }
   },

@@ -6,9 +6,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:player_head",
-          "functions": [
+          "modifier": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {"translate":"item.spiced.the_not_smiling_man","fallback":"The Not Smiling Man"},
                 "minecraft:item_model": "spiced:joebiden_item",

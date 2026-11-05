@@ -4,8 +4,12 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:wandering_trader",
-          "nbt": "{Tags:[\"spiced.c4t_trader\"]}"
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "entity_type": "minecraft:wandering_trader",
+            "entity_tags": {"any_of":["spiced.c4t_trader"]}
+          }
         }
       }
     }

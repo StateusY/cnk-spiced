@@ -8,7 +8,7 @@
           "name": "minecraft:baked_potato",
           "functions": [
             {
-              "function": "minecraft:set_components",
+              "type": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": {"translate":"item.spiced.okra_seeds","fallback":"Okra Seeds"},
                 "minecraft:use_effects": {"can_sprint":true, "speed_multiplier":1, "interact_vibrations":true},

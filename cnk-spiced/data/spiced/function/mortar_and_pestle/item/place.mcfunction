@@ -12,4 +12,4 @@ execute at @s rotated as @n[type=minecraft:item_display,tag=spiced.mortar_and_pe
 ride @s mount @n[type=minecraft:item_display,tag=spiced.mortar_and_pestle]
 playsound minecraft:block.bamboo_wood.step block @a ~ ~ ~ 1 2
 
-execute if score $hand_place cnk.dummy matches 1 run item modify entity @p[tag=spiced.interact_mortar_and_pestle] weapon.mainhand {"function":"minecraft:set_count","count":-1,"add":true}
+execute if score $hand_place cnk.dummy matches 1 run item modify entity @p[tag=spiced.interact_mortar_and_pestle] weapon.mainhand {"type":"minecraft:set_count","count":-1,"add":true}
